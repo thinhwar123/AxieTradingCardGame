@@ -24,7 +24,7 @@ namespace Game
 
         Axie2dBuilder builder => Mixer.Builder;
 
-        const bool USE_GRAPHIC = true;
+        const bool USE_GRAPHIC = false;
 
         private void OnEnable()
         {
