@@ -5,8 +5,9 @@ using UnityEngine.EventSystems;
 using Thinh;
 using DG.Tweening;
 using UnityEngine.Events;
+using Mirror;
 
-public class CardController : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler
+public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler
 {
     private Transform m_Transform;
     public Transform Transform { get { return m_Transform ??= transform; } }

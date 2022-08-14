@@ -19,6 +19,7 @@ public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 	[SerializeField] private int m_MaxCard;
 
 	public List<BasicCard> m_ListBasicCard = new List<BasicCard>();
+	public CardController m_Card;
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
@@ -32,6 +33,7 @@ public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 			if (!card.m_CanDrag) return;
 			card.ChangeDropZone(this);
 			card.GetCardSlot().SetParentTransform(Transform);
+			m_Card = card;
 		}
 	}
 	public void OnPointerExit(PointerEventData eventData)
