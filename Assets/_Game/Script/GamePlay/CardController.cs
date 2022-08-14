@@ -160,6 +160,7 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
     }
     public IEnumerator MoveCardToDropZone(DropZone dropZone, UnityAction onMoveComplete)
     {
+        Debug.Log(dropZone.gameObject.name);
         ChangeDropZone(dropZone);
 
         Transform.parent = UI_Game.Instance.CanvasParentTF;

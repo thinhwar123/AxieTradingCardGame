@@ -25,7 +25,7 @@ public class PlayerHandler : NetworkBehaviour
         if(!isLocalPlayer){
             return;
         }
-        if (Input.GetMouseButtonDown(0)){
+        if (Input.GetKeyDown(KeyCode.C)){
             SendMessage();
         }
     }

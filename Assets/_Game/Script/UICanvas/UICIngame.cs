@@ -21,6 +21,8 @@ public class UICIngame : UICanvas
     [SerializeField] private Phase m_CurrentPhase;
     [SerializeField] private List<Transform> m_PhaseList;
     [SerializeField] private Transform m_Border;
+    [SerializeField] private RectTransform m_AttackerRole;
+    [SerializeField] private RectTransform m_DefenderRole;
 
     [SerializeField] private CanvasGroup m_ButtonEndPhase;
 
@@ -54,7 +56,7 @@ public class UICIngame : UICanvas
     {
         for (int i = 0; i < m_OpponentSingleDropZones.Count; i++)
         {
-            m_OpponentDeck.DrawACard(m_OpponentSingleDropZones[i].m_DropZone, 1);
+            m_OpponentDeck.DrawACard(TempData.Instance.GetOpponentData().m_SelectCard[i] ,m_OpponentSingleDropZones[i].m_DropZone, 1);
         }
     }
     public void ShowAbilityOptionButton(bool value)
@@ -80,7 +82,85 @@ public class UICIngame : UICanvas
     }
     public void StartBattle()
     {
+        StartCoroutine(CoActiveEffect());
+    }
+    IEnumerator CoActiveEffect()
+    {
+        List<BasicCard> listCard = GetSelectBasicCardByTurn();
+        List<bool> listActiveSkill = TempData.Instance.GetSkillActiveByTurn();
+        for (int i = 0; i < listCard.Count; i++)
+        {
+            if (listActiveSkill[i])
+            {
+                listCard[i].ActiveAbility();
+            }
+            yield return new WaitForSeconds(1);
+        }
+    }
+    public List<BasicCard> GetSelectBasicCardByTurn()
+    {
+        List<SingleDropZone> attackerDropZones = new List<SingleDropZone>();
+        List<SingleDropZone> defenderDropZones = new List<SingleDropZone>();
+        if (TempData.Instance.GetPlayerData().m_BattleRole == BattleRole.ATTACKER)
+        {
+            attackerDropZones = m_PlayerSingleDropZones;
+            defenderDropZones = m_OpponentSingleDropZones;
+        }
+        else
+        {
+            attackerDropZones = m_OpponentSingleDropZones;
+            defenderDropZones = m_PlayerSingleDropZones;
+        }
 
+        List<BasicCard> list = new List<BasicCard>();
+        for (int i = 0; i < attackerDropZones.Count; i++)
+        {
+            list.Add(attackerDropZones[i].GetBasicCard());
+            list.Add(defenderDropZones[i].GetBasicCard());
+        }
+        return list;
+    }
+    public List<SingleDropZone> GetSelectSingleDropZoneByTurn()
+    {
+        List<SingleDropZone> attackerDropZones = new List<SingleDropZone>();
+        List<SingleDropZone> defenderDropZones = new List<SingleDropZone>();
+        if (TempData.Instance.GetPlayerData().m_BattleRole == BattleRole.ATTACKER)
+        {
+            attackerDropZones = m_PlayerSingleDropZones;
+            defenderDropZones = m_OpponentSingleDropZones;
+        }
+        else
+        {
+            attackerDropZones = m_OpponentSingleDropZones;
+            defenderDropZones = m_PlayerSingleDropZones;
+        }
+
+        List<SingleDropZone> list = new List<SingleDropZone>();
+        for (int i = 0; i < attackerDropZones.Count; i++)
+        {
+            list.Add(attackerDropZones[i]);
+            list.Add(defenderDropZones[i]);
+        }
+        return list;
+    }
+    public List<CardData> GetSelectCardData()
+    {
+        List<CardData> list = new List<CardData>();
+        for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
+        {
+            list.Add(m_PlayerSingleDropZones[i].GetBasicCard().m_CardData);
+        }
+        return list;
+    }
+    public List<bool> GetSelectSkill()
+    {
+        List<bool> list = new List<bool>();
+        for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
+        {
+            list.Add(m_PlayerSingleDropZones[i].m_IsActiveSkill);
+        }
+
+        return list;
     }
     public void UpdateTime(float time, float fillBar)
     {
@@ -97,6 +177,17 @@ public class UICIngame : UICanvas
     {
         m_ButtonEndPhase.DOFade(value ? 1 : 0, 0.2f).OnComplete(() => m_ButtonEndPhase.interactable = value);
         m_ButtonEndPhase.blocksRaycasts = value;
+    }
+    public void SetupRole(BattleRole playerRole)
+    {
+        float pos = playerRole == BattleRole.ATTACKER ? -400 : 400;
+        m_AttackerRole.DOLocalMoveX(pos, 0.5f);
+        m_DefenderRole.DOLocalMoveX(-pos, 0.5f);
+    }
+    public void EndSetupRole()
+    {
+        m_AttackerRole.DOLocalMoveX(0, 0.5f);
+        m_DefenderRole.DOLocalMoveX(0, 0.5f);
     }
     public void OnClickButtonEndPhasePhase()
     {

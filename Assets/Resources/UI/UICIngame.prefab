@@ -1579,6 +1579,7 @@ MonoBehaviour:
   m_HorizontalLayoutGroup: {fileID: 3309427860333095563}
   m_MaxCard: 10
   m_ListBasicCard: []
+  m_Card: {fileID: 0}
 --- !u!1 &3309427860392197991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,6 +1661,8 @@ MonoBehaviour:
   - {fileID: 6572175841284021577}
   - {fileID: 6825093934129535855}
   m_Border: {fileID: 4108885921155353726}
+  m_AttackerRole: {fileID: 8813718462034344760}
+  m_DefenderRole: {fileID: 8158905145931448367}
   m_ButtonEndPhase: {fileID: 277977704898546209}
 --- !u!1 &3309427860747160310
 GameObject:
@@ -2311,7 +2314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1265192556098091430}
   m_Layer: 0
-  m_Name: BattleIcon
+  m_Name: BattleRole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

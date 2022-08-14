@@ -22,4 +22,17 @@ public class Deck : MonoBehaviour
         MatchManager.Instance.m_BasicCards.Add(card);
         StartCoroutine(card.m_CardController.MoveCardToDropZone(dropZone, () => card.FlipCard(true)));
     }
+    public void DrawACard(CardData cardData, DropZone dropZone, int cardLookDirection)
+    {
+        BasicCard card = SimplePool.Spawn(m_BasicCard, Transform.position, Quaternion.identity);
+        card.Transform.SetParent(Transform);
+        card.transform.localScale = Vector3.one;
+        card.SetupCardConfig(cardData);
+        card.Setup(false);
+        card.SetCanDrag(false);
+        card.InitCard(cardLookDirection);
+
+        MatchManager.Instance.m_BasicCards.Add(card);
+        StartCoroutine(card.m_CardController.MoveCardToDropZone(dropZone, () => card.FlipCard(true)));
+    }
 }

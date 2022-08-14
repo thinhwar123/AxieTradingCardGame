@@ -8,9 +8,6 @@ public class MatchManager : Singleton<MatchManager>
     public float m_TimeThinking;
     private float m_CurrentTimeThinking;
 
-    [Header("Player Match Data")]
-    public List<PlayerMatchData> m_PlayerMatchData;
-
     [Header("BasicCard")]
     public List<BasicCard> m_BasicCards;
 
@@ -31,7 +28,7 @@ public class MatchManager : Singleton<MatchManager>
     private void Start()
     {
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
-        DelayAction(StartDrawPhase, 1);
+        DelayAction(StartDrawPhase, 2);
     }
     private void Update()
     {
@@ -61,7 +58,10 @@ public class MatchManager : Singleton<MatchManager>
     /// </summary>
     public void OnEnterDrawState()
     {
-        m_UICIngame.PlayerDrawCard(8);        
+        CreatePlayerMathData();
+
+        m_UICIngame.SetupRole(TempData.Instance.GetPlayerData().m_BattleRole);
+        m_UICIngame.PlayerDrawCard(TempData.Instance.GetPlayerData().m_MaxCardInHand);        
         m_UICIngame.ChangePhase(Phase.DRAW);
 
         
@@ -107,8 +107,7 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void OnExitSetupCardState()
     {
-
-
+        
     }
     /// <summary>
     /// Show Card State
@@ -166,6 +165,8 @@ public class MatchManager : Singleton<MatchManager>
     public void OnEnterBattleState()
     {
         m_UICIngame.ChangePhase(Phase.BATTLE);
+        m_UICIngame.EndSetupRole();
+        m_UICIngame.StartBattle();
     }
     public void OnExecuteBattleState()
     {
@@ -193,6 +194,11 @@ public class MatchManager : Singleton<MatchManager>
     #endregion
 
     #region Match Function
+    public void CreatePlayerMathData()
+    {
+        PlayerMatchData playerMatchData = new PlayerMatchData();
+        TempData.Instance.AddPlayerMathData(playerMatchData);
+    }
     public void StartDrawPhase()
     {
         StateMachine.ChangeState(DrawState.Instance);
@@ -204,11 +210,10 @@ public class MatchManager : Singleton<MatchManager>
     public void StartShowCardPhase()
     {
         SetCanDragCard(false);
-
         m_UICIngame.SetShowTimeCount(false);
         m_UICIngame.SetButtonEndPhase(false);
-
         m_UICIngame.AutoFillSingleDropZone();
+        TempData.Instance.GetPlayerData().m_SelectCard = m_UICIngame.GetSelectCardData();
         DelayAction(() => StateMachine.ChangeState(ShowCardState.Instance), 0.5f);
     }
     public void StartSetupAbilityPhase()
@@ -217,6 +222,7 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void StartBattlePhase()
     {
+        TempData.Instance.GetPlayerData().m_SelectSkill = m_UICIngame.GetSelectSkill();
         StateMachine.ChangeState(BattleState.Instance);
     }
     public void StartCountTime()
@@ -244,7 +250,23 @@ public class MatchManager : Singleton<MatchManager>
 [System.Serializable]
 public class PlayerMatchData
 {
+    public int m_MaxCardInHand;
+    public BattleRole m_BattleRole;
     public List<CardData> m_Deck;
     public List<CardData> m_SelectCard;
     public List<bool> m_SelectSkill;
+
+    public PlayerMatchData()
+    {
+        m_MaxCardInHand = 6;
+        m_BattleRole = BattleRole.ATTACKER;
+        m_Deck = new List<CardData>();
+        m_SelectCard = new List<CardData>();
+        m_SelectSkill = new List<bool>();
+    }
+}
+public enum BattleRole
+{
+    ATTACKER,
+    DEFENDER,
 }

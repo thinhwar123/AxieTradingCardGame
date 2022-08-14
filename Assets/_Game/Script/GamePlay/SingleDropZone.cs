@@ -10,6 +10,10 @@ public class SingleDropZone : MonoBehaviour
     public GameObject m_PassiveButton;
 
     public bool m_IsActiveSkill;
+    private void Awake()
+    {
+        m_ActiveButton.OnClick = OnClickStateButton;
+    }
 
     public BasicCard GetBasicCard()
     {

@@ -257,19 +257,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7449910043200792463}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6432676501988399945}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &6400024703649187819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +430,7 @@ MonoBehaviour:
   m_HorizontalLayoutGroup: {fileID: 0}
   m_MaxCard: 1
   m_ListBasicCard: []
+  m_Card: {fileID: 0}
 --- !u!222 &5650342122672679976
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -651,6 +640,7 @@ MonoBehaviour:
   m_DropZone: {fileID: 3092362889139823469}
   m_ActiveButton: {fileID: 6400024703649187819}
   m_PassiveButton: {fileID: 7883851402686872790}
+  m_IsActiveSkill: 0
 --- !u!1 &7111865600306518754
 GameObject:
   m_ObjectHideFlags: 0
