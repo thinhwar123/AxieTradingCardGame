@@ -32,7 +32,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     }
     protected virtual void Awake()
     {
-        transform.parent = null;
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
     }
 }

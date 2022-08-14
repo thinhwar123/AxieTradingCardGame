@@ -10,6 +10,7 @@ public enum UIID
     UICGamePlay,
     UICBlockRaycast,
     UICMainMenu,
+    UICIngame,
     UICEndGame,
     UICShowCardInfor,
 }

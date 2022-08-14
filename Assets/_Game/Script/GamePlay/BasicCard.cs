@@ -37,15 +37,20 @@ public class BasicCard : MonoBehaviour
 
 
     [Header("Config")]
+
     [SerializeField] private string m_AxieID;
     [SerializeField] private string m_AxieName;
     [SerializeField] private float m_Scale;
-    [SerializeField] private CardType m_CardType;
+    [SerializeField] private Symbol m_Symbol;
 
     [SerializeField] private AbilityType m_AbilityType;
     [SerializeField] private string m_AbilityName;
     [SerializeField] private string m_AbilityDescription;
 
+    [SerializeField] private List<string> m_WinAnimation;
+    [SerializeField] private List<string> m_LoseAnimation;
+
+    public CardData m_CardData { get; private set; }
 
     public bool m_IsFlipped { get; private set; }
     private const bool USE_GRAPHIC = true;
@@ -69,25 +74,26 @@ public class BasicCard : MonoBehaviour
     {
         m_IsFlipped = isFlipped;
     }
-    public void InitCard()
+    public void InitCard(int cardLookDirection)
     {
         m_CardController.InitCardController();
 
         for (int i = 0; i < m_ListImageCardBackground.Count; i++)
         {
-            m_ListImageCardBackground[i].SetActive(i == (int)m_CardType && m_IsFlipped);
+            m_ListImageCardBackground[i].SetActive(i == (int)m_Symbol && m_IsFlipped);
         }
         m_CardShirt.SetActive(!m_IsFlipped);
         m_TextCardName.text = string.Format(m_AxieName);
 
-        Sprite icon = m_ListImageCardAbilityIcon[((int)m_CardType * 2 + (int)m_AbilityType)];
+        Sprite icon = m_ListImageCardAbilityIcon[((int)m_Symbol * 2 + (int)m_AbilityType)];
         m_ImageAbilityIcon1.sprite = icon;
         m_ImageAbilityIcon2.sprite = icon;
 
         m_TextAbilityName1.text = m_AbilityName;
         m_TextAbilityName2.text = string.Format("{0} - {1}",m_AbilityType == AbilityType.ACTIVE ? "Active" : "Passive",m_AbilityName);
         m_TextAbilityDescription.text = string.Format("{0}\n\n{1}: {2}", m_AbilityType == AbilityType.ACTIVE ? m_ActiveDescription : m_PassiveDescription, m_AbilityName, m_AbilityDescription);
-        m_ImageAbilityPopupBG.color = m_ListColorAbilityPopupBG[(int)m_CardType];
+        m_ImageAbilityPopupBG.color = m_ListColorAbilityPopupBG[(int)m_Symbol];
+        m_CardGraphic.localScale = new Vector3(cardLookDirection, 1, 1);
         GenerateCardGraphic();
     }
 
@@ -109,11 +115,22 @@ public class BasicCard : MonoBehaviour
             m_Tweens.Add(m_RectAbilityDecription.DOLocalMoveX(0, 0.5f));
         }
     }
+    public void SetupCardConfig(CardData cardData)
+    {
+        m_CardData = cardData;
+        m_AxieID = cardData.m_ID;
+        m_AxieName = cardData.m_Name;
+        m_Symbol = cardData.m_Symbol;
+        m_AbilityType = cardData.m_AbilityType;
+        m_AbilityName = cardData.m_Archetype;
+        m_AbilityDescription = cardData.m_EffectDescription;
+        m_WinAnimation = cardData.m_WinAnimation;
+        m_LoseAnimation = cardData.m_LoseAnimation;
+    }
     public void RandomCardConfig()
     {
-        m_AxieID = Random.Range(100000, 999999).ToString();
-        m_CardType = (CardType)Random.Range(0,3);
-        m_AbilityType = (AbilityType)Random.Range(0,2);
+        CardData randomData = CardDataManager.Instance.m_CardDatas[Random.Range(0, CardDataManager.Instance.m_CardDatas.Count)];
+        SetupCardConfig(randomData);
     }
     public void ResetCard()
     {
@@ -131,12 +148,15 @@ public class BasicCard : MonoBehaviour
         {
             for (int i = 0; i < m_ListImageCardBackground.Count; i++)
             {
-                m_ListImageCardBackground[i].SetActive(i == (int)m_CardType && m_IsFlipped);
+                m_ListImageCardBackground[i].SetActive(i == (int)m_Symbol && m_IsFlipped);
             }
             m_CardShirt.SetActive(!m_IsFlipped);
         });
         Transform.DOScaleX(1, 0.3f).SetEase(Ease.OutSine).SetDelay(0.3f);
-
+    }
+    public void SetCanDrag(bool value)
+    {
+        m_CardController.SetCanDrag(value);
     }
     public void KillAllTween()
     {
@@ -223,14 +243,3 @@ public class BasicCard : MonoBehaviour
 
 }
 
-public enum CardType
-{
-    ROCK = 0,
-    PAPPER = 1,
-    SCISSORS = 2,
-}
-public enum AbilityType
-{
-    ACTIVE = 0,
-    PASSIVE = 1,
-}
