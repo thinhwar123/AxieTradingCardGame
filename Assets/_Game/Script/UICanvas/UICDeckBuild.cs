@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Thinh;
+
 public class UICDeckBuild : UICanvas
 {
     [SerializeField] private BasicCard m_BasicCard;

@@ -191,16 +191,7 @@ public class UICIngame : UICanvas
     }
     public void OnClickButtonEndPhasePhase()
     {
-        switch (m_CurrentPhase)
-        {
-            case Phase.SETUP_CARD:
-                MatchManager.Instance.StartShowCardPhase();
-                break;
-            case Phase.SETUP_ABILITY:
-                MatchManager.Instance.StartBattlePhase();
-                break;
-        }
-        
+        MatchManager.Instance.EndPhase(m_CurrentPhase);       
     }
     public void AutoFillSingleDropZone()
     {

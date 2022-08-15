@@ -273,36 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TimeThinking: 60
   m_BasicCards: []
---- !u!1 &635840011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 635840012}
-  m_Layer: 0
-  m_Name: ServerData
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &635840012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635840011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1652514287}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_UICIngame: {fileID: 0}
 --- !u!224 &743813074 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
@@ -631,6 +602,11 @@ PrefabInstance:
       propertyPath: sceneId
       value: 2763079057
       objectReference: {fileID: 0}
+    - target: {fileID: 2398716513426193838, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: sceneId
+      value: 2397095788
+      objectReference: {fileID: 0}
     - target: {fileID: 7715889882196259673, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -819,7 +795,6 @@ Transform:
   - {fileID: 505868593}
   - {fileID: 36897502}
   - {fileID: 1965630852}
-  - {fileID: 635840012}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1362,15 +1337,14 @@ GameObject:
   - component: {fileID: 1965630852}
   - component: {fileID: 1965630854}
   - component: {fileID: 1965630853}
-  - component: {fileID: 1965630857}
-  - component: {fileID: 1965630856}
+  - component: {fileID: 1965630855}
   m_Layer: 0
   m_Name: AxieNetworkManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1965630852
 Transform:
   m_ObjectHideFlags: 0
@@ -1431,17 +1405,18 @@ MonoBehaviour:
   autoStartServerBuild: 1
   serverTickRate: 30
   offlineScene: 
-  onlineScene: 
-  transport: {fileID: 0}
+  onlineScene: Assets/_Game/Scene/BattleScene.unity
+  transport: {fileID: 1965630853}
   networkAddress: localhost
-  maxConnections: 100
+  maxConnections: 2
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 0}
+  playerPrefab: {fileID: 4322532396386617348, guid: 6725afe615943664192e1c3e2bde6ea5,
+    type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
   playerSpawned: []
---- !u!114 &1965630856
+--- !u!114 &1965630855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1450,39 +1425,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1965630851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88c37d3deca7a834d80cfd8d3cfcc510, type: 3}
+  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  networkDiscovery: {fileID: 1965630857}
---- !u!114 &1965630857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965630851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c761308e733c51245b2e8bb4201f46dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  secretHandshake: 4599273112974521556
-  serverBroadcastListenPort: 47777
-  enableActiveDiscovery: 1
-  ActiveDiscoveryInterval: 3
-  transport: {fileID: 0}
-  OnServerFound:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1965630856}
-        m_TargetAssemblyTypeName: Mirror.Discovery.NetworkDiscoveryHUD, Mirror.Components
-        m_MethodName: OnDiscoveredServer
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  offsetX: 0
+  offsetY: 0

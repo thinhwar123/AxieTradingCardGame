@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 public class MatchManager : Singleton<MatchManager>
 {
+    private PlayerHandler m_PlayerHandler;
     [Header("Match Config")]
     public float m_TimeThinking;
     private float m_CurrentTimeThinking;
@@ -13,7 +14,7 @@ public class MatchManager : Singleton<MatchManager>
 
     private StateMachine<MatchManager> m_StateMachine;
     public StateMachine<MatchManager> StateMachine { get { return m_StateMachine; } }
-    private UICIngame m_UICIngame;
+    public UICIngame m_UICIngame;
     private bool m_StartCountTime;
 
     #region Unity Functions
@@ -27,9 +28,29 @@ public class MatchManager : Singleton<MatchManager>
     }
     private void Start()
     {
+        //m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
+        //DelayAction(StartDrawPhase, 2);
+    }
+    public void StartGame(PlayerHandler handler)
+    {
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
+        this.m_PlayerHandler = handler;
         DelayAction(StartDrawPhase, 2);
     }
+
+    public void EndPhase(Phase curPhase)
+    {
+        switch (curPhase)
+        {
+            case Phase.SETUP_CARD:
+                m_PlayerHandler.NextPhase(Phase.SHOW_CARD);
+                break;
+            case Phase.SETUP_ABILITY:
+                m_PlayerHandler.NextPhase(Phase.BATTLE);
+                break;
+        }
+    }
+
     private void Update()
     {
         StateMachine.Update();
