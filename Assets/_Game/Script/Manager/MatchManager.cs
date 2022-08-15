@@ -26,11 +26,11 @@ public class MatchManager : Singleton<MatchManager>
         m_StateMachine = new StateMachine<MatchManager>(this);
         m_StateMachine.InitStartState(WaitState.Instance);
     }
-    private void Start()
-    {
+    //private void Start()
+    //{
         //m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
         //DelayAction(StartDrawPhase, 2);
-    }
+   // }
     public void StartGame(PlayerHandler handler)
     {
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
@@ -128,7 +128,7 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void OnExitSetupCardState()
     {
-        
+         
     }
     /// <summary>
     /// Show Card State
@@ -235,6 +235,7 @@ public class MatchManager : Singleton<MatchManager>
         m_UICIngame.SetButtonEndPhase(false);
         m_UICIngame.AutoFillSingleDropZone();
         TempData.Instance.GetPlayerData().m_SelectCard = m_UICIngame.GetSelectCardData();
+        m_PlayerHandler.SetUpMatchData(TempData.Instance.GetPlayerData());
         DelayAction(() => StateMachine.ChangeState(ShowCardState.Instance), 0.5f);
     }
     public void StartSetupAbilityPhase()
@@ -244,7 +245,8 @@ public class MatchManager : Singleton<MatchManager>
     public void StartBattlePhase()
     {
         TempData.Instance.GetPlayerData().m_SelectSkill = m_UICIngame.GetSelectSkill();
-        StateMachine.ChangeState(BattleState.Instance);
+        m_PlayerHandler.SetUpMatchData(TempData.Instance.GetPlayerData());
+        DelayAction(() => StateMachine.ChangeState(BattleState.Instance), 0.5f);
     }
     public void StartCountTime()
     {

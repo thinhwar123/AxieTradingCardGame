@@ -191,7 +191,8 @@ public class UICIngame : UICanvas
     }
     public void OnClickButtonEndPhasePhase()
     {
-        MatchManager.Instance.EndPhase(m_CurrentPhase);       
+        SetButtonEndPhase(false);
+        MatchManager.Instance.EndPhase(m_CurrentPhase);
     }
     public void AutoFillSingleDropZone()
     {

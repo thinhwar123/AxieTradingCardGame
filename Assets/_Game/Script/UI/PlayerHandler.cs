@@ -5,92 +5,102 @@ using Mirror;
 public class PlayerHandler : NetworkBehaviour
 {
     public List<DropZone> m_dropZone;
+    private PlayerHandler otherPlayerHandler;
     [SyncVar]
-    public string message;
+    public PlayerMatchData m_MatchData;
     [SyncVar]
     public Phase m_CurrentPhase;
-    
-    private PlayerHandler otherPlayerHandler;
 
-    //void Start()
-    //{
-    //    if(!isLocalPlayer){
-    //        gameObject.SetActive(false);
-    //    }else{
-    //        GameManager.Instance.m_Player.Add(this);
-    //    }
-    //    NetworkIdentity ni = NetworkClient.connection.identity;
-    //}
     [ClientRpc]
     public void StartGame()
     {
-        MatchManager.Instance.StartGame(this);
+        if (isLocalPlayer)
+        {
+            MatchManager.Instance.StartGame(this);
+        }
+    }
+    [Client]
+    public void NextPhase(Phase m_Phase)
+    {
+        NextPhaseServer(m_Phase);
     }
 
-    [Command(requiresAuthority = false)]
-    public void NextPhase(Phase m_Phase, NetworkConnectionToClient sender = null)
+    [Command(requiresAuthority = false) ]
+    public void NextPhaseServer(Phase m_Phase, NetworkConnectionToClient sender = null)
     {
-        this.m_CurrentPhase = m_Phase;
-        if (otherPlayerHandler == null)
+        PlayerHandler sender_handler = sender.identity.GetComponent<PlayerHandler>();
+        if (sender_handler.otherPlayerHandler == null || sender_handler.otherPlayerHandler == sender_handler)
         {
-            int num = AxieNetworkManager.Instance.playerSpawned.Count;
-            for (int i = 0; i < num; i++)
+            for (int i = 0; i < AxieNetworkManager.Instance.maxConnections; i++)
             {
-                if (AxieNetworkManager.Instance.playerSpawned[i].GetComponent<PlayerHandler>() != this)
+                if (AxieNetworkManager.Instance.playerHandlers[i] != sender_handler)
                 {
-                    otherPlayerHandler = AxieNetworkManager.Instance.playerSpawned[i].GetComponent<PlayerHandler>();
+                    sender_handler.otherPlayerHandler = AxieNetworkManager.Instance.playerHandlers[i];
                     break;
                 }
             }
         }
-        if (otherPlayerHandler == null)
+        if (sender_handler.otherPlayerHandler == null)
         {
+            Debug.Log("Not Found Other Handler");
             return;
         }
-        if (otherPlayerHandler.m_CurrentPhase == m_Phase)
+        sender_handler.m_CurrentPhase = m_Phase;
+        if (sender_handler.otherPlayerHandler.m_CurrentPhase == m_Phase)
         {
-            otherPlayerHandler.StartCurrentPhase();
-            StartCurrentPhase();
+            for(int i = 0; i < AxieNetworkManager.Instance.maxConnections; i++)
+            {
+                AxieNetworkManager.Instance.playerHandlers[i].StartCurrentPhase(m_Phase);
+            }
         }
     }
-
-    public void StartCurrentPhase()
+    [ClientRpc]
+    public void StartCurrentPhase(Phase m_phase)
     {
-        switch (m_CurrentPhase)
+        if (isLocalPlayer)
         {
-            case Phase.SHOW_CARD:
-                MatchManager.Instance.StartShowCardPhase();
-                break;
-            case Phase.BATTLE:
-                MatchManager.Instance.StartBattlePhase();
-                break;
+            switch (m_phase)
+            {
+                case Phase.SHOW_CARD:
+                    MatchManager.Instance.StartShowCardPhase();
+                    break;
+                case Phase.BATTLE:
+                    MatchManager.Instance.StartBattlePhase();
+                    break;
+            }
         }
     }
-
-    void Update(){
-        if(!isLocalPlayer){
-            return;
-        }
-        if (Input.GetKeyDown(KeyCode.C)){
-            SendMessage();
-        }
+    [Client]
+    public void SetUpMatchData(PlayerMatchData data)
+    {
+        SetUpMatchDataServer(data);
     }
     [Command(requiresAuthority = false)]
-    void SendMessage(NetworkConnectionToClient sender = null){
-        if(otherPlayerHandler == null){
-            int num = AxieNetworkManager.Instance.playerSpawned.Count;
-            for (int i = 0; i < num; i++){
-                if(AxieNetworkManager.Instance.playerSpawned[i].GetComponent<PlayerHandler>() != this){
-                    otherPlayerHandler = AxieNetworkManager.Instance.playerSpawned[i].GetComponent<PlayerHandler>();
-                    break;
+    public void SetUpMatchDataServer(PlayerMatchData data, NetworkConnectionToClient sender = null)
+    {
+        PlayerHandler sender_handler = sender.identity.GetComponent<PlayerHandler>();
+        if (sender_handler.otherPlayerHandler == null || sender_handler.otherPlayerHandler == sender_handler)
+        {
+            for (int i = 0; i < AxieNetworkManager.Instance.maxConnections; i++)
+            {
+                if (AxieNetworkManager.Instance.playerHandlers[i] != sender_handler)
+                {
+                    AxieNetworkManager.Instance.playerHandlers[i].MatchData(data);
+                    return;
                 }
             }
         }
-        if(otherPlayerHandler == null){
-            return;
+        else
+        {
+            sender_handler.otherPlayerHandler.MatchData(data);
         }
-        otherPlayerHandler.message = "Send From Mana";
-        Debug.Log("Send from Mana");
-    }   
-    
+    }
+    [ClientRpc]
+    public void MatchData(PlayerMatchData data)
+    {
+        if (isLocalPlayer)
+        {
+            TempData.Instance.m_OpponentData = data;
+        }
+    }
 }
