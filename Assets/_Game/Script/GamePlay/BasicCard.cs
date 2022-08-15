@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public class BasicCard : MonoBehaviour
 {
@@ -30,29 +31,38 @@ public class BasicCard : MonoBehaviour
 
     [SerializeField] private GameObject m_CardShirt;
 
-    [SerializeField] private List<GameObject> m_ListImageCardBackground;
+    [SerializeField] private List<CanvasGroup> m_ListImageCardBackground;
     [SerializeField] private List<Sprite> m_ListImageCardAbilityIcon;
     [SerializeField] private List<Color> m_ListColorAbilityPopupBG;
 
 
 
     [Header("Config")]
+
     [SerializeField] private string m_AxieID;
     [SerializeField] private string m_AxieName;
     [SerializeField] private float m_Scale;
-    [SerializeField] private CardType m_CardType;
+    [SerializeField] private Symbol m_Symbol;
 
     [SerializeField] private AbilityType m_AbilityType;
     [SerializeField] private string m_AbilityName;
     [SerializeField] private string m_AbilityDescription;
 
+    [SerializeField] private List<string> m_WinAnimation;
+    [SerializeField] private List<string> m_LoseAnimation;
 
+    public CardData m_CardData { get; private set; }
+
+    public bool m_IsSilent;
     public bool m_IsFlipped { get; private set; }
     private const bool USE_GRAPHIC = true;
+    private UnityAction m_OnWinBattleCallback;
+    private UnityAction m_OnLoseBattleCallback;
     private SkeletonGraphic skeletonGraphic;
     private List<Tween> m_Tweens;
     private static string m_ActiveDescription = "- Active: The player can choose to use this ability or not after flipping the cards.";
     private static string m_PassiveDescription = "- Passive: This ability activates automatically after the card is flipped.";
+
     #region Unity & Init Functions
     private void Awake()
     {
@@ -69,26 +79,33 @@ public class BasicCard : MonoBehaviour
     {
         m_IsFlipped = isFlipped;
     }
-    public void InitCard()
+    public void InitCard(int cardLookDirection)
     {
         m_CardController.InitCardController();
 
         for (int i = 0; i < m_ListImageCardBackground.Count; i++)
         {
-            m_ListImageCardBackground[i].SetActive(i == (int)m_CardType && m_IsFlipped);
+            m_ListImageCardBackground[i].alpha = (i == (int)m_Symbol && m_IsFlipped) ? 1 : 0;
         }
+
         m_CardShirt.SetActive(!m_IsFlipped);
         m_TextCardName.text = string.Format(m_AxieName);
 
-        Sprite icon = m_ListImageCardAbilityIcon[((int)m_CardType * 2 + (int)m_AbilityType)];
+        Sprite icon = m_ListImageCardAbilityIcon[((int)m_Symbol * 2 + (int)m_AbilityType)];
         m_ImageAbilityIcon1.sprite = icon;
         m_ImageAbilityIcon2.sprite = icon;
 
         m_TextAbilityName1.text = m_AbilityName;
         m_TextAbilityName2.text = string.Format("{0} - {1}",m_AbilityType == AbilityType.ACTIVE ? "Active" : "Passive",m_AbilityName);
         m_TextAbilityDescription.text = string.Format("{0}\n\n{1}: {2}", m_AbilityType == AbilityType.ACTIVE ? m_ActiveDescription : m_PassiveDescription, m_AbilityName, m_AbilityDescription);
-        m_ImageAbilityPopupBG.color = m_ListColorAbilityPopupBG[(int)m_CardType];
+        m_ImageAbilityPopupBG.color = m_ListColorAbilityPopupBG[(int)m_Symbol];
+        m_CardGraphic.localScale = new Vector3(cardLookDirection, 1, 1);
         GenerateCardGraphic();
+
+
+        m_IsSilent = false;
+        m_OnWinBattleCallback = null;
+        m_OnLoseBattleCallback = null;
     }
 
     #endregion
@@ -109,11 +126,22 @@ public class BasicCard : MonoBehaviour
             m_Tweens.Add(m_RectAbilityDecription.DOLocalMoveX(0, 0.5f));
         }
     }
+    public void SetupCardConfig(CardData cardData)
+    {
+        m_CardData = cardData;
+        m_AxieID = cardData.m_ID;
+        m_AxieName = cardData.m_Name;
+        m_Symbol = cardData.m_Symbol;
+        m_AbilityType = cardData.m_AbilityType;
+        m_AbilityName = cardData.m_Archetype;
+        m_AbilityDescription = cardData.m_EffectDescription;
+        m_WinAnimation = cardData.m_WinAnimation;
+        m_LoseAnimation = cardData.m_LoseAnimation;
+    }
     public void RandomCardConfig()
     {
-        m_AxieID = Random.Range(100000, 999999).ToString();
-        m_CardType = (CardType)Random.Range(0,3);
-        m_AbilityType = (AbilityType)Random.Range(0,2);
+        CardData randomData = CardDataManager.Instance.m_CardDatas[Random.Range(0, CardDataManager.Instance.m_CardDatas.Count)];
+        SetupCardConfig(randomData);
     }
     public void ResetCard()
     {
@@ -131,12 +159,15 @@ public class BasicCard : MonoBehaviour
         {
             for (int i = 0; i < m_ListImageCardBackground.Count; i++)
             {
-                m_ListImageCardBackground[i].SetActive(i == (int)m_CardType && m_IsFlipped);
+                m_ListImageCardBackground[i].alpha = (i == (int)m_Symbol && m_IsFlipped) ? 1 : 0;
             }
             m_CardShirt.SetActive(!m_IsFlipped);
         });
         Transform.DOScaleX(1, 0.3f).SetEase(Ease.OutSine).SetDelay(0.3f);
-
+    }
+    public void SetCanDrag(bool value)
+    {
+        m_CardController.SetCanDrag(value);
     }
     public void KillAllTween()
     {
@@ -146,6 +177,57 @@ public class BasicCard : MonoBehaviour
         }
         m_Tweens.Clear();
     }
+    public void ActiveAbility()
+    {
+        StartCoroutine(CoActiveSkill());
+    }
+    IEnumerator CoActiveSkill()
+    {
+        if (m_IsSilent)
+        {
+            skeletonGraphic.AnimationState.SetAnimation(0, "battle/get-debuff", false);
+        }
+        else
+        {
+            skeletonGraphic.AnimationState.SetAnimation(0, "battle/get-buff", false);
+            switch (m_AbilityName)
+            {
+                case "Swap Back":
+                    SwapBack();
+                    break;
+                case "Twin Power":
+                    TwinPower();
+                    break;
+                case "Breaker":
+                    Breaker();
+                    break;
+                case "Card Maker":
+                    CardMaker();
+                    break;
+                case "Card Eater":
+                    CardEater();
+                    break;
+                case "Silencer":
+                    Silencer();
+                    break;
+                case "Surprise":
+                    Surprise();
+                    break;
+                case "Crusader":
+                    Crusader();
+                    break;
+                case "Two Face":
+                    TwoFace();
+                    break;
+
+            }
+        }
+        yield return new WaitForSeconds(2);
+        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+
+    }
+
+   
     #endregion
 
     #region Axie Graphic Generate Functions
@@ -205,7 +287,7 @@ public class BasicCard : MonoBehaviour
         skeletonGraphic.Initialize(true);
         skeletonGraphic.Skeleton.SetSkin("default");
         skeletonGraphic.Skeleton.SetSlotsToSetupPose();
-
+        
         skeletonGraphic.gameObject.AddComponent<AutoBlendAnimGraphicController>();
         skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
 
@@ -216,21 +298,166 @@ public class BasicCard : MonoBehaviour
         {
             skeletonGraphic.gameObject.AddComponent<MysticIdGraphicController>().Init(bodyClass, bodyId);
         }
+
     }
 
     #endregion
 
+    #region Ability Function
+    public void SwapBack()
+    {
 
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<SingleDropZone> singleDropZones = uicIngame.GetSelectSingleDropZoneByTurn();
+        for (int i = 0; i < singleDropZones.Count - 2; i++)
+        {
+            if (singleDropZones[i].GetBasicCard() == this)
+            {
+                BasicCard tempCard = singleDropZones[i + 2].GetBasicCard();
+                StartCoroutine(m_CardController.MoveCardToDropZone(singleDropZones[i + 2].m_DropZone, null));
+                StartCoroutine(tempCard.m_CardController.MoveCardToDropZone(singleDropZones[i].m_DropZone, null));
+                break;
+            }
+        }
+    }
+    public void TwinPower()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        for (int i = index%2; i < basicCards.Count; i+=2)
+        {
+            if (basicCards[i] != this && basicCards[i].m_AxieID == m_AxieID)
+            {
+                ChangeSymbol(GetWinSymbol(m_Symbol));
+            }
+        }
+    }
+    public void Breaker()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        int maxRate = 0;
+        for (int i = (index + 1) % 2; i < basicCards.Count; i += 2)
+        {
+            if (basicCards[i].m_Symbol == m_Symbol)
+            {
+                maxRate++;
+            }
+        }
+        if (TempData.Instance.m_Random.Next() % 3 + 1 < maxRate)
+        {
+            ChangeSymbol(GetWinSymbol(m_Symbol));
+        }
+    }
+    public void CardMaker()
+    {
+        m_OnWinBattleCallback = () =>
+        {
+            TempData.Instance.GetPlayerData().m_MaxCardInHand = 8;
+        };
+    }
+    public void CardEater()
+    {
+        m_OnWinBattleCallback = () =>
+        {
+            TempData.Instance.GetOpponentData().m_MaxCardInHand = 4;
+        };
+    }
+    public void Silencer()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        BasicCard opponentCard = basicCards[index + (index % 2 == 0 ? 1 : -1)];
+        opponentCard.m_IsSilent = true;
+    }
+    public void Surprise()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        BasicCard opponentCard = basicCards[index + (index % 2 == 0 ? 1 : -1)];
+        if (opponentCard.m_Symbol == GetWinSymbol(m_Symbol))
+        {
+            opponentCard.ChangeSymbol(GetRandomSymbol());
+        }
+
+    }
+    public void Crusader()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        BasicCard opponentCard = basicCards[index + (index % 2 == 0 ? 1 : -1)];
+        if (opponentCard.m_Symbol == GetWinSymbol(m_Symbol))
+        {
+            ChangeSymbol(GetRandomSymbol());
+        }
+    }
+    public void TwoFace()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        BasicCard opponentCard = basicCards[index + (index % 2 == 0 ? 1 : -1)];
+        if (TempData.Instance.m_Random.Next() % 2 == 1)
+        {
+            if (opponentCard.m_Symbol == GetWinSymbol(m_Symbol))
+            {
+                ChangeSymbol(GetWinSymbol(opponentCard.m_Symbol));
+            }
+            else if (opponentCard.m_Symbol == GetLoseSymbol(m_Symbol))
+            {
+                ChangeSymbol(GetLoseSymbol(opponentCard.m_Symbol));
+            }
+        }
+    }
+    public void ChangeSymbol(Symbol symbol)
+    {
+        Debug.Log("ChangeSymbol");
+        m_Symbol = symbol;
+
+        Sprite icon = m_ListImageCardAbilityIcon[((int)m_Symbol * 2 + (int)m_AbilityType)];
+        m_ImageAbilityIcon1.sprite = icon;
+        m_ImageAbilityIcon2.sprite = icon;
+
+        for (int i = 0; i < m_ListImageCardBackground.Count; i++)
+        {
+            m_ListImageCardBackground[i].DOFade((i == (int)m_Symbol && m_IsFlipped) ? 1 : 0, 2);
+        }
+    }
+    public Symbol GetRandomSymbol()
+    {
+         return (Symbol) (TempData.Instance.m_Random.Next()%3);
+    }
+    public Symbol GetWinSymbol(Symbol symbol)
+    {
+        switch (symbol)
+        {
+            case Symbol.ROCK:
+                return Symbol.PAPPER;
+            case Symbol.PAPPER:
+                return Symbol.SCISSORS;
+            case Symbol.SCISSORS:
+                return Symbol.ROCK;
+        }
+        return Symbol.ROCK;
+    }
+    public Symbol GetLoseSymbol(Symbol symbol)
+    {
+        switch (symbol)
+        {
+            case Symbol.ROCK:
+                return Symbol.SCISSORS;
+            case Symbol.PAPPER:
+                return Symbol.ROCK;
+            case Symbol.SCISSORS:
+                return Symbol.PAPPER;
+        }
+        return Symbol.ROCK;
+    }
+    #endregion
 }
 
-public enum CardType
-{
-    ROCK = 0,
-    PAPPER = 1,
-    SCISSORS = 2,
-}
-public enum AbilityType
-{
-    ACTIVE = 0,
-    PASSIVE = 1,
-}

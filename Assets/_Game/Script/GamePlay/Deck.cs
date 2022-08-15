@@ -8,28 +8,31 @@ public class Deck : MonoBehaviour
     public Transform Transform { get { return m_Transform ??= transform; } }
 
     [SerializeField] private BasicCard m_BasicCard;
-    [SerializeField] private DropZone m_DropZone;
-    void Start()
-    {
-        StartCoroutine(StartDraw());
-    }
-    IEnumerator StartDraw()
-    {
-        for (int i = 0; i < 6; i++)
-        {
-            DrawACard();
-            yield return new WaitForEndOfFrame();
-        }
-    }
 
-    public void DrawACard()
+    public void DrawACard(DropZone dropZone, int cardLookDirection)
     {
         BasicCard card = SimplePool.Spawn(m_BasicCard, Transform.position, Quaternion.identity);
-        card.Transform.parent = Transform;
+        card.Transform.SetParent(Transform);
         card.transform.localScale = Vector3.one;
         card.RandomCardConfig();
         card.Setup(false);
-        card.InitCard();
-        StartCoroutine(card.m_CardController.MoveCardToDropZone(m_DropZone.Transform, () => card.FlipCard(true)));
+        card.SetCanDrag(false);
+        card.InitCard(cardLookDirection);
+
+        MatchManager.Instance.m_BasicCards.Add(card);
+        StartCoroutine(card.m_CardController.MoveCardToDropZone(dropZone, () => card.FlipCard(true)));
+    }
+    public void DrawACard(CardData cardData, DropZone dropZone, int cardLookDirection)
+    {
+        BasicCard card = SimplePool.Spawn(m_BasicCard, Transform.position, Quaternion.identity);
+        card.Transform.SetParent(Transform);
+        card.transform.localScale = Vector3.one;
+        card.SetupCardConfig(cardData);
+        card.Setup(false);
+        card.SetCanDrag(false);
+        card.InitCard(cardLookDirection);
+
+        MatchManager.Instance.m_BasicCards.Add(card);
+        StartCoroutine(card.m_CardController.MoveCardToDropZone(dropZone, () => card.FlipCard(true)));
     }
 }

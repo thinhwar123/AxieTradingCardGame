@@ -123,6 +123,163 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36897501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36897502}
+  - component: {fileID: 36897503}
+  m_Layer: 0
+  m_Name: TempData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36897502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36897501}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652514287}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36897503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36897501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203dc19233b8b0148bb44048acbc8b00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllMatchData:
+  - m_MaxCardInHand: 0
+    m_BattleRole: 0
+    m_Deck: []
+    m_SelectCard:
+    - m_ID: 11408569
+      m_Name: Card Eater 1
+      m_Archetype: Card Eater
+      m_Symbol: 0
+      m_AbilityType: 1
+      m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+        turn can draw up to 4 cards instead of 6
+      m_WinAnimation:
+      - attack/melee/horn-gore
+      - attack/melee/mouth-bite
+      - attack/melee/multi-attack
+      - attack/melee/normal-attack
+      - attack/melee/shrimp
+      - attack/melee/tail-multi-slap
+      - attack/melee/tail-roll
+      - attack/melee/tail-smash
+      - attack/melee/tail-thrash
+      - attack/ranged/cast-fly
+      - attack/ranged/cast-high
+      - attack/ranged/cast-low
+      - attack/ranged/cast-multi
+      - attack/ranged/cast-tail
+      m_LoseAnimation:
+      - defense/hit-by-normal-crit
+      - defense/hit-by-ranged-attack
+    - m_ID: 11411350
+      m_Name: The Twin 2
+      m_Archetype: Twin Power
+      m_Symbol: 1
+      m_AbilityType: 0
+      m_EffectDescription: When there are exactly two same Axie on the field, you
+        can change the Symbols of these Axie to another Symbols
+      m_WinAnimation:
+      - attack/melee/shrimp
+      - attack/melee/tail-multi-slap
+      - attack/melee/tail-roll
+      - attack/melee/tail-smash
+      - attack/melee/tail-thrash
+      m_LoseAnimation:
+      - defense/hit-by-normal-dramatic
+      - defense/hit-by-ranged-attack
+    - m_ID: 4457662
+      m_Name: The Swap 3
+      m_Archetype: Swap Back
+      m_Symbol: 2
+      m_AbilityType: 0
+      m_EffectDescription: Swap this card with your previous card
+      m_WinAnimation:
+      - attack/melee/multi-attack
+      - attack/melee/normal-attack
+      - attack/melee/shrimp
+      - attack/melee/tail-multi-slap
+      - attack/melee/tail-roll
+      m_LoseAnimation:
+      - defense/hit-by-normal
+      - defense/hit-by-ranged-attack
+    m_SelectSkill: 010101
+--- !u!1 &505868592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 505868593}
+  - component: {fileID: 505868594}
+  m_Layer: 0
+  m_Name: MatchManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &505868593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505868592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652514287}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &505868594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505868592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 406fb5eeefd0dc4439e5af6d8bb23c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TimeThinking: 60
+  m_BasicCards: []
+  m_UICIngame: {fileID: 0}
+--- !u!224 &743813074 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1384310929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &784326603
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +473,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1155990923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155990924}
+  - component: {fileID: 1155990926}
+  m_Layer: 0
+  m_Name: PlayerData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1155990924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155990923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652514287}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155990926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155990923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3f51d222df15949914a5c17a37df1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1241286704
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,114 +542,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 743813074}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1272612121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1272612122}
-  - component: {fileID: 1272612126}
-  - component: {fileID: 1272612125}
-  - component: {fileID: 1272612123}
-  m_Layer: 0
-  m_Name: NetworkManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1272612122
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272612121}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1652514287}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1272612123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272612121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0
---- !u!114 &1272612125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272612121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Port: 7777
-  DualMode: 1
-  NoDelay: 1
-  Interval: 10
-  Timeout: 10000
-  FastResend: 2
-  CongestionWindow: 0
-  SendWindowSize: 4096
-  ReceiveWindowSize: 4096
-  MaxRetransmit: 40
-  NonAlloc: 1
-  MaximizeSendReceiveBuffersToOSLimit: 1
-  ReliableMaxMessageSize: 298449
-  UnreliableMaxMessageSize: 1199
-  debugLog: 0
-  statisticsGUI: 0
-  statisticsLog: 0
---- !u!114 &1272612126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272612121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 253b5a2e98d48b0e8b338dc2a152b084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 1
-  runInBackground: 1
-  autoStartServerBuild: 1
-  serverTickRate: 30
-  offlineScene: 
-  onlineScene: 
-  transport: {fileID: 1272612125}
-  networkAddress: localhost
-  maxConnections: 100
-  authenticator: {fileID: 0}
-  playerPrefab: {fileID: 8392316110214681452, guid: 69f334eb0e1bfd7b89a29bb4e3af1b41,
-    type: 3}
-  autoCreatePlayer: 1
-  playerSpawnMethod: 0
-  spawnPrefabs: []
-  playerSpawned: []
 --- !u!1 &1275662864
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +590,177 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ebebaebb5158e644834c3440435fde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1384310929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1241286705}
+    m_Modifications:
+    - target: {fileID: 32600833544047352, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: sceneId
+      value: 2763079057
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398716513426193838, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: sceneId
+      value: 2397095788
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882196259673, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1860.7249
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882536218001, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882647002409, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882647002409, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374144, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: sceneId
+      value: 1569892477
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374153, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_Name
+      value: UI_Game1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882991749461, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882991749461, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889882991749461, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7715889882946374151, guid: 8b4c7b1f425dff245a97f3ba3375b74e, type: 3}
+    - {fileID: 7715889882946374144, guid: 8b4c7b1f425dff245a97f3ba3375b74e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8b4c7b1f425dff245a97f3ba3375b74e, type: 3}
 --- !u!1 &1652514286
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,10 +790,512 @@ Transform:
   m_Children:
   - {fileID: 1275662865}
   - {fileID: 966688816}
-  - {fileID: 1272612122}
+  - {fileID: 1756186028}
+  - {fileID: 1155990924}
+  - {fileID: 505868593}
+  - {fileID: 36897502}
+  - {fileID: 1965630852}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1756186027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756186028}
+  - component: {fileID: 1756186029}
+  m_Layer: 0
+  m_Name: CardDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1756186028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756186027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652514287}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756186029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756186027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fafc3ac1ec6a749a44d4c2b2611faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CardDataJson: {fileID: 4900000, guid: cd6511eed88964d4da23ea2befdc5f4f, type: 3}
+  m_CardDatas:
+  - m_ID: 11410944
+    m_Name: The Swap 1
+    m_Archetype: Swap Back
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: Swap this card with your previous card
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411421
+    m_Name: The Swap 2
+    m_Archetype: Swap Back
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: Swap this card with your previous card
+    m_WinAnimation:
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 4457662
+    m_Name: The Swap 3
+    m_Archetype: Swap Back
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: Swap this card with your previous card
+    m_WinAnimation:
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411237
+    m_Name: The Twin 1
+    m_Archetype: Twin Power
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: When there are exactly two same Axie on the field, you can
+      change the Symbols of these Axie to another Symbols
+    m_WinAnimation:
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411350
+    m_Name: The Twin 2
+    m_Archetype: Twin Power
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: When there are exactly two same Axie on the field, you can
+      change the Symbols of these Axie to another Symbols
+    m_WinAnimation:
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411195
+    m_Name: The Twin 3
+    m_Archetype: Twin Power
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: When there are exactly two same Axie on the field, you can
+      change the Symbols of these Axie to another Symbols
+    m_WinAnimation:
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410738
+    m_Name: Rock Breaker
+    m_Archetype: Breaker
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: The more Rock Symbol in your opponent's Axie team, the more
+      chance you can change this card Symbol into Paper
+    m_WinAnimation:
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411211
+    m_Name: Paper Eater
+    m_Archetype: Breaker
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: The more Paper Symbol in your opponent's Axie team, the
+      more chance you can change this card Symbol into Sciccors
+    m_WinAnimation:
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411074
+    m_Name: Sciccors Breaker
+    m_Archetype: Breaker
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: The more Sciccor Symbol in your opponent's Axie team, the
+      more chance you can change this card Symbol into Rock
+    m_WinAnimation:
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410055
+    m_Name: Card Maker 1
+    m_Archetype: Card Maker
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 8 cards instead of 6
+    m_WinAnimation:
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410599
+    m_Name: Card Maker 2
+    m_Archetype: Card Maker
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 8 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410849
+    m_Name: Card Maker 3
+    m_Archetype: Card Maker
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 8 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/mouth-bite
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409409
+    m_Name: The Nope 1
+    m_Archetype: Silencer
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: Negate the ability of your opponent 's Axie to fight this
+      Axie
+    m_WinAnimation:
+    - attack/melee/multi-attack
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410174
+    m_Name: The Nope 2
+    m_Archetype: Silencer
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: Negate the ability of your opponent 's Axie to fight this
+      Axie
+    m_WinAnimation:
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409398
+    m_Name: The Nope 3
+    m_Archetype: Silencer
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: Negate the ability of your opponent 's Axie to fight this
+      Axie
+    m_WinAnimation:
+    - attack/melee/shrimp
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11408569
+    m_Name: Card Eater 1
+    m_Archetype: Card Eater
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 4 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409888
+    m_Name: Card Eater 2
+    m_Archetype: Card Eater
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 4 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/tail-multi-slap
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11406536
+    m_Name: Card Eater 3
+    m_Archetype: Card Eater
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 4 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/tail-roll
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11406953
+    m_Name: The Surprise 1
+    m_Archetype: Surprise
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: While losing to your opponent's Axie, your opponent draws
+      the first card from the deck and your opponent's symbol becomes that card's
+    m_WinAnimation:
+    - attack/melee/tail-smash
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409824
+    m_Name: The Surprise 2
+    m_Archetype: Surprise
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: While losing to your opponent's Axie, your opponent draws
+      the first card from the deck and your opponent's symbol becomes that card's
+    m_WinAnimation:
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 2727
+    m_Name: The Surprise 3
+    m_Archetype: Surprise
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: While losing to your opponent's Axie, your opponent draws
+      the first card from the deck and your opponent's symbol becomes that card's
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+  - m_ID: 11404770
+    m_Name: The Crusader 1
+    m_Archetype: Crusader
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: While losing to your opponent's Axie, you can draw the first
+      card from the deck and this Axie's symbol will become that card's.
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+  - m_ID: 11409245
+    m_Name: The Crusader 2
+    m_Archetype: Crusader
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: While losing to your opponent's Axie, you can draw the first
+      card from the deck and this Axie's symbol will become that card's.
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11406536
+    m_Name: The Crusader 3
+    m_Archetype: Crusader
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: While losing to your opponent's Axie, you can draw the first
+      card from the deck and this Axie's symbol will become that card's.
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+  - m_ID: 11404770
+    m_Name: Two Face 1
+    m_Archetype: Two Face
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: When faced with a Leaf Symbol has a 50% chance to become
+      Scissors Symbol but also has a 50% chance to become a Leaf Symbol when encountering
+      Scissors Symbol
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/tail-multi-slap
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409390
+    m_Name: Two Face 2
+    m_Archetype: Two Face
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: When faced with a Sciccors Symbol has a 50% chance to become
+      Rock Symbol but also has a 50% chance to become a Sciccors Symbol when encountering
+      Rock Symbol
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 5509
+    m_Name: Two Face 3
+    m_Archetype: Two Face
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: When faced with a Rock Symbol has a 50% chance to become
+      Paper Symbol but also has a 50% chance to become a Rock Symbol when encountering
+      Paper Symbol
+    m_WinAnimation:
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
 --- !u!1 &1858964585
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,3 +1326,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1965630851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965630852}
+  - component: {fileID: 1965630854}
+  - component: {fileID: 1965630853}
+  - component: {fileID: 1965630855}
+  m_Layer: 0
+  m_Name: AxieNetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1965630852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965630851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652514287}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965630853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965630851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Port: 7777
+  DualMode: 1
+  NoDelay: 1
+  Interval: 10
+  Timeout: 10000
+  FastResend: 2
+  CongestionWindow: 0
+  SendWindowSize: 4096
+  ReceiveWindowSize: 4096
+  MaxRetransmit: 40
+  NonAlloc: 1
+  MaximizeSendReceiveBuffersToOSLimit: 1
+  ReliableMaxMessageSize: 298449
+  UnreliableMaxMessageSize: 1199
+  debugLog: 0
+  statisticsGUI: 0
+  statisticsLog: 0
+--- !u!114 &1965630854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965630851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253b5a2e98d48b0e8b338dc2a152b084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 1
+  runInBackground: 1
+  autoStartServerBuild: 1
+  serverTickRate: 30
+  offlineScene: 
+  onlineScene: Assets/_Game/Scene/BattleScene.unity
+  transport: {fileID: 1965630853}
+  networkAddress: localhost
+  maxConnections: 2
+  authenticator: {fileID: 0}
+  playerPrefab: {fileID: 4322532396386617348, guid: 6725afe615943664192e1c3e2bde6ea5,
+    type: 3}
+  autoCreatePlayer: 1
+  playerSpawnMethod: 0
+  spawnPrefabs: []
+  playerSpawned: []
+--- !u!114 &1965630855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965630851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 0
+  offsetY: 0

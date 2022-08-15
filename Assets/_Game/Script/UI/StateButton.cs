@@ -9,7 +9,7 @@ public class StateButton : MonoBehaviour
 {
     public UnityAction<bool> OnClick;
 
-    private bool isOn;
+    public bool isOn;
 
     [Header("----- UI -----")]
     public GameObject isOffGO;

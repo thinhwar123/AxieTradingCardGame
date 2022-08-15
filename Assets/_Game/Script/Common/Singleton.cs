@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Mirror;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,7 +33,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     }
     protected virtual void Awake()
     {
-        transform.parent = null;
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
     }
 }

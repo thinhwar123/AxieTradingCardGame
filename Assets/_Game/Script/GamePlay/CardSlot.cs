@@ -12,7 +12,7 @@ public class CardSlot : MonoBehaviour
 
     public void SetParentTransform(Transform parent)
     {
-        Transform.parent = parent;
+        Transform.SetParent(parent);
     }
     public void SaveLastParentTransform() 
     {

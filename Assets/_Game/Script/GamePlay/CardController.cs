@@ -13,23 +13,23 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
     public Transform Transform { get { return m_Transform ??= transform; } }
     private RectTransform m_RectTransform;
     public RectTransform RectTransform { get { return m_RectTransform ??= GetComponent<RectTransform>(); } }
+    [SerializeField] private DropZone m_CurrentDropZone;
     [SerializeField] private BasicCard m_BasicCard;
     [SerializeField] private CardSlot m_CardSlot;
     [SerializeField] private CanvasGroup m_CanvasGroup;
 
-    private bool m_CanDrag;
+    public bool m_CanDrag { get; private set; }
     private bool m_IsScale;
-
+    private bool m_OnDrag;
     private Vector2 m_Offset;
     private CardSlot m_CurrentCardSlot;
 
     private List<Tween> m_Tweens;
-
+    private bool m_LastCanDrag;
     public void InitCardController()
     {
         m_Tweens = new List<Tween>();
         m_IsScale = false;
-        m_CanDrag = true;
 
         CreateCardSlot();
     }
@@ -37,8 +37,10 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
     {
         m_CurrentCardSlot = SimplePool.Spawn(m_CardSlot, Transform.position, Quaternion.identity);
         m_CurrentCardSlot.SetParentTransform(Transform.parent);
+        m_CurrentCardSlot.Transform.localScale = Vector3.one;
         m_CurrentCardSlot.SaveLastParentTransform();
         Transform.parent = m_CurrentCardSlot.Transform;
+        Transform.localScale = Vector3.one;
 
     }
     public CardSlot GetCardSlot()
@@ -53,6 +55,7 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
     {
         if (m_IsScale || !m_CanDrag) return;
         KillAllTween();
+        m_OnDrag = true;
         m_CurrentCardSlot.SaveLastParentTransform();
         m_CurrentCardSlot.SetBorder(true);
         m_Offset = (Vector2)Transform.position - eventData.position;
@@ -62,6 +65,15 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (m_OnDrag && !m_CanDrag)
+        {
+            KillAllTween();
+            m_CurrentCardSlot.SetBorder(false);
+            m_Tweens.Add(Transform.DOMove(m_CurrentCardSlot.Transform.position, 0.2f).OnComplete(() => m_Transform.parent = m_CurrentCardSlot.Transform));
+            m_CanvasGroup.blocksRaycasts = true;
+            m_OnDrag = false;
+        }
+
         if (m_IsScale || !m_CanDrag) return;
         Transform.position = eventData.position + m_Offset;
 
@@ -91,6 +103,7 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
         m_CurrentCardSlot.SetBorder(false);
         m_Tweens.Add(Transform.DOMove(m_CurrentCardSlot.Transform.position, 0.2f).OnComplete(() => m_Transform.parent = m_CurrentCardSlot.Transform));
         m_CanvasGroup.blocksRaycasts = true;
+        m_OnDrag = false;
     }
 
 
@@ -109,7 +122,7 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
                 m_Tweens.Add(RectTransform.DOMove(m_CurrentCardSlot.Transform.position, 0.5f).OnComplete(() => 
                 {
                     Transform.parent = m_CurrentCardSlot.Transform;
-                    m_CanDrag = true;
+                    m_CanDrag = m_LastCanDrag;
                 }));
 
                 UI_Game.Instance.CloseUI(UIID.UICShowCardInfor);
@@ -118,6 +131,7 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
             else
             {
                 m_IsScale = true;
+                m_LastCanDrag = m_CanDrag;
                 m_CanDrag = false;
                 KillAllTween();
 
@@ -130,17 +144,32 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
 
         }
     }
-    public IEnumerator MoveCardToDropZone(Transform dropZone, UnityAction onMoveComplete)
+    public void SetCurrentDropZone(DropZone dropZone)
     {
-        m_CanDrag = false;
+        m_CurrentDropZone = dropZone;
+        m_CurrentDropZone.AddBasicCard(m_BasicCard);
+    }
+    public void ChangeDropZone(DropZone dropZone)
+    {
+        if (m_CurrentDropZone != null)
+        {
+            m_CurrentDropZone.RemoveBasicCard(m_BasicCard);
+        }
+        m_CurrentDropZone = dropZone;
+        m_CurrentDropZone.AddBasicCard(m_BasicCard);
+    }
+    public IEnumerator MoveCardToDropZone(DropZone dropZone, UnityAction onMoveComplete)
+    {
+        Debug.Log(dropZone.gameObject.name);
+        ChangeDropZone(dropZone);
+
         Transform.parent = UI_Game.Instance.CanvasParentTF;
-        m_CurrentCardSlot.Transform.parent = dropZone;
+        m_CurrentCardSlot.Transform.parent = dropZone.Transform;
         m_CurrentCardSlot.Transform.localScale = Vector3.one;
         yield return new WaitForSeconds(0.5f);
-        m_Tweens.Add(Transform.DOMove(m_CurrentCardSlot.Transform.position, 1f).SetEase(Ease.InOutSine).OnComplete(() => m_Transform.parent = m_CurrentCardSlot.Transform));
-        yield return new WaitForSeconds(1f);
+        m_Tweens.Add(Transform.DOMove(m_CurrentCardSlot.Transform.position, 0.5f).SetEase(Ease.InOutSine).OnComplete(() => m_Transform.SetParent(m_CurrentCardSlot.Transform)));
+        yield return new WaitForSeconds(0.5f);
         onMoveComplete?.Invoke();
-        m_CanDrag = true;
     }
     public void KillAllTween()
     {

@@ -14,7 +14,7 @@ public class BasicCardEditor : Editor
             {
                 BasicCard basicCard = (BasicCard) card;
                 basicCard.ResetCard();
-                basicCard.InitCard();
+                basicCard.InitCard(-1);
             }
         }
         if (GUILayout.Button("Random Card"))
@@ -24,7 +24,7 @@ public class BasicCardEditor : Editor
                 BasicCard basicCard = (BasicCard)card;
                 basicCard.RandomCardConfig();
                 basicCard.ResetCard();
-                basicCard.InitCard();
+                basicCard.InitCard(-1);
             }
         }
         if (GUILayout.Button("Flip Card False"))

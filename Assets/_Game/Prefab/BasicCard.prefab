@@ -550,8 +550,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7bf45f0ef95bed4491c5809fc6bf484, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 43d850e9432604fbe9fc16c8c0fa806a, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -873,6 +873,7 @@ GameObject:
   - component: {fileID: 7247426606780390313}
   - component: {fileID: 7342453193438920114}
   - component: {fileID: 1323668279152446861}
+  - component: {fileID: 3294095093327981973}
   m_Layer: 0
   m_Name: BasicCard
   m_TagString: Untagged
@@ -943,9 +944,9 @@ MonoBehaviour:
   m_TextAbilityDescription: {fileID: 7097603912117565701}
   m_CardShirt: {fileID: 3808947360051484737}
   m_ListImageCardBackground:
-  - {fileID: 7342453194218430999}
-  - {fileID: 7342453194983159348}
-  - {fileID: 7342453195001781645}
+  - {fileID: 3465835108018267851}
+  - {fileID: 1576290988650117715}
+  - {fileID: 87564639821516416}
   m_ListImageCardAbilityIcon:
   - {fileID: 21300000, guid: af046ff5a9b3d44b79be18e97354c5c4, type: 3}
   - {fileID: 21300000, guid: 494f56e2fb2814696b824ae89249b018, type: 3}
@@ -960,11 +961,14 @@ MonoBehaviour:
   m_AxieID: 2727
   m_AxieName: The Twins
   m_Scale: 0.0018
-  m_CardType: 0
+  m_Symbol: 0
   m_AbilityType: 0
   m_AbilityName: The swap
   m_AbilityDescription: Swap this card's position with the card behind it, if there
     are no cards behind this ability do nothing.
+  m_WinAnimation: []
+  m_LoseAnimation: []
+  m_IsSilent: 0
 --- !u!114 &1323668279152446861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,10 +981,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57bf4973181bf5847aa22824d24804d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  m_CurrentDropZone: {fileID: 0}
   m_BasicCard: {fileID: 7342453193438920114}
   m_CardSlot: {fileID: 8781219057523084532, guid: 7de9b835c9d006449a6e11f63ce99563,
     type: 3}
   m_CanvasGroup: {fileID: 7247426606780390313}
+--- !u!114 &3294095093327981973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342453193438920124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 1c37d866c1bd23d4caa59c507bc1eef5
+  hasSpawned: 0
 --- !u!1 &7342453193811851536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1092,7 @@ GameObject:
   - component: {fileID: 7342453194218430996}
   - component: {fileID: 7342453194218431018}
   - component: {fileID: 7342453194218430997}
+  - component: {fileID: 3465835108018267851}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -1133,6 +1158,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &3465835108018267851
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342453194218430999}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7342453194256532113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,13 +1481,14 @@ GameObject:
   - component: {fileID: 7342453194983159349}
   - component: {fileID: 7342453194983159499}
   - component: {fileID: 7342453194983159498}
+  - component: {fileID: 1576290988650117715}
   m_Layer: 0
   m_Name: Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7342453194983159349
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1509,6 +1547,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &1576290988650117715
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342453194983159348}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7342453195001781645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,13 +1570,14 @@ GameObject:
   - component: {fileID: 7342453195001781634}
   - component: {fileID: 7342453195001781632}
   - component: {fileID: 7342453195001781635}
+  - component: {fileID: 87564639821516416}
   m_Layer: 0
   m_Name: Scissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7342453195001781634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1585,6 +1636,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &87564639821516416
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342453195001781645}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7342453195047670210
 GameObject:
   m_ObjectHideFlags: 0
