@@ -7,6 +7,7 @@ public class TempData : Singleton<TempData>
     public System.Random m_Random;
     [Header("Player Match Data")]
     public List<PlayerMatchData> m_AllMatchData;
+    public PlayerMatchData m_OpponentData;
     private int m_ID;
 
     protected override void Awake()
@@ -32,6 +33,7 @@ public class TempData : Singleton<TempData>
     }
     public PlayerMatchData GetOpponentData()
     {
+        return m_OpponentData;
         for (int i = 0; i < m_AllMatchData.Count; i++)
         {
             if (i != m_ID)
@@ -55,6 +57,7 @@ public class TempData : Singleton<TempData>
             attacker = GetOpponentData().m_SelectSkill;
             defender = GetPlayerData().m_SelectSkill;
         }
+        Debug.Log(attacker.Count.ToString() + " " + defender.Count);
 
         List<bool> list = new List<bool>();
         for (int i = 0; i < attacker.Count; i++)

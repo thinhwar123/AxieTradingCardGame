@@ -14,7 +14,8 @@ public class AxieNetworkManager : NetworkManager
             return instance;
         }
     }
-    public List<GameObject> playerSpawned;
+    private List<GameObject> playerSpawned;
+    public List<PlayerHandler> playerHandlers;
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
         {
             if(playerSpawned == null){
@@ -30,17 +31,25 @@ public class AxieNetworkManager : NetworkManager
             player.name = $"{playerPrefab.name} [connId={conn.connectionId}]";
             NetworkServer.AddPlayerForConnection(conn, player);
             playerSpawned.Add(player);
+            if(playerSpawned.Count == maxConnections)
+        {
+            playerHandlers = new List<PlayerHandler>();
+            for (int i = 0; i < maxConnections; i++)
+            {
+                playerHandlers.Add(playerSpawned[i].GetComponent<PlayerHandler>());
+                playerHandlers[i].StartGame();
+            }
+        }
         }
 
     public override void OnServerDisconnect(NetworkConnectionToClient conn)
         {
-            // destroy ball
-            if (playerSpawned != null)
-            foreach(GameObject player in playerSpawned){
-                NetworkServer.Destroy(player);
-            }
-
             // call base functionality (actually destroys the player)
             base.OnServerDisconnect(conn);
         }
+    public override void OnClientDisconnect(NetworkConnection conn)
+    {
+        base.OnClientDisconnect(conn);
+        UI_Game.Instance.CloseUI(UIID.UICIngame);
+    }
 }
