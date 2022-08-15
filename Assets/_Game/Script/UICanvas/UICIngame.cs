@@ -8,7 +8,7 @@ using DG.Tweening;
 public class UICIngame : UICanvas
 {
     [SerializeField] private Deck m_PlayerDeck;
-    [SerializeField] private Hand m_PlayerHand;
+    [SerializeField] public Hand m_PlayerHand;
     [SerializeField] private List<SingleDropZone> m_PlayerSingleDropZones;
 
     [SerializeField] private Deck m_OpponentDeck;
@@ -25,13 +25,21 @@ public class UICIngame : UICanvas
     [SerializeField] private RectTransform m_DefenderRole;
 
     [SerializeField] private CanvasGroup m_ButtonEndPhase;
+    private int m_Score1;
+    private int m_Score2;
+    [SerializeField] private TextMeshProUGUI m_TextScore1;
+    [SerializeField] private TextMeshProUGUI m_TextScore2;
 
     private Tween m_FadeTimeCountTween;
     private Tween m_MoveBoderTween;
     public override void Setup()
     {
-        base.Setup();
 
+        base.Setup();
+        m_Score1 = 0;
+        m_Score2 = 0;
+        m_TextScore1.text = string.Format("Score: {0}", m_Score1);
+        m_TextScore2.text = string.Format("Score: {0}", m_Score2);
     }
     private void Update()
     {
@@ -82,9 +90,9 @@ public class UICIngame : UICanvas
     }
     public void StartBattle()
     {
-        StartCoroutine(CoActiveEffect());
+        StartCoroutine(CoStartBattle());
     }
-    IEnumerator CoActiveEffect()
+    IEnumerator CoStartBattle()
     {
         List<BasicCard> listCard = GetSelectBasicCardByTurn();
         List<bool> listActiveSkill = TempData.Instance.GetSkillActiveByTurn();
@@ -95,6 +103,37 @@ public class UICIngame : UICanvas
                 listCard[i].ActiveAbility();
             }
             yield return new WaitForSeconds(1);
+        }
+        yield return new WaitForSeconds(1);
+        for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
+        {
+            m_PlayerSingleDropZones[i].GetBasicCard().m_OnWinBattleCallback += AddScore1;
+        }
+        for (int i = 0; i < m_OpponentSingleDropZones.Count; i++)
+        {
+            m_OpponentSingleDropZones[i].GetBasicCard().m_OnWinBattleCallback += AddScore2;
+        }
+
+        listCard = GetSelectBasicCardByTurn();
+        for (int i = 0; i < listCard.Count; i+=2)
+        {
+            listCard[i].Battle(listCard[i+1]);
+            listCard[i+1].Battle(listCard[i]);
+            yield return new WaitForSeconds(5);
+        }
+        yield return new WaitForSeconds(1);
+
+        MatchManager.Instance.StartEndPhase();
+    }
+    public void ClearBattle()
+    {
+        for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
+        {
+            m_PlayerSingleDropZones[i].ClearDropZone();
+        }
+        for (int i = 0; i < m_OpponentSingleDropZones.Count; i++)
+        {
+            m_OpponentSingleDropZones[i].ClearDropZone();
         }
     }
     public List<BasicCard> GetSelectBasicCardByTurn()
@@ -211,6 +250,16 @@ public class UICIngame : UICanvas
                 StartCoroutine(m_PlayerHand.GetRandomBasicCardInHand().m_CardController.MoveCardToDropZone(m_PlayerSingleDropZones[i].m_DropZone, null));
             }
         }
+    }
+    public void AddScore1()
+    {
+        m_Score1++;
+        m_TextScore1.text = string.Format("Score: {0}", m_Score1);
+    }
+    public void AddScore2()
+    {
+        m_Score2++;
+        m_TextScore2.text = string.Format("Score: {0}", m_Score2);
     }
 }
 

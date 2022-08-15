@@ -179,4 +179,9 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
         }
         m_Tweens.Clear();
     }
+    public void DespawnCardSlot()
+    {
+        Thinh.SimplePool.Despawn(m_CurrentCardSlot.gameObject);
+        m_CurrentCardSlot = null;
+    }
 }

@@ -40,4 +40,9 @@ public class SingleDropZone : MonoBehaviour
     {
         m_IsActiveSkill = value;
     }
+    public void ClearDropZone()
+    {
+        m_DropZone.m_ListBasicCard.Clear();
+        m_DropZone.m_Card = null;
+    }
 }

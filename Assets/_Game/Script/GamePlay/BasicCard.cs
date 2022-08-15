@@ -17,6 +17,7 @@ public class BasicCard : MonoBehaviour
 
     [Header("Reference")]
     public CardController m_CardController;
+    [SerializeField] private CanvasGroup m_CanvasGroup;
     [SerializeField] private RectTransform m_CardGraphic;
     [SerializeField] private TextMeshProUGUI m_TextCardName;
     [SerializeField] private Image m_ImageAbilityIcon1;
@@ -56,8 +57,9 @@ public class BasicCard : MonoBehaviour
     public bool m_IsSilent;
     public bool m_IsFlipped { get; private set; }
     private const bool USE_GRAPHIC = true;
-    private UnityAction m_OnWinBattleCallback;
-    private UnityAction m_OnLoseBattleCallback;
+    public UnityAction m_OnWinBattleCallback;
+    public UnityAction m_OnLoseBattleCallback;
+    private int m_CardLookDirection;
     private SkeletonGraphic skeletonGraphic;
     private List<Tween> m_Tweens;
     private static string m_ActiveDescription = "- Active: The player can choose to use this ability or not after flipping the cards.";
@@ -104,6 +106,8 @@ public class BasicCard : MonoBehaviour
 
 
         m_IsSilent = false;
+        m_CanvasGroup.alpha = 1;
+        m_CardLookDirection = cardLookDirection;
         m_OnWinBattleCallback = null;
         m_OnLoseBattleCallback = null;
     }
@@ -303,7 +307,7 @@ public class BasicCard : MonoBehaviour
 
     #endregion
 
-    #region Ability Function
+    #region Ability Functions
     public void SwapBack()
     {
 
@@ -457,6 +461,61 @@ public class BasicCard : MonoBehaviour
                 return Symbol.PAPPER;
         }
         return Symbol.ROCK;
+    }
+    #endregion
+
+    #region Combat Functions
+    public void Battle(BasicCard basicCard)
+    {
+        Vector3 pos = (Transform.position + basicCard.transform.position) /2;
+        skeletonGraphic.rectTransform.DOMoveX((pos + m_CardLookDirection * Vector3.right * 25).x, 1);
+
+        if (GetLoseSymbol(m_Symbol) == basicCard.m_Symbol)
+        {
+            StartCoroutine(OnAttack());
+            m_OnWinBattleCallback?.Invoke();
+        }
+        else if (GetWinSymbol(m_Symbol) == basicCard.m_Symbol)
+        {
+            StartCoroutine(OnHit());
+        }
+        else
+        {
+            StartCoroutine(OnAttack());
+        }
+    }
+    IEnumerator OnAttack()
+    {
+        Debug.Log("Attack");
+        skeletonGraphic.transform.SetParent( UI_Game.Instance.CanvasParentTF);
+        skeletonGraphic.AnimationState.SetAnimation(0, "action/run", true);
+        yield return new WaitForSeconds(1);
+        m_CanvasGroup.DOFade(0, 1);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_WinAnimation[Random.Range(0, m_WinAnimation.Count)], false);
+        yield return new WaitForSeconds(1.5f);
+        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        yield return new WaitForSeconds(2f);
+
+        DestroyCard();
+    }
+    IEnumerator OnHit()
+    {
+        Debug.Log("Hit");
+        skeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
+        skeletonGraphic.AnimationState.SetAnimation(0, "action/run", true);
+        yield return new WaitForSeconds(1f);
+        m_CanvasGroup.DOFade(0, 1);
+        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        yield return new WaitForSeconds(0.75f);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_LoseAnimation[Random.Range(0, m_LoseAnimation.Count)], false);
+        yield return new WaitForSeconds(2.75f);
+        DestroyCard();
+    }
+    public void DestroyCard()
+    {
+        Destroy(skeletonGraphic.gameObject);
+        m_CardController.DespawnCardSlot();
+        Thinh.SimplePool.Despawn(gameObject);
     }
     #endregion
 }

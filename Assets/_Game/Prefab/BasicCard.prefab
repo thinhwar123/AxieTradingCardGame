@@ -932,6 +932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CardController: {fileID: 1323668279152446861}
+  m_CanvasGroup: {fileID: 7247426606780390313}
   m_CardGraphic: {fileID: 7342453194811110445}
   m_TextCardName: {fileID: 5328959079204850900}
   m_ImageAbilityIcon1: {fileID: 1616897479805412509}

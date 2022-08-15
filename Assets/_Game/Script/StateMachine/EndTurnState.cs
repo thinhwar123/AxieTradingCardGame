@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndTurnState : MonoBehaviour
+public class EndTurnState : State<MatchManager>
 {
     private static EndTurnState m_Instance;
     public static EndTurnState Instance { get { return m_Instance ??= new EndTurnState(); } }

@@ -61,7 +61,7 @@ public class MatchManager : Singleton<MatchManager>
         CreatePlayerMathData();
 
         m_UICIngame.SetupRole(TempData.Instance.GetPlayerData().m_BattleRole);
-        m_UICIngame.PlayerDrawCard(TempData.Instance.GetPlayerData().m_MaxCardInHand);        
+        m_UICIngame.PlayerDrawCard(TempData.Instance.GetPlayerData().m_MaxCardInHand - m_UICIngame.m_PlayerHand.GetCardInHandCount());        
         m_UICIngame.ChangePhase(Phase.DRAW);
 
         
@@ -181,7 +181,9 @@ public class MatchManager : Singleton<MatchManager>
     /// </summary>
     public void OnEnterEndTurnState()
     {
-
+        m_UICIngame.ChangePhase(Phase.END_TURN);
+        m_UICIngame.ClearBattle();
+        DelayAction(StartDrawPhase, 2);
     }
     public void OnExecuteEndTurnState()
     {
@@ -224,6 +226,10 @@ public class MatchManager : Singleton<MatchManager>
     {
         TempData.Instance.GetPlayerData().m_SelectSkill = m_UICIngame.GetSelectSkill();
         StateMachine.ChangeState(BattleState.Instance);
+    }
+    public void StartEndPhase()
+    {
+        StateMachine.ChangeState(EndTurnState.Instance);
     }
     public void StartCountTime()
     {
