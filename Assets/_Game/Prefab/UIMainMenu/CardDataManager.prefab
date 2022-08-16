@@ -1,0 +1,500 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8598801877035861945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8598801877035861950}
+  - component: {fileID: 8598801877035861951}
+  m_Layer: 0
+  m_Name: CardDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8598801877035861950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598801877035861945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8598801877035861951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598801877035861945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fafc3ac1ec6a749a44d4c2b2611faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CardDataJson: {fileID: 4900000, guid: cd6511eed88964d4da23ea2befdc5f4f, type: 3}
+  m_CardDatas:
+  - m_ID: 11410944
+    m_Name: The Swap 1
+    m_Archetype: swap
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: Swap this card with your previous card
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411421
+    m_Name: The Swap 2
+    m_Archetype: swap
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: Swap this card with your previous card
+    m_WinAnimation:
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 4457662
+    m_Name: The Swap 3
+    m_Archetype: swap
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: Swap this card with your previous card
+    m_WinAnimation:
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411237
+    m_Name: The Twin 1
+    m_Archetype: buff
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: When there are exactly two same Axie on the field, you can
+      change the Symbols of these Axie to another Symbols
+    m_WinAnimation:
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411350
+    m_Name: The Twin 2
+    m_Archetype: buff
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: When there are exactly two same Axie on the field, you can
+      change the Symbols of these Axie to another Symbols
+    m_WinAnimation:
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411195
+    m_Name: The Twin 3
+    m_Archetype: buff
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: When there are exactly two same Axie on the field, you can
+      change the Symbols of these Axie to another Symbols
+    m_WinAnimation:
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410738
+    m_Name: Rock Breaker
+    m_Archetype: buff
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: The more Rock Symbol in your opponent's Axie team, the more
+      chance you can change this card Symbol into Paper
+    m_WinAnimation:
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411211
+    m_Name: Paper Eater
+    m_Archetype: buff
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: The more Paper Symbol in your opponent's Axie team, the
+      more chance you can change this card Symbol into Sciccors
+    m_WinAnimation:
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11411074
+    m_Name: Sciccors Breaker
+    m_Archetype: buff
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: The more Sciccor Symbol in your opponent's Axie team, the
+      more chance you can change this card Symbol into Rock
+    m_WinAnimation:
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410055
+    m_Name: Card Maker 1
+    m_Archetype: buff
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 8 cards instead of 6
+    m_WinAnimation:
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410599
+    m_Name: Card Maker 2
+    m_Archetype: buff
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 8 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410849
+    m_Name: Card Maker 3
+    m_Archetype: buff
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 8 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/mouth-bite
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409409
+    m_Name: The Nope 1
+    m_Archetype: disrupter
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: Negate the ability of your opponent 's Axie to fight this
+      Axie
+    m_WinAnimation:
+    - attack/melee/multi-attack
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11410174
+    m_Name: The Nope 2
+    m_Archetype: disrupter
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: Negate the ability of your opponent 's Axie to fight this
+      Axie
+    m_WinAnimation:
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409398
+    m_Name: The Nope 3
+    m_Archetype: disrupter
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: Negate the ability of your opponent 's Axie to fight this
+      Axie
+    m_WinAnimation:
+    - attack/melee/shrimp
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11408569
+    m_Name: Card Eater 1
+    m_Archetype: disrupter
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 4 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409888
+    m_Name: Card Eater 2
+    m_Archetype: disrupter
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 4 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/tail-multi-slap
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11406536
+    m_Name: Card Eater 3
+    m_Archetype: disrupter
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: If this Axie wins against your opponent's Axie, your next
+      turn can draw up to 4 cards instead of 6
+    m_WinAnimation:
+    - attack/melee/tail-roll
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11406953
+    m_Name: The Surprise 1
+    m_Archetype: disrupter
+    m_Symbol: 0
+    m_AbilityType: 0
+    m_EffectDescription: While losing to your opponent's Axie, your opponent draws
+      the first card from the deck and your opponent's symbol becomes that card's
+    m_WinAnimation:
+    - attack/melee/tail-smash
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409824
+    m_Name: The Surprise 2
+    m_Archetype: disrupter
+    m_Symbol: 1
+    m_AbilityType: 0
+    m_EffectDescription: While losing to your opponent's Axie, your opponent draws
+      the first card from the deck and your opponent's symbol becomes that card's
+    m_WinAnimation:
+    - attack/melee/tail-thrash
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 2727
+    m_Name: The Surprise 3
+    m_Archetype: disrupter
+    m_Symbol: 2
+    m_AbilityType: 0
+    m_EffectDescription: While losing to your opponent's Axie, your opponent draws
+      the first card from the deck and your opponent's symbol becomes that card's
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+  - m_ID: 11404770
+    m_Name: The Crusader 1
+    m_Archetype: attacker
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: While losing to your opponent's Axie, you can draw the first
+      card from the deck and this Axie's symbol will become that card's.
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+  - m_ID: 11409245
+    m_Name: The Crusader 2
+    m_Archetype: attacker
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: While losing to your opponent's Axie, you can draw the first
+      card from the deck and this Axie's symbol will become that card's.
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack
+  - m_ID: 11406536
+    m_Name: The Crusader 3
+    m_Archetype: attacker
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: While losing to your opponent's Axie, you can draw the first
+      card from the deck and this Axie's symbol will become that card's.
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/mouth-bite
+    - attack/melee/multi-attack
+    - attack/melee/normal-attack
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+  - m_ID: 11404770
+    m_Name: Two Face 1
+    m_Archetype: attacker
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: When faced with a Leaf Symbol has a 50% chance to become
+      Scissors Symbol but also has a 50% chance to become a Leaf Symbol when encountering
+      Scissors Symbol
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/tail-multi-slap
+    - attack/ranged/cast-fly
+    - attack/ranged/cast-high
+    - attack/ranged/cast-low
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-normal-crit
+    - defense/hit-by-ranged-attack
+  - m_ID: 11409390
+    m_Name: Two Face 2
+    m_Archetype: attacker
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: When faced with a Sciccors Symbol has a 50% chance to become
+      Rock Symbol but also has a 50% chance to become a Sciccors Symbol when encountering
+      Rock Symbol
+    m_WinAnimation:
+    - attack/melee/horn-gore
+    - attack/melee/tail-multi-slap
+    - attack/melee/tail-roll
+    - attack/melee/tail-smash
+    - attack/melee/tail-thrash
+    m_LoseAnimation:
+    - defense/hit-by-normal
+    - defense/hit-by-ranged-attack
+  - m_ID: 5509
+    m_Name: Two Face 3
+    m_Archetype: attacker
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: When faced with a Rock Symbol has a 50% chance to become
+      Paper Symbol but also has a 50% chance to become a Rock Symbol when encountering
+      Paper Symbol
+    m_WinAnimation:
+    - attack/melee/normal-attack
+    - attack/melee/shrimp
+    - attack/ranged/cast-low
+    - attack/ranged/cast-multi
+    - attack/ranged/cast-tail
+    m_LoseAnimation:
+    - defense/hit-by-normal-crit
+    - defense/hit-by-normal-dramatic
+    - defense/hit-by-ranged-attack

@@ -142,6 +142,12 @@ public class BasicCard : MonoBehaviour
         m_WinAnimation = cardData.m_WinAnimation;
         m_LoseAnimation = cardData.m_LoseAnimation;
     }
+
+    public string GetID()
+    {
+        return m_AxieID;
+    }
+    
     public void RandomCardConfig()
     {
         CardData randomData = CardDataManager.Instance.m_CardDatas[Random.Range(0, CardDataManager.Instance.m_CardDatas.Count)];

@@ -24,6 +24,10 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
     private Vector2 m_Offset;
     private CardSlot m_CurrentCardSlot;
 
+    public int numberOfCopy = 0;
+    public bool isChooseToDeck = false;
+    public UIManager m_UIManager;
+
     private List<Tween> m_Tweens;
     private bool m_LastCanDrag;
     public void InitCardController()
@@ -143,6 +147,40 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
             }
 
         }
+        else if(eventData.button == PointerEventData.InputButton.Left)
+        {
+            //Debug.Log("Left click");
+            m_UIManager.ResetPopupFullCard();            
+            if(numberOfCopy < 3)
+            {
+                if (!isChooseToDeck)
+                {
+                    if (m_UIManager.listDeckCards.Count < 24)
+                    {
+                        numberOfCopy++;
+                        m_UIManager.CloneCard(m_BasicCard.GetID());
+                    }
+                    else
+                    {
+                        m_UIManager.PopupFullCard();
+                    }
+                    //m_UIManager.AddBasicCard(m_BasicCard);
+                    //if (m_UIManager.listDeckCards.Count >= 24) numberOfCopy--;
+                }
+                else if (isChooseToDeck)
+                {                    
+                    isChooseToDeck = false;
+                    m_UIManager.OutDeck(m_BasicCard);
+                    m_UIManager.ChangeNumberOfClone(m_BasicCard.GetID());
+                    m_UIManager.DeleteBasicCard(m_BasicCard);
+                }
+            }
+            else
+            {
+                m_UIManager.PopupFullCopyCard();
+            }
+        }
+        
     }
     public void SetCurrentDropZone(DropZone dropZone)
     {
