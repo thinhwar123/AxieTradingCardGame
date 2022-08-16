@@ -54,8 +54,8 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI numberOfCards;
     public TextMeshProUGUI timeWait;
 
-    //[Scene]
-    //public string onlineScene;
+    [Scene]
+    public string onlineScene;
 
     //public bool goGame = false;
     public bool isFirstTime = true;
@@ -87,6 +87,8 @@ public class UIManager : MonoBehaviour
         isServer = false;
         serverClient.goGame = false;
         LoadCardData();
+        //ResetDeck();
+        //LoadDeck();
         //GenAllCard();
         //isLoadingMatch = true;
         //ShowDeckInfo();
@@ -119,33 +121,33 @@ public class UIManager : MonoBehaviour
             LoadingGame();
         }
 
-        if (isWaiting)
-        {
-            TimeCount();            
-        }
+        //if (isWaiting)
+        //{
+        //    TimeCount();            
+        //}
 
-        if((networkManager.playerHandlers.Count == networkManager.maxConnections || serverClient.goGame) && isCanStart)
-        {
-            //CmdGoGame();
-            Debug.Log("GoGoGo");
-            if (isServer)
-            {
-                serverClient.GoGame();
-                serverClient.AvatarEnemyClient(indexAvatar);
-                //networkManager.ServerChangeScene(onlineScene);
-            }
-            else
-            {
-                serverClient.AvatarEnemyServer(indexAvatar);
-            }
-            avatarMain.sprite = avatar.sprite;
-            isWaiting = false;
-            isCanStart = false;
-            mainMenu = false;
-            matchPanel.SetActive(true);
-            StartCoroutine(LoadingMatch());
-            //networkManager.ServerChangeScene(onlineScene);
-        }
+        //if((networkManager.playerHandlers.Count == networkManager.maxConnections || serverClient.goGame) && isCanStart)
+        //{
+        //    //CmdGoGame();
+        //    Debug.Log("GoGoGo");
+        //    if (isServer)
+        //    {
+        //        serverClient.GoGame();
+        //        serverClient.AvatarEnemyClient(indexAvatar);
+        //        //networkManager.ServerChangeScene(onlineScene);
+        //    }
+        //    else
+        //    {
+        //        serverClient.AvatarEnemyServer(indexAvatar);
+        //    }
+        //    avatarMain.sprite = avatar.sprite;
+        //    isWaiting = false;
+        //    isCanStart = false;
+        //    mainMenu = false;
+        //    matchPanel.SetActive(true);
+        //    //StartCoroutine(LoadingMatch());
+        //    //networkManager.ServerChangeScene(onlineScene);
+        //}
     }
 
     //[ClientRpc]
@@ -211,6 +213,7 @@ public class UIManager : MonoBehaviour
             isLoading = false;
             Invoke("EndLoading", 1);
             SwitchToBuildSpace();
+            LoadDeck();
         }
     }
 
@@ -419,6 +422,12 @@ public class UIManager : MonoBehaviour
 
             yield return null;
         }
+
+        //if (isServer)
+        //{
+        //    networkManager.ServerChangeScene(onlineScene);
+        //}
+        //else yield return null;
     }
 
     public void BuildDeck()
@@ -610,6 +619,14 @@ public class UIManager : MonoBehaviour
         //}
     }
 
+    public void ResetDeck()
+    {
+        for(int i = 0; i < 24; i++)
+        {
+            PlayerPrefs.SetString(i.ToString(), "");
+        }
+    }
+
     public void LoadCardData()
     {
         //if (PlayerPrefs == null) return;
@@ -643,6 +660,17 @@ public class UIManager : MonoBehaviour
                     listCardDatas.Add(crData);                    
                 }
             }
+        }
+    }
+
+    public void LoadDeck()
+    {
+        listDeckCards.Clear();
+        numberOfCards.text = listCardDatas.Count.ToString() + "/24";
+        popupFullCardText.text = "";        
+        foreach(var cardData in listCardDatas)
+        {
+            CloneCard(cardData.m_ID);
         }
     }
 

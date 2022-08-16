@@ -180,7 +180,6 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
                 m_UIManager.PopupFullCopyCard();
             }
         }
-        
     }
     public void SetCurrentDropZone(DropZone dropZone)
     {

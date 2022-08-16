@@ -21,35 +21,35 @@ namespace Mirror
             manager = GetComponent<NetworkManager>();
         }
 
-        void OnGUI()
-        {
-            GUILayout.BeginArea(new Rect(10 + offsetX, 40 + offsetY, 215, 9999));
-            if (!NetworkClient.isConnected && !NetworkServer.active)
-            {
-                StartButtons();
-            }
-            else
-            {
-                StatusLabels();
-            }
+        //void OnGUI()
+        //{
+        //    GUILayout.BeginArea(new Rect(10 + offsetX, 40 + offsetY, 215, 9999));
+        //    if (!NetworkClient.isConnected && !NetworkServer.active)
+        //    {
+        //        StartButtons();
+        //    }
+        //    else
+        //    {
+        //        StatusLabels();
+        //    }
 
-            // client ready
-            if (NetworkClient.isConnected && !NetworkClient.ready)
-            {
-                if (GUILayout.Button("Client Ready"))
-                {
-                    NetworkClient.Ready();
-                    if (NetworkClient.localPlayer == null)
-                    {
-                        NetworkClient.AddPlayer();
-                    }
-                }
-            }
+        //    // client ready
+        //    if (NetworkClient.isConnected && !NetworkClient.ready)
+        //    {
+        //        if (GUILayout.Button("Client Ready"))
+        //        {
+        //            NetworkClient.Ready();
+        //            if (NetworkClient.localPlayer == null)
+        //            {
+        //                NetworkClient.AddPlayer();
+        //            }
+        //        }
+        //    }
 
-            StopButtons();
+        //    StopButtons();
 
-            GUILayout.EndArea();
-        }
+        //    GUILayout.EndArea();
+        //}
 
         void StartButtons()
         {

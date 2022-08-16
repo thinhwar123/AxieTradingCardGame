@@ -34,6 +34,7 @@ public class MatchManager : Singleton<MatchManager>
     public void StartGame(PlayerHandler handler)
     {
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
+        TempData.Instance.InitNewData();
         this.m_PlayerHandler = handler;
         DelayAction(StartDrawPhase, 2);
     }
@@ -171,7 +172,7 @@ public class MatchManager : Singleton<MatchManager>
         else
         {
             m_StartCountTime = false;
-            StartBattlePhase();
+             StartBattlePhase();
         }
     }
     public void OnExitSetupSkillState()
@@ -232,10 +233,19 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void StartShowCardPhase()
     {
+        StartCoroutine(CoStartShowCardPhase());
+    }
+    IEnumerator CoStartShowCardPhase()
+    {
         SetCanDragCard(false);
         m_UICIngame.SetShowTimeCount(false);
         m_UICIngame.SetButtonEndPhase(false);
-        m_UICIngame.AutoFillSingleDropZone();
+
+        if (m_UICIngame.HasEmptyDropZone())
+        {
+            m_UICIngame.AutoFillSingleDropZone();
+        }
+        yield return new WaitForSeconds(1);
         TempData.Instance.GetPlayerData().m_SelectCard = m_UICIngame.GetSelectCardData();
         m_PlayerHandler.SetUpMatchData(TempData.Instance.GetPlayerData());
         DelayAction(() => StateMachine.ChangeState(ShowCardState.Instance), 0.5f);
