@@ -4248,7 +4248,7 @@ PrefabInstance:
     - target: {fileID: 7216595548343900242, guid: 642c7baabff554d75a2a3e1a1a0c891e,
         type: 3}
       propertyPath: m_text
-      value: Axie  Trading  Card  Game
+      value: Axie Alway Throw Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7216595548343900242, guid: 642c7baabff554d75a2a3e1a1a0c891e,
         type: 3}
