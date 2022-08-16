@@ -277,9 +277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406fb5eeefd0dc4439e5af6d8bb23c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TimeThinking: 5
+  m_TimeThinking: 30
   m_BasicCards: []
   m_UICIngame: {fileID: 0}
+  m_SavedDataDeskCard: []
 --- !u!224 &743813074 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7715889882946374154, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
