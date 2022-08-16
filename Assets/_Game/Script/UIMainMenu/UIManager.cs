@@ -322,6 +322,7 @@ public class UIManager : MonoBehaviour
         popupCanHostOrJoin.text = "";
         if (IsDeckBuilded())
         {
+            mainMenu = false;
             networkManager.StartClient();
             //serverClient.AvatarEnemyServer(indexAvatar);
         }

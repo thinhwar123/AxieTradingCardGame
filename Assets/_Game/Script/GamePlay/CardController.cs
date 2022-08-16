@@ -114,7 +114,7 @@ public class CardController : NetworkBehaviour, IDragHandler, IBeginDragHandler,
     public void OnPointerClick(PointerEventData eventData)
     {
         if (!m_BasicCard.m_IsFlipped) return;
-        if (eventData.button == PointerEventData.InputButton.Right)
+        if (eventData.button == PointerEventData.InputButton.Right && !UIManager.mainMenu)
         {
             if (m_IsScale)
             {
