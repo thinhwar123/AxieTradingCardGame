@@ -228,6 +228,12 @@ MonoBehaviour:
       - defense/hit-by-normal
       - defense/hit-by-ranged-attack
     m_SelectSkill: 010101
+  m_OpponentData:
+    m_MaxCardInHand: 6
+    m_BattleRole: 0
+    m_Deck: []
+    m_SelectCard: []
+    m_SelectSkill: 
 --- !u!1 &505868592
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406fb5eeefd0dc4439e5af6d8bb23c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TimeThinking: 60
+  m_TimeThinking: 5
   m_BasicCards: []
   m_UICIngame: {fileID: 0}
 --- !u!224 &743813074 stripped
@@ -1415,7 +1421,7 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
-  playerSpawned: []
+  playerHandlers: []
 --- !u!114 &1965630855
 MonoBehaviour:
   m_ObjectHideFlags: 0

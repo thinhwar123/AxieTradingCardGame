@@ -243,6 +243,18 @@ public class UICIngame : UICanvas
             }
         }
     }
+    public bool HasEmptyDropZone()
+    {
+        for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
+        {
+            if (m_PlayerSingleDropZones[i].IsEmpty())
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void AddScore1()
     {
         m_Score1++;

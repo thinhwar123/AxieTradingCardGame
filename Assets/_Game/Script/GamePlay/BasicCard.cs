@@ -468,7 +468,7 @@ public class BasicCard : MonoBehaviour
     public void Battle(BasicCard basicCard)
     {
         Vector3 pos = (Transform.position + basicCard.transform.position) /2;
-        skeletonGraphic.rectTransform.DOMoveX((pos + m_CardLookDirection * Vector3.right * 25).x, 1);
+        skeletonGraphic.rectTransform.DOMoveX((pos + m_CardLookDirection * Vector3.right * 75).x, 1);
 
         if (GetLoseSymbol(m_Symbol) == basicCard.m_Symbol)
         {

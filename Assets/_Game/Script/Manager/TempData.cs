@@ -13,7 +13,7 @@ public class TempData : Singleton<TempData>
     protected override void Awake()
     {
         base.Awake();
-        m_Random = new System.Random(123);
+
     }
     private void Update()
     {
@@ -21,6 +21,10 @@ public class TempData : Singleton<TempData>
         {
             Debug.Log(m_Random.Next());
         }
+    }
+    public void InitNewData()
+    {
+        m_Random = new System.Random(123);
     }
     public void AddPlayerMathData(PlayerMatchData playerMatchData)
     {
