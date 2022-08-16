@@ -16,11 +16,17 @@ public class MatchManager : Singleton<MatchManager>
     public StateMachine<MatchManager> StateMachine { get { return m_StateMachine; } }
     public UICIngame m_UICIngame;
     private bool m_StartCountTime;
+    public List<CardData> m_SavedDataDeskCard;
 
     #region Unity Functions
     protected override void Awake()
     {
         base.Awake();
+        m_SavedDataDeskCard = new List<CardData>();
+        for (int i = 0; i < 24; i++)
+        {
+            m_SavedDataDeskCard.Add(CardDataManager.Instance.m_CardDatas[PlayerPrefs.GetInt(i.ToString(), 0)]);
+        }
         m_StartCountTime = false;
         m_BasicCards = new List<BasicCard>();
         m_StateMachine = new StateMachine<MatchManager>(this);

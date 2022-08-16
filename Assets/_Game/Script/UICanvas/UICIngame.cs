@@ -30,11 +30,12 @@ public class UICIngame : UICanvas
     [SerializeField] private TextMeshProUGUI m_TextScore1;
     [SerializeField] private TextMeshProUGUI m_TextScore2;
 
+    private List<int> m_CardIndex = new List<int>();
     private Tween m_FadeTimeCountTween;
     private Tween m_MoveBoderTween;
     public override void Setup()
     {
-
+        m_CardIndex = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 };
         base.Setup();
         m_Score1 = 0;
         m_Score2 = 0;
@@ -56,10 +57,11 @@ public class UICIngame : UICanvas
     {
         for (int i = 0; i < count; i++)
         {
-            m_PlayerDeck.DrawACard(m_PlayerHand.m_DropZone, -1);
+            m_PlayerDeck.DrawACard(GetRandomCardInList(), m_PlayerHand.m_DropZone, -1);
             yield return new WaitForEndOfFrame();
         }
     }
+
     public void ShowOpponentCard()
     {
         for (int i = 0; i < m_OpponentSingleDropZones.Count; i++)
@@ -242,6 +244,11 @@ public class UICIngame : UICanvas
                 StartCoroutine(m_PlayerHand.GetRandomBasicCardInHand().m_CardController.MoveCardToDropZone(m_PlayerSingleDropZones[i].m_DropZone, null));
             }
         }
+    }
+    private CardData GetRandomCardInList()
+    {
+        int i = Random.Range(0, m_CardIndex.Count);
+        return MatchManager.Instance.m_SavedDataDeskCard[m_CardIndex[i]];
     }
     public bool HasEmptyDropZone()
     {
