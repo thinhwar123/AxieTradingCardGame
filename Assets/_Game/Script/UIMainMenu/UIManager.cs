@@ -123,10 +123,10 @@ public class UIManager : MonoBehaviour
 
         //if (isWaiting)
         //{
-        //    TimeCount();            
+        //    TimeCount();
         //}
 
-        //if((networkManager.playerHandlers.Count == networkManager.maxConnections || serverClient.goGame) && isCanStart)
+        //if ((networkManager.playerHandlers.Count == networkManager.maxConnections || serverClient.goGame) && isCanStart)
         //{
         //    //CmdGoGame();
         //    Debug.Log("GoGoGo");
@@ -145,7 +145,7 @@ public class UIManager : MonoBehaviour
         //    isCanStart = false;
         //    mainMenu = false;
         //    matchPanel.SetActive(true);
-        //    //StartCoroutine(LoadingMatch());
+        //    StartCoroutine(LoadingMatch());
         //    //networkManager.ServerChangeScene(onlineScene);
         //}
     }
@@ -372,63 +372,70 @@ public class UIManager : MonoBehaviour
         if (listCardDatas.Count == 24) return true;
         return false;
     }
-    public IEnumerator LoadingMatch()
-    {
-        //for (int i = 0; i <= 100; i++)
-        //{
-        //    loadingMatchText.text = i.ToString() + "%";
-        //    yield return new WaitForSeconds(0.2f);
-        //}
-        //SceneManager.LoadScene(0);
+    //public IEnumerator LoadingMatch()
+    //{
+    //    //for (int i = 0; i <= 100; i++)
+    //    //{
+    //    //    loadingMatchText.text = i.ToString() + "%";
+    //    //    yield return new WaitForSeconds(0.2f);
+    //    //}
+    //    //SceneManager.LoadScene(0);
 
-        AsyncOperation op = SceneManager.LoadSceneAsync(1);
+    //    AsyncOperation op = SceneManager.LoadSceneAsync(1);
 
-        op.allowSceneActivation = false;
+    //    op.allowSceneActivation = false;
 
-        int i = 0;
+    //    int i = 0;
 
-        while (!op.isDone)
-        {
-            if (i < 100) 
-            {
-                loadingMatchText.text = i.ToString() + "%";
-                i++;
-                yield return new WaitForSeconds(0.05f);
-                if(i == 100)
-                {
-                    if (isServer)
-                    {
-                        serverClient.FinishLoadingClient();
-                    }
-                    else
-                    {
-                        serverClient.FinishLoadingServer();
-                    }
-                }
-            }
-            //else if(isServer)
-            //{
-            //    serverClient.FinishLoadingClient();
-            //}
-            //else
-            //{
-            //    serverClient.FinishLoadingServer();
-            //}
+    //    while (!op.isDone)
+    //    {
+    //        if (i < 100) 
+    //        {
+    //            loadingMatchText.text = i.ToString() + "%";
+    //            i++;
+    //            yield return new WaitForSeconds(0.05f);
+    //            if(i == 100)
+    //            {
+    //                if (isServer)
+    //                {
+    //                    serverClient.FinishLoadingClient();
+    //                }
+    //                else
+    //                {
+    //                    serverClient.FinishLoadingServer();
+    //                }
+    //            }
+    //        }
+    //        //else if(isServer)
+    //        //{
+    //        //    serverClient.FinishLoadingClient();
+    //        //}
+    //        //else
+    //        //{
+    //        //    serverClient.FinishLoadingServer();
+    //        //}
 
-            if(op.progress >= 0.9f && !op.allowSceneActivation && i == 100 && serverClient.isFinishLoadingMatch)
-            {
-                op.allowSceneActivation = true;
-            }
+    //        if(op.progress >= 0.9f && !op.allowSceneActivation && i == 100 && serverClient.isFinishLoadingMatch)
+    //        {
+    //            if (isServer)
+    //            {
+    //                for(int k = 0; k < networkManager.maxConnections; k++)
+    //                {
+    //                    networkManager.playerHandlers[i].StartGame();
+    //                }
+    //            }
+    //            op.allowSceneActivation = true;
+    //        }
 
-            yield return null;
-        }
+    //        yield return null;
+    //    }
 
-        //if (isServer)
-        //{
-        //    networkManager.ServerChangeScene(onlineScene);
-        //}
-        //else yield return null;
-    }
+    //    //if (isServer)
+    //    //{
+    //    //    networkManager.ServerChangeScene(onlineScene);
+    //    //}
+    //    //else yield return null;
+    //}
 
     public void BuildDeck()
     {

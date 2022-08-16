@@ -17,6 +17,8 @@ public class MatchManager : Singleton<MatchManager>
     public UICIngame m_UICIngame;
     private bool m_StartCountTime;
 
+    public TImeCount timeCount;
+
     #region Unity Functions
     protected override void Awake()
     {
@@ -33,6 +35,7 @@ public class MatchManager : Singleton<MatchManager>
    // }
     public void StartGame(PlayerHandler handler)
     {
+        timeCount.StopWaiting();
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
         TempData.Instance.InitNewData();
         this.m_PlayerHandler = handler;
