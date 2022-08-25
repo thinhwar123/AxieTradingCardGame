@@ -872,8 +872,8 @@ GameObject:
   - component: {fileID: 7342453193438920125}
   - component: {fileID: 7247426606780390313}
   - component: {fileID: 7342453193438920114}
-  - component: {fileID: 1323668279152446861}
   - component: {fileID: 3294095093327981973}
+  - component: {fileID: 2512842989120621172}
   m_Layer: 0
   m_Name: BasicCard
   m_TagString: Untagged
@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0352e9345e03a42af5579751ff19d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CardController: {fileID: 1323668279152446861}
+  m_CardController: {fileID: 2512842989120621172}
   m_CanvasGroup: {fileID: 7247426606780390313}
   m_CardGraphic: {fileID: 7342453194811110445}
   m_TextCardName: {fileID: 5328959079204850900}
@@ -970,25 +970,6 @@ MonoBehaviour:
   m_WinAnimation: []
   m_LoseAnimation: []
   m_IsSilent: 0
---- !u!114 &1323668279152446861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342453193438920124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57bf4973181bf5847aa22824d24804d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  m_CurrentDropZone: {fileID: 0}
-  m_BasicCard: {fileID: 7342453193438920114}
-  m_CardSlot: {fileID: 8781219057523084532, guid: 7de9b835c9d006449a6e11f63ce99563,
-    type: 3}
-  m_CanvasGroup: {fileID: 7247426606780390313}
 --- !u!114 &3294095093327981973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +987,28 @@ MonoBehaviour:
   visible: 0
   m_AssetId: 1c37d866c1bd23d4caa59c507bc1eef5
   hasSpawned: 0
+--- !u!114 &2512842989120621172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342453193438920124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8168d259d4ca3064f98c790a949226a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  m_CurrentDropZone: {fileID: 0}
+  m_BasicCard: {fileID: 7342453193438920114}
+  m_CardSlot: {fileID: 8781219057523084532, guid: 7de9b835c9d006449a6e11f63ce99563,
+    type: 3}
+  m_CanvasGroup: {fileID: 7247426606780390313}
+  numberOfCopy: 0
+  isChooseToDeck: 0
+  m_UIManager: {fileID: 0}
 --- !u!1 &7342453193811851536
 GameObject:
   m_ObjectHideFlags: 0

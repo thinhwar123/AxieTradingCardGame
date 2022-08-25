@@ -641,7 +641,7 @@ public class UIManager : MonoBehaviour
         listCardDatas.Clear();
         for(int i = 0; i < 24; i++)
         {
-            string id = PlayerPrefs.GetString(i.ToString());
+            string id = PlayerPrefs.GetString(i.ToString(), CardDataManager.Instance.m_CardDatas[i/3].m_ID);
             //Debug.Log(id);
             //CardData crData;
             //if (id == "") continue;
@@ -649,14 +649,15 @@ public class UIManager : MonoBehaviour
             {
                 if(CardDataManager.Instance.m_CardDatas[j].m_ID == id)
                 {
-                    CardData crData = new CardData(CardDataManager.Instance.m_CardDatas[j].m_ID,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_Name,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_Archetype,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_Symbol,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_AbilityType,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_EffectDescription,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_WinAnimation,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_LoseAnimation);
+                    //CardData crData = new CardData(CardDataManager.Instance.m_CardDatas[j].m_ID,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_Name,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_Archetype,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_Symbol,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_AbilityType,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_EffectDescription,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_WinAnimation,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_LoseAnimation);
+                    CardData crData = CardDataManager.Instance.m_CardDatas[j];
                     //crData.m_ID = CardDataManager.Instance.m_CardDatas[i].m_ID;
                     //crData.m_Archetype = CardDataManager.Instance.m_CardDatas[i].m_Archetype;
                     //crData.m_Symbol = CardDataManager.Instance.m_CardDatas[i].m_Symbol;
@@ -664,7 +665,8 @@ public class UIManager : MonoBehaviour
                     //crData.m_EffectDescription = CardDataManager.Instance.m_CardDatas[i].m_EffectDescription;
                     //crData.m_Name = CardDataManager.Instance.m_CardDatas[i].m_Name;
                     //crData.m_WinAnimation = CardDataManager.Instance.m_CardDatas[i].m_WinAnimation;
-                    //crData.m_LoseAnimation = CardDataManager.Instance.m_CardDatas[i].m_LoseAnimation;                    
+                    //crData.m_LoseAnimation = CardDataManager.Instance.m_CardDatas[i].m_LoseAnimation;
+                    
                     listCardDatas.Add(crData);                    
                 }
             }

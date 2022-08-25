@@ -439,12 +439,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -459,8 +459,8 @@ Canvas:
   m_GameObject: {fileID: 316929792}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 979770734}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1046,6 +1046,16 @@ PrefabInstance:
       propertyPath: sceneId
       value: 1569892477
       objectReference: {fileID: 0}
+    - target: {fileID: 7715889882946374150, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 979770734}
+    - target: {fileID: 7715889882946374150, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7715889882946374153, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
         type: 3}
       propertyPath: m_Name
@@ -1170,6 +1180,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715889883588192786, guid: 8b4c7b1f425dff245a97f3ba3375b74e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -149.99994
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7715889882946374151, guid: 8b4c7b1f425dff245a97f3ba3375b74e, type: 3}
