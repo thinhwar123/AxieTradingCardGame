@@ -46,6 +46,7 @@ public class MatchManager : Singleton<MatchManager>
         m_UICIngame.m_PlayerDeck.InitDeck();
         TempData.Instance.InitNewData();
         this.m_PlayerHandler = handler;
+        CreatePlayerMathData();
         DelayAction(StartDrawPhase, 2);
     }
 
@@ -90,10 +91,12 @@ public class MatchManager : Singleton<MatchManager>
     /// </summary>
     public void OnEnterDrawState()
     {
-        CreatePlayerMathData();
+
 
         m_UICIngame.SetupRole(TempData.Instance.GetPlayerData().m_BattleRole);
-        m_UICIngame.PlayerDrawCard(TempData.Instance.GetPlayerData().m_MaxCardInHand - m_UICIngame.m_PlayerHand.GetCardInHandCount());        
+        int cardDraw = (TempData.Instance.GetPlayerData().m_MaxCardInHand - m_UICIngame.m_PlayerHand.GetCardInHandCount());
+        TempData.Instance.GetPlayerData().m_MaxCardInHand = 6;
+        m_UICIngame.PlayerDrawCard(cardDraw < 0 ? 0 : cardDraw);        
         m_UICIngame.ChangePhase(Phase.DRAW);
 
         
@@ -215,6 +218,7 @@ public class MatchManager : Singleton<MatchManager>
     {
         m_UICIngame.ChangePhase(Phase.END_TURN);
         m_UICIngame.ClearBattle();
+        TempData.Instance.GetPlayerData().SwapRole();
         DelayAction(StartDrawPhase, 2);
     }
     public void OnExecuteEndTurnState()
@@ -231,6 +235,11 @@ public class MatchManager : Singleton<MatchManager>
     public void CreatePlayerMathData()
     {
         PlayerMatchData playerMatchData = new PlayerMatchData();
+        if (m_PlayerHandler.isClientOnly)
+        {
+            playerMatchData.m_BattleRole = BattleRole.DEFENDER;
+        }
+        
         TempData.Instance.AddPlayerMathData(playerMatchData);
         
 
@@ -301,7 +310,7 @@ public class MatchManager : Singleton<MatchManager>
 [System.Serializable]
 public class PlayerMatchData
 {
-    public int m_MaxCardInHand;
+    public int m_MaxCardInHand { get; set; }
     public BattleRole m_BattleRole;
     public List<CardData> m_Deck;
     public List<CardData> m_SelectCard;
@@ -314,6 +323,19 @@ public class PlayerMatchData
         m_Deck = new List<CardData>();
         m_SelectCard = new List<CardData>();
         m_SelectSkill = new List<bool>();
+    }
+    public void SwapRole()
+    {
+        switch (m_BattleRole)
+        {
+            case BattleRole.ATTACKER:
+                m_BattleRole = BattleRole.DEFENDER;
+                break;
+            case BattleRole.DEFENDER:
+                m_BattleRole = BattleRole.ATTACKER;
+                break;
+
+        }
     }
 }
 public enum BattleRole

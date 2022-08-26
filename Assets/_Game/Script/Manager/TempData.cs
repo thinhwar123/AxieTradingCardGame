@@ -38,14 +38,6 @@ public class TempData : Singleton<TempData>
     public PlayerMatchData GetOpponentData()
     {
         return m_OpponentData;
-        for (int i = 0; i < m_AllMatchData.Count; i++)
-        {
-            if (i != m_ID)
-            {
-                return m_AllMatchData[i];
-            }
-        }
-        return null;
     }
     public List<bool> GetSkillActiveByTurn()
     {
