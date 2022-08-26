@@ -91,9 +91,8 @@ public class MatchManager : Singleton<MatchManager>
     /// </summary>
     public void OnEnterDrawState()
     {
-
-
         m_UICIngame.SetupRole(TempData.Instance.GetPlayerData().m_BattleRole);
+        m_UICIngame.SetFadeDropZone(false);
         int cardDraw = (TempData.Instance.GetPlayerData().m_MaxCardInHand - m_UICIngame.m_PlayerHand.GetCardInHandCount());
         TempData.Instance.GetPlayerData().m_MaxCardInHand = 6;
         m_UICIngame.PlayerDrawCard(cardDraw < 0 ? 0 : cardDraw);        
@@ -200,6 +199,7 @@ public class MatchManager : Singleton<MatchManager>
     public void OnEnterBattleState()
     {
         m_UICIngame.ChangePhase(Phase.BATTLE);
+        m_UICIngame.SetFadeDropZone(true);
         m_UICIngame.EndSetupRole();
         m_UICIngame.StartBattle();
     }
@@ -219,7 +219,28 @@ public class MatchManager : Singleton<MatchManager>
         m_UICIngame.ChangePhase(Phase.END_TURN);
         m_UICIngame.ClearBattle();
         TempData.Instance.GetPlayerData().SwapRole();
-        DelayAction(StartDrawPhase, 2);
+        TempData.Instance.GetPlayerData().m_Round++;
+        if (TempData.Instance.GetPlayerData().m_Round < 6)
+        {
+            DelayAction(StartDrawPhase, 2);
+        }
+        else
+        {
+            if (m_UICIngame.m_Score1 > m_UICIngame.m_Score2)
+            {
+                Debug.Log("Win Game");
+            }
+            else if (m_UICIngame.m_Score1 < m_UICIngame.m_Score2)
+            {
+                Debug.Log("Lose Game");
+            }
+            else
+            {
+                Debug.Log("Draw Game");
+            }
+
+        }
+
     }
     public void OnExecuteEndTurnState()
     {
@@ -310,7 +331,8 @@ public class MatchManager : Singleton<MatchManager>
 [System.Serializable]
 public class PlayerMatchData
 {
-    public int m_MaxCardInHand { get; set; }
+    public int m_MaxCardInHand;
+    public int m_Round;
     public BattleRole m_BattleRole;
     public List<CardData> m_Deck;
     public List<CardData> m_SelectCard;
@@ -318,6 +340,7 @@ public class PlayerMatchData
 
     public PlayerMatchData()
     {
+        m_Round = 0;
         m_MaxCardInHand = 6;
         m_BattleRole = BattleRole.ATTACKER;
         m_Deck = new List<CardData>();

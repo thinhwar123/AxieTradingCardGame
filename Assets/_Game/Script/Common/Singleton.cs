@@ -34,7 +34,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     protected virtual void Awake()
     {
         transform.SetParent(null);
-        if (Instance != null && Instance != this)
+        if (Instance != this)
         {
             Destroy(gameObject);
         }
@@ -42,5 +42,6 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+        
     }
 }
