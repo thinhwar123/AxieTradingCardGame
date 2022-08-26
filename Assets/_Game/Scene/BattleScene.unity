@@ -167,8 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllMatchData:
-  - m_MaxCardInHand: 0
-    m_BattleRole: 0
+  - m_BattleRole: 0
     m_Deck: []
     m_SelectCard:
     - m_ID: 11408569
@@ -229,7 +228,6 @@ MonoBehaviour:
       - defense/hit-by-ranged-attack
     m_SelectSkill: 010101
   m_OpponentData:
-    m_MaxCardInHand: 6
     m_BattleRole: 0
     m_Deck: []
     m_SelectCard: []

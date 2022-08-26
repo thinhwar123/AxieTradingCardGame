@@ -25,7 +25,8 @@ public class UIManager : MonoBehaviour
     public Button soundOnOff;
     public Sprite soundOn;
     public Sprite soundOff;
-    public List<Sprite> listAvatars = new List<Sprite>();
+    //public List<Sprite> listAvatars = new List<Sprite>();
+    public AvatarData listAvatars;
     public int indexAvatar = 0;
     public Image avatarMain;
     public Image avatarEnemy;
@@ -323,6 +324,8 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             mainMenu = false;
+            PlayerPrefs.SetInt("player", indexAvatar);
+            serverClient.AvatarEnemyServer(indexAvatar);
             networkManager.StartClient();
             //serverClient.AvatarEnemyServer(indexAvatar);
         }
@@ -354,13 +357,15 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             isServer = true;
+            PlayerPrefs.SetInt("player", indexAvatar);
+            serverClient.AvatarEnemyClient(indexAvatar);
             networkManager.StartHost();
-            isWaiting = true;
-            minute = 0;
-            second = 0;
-            countTime = 0f;
-            //serverClient.goGame = true;
-            WaitJoin.SetActive(true);
+            //isWaiting = true;
+            //minute = 0;
+            //second = 0;
+            //countTime = 0f;
+            ////serverClient.goGame = true;
+            //WaitJoin.SetActive(true);
         }
         else
         {
@@ -748,27 +753,27 @@ public class UIManager : MonoBehaviour
     {
         if(indexAvatar == 0)
         {
-            indexAvatar = listAvatars.Count - 1;
-            avatar.sprite = listAvatars[indexAvatar];
+            indexAvatar = listAvatars.listAvatar.Count - 1;
+            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
         }
         else
         {
             indexAvatar--;
-            avatar.sprite = listAvatars[indexAvatar];
+            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
         }
     }
 
     public void ButtonRight()
     {
-        if (indexAvatar == listAvatars.Count-1)
+        if (indexAvatar == listAvatars.listAvatar.Count-1)
         {
             indexAvatar = 0;
-            avatar.sprite = listAvatars[indexAvatar];
+            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
         }
         else
         {
             indexAvatar++;
-            avatar.sprite = listAvatars[indexAvatar];
+            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
         }
     }
     //public IEnumerator FullCard()

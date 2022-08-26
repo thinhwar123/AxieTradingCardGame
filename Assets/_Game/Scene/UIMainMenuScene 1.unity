@@ -4441,9 +4441,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 407856101}
     m_Modifications:
+    - target: {fileID: 270823838, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_Spacing.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 270823838, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_Spacing.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 270823838, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 270823838, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 531292869, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1098.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 531292869, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 126.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 979754609, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_Spacing.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 979754609, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590060049, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1800836349, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965943143, guid: 83b480c0aadfe72439fa9e07094bf429, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.00012207
       objectReference: {fileID: 0}
     - target: {fileID: 657818364753138579, guid: 83b480c0aadfe72439fa9e07094bf429,
         type: 3}
@@ -4615,6 +4655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd3f51d222df15949914a5c17a37df1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ListCardDatas: []
 --- !u!1 &1590060045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 657818365120403781, guid: 83b480c0aadfe72439fa9e07094bf429,
@@ -4925,21 +4966,7 @@ MonoBehaviour:
   soundOnOff: {fileID: 285277207}
   soundOn: {fileID: 21300000, guid: eb165af05aa2e4ab2bcad217611774b8, type: 3}
   soundOff: {fileID: 21300000, guid: b1f42bbbfffc44202b66381ab8b622ee, type: 3}
-  listAvatars:
-  - {fileID: 21300000, guid: 8419dd1c57738f347b3213d6eb64bb6a, type: 3}
-  - {fileID: 21300000, guid: 2bea0a74215f79b4294364e074f1b8cc, type: 3}
-  - {fileID: 21300000, guid: 1de41ca0abb22954c8b98da0fa56b4a0, type: 3}
-  - {fileID: 21300000, guid: a6d791f7e6e75eb4c8016211f8a7bc30, type: 3}
-  - {fileID: 21300000, guid: dfb6409c84868ec4cb7be3344a5d3bc8, type: 3}
-  - {fileID: 21300000, guid: 97d8214b8697e694c830f5bc1e3c8157, type: 3}
-  - {fileID: 21300000, guid: 90b43d50c90c52645a6c89cb8780b33e, type: 3}
-  - {fileID: 21300000, guid: 46cc7c10f4f42a54db863d76ca9d2a2e, type: 3}
-  - {fileID: 21300000, guid: 52e851ef214434342b4432d1857b674d, type: 3}
-  - {fileID: 21300000, guid: e6747cfd9dc828446a0184b7592d14e7, type: 3}
-  - {fileID: 21300000, guid: 0077148cbc2afdb4685d26ea2c3db598, type: 3}
-  - {fileID: 21300000, guid: b7129cd53d9446948a4197aec431201c, type: 3}
-  - {fileID: 21300000, guid: 5ba75e44b999fbc4c903f3668d4d3c3d, type: 3}
-  - {fileID: 21300000, guid: 48b1c7b1a5bcc0e4188a5befcaa2501a, type: 3}
+  listAvatars: {fileID: 11400000, guid: 7a091ee703b4f2246a7d051b6b4d6083, type: 2}
   indexAvatar: 0
   avatarMain: {fileID: 1930064843}
   avatarEnemy: {fileID: 523641588}
