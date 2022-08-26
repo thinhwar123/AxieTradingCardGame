@@ -7,7 +7,7 @@ using TMPro;
 using DG.Tweening;
 public class UICIngame : UICanvas
 {
-    [SerializeField] private Deck m_PlayerDeck;
+    [SerializeField] public Deck m_PlayerDeck;
     [SerializeField] public Hand m_PlayerHand;
     [SerializeField] private List<SingleDropZone> m_PlayerSingleDropZones;
 
@@ -57,7 +57,8 @@ public class UICIngame : UICanvas
     {
         for (int i = 0; i < count; i++)
         {
-            m_PlayerDeck.DrawACard(GetRandomCardInList(), m_PlayerHand.m_DropZone, -1);
+            //m_PlayerDeck.DrawACard(GetRandomCardInList(), m_PlayerHand.m_DropZone, -1);
+            m_PlayerDeck.DrawACardFormDeck(m_PlayerHand.m_DropZone, -1);
             yield return new WaitForEndOfFrame();
         }
     }

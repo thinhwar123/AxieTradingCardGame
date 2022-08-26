@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
     public RectTransform pool;
     public List<BasicCard> listCards = new List<BasicCard>();
     public List<BasicCard> listCopyCards = new List<BasicCard>();
-    public List<BasicCard> listDeckCards = new List<BasicCard>();
+    public List<BasicCard> listDeckCards { get => PlayerData.Instance.m_ListCardDatas; }
     public List<CardData> listCardDatas = new List<CardData>();
     public static bool mainMenu = true;
 

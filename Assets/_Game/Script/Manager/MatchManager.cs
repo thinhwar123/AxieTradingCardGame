@@ -231,6 +231,8 @@ public class MatchManager : Singleton<MatchManager>
     {
         PlayerMatchData playerMatchData = new PlayerMatchData();
         TempData.Instance.AddPlayerMathData(playerMatchData);
+        m_UICIngame.m_PlayerDeck.InitDeck();
+
     }
     public void StartDrawPhase()
     {
