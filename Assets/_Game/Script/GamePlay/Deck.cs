@@ -7,7 +7,8 @@ public class Deck : MonoBehaviour
     private Transform m_Transform;
     public Transform Transform { get { return m_Transform ??= transform; } }
 
-    [SerializeField] private BasicCard m_BasicCard;
+    private BasicCard m_BasicCard;
+    [SerializeField] private List<string> m_ListCard;
 
     public void DrawACard(DropZone dropZone, int cardLookDirection)
     {
