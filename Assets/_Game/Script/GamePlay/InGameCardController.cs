@@ -13,6 +13,7 @@ public class InGameCardController : CardController , IDragHandler, IBeginDragHan
         m_OnDrag = true;
         m_CurrentCardSlot.SaveLastParentTransform();
         m_CurrentCardSlot.SetBorder(true);
+        //m_Offset = Vector2.zero;
         m_Offset = (Vector2)Transform.position - eventData.position;
         m_CanvasGroup.blocksRaycasts = false;
         Transform.parent = UI_Game.Instance.CanvasParentTF;
@@ -30,7 +31,12 @@ public class InGameCardController : CardController , IDragHandler, IBeginDragHan
         }
 
         if (m_IsScale || !m_CanDrag) return;
-        Transform.position = eventData.position + m_Offset;
+        Vector3 vec = Camera.main.WorldToScreenPoint(Transform.position);
+        vec.x += eventData.delta.x;
+        vec.y += eventData.delta.y;
+        //Debug.Log(vec);
+        Transform.position = Camera.main.ScreenToWorldPoint(vec);
+        //Transform.position = eventData.position + m_Offset;
 
         int newSiblingIndex = m_CurrentCardSlot.Transform.parent.childCount;
 

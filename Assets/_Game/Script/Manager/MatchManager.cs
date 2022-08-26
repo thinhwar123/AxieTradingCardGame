@@ -43,6 +43,7 @@ public class MatchManager : Singleton<MatchManager>
     {
         timeCount.StopWaiting();
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
+        m_UICIngame.m_PlayerDeck.InitDeck();
         TempData.Instance.InitNewData();
         this.m_PlayerHandler = handler;
         DelayAction(StartDrawPhase, 2);
@@ -231,7 +232,7 @@ public class MatchManager : Singleton<MatchManager>
     {
         PlayerMatchData playerMatchData = new PlayerMatchData();
         TempData.Instance.AddPlayerMathData(playerMatchData);
-        m_UICIngame.m_PlayerDeck.InitDeck();
+        
 
     }
     public void StartDrawPhase()

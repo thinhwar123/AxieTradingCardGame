@@ -7,15 +7,15 @@ public class Deck : MonoBehaviour
     private Transform m_Transform;
     public Transform Transform { get { return m_Transform ??= transform; } }
 
-    private BasicCard m_BasicCard;
+    [SerializeField] private BasicCard m_BasicCard;
     [SerializeField] private List<CardData> m_ListCardDataInDeck;
 
     public void InitDeck()
     {
         m_ListCardDataInDeck = new List<CardData>();
-        for (int i = 0; i < PlayerData.Instance.m_ListCardDatas.Count; i++)
+        for (int i = 0; i < 24; i++)
         {
-            m_ListCardDataInDeck.Add(PlayerData.Instance.m_ListCardDatas[i].m_CardData);
+            m_ListCardDataInDeck.Add(CardDataManager.Instance.m_CardDatas[PlayerPrefs.GetInt(i.ToString(), i)]);
         }
     }
 

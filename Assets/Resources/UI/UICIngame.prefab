@@ -1832,7 +1832,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28064e8e2cd2b5547b0275225adb1a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ListCard: []
+  m_BasicCard: {fileID: 7342453193438920114, guid: 1c37d866c1bd23d4caa59c507bc1eef5,
+    type: 3}
+  m_ListCardDataInDeck: []
 --- !u!1 &3351144028538456695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,7 +2645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28064e8e2cd2b5547b0275225adb1a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ListCard: []
+  m_BasicCard: {fileID: 7342453193438920114, guid: 1c37d866c1bd23d4caa59c507bc1eef5,
+    type: 3}
+  m_ListCardDataInDeck: []
 --- !u!1 &6655930486760773005
 GameObject:
   m_ObjectHideFlags: 0

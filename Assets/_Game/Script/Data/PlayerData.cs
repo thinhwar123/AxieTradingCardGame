@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerData : Singleton<PlayerData>
 {
-    public List<BasicCard> m_ListCardDatas;
+    public List<CardData> m_ListCardDatas;
 
     protected override void Awake()
     {
-        m_ListCardDatas = new List<BasicCard>();
+        base.Awake();
+        m_ListCardDatas = new List<CardData>();
     }
+
+
 }
