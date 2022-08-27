@@ -13,17 +13,14 @@ public class UIManager : MonoBehaviour
 {
     // Start is called before the first frame update    
     public Slider loadingBar;
-    public Slider loadingBackBar;
+    public Image loadingFill;
     public float speedLoad;
     public float speedLoadBack;
-    public float fill;
-    public float fillBack;
+    public float fill;    
     public bool isLoading;    
-    public TextMeshProUGUI loadingText;
-    public TextMeshProUGUI loadingBackText;
+    public TextMeshProUGUI loadingText;    
     public TextMeshProUGUI loadingMatchText;
-    public GameObject loadingPanel;
-    public GameObject loadingBackPanel;
+    public GameObject loadingPanel;    
     public GameObject mainMenuPanel;
     public GameObject WaitJoin;
     //public Button soundSetting;
@@ -38,6 +35,7 @@ public class UIManager : MonoBehaviour
     public Image avatar;
     public bool isSoundOn;
     public GameObject buildScreen;
+    public GameObject joinScreen;
     public GameObject matchPanel;
     public BasicCard card;
     public RectTransform allCards;
@@ -46,14 +44,23 @@ public class UIManager : MonoBehaviour
     public List<BasicCard> listCopyCards = new List<BasicCard>();
     public List<BasicCard> listDeckCards = new List<BasicCard>();
     public List<CardData> listCardDatas = new List<CardData>();
+    public List<Button> listRooms = new List<Button>();
     public List<Sprite> bg;
+    public Button roomPrefab;
     public Image bgBack;
+    public Sprite mainBG;
+    public Sprite mainFill;
+    public Sprite backFill;
+    public GameObject banner;
+
     public static bool mainMenu = true;
 
     [SerializeField] private BasicCard m_BasicCard;
     [SerializeField] private Transform m_StartSpawnPosition;
     [SerializeField] private DropZone m_AllCard;
     [SerializeField] private DropZone m_AllCopyCard;
+    [SerializeField] private Transform m_StartSpawnButton;
+    [SerializeField] private Transform boxRoom;
     public DropZone buildSpace;
     public DropZone deckSpace;
 
@@ -81,7 +88,7 @@ public class UIManager : MonoBehaviour
     public ServerClient serverClient;
 
     //network
-    public AxieNetworkManager networkManager;
+    //public AxieNetworkManager networkManager;
     void Start()
     {
         isLoading = true;
@@ -94,14 +101,15 @@ public class UIManager : MonoBehaviour
         //isLoadingYet = PlayerPrefs.GetInt("IsLoadingYet");
         if (!PlayerData.Instance.isLoad)
         {
-            loadingBackPanel.SetActive(false);
-            loadingPanel.SetActive(true);
+            bgBack.sprite = mainBG;
+            banner.SetActive(true);
+            loadingFill.sprite = mainFill;
         }
         else
         {
-            loadingBackPanel.SetActive(true);
-            loadingPanel.SetActive(false);
             SetBackGroundBack();
+            banner.SetActive(false);
+            loadingFill.sprite = backFill;
         }
         second = 0;
         minute = 0;
@@ -140,14 +148,7 @@ public class UIManager : MonoBehaviour
 
         if (isLoading)
         {
-            if (!PlayerData.Instance.isLoad)
-            {
-                LoadingGame();
-            }
-            else
-            {
-                LoadingBack();
-            }
+            LoadingGame();
         }
 
         //if (isWaiting)
@@ -256,32 +257,32 @@ public class UIManager : MonoBehaviour
         //SwitchToBuildSpace();
     }
 
-    public void LoadingBack()
-    {
-        fillBack += speedLoadBack * Time.deltaTime;
+    //public void LoadingBack()
+    //{
+    //    fillBack += speedLoadBack * Time.deltaTime;
 
-        if (fillBack < 1f)
-        {
-            loadingBackBar.value = fillBack;
-            loadingBackText.text = ((int)(100 * fillBack)).ToString() + "%";
-        }
-        else
-        {
-            isLoading = false;            
-            //PlayerPrefs.SetInt("IsLoadingYet", 1);
-            Invoke("EndLoadingBack", 1);
-            SwitchToBuildSpace();
-            LoadDeck();
-        }
-    }
+    //    if (fillBack < 1f)
+    //    {
+    //        loadingBackBar.value = fillBack;
+    //        loadingBackText.text = ((int)(100 * fillBack)).ToString() + "%";
+    //    }
+    //    else
+    //    {
+    //        isLoading = false;            
+    //        //PlayerPrefs.SetInt("IsLoadingYet", 1);
+    //        Invoke("EndLoadingBack", 1);
+    //        //SwitchToBuildSpace();
+    //        //LoadDeck();
+    //    }
+    //}
 
-    public void EndLoadingBack()
-    {
-        //yield return new WaitForSeconds(1f);
-        loadingBackPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
-        //SwitchToBuildSpace();
-    }
+    //public void EndLoadingBack()
+    //{
+    //    //yield return new WaitForSeconds(1f);
+    //    loadingBackPanel.SetActive(false);
+    //    mainMenuPanel.SetActive(true);
+    //    //SwitchToBuildSpace();
+    //}
 
     public void SoundSetting()
     {
@@ -383,7 +384,9 @@ public class UIManager : MonoBehaviour
             mainMenu = false;
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyServer(indexAvatar);
-            networkManager.StartClient();
+            //AxieNetworkManager.Instance.StartClient();
+            OpenJoinScreen();
+            InitRoom(16);
             //serverClient.AvatarEnemyServer(indexAvatar);
         }
         else
@@ -416,7 +419,7 @@ public class UIManager : MonoBehaviour
             isServer = true;
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyClient(indexAvatar);
-            networkManager.StartHost();
+            AxieNetworkManager.Instance.StartHost();
             //isWaiting = true;
             //minute = 0;
             //second = 0;
@@ -605,8 +608,41 @@ public class UIManager : MonoBehaviour
             }
             //listCardSlots.Add(card.m_CardController.GetCardSlot());
         }
+    }    
+    public void InitRoom(int amount)
+    {
+        var empty = listRooms.Count() - amount;
+        Debug.Log(empty);
+        if (empty < 0)
+        {
+            for (int i = 0; i < -empty; i++)
+            {
+                Button newButton = Instantiate(roomPrefab);
+                newButton.gameObject.SetActive(false);
+                newButton.transform.SetParent(m_StartSpawnButton.transform, false);
+                listRooms.Add(newButton);
+            }
+        }
+        for (int j = 0; j < listRooms.Count(); j++)
+        {
+            if (!listRooms[j].gameObject.activeInHierarchy)
+            {
+                listRooms[j].transform.SetParent(boxRoom, false);
+                listRooms[j].gameObject.SetActive(true);
+            }
+        }
+
     }
 
+    public void OpenJoinScreen()
+    {
+        joinScreen.SetActive(true);
+    }
+
+    public void CloseJoinScreen()
+    {
+        joinScreen.SetActive(false);
+    }
     //public void GenAllCard()
     //{
     //    for(int i = 0; i < 10; i++)
