@@ -330,6 +330,18 @@ public class MatchManager : Singleton<MatchManager>
         yield return new WaitForSeconds(time);
         action?.Invoke();
     }
+    public bool IsPlayerCard(BasicCard basicCard)
+    {
+        List<CardData> cardDatas = m_UICIngame.GetSelectCardData();
+        for (int i = 0; i < cardDatas.Count; i+=2)
+        {
+            if (cardDatas[i].m_ID == basicCard.GetID())
+            {
+                return true;
+            }
+        } 
+        return false;
+    }
     #endregion
 }
 [System.Serializable]

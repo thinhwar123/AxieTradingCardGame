@@ -363,17 +363,23 @@ public class BasicCard : MonoBehaviour
     }
     public void CardMaker()
     {
-        m_OnWinBattleCallback = () =>
+        if (MatchManager.Instance.IsPlayerCard(this))
         {
-            TempData.Instance.GetPlayerData().m_MaxCardInHand = 8;
-        };
+            m_OnWinBattleCallback = () =>
+            {
+                TempData.Instance.GetPlayerData().m_MaxCardInHand = 8;
+            };
+        }
     }
     public void CardEater()
     {
-        m_OnWinBattleCallback = () =>
+        if (!MatchManager.Instance.IsPlayerCard(this))
         {
-            TempData.Instance.GetOpponentData().m_MaxCardInHand = 4;
-        };
+            m_OnWinBattleCallback = () =>
+            {
+                TempData.Instance.GetPlayerData().m_MaxCardInHand = 4;
+            };
+        }
     }
     public void Silencer()
     {
