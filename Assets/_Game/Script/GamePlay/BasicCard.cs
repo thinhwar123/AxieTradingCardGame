@@ -196,6 +196,7 @@ public class BasicCard : MonoBehaviour
         if (m_IsSilent)
         {
             skeletonGraphic.AnimationState.SetAnimation(0, "battle/get-debuff", false);
+            UIEffectManager.Instance.PlayEffect(m_AbilityName, Transform, Transform.position);
         }
         else
         {
