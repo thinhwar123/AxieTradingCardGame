@@ -3132,7 +3132,7 @@ MonoBehaviour:
   offlineScene: Assets/_Game/Scene/UIMainMenuScene 1.unity
   onlineScene: Assets/_Game/Scene/BattleScene.unity
   transport: {fileID: 794572639}
-  networkAddress: 0.0.0.0
+  networkAddress: localhost
   maxConnections: 2
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 4322532396386617348, guid: 6725afe615943664192e1c3e2bde6ea5,
@@ -5328,7 +5328,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Effects:
+  - {fileID: 2673231788002424781, guid: 8c84a7fd76203634d90a2a826fb8e7d9, type: 3}
+  - {fileID: 2673231788002424781, guid: 0743b36576c415048b4791a4a2bdf4fa, type: 3}
+  - {fileID: 2673231788002424781, guid: 3a2dad2a9d1220f4e83892c68bed9981, type: 3}
+  - {fileID: 2673231788002424781, guid: 9e8ad7dcb2d33474580237940b2844d4, type: 3}
+  - {fileID: 2673231788002424781, guid: c501d2fec9df06242bb900591c185186, type: 3}
   - {fileID: 2673231788002424781, guid: 11ce9b5e96d815c4d888fb6a7870ea15, type: 3}
+  - {fileID: 2673231788002424781, guid: e3babfa7a88a4d848b2bd200a2b6d91f, type: 3}
+  - {fileID: 2673231788002424781, guid: 90189a5e3bca1df4f90e12df5b989b16, type: 3}
+  - {fileID: 2673231788002424781, guid: f93af7518fd917447a610c4677039b5c, type: 3}
 --- !u!114 &1906801424 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1687315722042762991, guid: 9cdb7313f37cd554d8056932782feec8,

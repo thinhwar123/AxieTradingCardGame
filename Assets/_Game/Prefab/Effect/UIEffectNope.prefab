@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  skeletonDataAsset: {fileID: 11400000, guid: d02d1aa41639543ee954dc889b3bddef, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: b328fdab2013344e5aaa4b8000c116c2, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8450269630629351349}
   - component: {fileID: 2673231788002424781}
   m_Layer: 5
-  m_Name: UIEffectSwap
+  m_Name: UIEffectNope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,5 +141,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SkeletonGraphic: {fileID: 2993424564808221929}
-  m_EffectName: Swap Back
+  m_EffectName: Silencer
   m_TimeDuration: 1
