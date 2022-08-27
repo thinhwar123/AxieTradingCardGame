@@ -5,39 +5,59 @@ using UnityEngine.UI;
 
 public class UI_Endgame : UICanvas
 {
-    public Image player;
-    public Image enemy;
+    //public Image player;
+    //public Image enemy;
     public GameObject playerWin;
     public GameObject playerLose;
-    public GameObject enemyWin;
-    public GameObject enemyLose;
-    public AvatarData list;
+    public GameObject playerDraw;
+    public Image loadIcon;
+    public bool isLoading;
+    public float count;
+    //public GameObject enemyLose;
+    //public AvatarData list;
+
+    private void Update()
+    {
+        if (isLoading)
+        {
+            loadIcon.transform.Rotate(Vector3.back * 50f * Time.deltaTime);
+            count += Time.deltaTime;
+            if(count >= 5f)
+            {
+                BackToMainMenu();
+            }
+        }
+    }
 
     public void Setup(int state)
     {
-        player.sprite = list.listAvatar[PlayerPrefs.GetInt("player")].avatar;
-        enemy.sprite = list.listAvatar[PlayerPrefs.GetInt("enemy")].avatar;
+        //player.sprite = list.listAvatar[PlayerPrefs.GetInt("player")].avatar;
+        //enemy.sprite = list.listAvatar[PlayerPrefs.GetInt("enemy")].avatar;
         if (state == -1)
         {
             playerWin.SetActive(false);
             playerLose.SetActive(true);
-            enemyWin.SetActive(true);
-            enemyLose.SetActive(false);
+            playerDraw.SetActive(false);
         }
         else if(state == 0)
         {
-            playerWin.SetActive(true);
+            playerWin.SetActive(false);
             playerLose.SetActive(false);
-            enemyWin.SetActive(true);
-            enemyLose.SetActive(false);
+            playerDraw.SetActive(true);
         }
         else if(state == 1)
         {
             playerWin.SetActive(true);
             playerLose.SetActive(false);
-            enemyWin.SetActive(false);
-            enemyLose.SetActive(true);
+            playerDraw.SetActive(false);
         }
+        isLoading = true;
+    }
+
+    public void BackToMainMenu()
+    {
+        //code
+        Debug.Log("Back");
     }
 
 }

@@ -4879,7 +4879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingBar: {fileID: 1000314624}
-  speedLoad: 0.005
+  speedLoad: 0.1
   fill: 0
   isLoading: 1
   loadingText: {fileID: 134659413}
