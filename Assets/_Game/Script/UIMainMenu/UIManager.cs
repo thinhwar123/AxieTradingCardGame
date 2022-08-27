@@ -745,6 +745,13 @@ public class UIManager : MonoBehaviour
         //    Debug.Log("number " + i.ToString() + ":" + listCardDatas[i].m_ID);
         //}
     }
+    public void SaveListCardData()
+    {
+        for (int i = 0; i < listCardDatas.Count; i++)
+        {
+            PlayerPrefs.SetString(i.ToString(), listCardDatas[i].m_ID);
+        }
+    }
 
     public void ResetDeck()
     {
@@ -790,6 +797,7 @@ public class UIManager : MonoBehaviour
                 }
             }
         }
+        SaveListCardData();
     }
 
     public void LoadDeck()

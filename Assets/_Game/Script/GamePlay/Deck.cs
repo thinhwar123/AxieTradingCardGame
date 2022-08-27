@@ -15,7 +15,7 @@ public class Deck : MonoBehaviour
         m_ListCardDataInDeck = new List<CardData>();
         for (int i = 0; i < 24; i++)
         {
-            m_ListCardDataInDeck.Add(CardDataManager.Instance.m_CardDatas[PlayerPrefs.GetInt(i.ToString(), i)]);
+            m_ListCardDataInDeck.Add(CardDataManager.Instance.GetCardData(PlayerPrefs.GetString(i.ToString())));
         }
     }
 
