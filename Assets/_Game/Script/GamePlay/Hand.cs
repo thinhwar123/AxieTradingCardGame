@@ -19,4 +19,8 @@ public class Hand : MonoBehaviour
     {
         return m_DropZone.m_ListBasicCard.Count;
     }
+    public List<BasicCard> GetListBasicCardInHand()
+    {
+        return m_DropZone.m_ListBasicCard;
+    }
 }
