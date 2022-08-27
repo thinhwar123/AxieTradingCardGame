@@ -1,0 +1,32 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "energy_08_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "energy_08_00000": {"x": 40, "y": 101, "width": 59, "height": 49},
+          "energy_08_00001": {"x": 20, "y": 97, "width": 104, "height": 58},
+          "energy_08_00002": {"x": 0, "y": 32, "width": 134, "height": 190},
+          "energy_08_00003": {"x": -44, "y": -22, "width": 74, "height": 206},
+          "energy_08_00004": {"x": -25, "y": -72, "width": 116, "height": 105},
+          "energy_08_00005": {"x": -11, "y": -63, "width": 101, "height": 120},
+          "energy_08_00006": {"x": 227, "y": -128, "width": 455, "height": 256}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "energy_08_00000"}, {"time": 0.1, "name": "energy_08_00001"}, {"time": 0.2, "name": "energy_08_00002"}, {"time": 0.30000000000000004, "name": "energy_08_00003"}, {"time": 0.4, "name": "energy_08_00004"},
+            {"time": 0.5, "name": "energy_08_00005"}, {"time": 0.6000000000000001, "name": "energy_08_00006"}
+          ]
+        }
+      }
+    }
+  }
+}

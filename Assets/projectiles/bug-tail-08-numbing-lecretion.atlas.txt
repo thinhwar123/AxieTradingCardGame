@@ -1,0 +1,34 @@
+
+bug-tail-08-numbing-lecretion.png
+size: 198,57
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+numbing-1
+  rotate: false
+  xy: 2, 2
+  size: 47, 53
+  orig: 47, 53
+  offset: 0, 0
+  index: -1
+numbing-2
+  rotate: false
+  xy: 51, 2
+  size: 47, 53
+  orig: 47, 53
+  offset: 0, 0
+  index: -1
+numbing-3
+  rotate: false
+  xy: 100, 2
+  size: 47, 53
+  orig: 47, 53
+  offset: 0, 0
+  index: -1
+numbing-4
+  rotate: false
+  xy: 149, 2
+  size: 47, 53
+  orig: 47, 53
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,279 @@
+
+explosion-5-sre.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+explosion-5-sre_00
+  rotate: false
+  xy: 2,946
+  size: 157,58
+  orig: 157,58
+  offset: 0, 0
+  index: -1
+explosion-5-sre_01
+  rotate: false
+  xy: 1276,464
+  size: 203,101
+  orig: 203,101
+  offset: 0, 0
+  index: -1
+explosion-5-sre_02
+  rotate: false
+  xy: 1493,329
+  size: 210,118
+  orig: 210,118
+  offset: 0, 0
+  index: -1
+explosion-5-sre_03
+  rotate: false
+  xy: 1276,329
+  size: 213,131
+  orig: 213,131
+  offset: 0, 0
+  index: -1
+explosion-5-sre_04
+  rotate: false
+  xy: 1042,490
+  size: 227,151
+  orig: 227,151
+  offset: 0, 0
+  index: -1
+explosion-5-sre_05
+  rotate: false
+  xy: 1042,167
+  size: 230,153
+  orig: 230,153
+  offset: 0, 0
+  index: -1
+explosion-5-sre_06
+  rotate: false
+  xy: 1773,2
+  size: 233,154
+  orig: 233,154
+  offset: 0, 0
+  index: -1
+explosion-5-sre_07
+  rotate: false
+  xy: 1532,2
+  size: 237,156
+  orig: 237,156
+  offset: 0, 0
+  index: -1
+explosion-5-sre_08
+  rotate: false
+  xy: 1286,2
+  size: 242,157
+  orig: 242,157
+  offset: 0, 0
+  index: -1
+explosion-5-sre_09
+  rotate: false
+  xy: 262,782
+  size: 244,159
+  orig: 244,159
+  offset: 0, 0
+  index: -1
+explosion-5-sre_10
+  rotate: false
+  xy: 2,782
+  size: 245,160
+  orig: 245,160
+  offset: 0, 0
+  index: -1
+explosion-5-sre_11
+  rotate: false
+  xy: 1042,2
+  size: 240,161
+  orig: 240,161
+  offset: 0, 0
+  index: -1
+explosion-5-sre_12
+  rotate: false
+  xy: 782,782
+  size: 239,162
+  orig: 239,162
+  offset: 0, 0
+  index: -1
+explosion-5-sre_13
+  rotate: false
+  xy: 522,782
+  size: 239,162
+  orig: 239,162
+  offset: 0, 0
+  index: -1
+explosion-5-sre_14
+  rotate: false
+  xy: 1042,324
+  size: 213,162
+  orig: 213,162
+  offset: 0, 0
+  index: -1
+explosion-5-sre_15
+  rotate: false
+  xy: 1042,645
+  size: 208,161
+  orig: 208,161
+  offset: 0, 0
+  index: -1
+explosion-5-sre_16
+  rotate: false
+  xy: 1276,167
+  size: 209,158
+  orig: 209,158
+  offset: 0, 0
+  index: -1
+explosion-5-sre_17
+  rotate: false
+  xy: 1042,810
+  size: 209,160
+  orig: 209,160
+  offset: 0, 0
+  index: -1
+explosion-5-sre_18
+  rotate: false
+  xy: 1489,167
+  size: 208,158
+  orig: 208,158
+  offset: 0, 0
+  index: -1
+explosion-5-sre_19
+  rotate: false
+  xy: 1701,167
+  size: 204,156
+  orig: 204,156
+  offset: 0, 0
+  index: -1
+explosion-5-sre_20
+  rotate: false
+  xy: 1707,329
+  size: 206,108
+  orig: 206,108
+  offset: 0, 0
+  index: -1
+explosion-5-sre_21
+  rotate: false
+  xy: 262,945
+  size: 117,55
+  orig: 117,55
+  offset: 0, 0
+  index: -1
+explosion-5-sre_22
+  rotate: false
+  xy: 522,948
+  size: 114,55
+  orig: 114,55
+  offset: 0, 0
+  index: -1
+explosion-5-sre_23
+  rotate: false
+  xy: 383,945
+  size: 112,56
+  orig: 112,56
+  offset: 0, 0
+  index: -1
+explosion-5-sre_24
+  rotate: false
+  xy: 163,946
+  size: 23,52
+  orig: 23,52
+  offset: 0, 0
+  index: -1
+explosion-5-sre_25
+  rotate: false
+  xy: 190,946
+  size: 22,49
+  orig: 22,49
+  offset: 0, 0
+  index: -1
+explosion-5-sre_26
+  rotate: false
+  xy: 190,999
+  size: 9,21
+  orig: 9,21
+  offset: 0, 0
+  index: -1
+explosion-5-sre_27
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_28
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_29
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_30
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_31
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_32
+  rotate: false
+  xy: 262,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_33
+  rotate: false
+  xy: 522,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_34
+  rotate: false
+  xy: 782,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_35
+  rotate: false
+  xy: 782,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_36
+  rotate: false
+  xy: 782,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_37
+  rotate: false
+  xy: 522,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-5-sre_38
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1

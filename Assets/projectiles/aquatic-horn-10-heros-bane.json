@@ -1,0 +1,59 @@
+{
+"skeleton": {
+	"hash": "z0ueCrGQDbce8qjIpxNqGUilMqk",
+	"spine": "3.8.79",
+	"x": -142.5,
+	"y": -339,
+	"width": 285,
+	"height": 678,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -255.53 },
+	{ "name": "heros-bane-1", "parent": "root", "y": 255.53 }
+],
+"slots": [
+	{ "name": "heros-bane-1", "bone": "heros-bane-1", "attachment": "heros-bane-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"heros-bane-1": {
+				"heros-bane-1": { "width": 285, "height": 678 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"heros-bane-1": {
+				"color": [
+					{ "time": 0.5, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "heros-bane-1" }
+				]
+			}
+		},
+		"bones": {
+			"heros-bane-1": {
+				"translate": [
+					{ "y": 1069.37, "curve": 0, "c2": 0.9, "c3": 0.079 },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 0.8333 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.0667, "name": "hit" }
+		]
+	}
+}
+}

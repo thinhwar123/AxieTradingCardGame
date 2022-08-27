@@ -1,0 +1,90 @@
+
+smoke-3-de-short.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_07_00000
+  rotate: false
+  xy: 317,422
+  size: 92,35
+  orig: 92,35
+  offset: 0, 0
+  index: -1
+smoke_07_00001
+  rotate: false
+  xy: 2,429
+  size: 187,76
+  orig: 187,76
+  offset: 0, 0
+  index: -1
+smoke_07_00002
+  rotate: false
+  xy: 448,354
+  size: 225,109
+  orig: 225,109
+  offset: 0, 0
+  index: -1
+smoke_07_00003
+  rotate: false
+  xy: 448,204
+  size: 224,146
+  orig: 224,146
+  offset: 0, 0
+  index: -1
+smoke_07_00004
+  rotate: false
+  xy: 678,2
+  size: 230,180
+  orig: 230,180
+  offset: 0, 0
+  index: -1
+smoke_07_00005
+  rotate: false
+  xy: 448,2
+  size: 226,198
+  orig: 226,198
+  offset: 0, 0
+  index: -1
+smoke_07_00006
+  rotate: false
+  xy: 224,2
+  size: 220,206
+  orig: 220,206
+  offset: 0, 0
+  index: -1
+smoke_07_00007
+  rotate: false
+  xy: 2,2
+  size: 218,208
+  orig: 218,208
+  offset: 0, 0
+  index: -1
+smoke_07_00008
+  rotate: false
+  xy: 2,214
+  size: 198,211
+  orig: 198,211
+  offset: 0, 0
+  index: -1
+smoke_07_00009
+  rotate: false
+  xy: 224,212
+  size: 165,206
+  orig: 165,206
+  offset: 0, 0
+  index: -1
+smoke_07_00010
+  rotate: false
+  xy: 678,186
+  size: 153,203
+  orig: 153,203
+  offset: 0, 0
+  index: -1
+smoke_07_00011
+  rotate: false
+  xy: 224,422
+  size: 89,72
+  orig: 89,72
+  offset: 0, 0
+  index: -1

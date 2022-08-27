@@ -1,0 +1,13 @@
+
+aquatic-horn-08-aquaponics.png
+size: 85,88
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+aquaponics-1
+  rotate: false
+  xy: 2, 2
+  size: 81, 84
+  orig: 81, 84
+  offset: 0, 0
+  index: -1

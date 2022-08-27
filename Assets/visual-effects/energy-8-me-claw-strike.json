@@ -1,0 +1,45 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "energy-8-me-claw-strike_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "energy-8-me-claw-strike_00": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "energy-8-me-claw-strike_01": {"x": -92, "y": 4, "width": 72, "height": 79},
+          "energy-8-me-claw-strike_02": {"x": -70, "y": 4, "width": 117, "height": 81},
+          "energy-8-me-claw-strike_03": {"x": -19, "y": 4, "width": 204, "height": 81},
+          "energy-8-me-claw-strike_04": {"x": 9, "y": 4, "width": 237, "height": 83},
+          "energy-8-me-claw-strike_05": {"x": 10, "y": 3, "width": 235, "height": 84},
+          "energy-8-me-claw-strike_06": {"x": 13, "y": 3, "width": 230, "height": 83},
+          "energy-8-me-claw-strike_07": {"x": 16, "y": 3, "width": 224, "height": 83},
+          "energy-8-me-claw-strike_08": {"x": 25, "y": 3, "width": 206, "height": 82},
+          "energy-8-me-claw-strike_09": {"x": 26, "y": 3, "width": 204, "height": 80},
+          "energy-8-me-claw-strike_10": {"x": 27, "y": 4, "width": 202, "height": 79},
+          "energy-8-me-claw-strike_11": {"x": 50, "y": 4, "width": 155, "height": 74},
+          "energy-8-me-claw-strike_12": {"x": 52, "y": 4, "width": 152, "height": 74},
+          "energy-8-me-claw-strike_13": {"x": 52, "y": 4, "width": 152, "height": 72},
+          "energy-8-me-claw-strike_14": {"x": 88, "y": 3, "width": 80, "height": 68},
+          "energy-8-me-claw-strike_15": {"x": 90, "y": 4, "width": 76, "height": 63},
+          "energy-8-me-claw-strike_16": {"x": 91, "y": 4, "width": 74, "height": 61}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "energy-8-me-claw-strike_00"}, {"time": 0.1, "name": "energy-8-me-claw-strike_01"}, {"time": 0.2, "name": "energy-8-me-claw-strike_02"}, {"time": 0.30000000000000004, "name": "energy-8-me-claw-strike_03"},
+            {"time": 0.4, "name": "energy-8-me-claw-strike_04"}, {"time": 0.5, "name": "energy-8-me-claw-strike_05"}, {"time": 0.6000000000000001, "name": "energy-8-me-claw-strike_06"},
+            {"time": 0.7000000000000001, "name": "energy-8-me-claw-strike_07"}, {"time": 0.8, "name": "energy-8-me-claw-strike_08"}, {"time": 0.9, "name": "energy-8-me-claw-strike_09"}, {"time": 1.0, "name": "energy-8-me-claw-strike_10"},
+            {"time": 1.1, "name": "energy-8-me-claw-strike_11"}, {"time": 1.2000000000000002, "name": "energy-8-me-claw-strike_12"}, {"time": 1.3, "name": "energy-8-me-claw-strike_13"},
+            {"time": 1.4000000000000001, "name": "energy-8-me-claw-strike_14"}, {"time": 1.5, "name": "energy-8-me-claw-strike_15"}, {"time": 1.6, "name": "energy-8-me-claw-strike_16"}
+          ]
+        }
+      }
+    }
+  }
+}

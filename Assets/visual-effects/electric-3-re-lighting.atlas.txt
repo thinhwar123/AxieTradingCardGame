@@ -1,0 +1,83 @@
+
+electric-3-re-lighting.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-3-re-lighting_00
+  rotate: false
+  xy: 229,415
+  size: 72,62
+  orig: 72,62
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_01
+  rotate: false
+  xy: 324,191
+  size: 77,204
+  orig: 77,204
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_02
+  rotate: false
+  xy: 229,2
+  size: 91,222
+  orig: 91,222
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_03
+  rotate: false
+  xy: 118,233
+  size: 107,223
+  orig: 107,223
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_04
+  rotate: false
+  xy: 118,2
+  size: 107,227
+  orig: 107,227
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_05
+  rotate: false
+  xy: 2,2
+  size: 112,232
+  orig: 112,232
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_06
+  rotate: false
+  xy: 2,238
+  size: 108,225
+  orig: 108,225
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_07
+  rotate: false
+  xy: 229,228
+  size: 91,183
+  orig: 91,183
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_08
+  rotate: false
+  xy: 324,2
+  size: 94,185
+  orig: 94,185
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_09
+  rotate: false
+  xy: 422,2
+  size: 90,160
+  orig: 90,160
+  offset: 0, 0
+  index: -1
+electric-3-re-lighting_10
+  rotate: false
+  xy: 422,166
+  size: 76,177
+  orig: 76,177
+  offset: 0, 0
+  index: -1

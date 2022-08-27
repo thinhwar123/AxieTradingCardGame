@@ -1,0 +1,132 @@
+
+smoke-3-ee-ground.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke-10-ee-ground_00
+  rotate: false
+  xy: 503,389
+  size: 70,25
+  orig: 70,25
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_01
+  rotate: false
+  xy: 503,304
+  size: 174,81
+  orig: 174,81
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_02
+  rotate: false
+  xy: 503,205
+  size: 214,95
+  orig: 214,95
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_03
+  rotate: false
+  xy: 743,2
+  size: 231,106
+  orig: 231,106
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_04
+  rotate: false
+  xy: 503,2
+  size: 236,111
+  orig: 236,111
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_05
+  rotate: false
+  xy: 255,370
+  size: 240,115
+  orig: 240,115
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_06
+  rotate: false
+  xy: 255,248
+  size: 241,118
+  orig: 241,118
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_07
+  rotate: false
+  xy: 255,125
+  size: 243,119
+  orig: 243,119
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_08
+  rotate: false
+  xy: 255,2
+  size: 244,119
+  orig: 244,119
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_09
+  rotate: false
+  xy: 2,374
+  size: 246,120
+  orig: 246,120
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_10
+  rotate: false
+  xy: 2,250
+  size: 247,120
+  orig: 247,120
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_11
+  rotate: false
+  xy: 2,126
+  size: 248,120
+  orig: 248,120
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_12
+  rotate: false
+  xy: 2,2
+  size: 249,120
+  orig: 249,120
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_13
+  rotate: false
+  xy: 503,117
+  size: 249,84
+  orig: 249,84
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_14
+  rotate: false
+  xy: 756,117
+  size: 249,83
+  orig: 249,83
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_15
+  rotate: false
+  xy: 978,2
+  size: 37,43
+  orig: 37,43
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_16
+  rotate: false
+  xy: 978,49
+  size: 35,42
+  orig: 35,42
+  offset: 0, 0
+  index: -1
+smoke-10-ee-ground_17
+  rotate: false
+  xy: 2,498
+  size: 6,10
+  orig: 6,10
+  offset: 0, 0
+  index: -1

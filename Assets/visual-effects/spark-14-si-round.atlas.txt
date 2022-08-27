@@ -1,0 +1,90 @@
+
+spark-14-si-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-14-si-round_00
+  rotate: false
+  xy: 2,925
+  size: 91,74
+  orig: 91,74
+  offset: 0, 0
+  index: -1
+spark-14-si-round_01
+  rotate: false
+  xy: 773,238
+  size: 183,163
+  orig: 183,163
+  offset: 0, 0
+  index: -1
+spark-14-si-round_02
+  rotate: false
+  xy: 782,2
+  size: 234,201
+  orig: 234,201
+  offset: 0, 0
+  index: -1
+spark-14-si-round_03
+  rotate: false
+  xy: 262,238
+  size: 249,219
+  orig: 249,219
+  offset: 0, 0
+  index: -1
+spark-14-si-round_04
+  rotate: false
+  xy: 2,469
+  size: 254,225
+  orig: 254,225
+  offset: 0, 0
+  index: -1
+spark-14-si-round_05
+  rotate: false
+  xy: 2,2
+  size: 256,232
+  orig: 256,232
+  offset: 0, 0
+  index: -1
+spark-14-si-round_06
+  rotate: false
+  xy: 262,2
+  size: 256,230
+  orig: 256,230
+  offset: 0, 0
+  index: -1
+spark-14-si-round_07
+  rotate: false
+  xy: 522,2
+  size: 256,229
+  orig: 256,229
+  offset: 0, 0
+  index: -1
+spark-14-si-round_08
+  rotate: false
+  xy: 2,238
+  size: 256,227
+  orig: 256,227
+  offset: 0, 0
+  index: -1
+spark-14-si-round_09
+  rotate: false
+  xy: 2,698
+  size: 255,223
+  orig: 255,223
+  offset: 0, 0
+  index: -1
+spark-14-si-round_10
+  rotate: false
+  xy: 515,238
+  size: 254,199
+  orig: 254,199
+  offset: 0, 0
+  index: -1
+spark-14-si-round_11
+  rotate: false
+  xy: 262,461
+  size: 253,192
+  orig: 253,192
+  offset: 0, 0
+  index: -1

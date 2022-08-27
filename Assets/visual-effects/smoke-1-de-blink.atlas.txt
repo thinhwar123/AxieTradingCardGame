@@ -1,0 +1,90 @@
+
+smoke-1-de-blink.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_06_00000
+  rotate: false
+  xy: 695,2
+  size: 121,64
+  orig: 121,64
+  offset: 0, 0
+  index: -1
+smoke_06_00001
+  rotate: false
+  xy: 517,2
+  size: 174,116
+  orig: 174,116
+  offset: 0, 0
+  index: -1
+smoke_06_00002
+  rotate: false
+  xy: 255,2
+  size: 258,147
+  orig: 258,147
+  offset: 0, 0
+  index: -1
+smoke_06_00003
+  rotate: false
+  xy: 2,2
+  size: 249,162
+  orig: 249,162
+  offset: 0, 0
+  index: -1
+smoke_06_00004
+  rotate: false
+  xy: 455,168
+  size: 233,171
+  orig: 233,171
+  offset: 0, 0
+  index: -1
+smoke_06_00005
+  rotate: false
+  xy: 2,353
+  size: 222,177
+  orig: 222,177
+  offset: 0, 0
+  index: -1
+smoke_06_00006
+  rotate: false
+  xy: 228,168
+  size: 223,180
+  orig: 223,180
+  offset: 0, 0
+  index: -1
+smoke_06_00007
+  rotate: false
+  xy: 2,168
+  size: 222,181
+  orig: 222,181
+  offset: 0, 0
+  index: -1
+smoke_06_00008
+  rotate: false
+  xy: 2,534
+  size: 196,180
+  orig: 196,180
+  offset: 0, 0
+  index: -1
+smoke_06_00009
+  rotate: false
+  xy: 2,718
+  size: 191,181
+  orig: 191,181
+  offset: 0, 0
+  index: -1
+smoke_06_00010
+  rotate: false
+  xy: 692,168
+  size: 186,180
+  orig: 186,180
+  offset: 0, 0
+  index: -1
+smoke_06_00011
+  rotate: false
+  xy: 882,168
+  size: 120,175
+  orig: 120,175
+  offset: 0, 0
+  index: -1

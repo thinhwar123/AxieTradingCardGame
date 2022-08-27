@@ -1,0 +1,111 @@
+
+water-3-si-splash.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-3-si-splash_00
+  rotate: false
+  xy: 156,272
+  size: 38,75
+  orig: 38,75
+  offset: 0, 0
+  index: -1
+water-3-si-splash_01
+  rotate: false
+  xy: 432,2
+  size: 77,122
+  orig: 77,122
+  offset: 0, 0
+  index: -1
+water-3-si-splash_02
+  rotate: false
+  xy: 156,137
+  size: 104,131
+  orig: 104,131
+  offset: 0, 0
+  index: -1
+water-3-si-splash_03
+  rotate: false
+  xy: 2,250
+  size: 122,132
+  orig: 122,132
+  offset: 0, 0
+  index: -1
+water-3-si-splash_04
+  rotate: false
+  xy: 2,2
+  size: 135,131
+  orig: 135,131
+  offset: 0, 0
+  index: -1
+water-3-si-splash_05
+  rotate: false
+  xy: 141,2
+  size: 139,126
+  orig: 139,126
+  offset: 0, 0
+  index: -1
+water-3-si-splash_06
+  rotate: false
+  xy: 284,2
+  size: 144,118
+  orig: 144,118
+  offset: 0, 0
+  index: -1
+water-3-si-splash_07
+  rotate: false
+  xy: 2,137
+  size: 150,109
+  orig: 150,109
+  offset: 0, 0
+  index: -1
+water-3-si-splash_08
+  rotate: false
+  xy: 264,220
+  size: 122,78
+  orig: 122,78
+  offset: 0, 0
+  index: -1
+water-3-si-splash_09
+  rotate: false
+  xy: 264,137
+  size: 121,79
+  orig: 121,79
+  offset: 0, 0
+  index: -1
+water-3-si-splash_10
+  rotate: false
+  xy: 2,386
+  size: 120,81
+  orig: 120,81
+  offset: 0, 0
+  index: -1
+water-3-si-splash_11
+  rotate: false
+  xy: 389,137
+  size: 117,75
+  orig: 117,75
+  offset: 0, 0
+  index: -1
+water-3-si-splash_12
+  rotate: false
+  xy: 390,220
+  size: 112,73
+  orig: 112,73
+  offset: 0, 0
+  index: -1
+water-3-si-splash_13
+  rotate: false
+  xy: 264,302
+  size: 109,58
+  orig: 109,58
+  offset: 0, 0
+  index: -1
+water-3-si-splash_14
+  rotate: false
+  xy: 2,471
+  size: 40,32
+  orig: 40,32
+  offset: 0, 0
+  index: -1

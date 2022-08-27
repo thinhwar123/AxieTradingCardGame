@@ -1,0 +1,42 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-9-ee-ground_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-9-ee-ground_00": {"x": -5, "y": -15, "width": 77, "height": 24},
+          "water-9-ee-ground_01": {"x": -3, "y": -15, "width": 163, "height": 41},
+          "water-9-ee-ground_02": {"x": -1, "y": -14, "width": 183, "height": 46},
+          "water-9-ee-ground_03": {"x": 0, "y": -15, "width": 189, "height": 48},
+          "water-9-ee-ground_04": {"x": 1, "y": -15, "width": 194, "height": 50},
+          "water-9-ee-ground_05": {"x": 1, "y": -13, "width": 196, "height": 50},
+          "water-9-ee-ground_06": {"x": 1, "y": -12, "width": 198, "height": 52},
+          "water-9-ee-ground_07": {"x": 1, "y": -11, "width": 200, "height": 51},
+          "water-9-ee-ground_08": {"x": 2, "y": -10, "width": 202, "height": 51},
+          "water-9-ee-ground_09": {"x": 2, "y": -10, "width": 202, "height": 51},
+          "water-9-ee-ground_10": {"x": 1, "y": -10, "width": 203, "height": 49},
+          "water-9-ee-ground_11": {"x": 2, "y": -11, "width": 204, "height": 48},
+          "water-9-ee-ground_12": {"x": 2, "y": -10, "width": 204, "height": 47},
+          "water-9-ee-ground_13": {"x": 2, "y": -8, "width": 205, "height": 43},
+          "water-9-ee-ground_14": {"x": 13, "y": -13, "width": 183, "height": 11}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-9-ee-ground_00"}, {"time": 0.1, "name": "water-9-ee-ground_01"}, {"time": 0.2, "name": "water-9-ee-ground_02"}, {"time": 0.30000000000000004, "name": "water-9-ee-ground_03"},
+            {"time": 0.4, "name": "water-9-ee-ground_04"}, {"time": 0.5, "name": "water-9-ee-ground_05"}, {"time": 0.6000000000000001, "name": "water-9-ee-ground_06"}, {"time": 0.7000000000000001, "name": "water-9-ee-ground_07"},
+            {"time": 0.8, "name": "water-9-ee-ground_08"}, {"time": 0.9, "name": "water-9-ee-ground_09"}, {"time": 1.0, "name": "water-9-ee-ground_10"}, {"time": 1.1, "name": "water-9-ee-ground_11"},
+            {"time": 1.2000000000000002, "name": "water-9-ee-ground_12"}, {"time": 1.3, "name": "water-9-ee-ground_13"}, {"time": 1.4000000000000001, "name": "water-9-ee-ground_14"}
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+
+electric-5-si-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-5-si-round_00
+  rotate: false
+  xy: 512,857
+  size: 78,83
+  orig: 78,83
+  offset: 0, 0
+  index: -1
+electric-5-si-round_01
+  rotate: false
+  xy: 512,708
+  size: 135,145
+  orig: 135,145
+  offset: 0, 0
+  index: -1
+electric-5-si-round_02
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-5-si-round_03
+  rotate: false
+  xy: 512,520
+  size: 179,184
+  orig: 179,184
+  offset: 0, 0
+  index: -1
+electric-5-si-round_04
+  rotate: false
+  xy: 763,262
+  size: 200,215
+  orig: 200,215
+  offset: 0, 0
+  index: -1
+electric-5-si-round_05
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-5-si-round_06
+  rotate: false
+  xy: 2,782
+  size: 215,225
+  orig: 215,225
+  offset: 0, 0
+  index: -1
+electric-5-si-round_07
+  rotate: false
+  xy: 262,773
+  size: 228,241
+  orig: 228,241
+  offset: 0, 0
+  index: -1
+electric-5-si-round_08
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-5-si-round_09
+  rotate: false
+  xy: 262,522
+  size: 233,247
+  orig: 233,247
+  offset: 0, 0
+  index: -1
+electric-5-si-round_10
+  rotate: false
+  xy: 782,2
+  size: 236,250
+  orig: 236,250
+  offset: 0, 0
+  index: -1
+electric-5-si-round_11
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-5-si-round_12
+  rotate: false
+  xy: 512,262
+  size: 247,254
+  orig: 247,254
+  offset: 0, 0
+  index: -1
+electric-5-si-round_13
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-5-si-round_14
+  rotate: false
+  xy: 262,262
+  size: 246,256
+  orig: 246,256
+  offset: 0, 0
+  index: -1

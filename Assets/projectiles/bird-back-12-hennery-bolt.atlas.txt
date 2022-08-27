@@ -1,0 +1,27 @@
+
+bird-back-12-hennery-bolt.png
+size: 222,406
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+goda-1
+  rotate: false
+  xy: 2, 2
+  size: 218, 402
+  orig: 218, 402
+  offset: 0, 0
+  index: -1
+goda-2
+  rotate: false
+  xy: 2, 2
+  size: 218, 402
+  orig: 218, 402
+  offset: 0, 0
+  index: -1
+goda-3
+  rotate: false
+  xy: 2, 2
+  size: 218, 402
+  orig: 218, 402
+  offset: 0, 0
+  index: -1

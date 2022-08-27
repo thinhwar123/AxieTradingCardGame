@@ -1,0 +1,30 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "spark-29-si-particle_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "spark-29-si-particle_00": {"x": 1, "y": -3, "width": 93, "height": 94},
+          "spark-29-si-particle_01": {"x": 0, "y": 0, "width": 157, "height": 156},
+          "spark-29-si-particle_02": {"x": -5, "y": 5, "width": 176, "height": 186},
+          "spark-29-si-particle_03": {"x": 3, "y": -1, "width": 107, "height": 94},
+          "spark-29-si-particle_04": {"x": 4, "y": -2, "width": 66, "height": 65}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "spark-29-si-particle_00"}, {"time": 0.1, "name": "spark-29-si-particle_01"}, {"time": 0.2, "name": "spark-29-si-particle_02"}, {"time": 0.30000000000000004, "name": "spark-29-si-particle_03"},
+            {"time": 0.4, "name": "spark-29-si-particle_04"}
+          ]
+        }
+      }
+    }
+  }
+}

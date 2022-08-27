@@ -1,0 +1,13 @@
+
+beast-tail-10-nut-throw.png
+size: 112,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nut-throw
+  rotate: false
+  xy: 2, 2
+  size: 108, 124
+  orig: 108, 124
+  offset: 0, 0
+  index: -1

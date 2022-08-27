@@ -1,0 +1,83 @@
+
+spark-20-si-up.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-20-si-up_00
+  rotate: false
+  xy: 2,449
+  size: 78,57
+  orig: 78,57
+  offset: 0, 0
+  index: -1
+spark-20-si-up_01
+  rotate: false
+  xy: 262,230
+  size: 176,73
+  orig: 176,73
+  offset: 0, 0
+  index: -1
+spark-20-si-up_02
+  rotate: false
+  xy: 2,303
+  size: 233,74
+  orig: 233,74
+  offset: 0, 0
+  index: -1
+spark-20-si-up_03
+  rotate: false
+  xy: 262,2
+  size: 248,75
+  orig: 248,75
+  offset: 0, 0
+  index: -1
+spark-20-si-up_04
+  rotate: false
+  xy: 2,2
+  size: 256,75
+  orig: 256,75
+  offset: 0, 0
+  index: -1
+spark-20-si-up_05
+  rotate: false
+  xy: 2,81
+  size: 256,72
+  orig: 256,72
+  offset: 0, 0
+  index: -1
+spark-20-si-up_06
+  rotate: false
+  xy: 2,157
+  size: 256,69
+  orig: 256,69
+  offset: 0, 0
+  index: -1
+spark-20-si-up_07
+  rotate: false
+  xy: 2,230
+  size: 256,69
+  orig: 256,69
+  offset: 0, 0
+  index: -1
+spark-20-si-up_08
+  rotate: false
+  xy: 2,381
+  size: 253,64
+  orig: 253,64
+  offset: 0, 0
+  index: -1
+spark-20-si-up_09
+  rotate: false
+  xy: 262,81
+  size: 245,60
+  orig: 245,60
+  offset: 0, 0
+  index: -1
+spark-20-si-up_10
+  rotate: false
+  xy: 262,157
+  size: 234,51
+  orig: 234,51
+  offset: 0, 0
+  index: -1

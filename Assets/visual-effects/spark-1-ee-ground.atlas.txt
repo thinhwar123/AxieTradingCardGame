@@ -1,0 +1,69 @@
+
+spark-1-ee-ground.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-30-ee-ground_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_01
+  rotate: false
+  xy: 173,332
+  size: 64,51
+  orig: 64,51
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_02
+  rotate: false
+  xy: 2,399
+  size: 106,55
+  orig: 106,55
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_03
+  rotate: false
+  xy: 2,332
+  size: 167,63
+  orig: 167,63
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_04
+  rotate: false
+  xy: 262,168
+  size: 231,78
+  orig: 231,78
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_05
+  rotate: false
+  xy: 262,2
+  size: 237,83
+  orig: 237,83
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_06
+  rotate: false
+  xy: 262,89
+  size: 242,75
+  orig: 242,75
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_07
+  rotate: false
+  xy: 2,262
+  size: 242,66
+  orig: 242,66
+  offset: 0, 0
+  index: -1
+spark-30-ee-ground_08
+  rotate: false
+  xy: 248,262
+  size: 184,30
+  orig: 184,30
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+spark-7-mi-down.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sparks_02_00000
+  rotate: false
+  xy: 382,307
+  size: 124,145
+  orig: 124,145
+  offset: 0, 0
+  index: -1
+sparks_02_00001
+  rotate: false
+  xy: 382,201
+  size: 198,102
+  orig: 198,102
+  offset: 0, 0
+  index: -1
+sparks_02_00002
+  rotate: false
+  xy: 382,2
+  size: 318,195
+  orig: 318,195
+  offset: 0, 0
+  index: -1
+sparks_02_00003
+  rotate: false
+  xy: 2,225
+  size: 361,224
+  orig: 361,224
+  offset: 0, 0
+  index: -1
+sparks_02_00004
+  rotate: false
+  xy: 2,2
+  size: 376,219
+  orig: 376,219
+  offset: 0, 0
+  index: -1

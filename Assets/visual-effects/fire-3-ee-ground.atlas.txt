@@ -1,0 +1,146 @@
+
+fire-3-ee-ground.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire-23-ee-ground_00
+  rotate: false
+  xy: 505,244
+  size: 108,115
+  orig: 108,115
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_01
+  rotate: false
+  xy: 152,642
+  size: 121,179
+  orig: 121,179
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_02
+  rotate: false
+  xy: 727,2
+  size: 137,214
+  orig: 137,214
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_03
+  rotate: false
+  xy: 442,2
+  size: 142,226
+  orig: 142,226
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_04
+  rotate: false
+  xy: 2,729
+  size: 145,235
+  orig: 145,235
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_05
+  rotate: false
+  xy: 2,488
+  size: 146,237
+  orig: 146,237
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_06
+  rotate: false
+  xy: 2,2
+  size: 146,239
+  orig: 146,239
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_07
+  rotate: false
+  xy: 2,245
+  size: 145,239
+  orig: 145,239
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_08
+  rotate: false
+  xy: 152,2
+  size: 143,238
+  orig: 143,238
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_09
+  rotate: false
+  xy: 299,2
+  size: 139,234
+  orig: 139,234
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_10
+  rotate: false
+  xy: 588,2
+  size: 135,228
+  orig: 135,228
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_11
+  rotate: false
+  xy: 868,2
+  size: 132,219
+  orig: 132,219
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_12
+  rotate: false
+  xy: 152,244
+  size: 129,208
+  orig: 129,208
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_13
+  rotate: false
+  xy: 152,456
+  size: 122,182
+  orig: 122,182
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_14
+  rotate: false
+  xy: 152,825
+  size: 116,163
+  orig: 116,163
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_15
+  rotate: false
+  xy: 285,244
+  size: 109,145
+  orig: 109,145
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_16
+  rotate: false
+  xy: 398,244
+  size: 103,121
+  orig: 103,121
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_17
+  rotate: false
+  xy: 617,244
+  size: 81,98
+  orig: 81,98
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_18
+  rotate: false
+  xy: 702,316
+  size: 60,63
+  orig: 60,63
+  offset: 0, 0
+  index: -1
+fire-23-ee-ground_19
+  rotate: false
+  xy: 702,244
+  size: 79,68
+  orig: 79,68
+  offset: 0, 0
+  index: -1

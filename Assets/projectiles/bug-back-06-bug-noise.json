@@ -1,0 +1,146 @@
+{
+"skeleton": {
+	"hash": "qkJEU/FnaAjbFxNFAIp7ah5gmgw",
+	"spine": "3.8.79",
+	"x": -204.54,
+	"y": -218.74,
+	"width": 409.08,
+	"height": 437.49,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -128 },
+	{
+		"name": "pivot",
+		"parent": "root",
+		"y": 128,
+		"scaleX": 0.88,
+		"shearX": -1.8,
+		"shearY": -4.5,
+		"color": "bd1d1dff"
+	},
+	{ "name": "bug-noise-1", "parent": "pivot" },
+	{ "name": "bug-noise-2", "parent": "pivot" },
+	{ "name": "bug-noise-3", "parent": "pivot" },
+	{ "name": "bug-noise-4", "parent": "pivot" },
+	{ "name": "bug-noise-5", "parent": "pivot" }
+],
+"slots": [
+	{ "name": "bug-noise-1", "bone": "bug-noise-1", "attachment": "bug-noise-1" },
+	{ "name": "bug-noise-2", "bone": "bug-noise-2", "attachment": "bug-noise-1" },
+	{ "name": "bug-noise-3", "bone": "bug-noise-3", "attachment": "bug-noise-1" },
+	{ "name": "bug-noise-4", "bone": "bug-noise-4", "attachment": "bug-noise-1" },
+	{ "name": "bug-noise-5", "bone": "bug-noise-5", "attachment": "bug-noise-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bug-noise-1": {
+				"bug-noise-1": { "width": 427, "height": 427 }
+			},
+			"bug-noise-2": {
+				"bug-noise-1": { "width": 427, "height": 427 }
+			},
+			"bug-noise-3": {
+				"bug-noise-1": { "width": 427, "height": 427 }
+			},
+			"bug-noise-4": {
+				"bug-noise-1": { "width": 427, "height": 427 }
+			},
+			"bug-noise-5": {
+				"bug-noise-1": { "width": 427, "height": 427 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"bug-noise-1": {
+				"color": [
+					{ "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"bug-noise-2": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.0667, "color": "ffffff00", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.1333, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"bug-noise-3": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.2333, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.7333, "color": "ffffff00" }
+				]
+			},
+			"bug-noise-4": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2667, "color": "ffffff00", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.3333, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"bug-noise-5": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3667, "color": "ffffff00", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.4333, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.9333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"bug-noise-1": {
+				"scale": [
+					{ "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.5, "x": 0.155, "y": 0.155 }
+				]
+			},
+			"bug-noise-2": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.1333, "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.6333, "x": 0.155, "y": 0.155 }
+				]
+			},
+			"bug-noise-3": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.2333, "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.7333, "x": 0.155, "y": 0.155 }
+				]
+			},
+			"bug-noise-4": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.3333, "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8333, "x": 0.155, "y": 0.155 }
+				]
+			},
+			"bug-noise-5": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.4333, "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.9333, "x": 0.155, "y": 0.155, "curve": "stepped" },
+					{ "time": 1, "x": 0.155, "y": 0.155 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.3333, "name": "hit" }
+		]
+	}
+}
+}

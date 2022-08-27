@@ -1,0 +1,13 @@
+
+bird-tail-06-risky-feather.png
+size: 272,125
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+risky-feather
+  rotate: false
+  xy: 2, 2
+  size: 268, 121
+  orig: 269, 121
+  offset: 0, 0
+  index: -1

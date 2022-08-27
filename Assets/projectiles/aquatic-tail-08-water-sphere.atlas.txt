@@ -1,0 +1,13 @@
+
+aquatic-tail-08-water-sphere.png
+size: 100,99
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-sphere
+  rotate: false
+  xy: 2, 2
+  size: 96, 95
+  orig: 96, 95
+  offset: 0, 0
+  index: -1

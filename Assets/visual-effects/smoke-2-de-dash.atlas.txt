@@ -1,0 +1,111 @@
+
+smoke-2-de-dash.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_03_00000
+  rotate: false
+  xy: 251,161
+  size: 141,22
+  orig: 141,22
+  offset: 0, 0
+  index: -1
+smoke_03_00001
+  rotate: false
+  xy: 744,283
+  size: 211,46
+  orig: 211,46
+  offset: 0, 0
+  index: -1
+smoke_03_00002
+  rotate: false
+  xy: 744,198
+  size: 264,81
+  orig: 264,81
+  offset: 0, 0
+  index: -1
+smoke_03_00003
+  rotate: false
+  xy: 560,389
+  size: 309,122
+  orig: 309,122
+  offset: 0, 0
+  index: -1
+smoke_03_00004
+  rotate: false
+  xy: 248,389
+  size: 308,139
+  orig: 308,139
+  offset: 0, 0
+  index: -1
+smoke_03_00005
+  rotate: false
+  xy: 251,2
+  size: 303,155
+  orig: 303,155
+  offset: 0, 0
+  index: -1
+smoke_03_00006
+  rotate: false
+  xy: 558,2
+  size: 274,169
+  orig: 274,169
+  offset: 0, 0
+  index: -1
+smoke_03_00007
+  rotate: false
+  xy: 496,198
+  size: 244,182
+  orig: 244,182
+  offset: 0, 0
+  index: -1
+smoke_03_00008
+  rotate: false
+  xy: 248,198
+  size: 244,187
+  orig: 244,187
+  offset: 0, 0
+  index: -1
+smoke_03_00009
+  rotate: false
+  xy: 2,2
+  size: 245,192
+  orig: 245,192
+  offset: 0, 0
+  index: -1
+smoke_03_00010
+  rotate: false
+  xy: 2,198
+  size: 242,194
+  orig: 242,194
+  offset: 0, 0
+  index: -1
+smoke_03_00011
+  rotate: false
+  xy: 2,396
+  size: 235,196
+  orig: 235,196
+  offset: 0, 0
+  index: -1
+smoke_03_00012
+  rotate: false
+  xy: 2,596
+  size: 220,193
+  orig: 220,193
+  offset: 0, 0
+  index: -1
+smoke_03_00013
+  rotate: false
+  xy: 836,2
+  size: 169,191
+  orig: 169,191
+  offset: 0, 0
+  index: -1
+smoke_03_00014
+  rotate: false
+  xy: 2,793
+  size: 78,182
+  orig: 78,182
+  offset: 0, 0
+  index: -1

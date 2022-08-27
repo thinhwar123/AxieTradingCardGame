@@ -1,0 +1,66 @@
+{
+"skeleton": {
+	"hash": "49LraVWZMsm9r4i0gX8OWZAhmNc",
+	"spine": "3.8.79",
+	"x": -219,
+	"y": -79.5,
+	"width": 438,
+	"height": 159,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.23 },
+	{ "name": "mail", "parent": "root", "y": 63.23 }
+],
+"slots": [
+	{ "name": "mail", "bone": "mail", "attachment": "mail" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"mail": {
+				"mail": { "width": 438, "height": 159 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"bones": {
+			"mail": {
+				"rotate": [
+					{ "angle": 13, "curve": 0.236, "c4": 0.85 },
+					{ "time": 0.5, "angle": -13, "curve": 0.236, "c4": 0.85 },
+					{ "time": 1, "angle": 13, "curve": 0.236, "c4": 0.85 },
+					{ "time": 1.5 }
+				],
+				"translate": [
+					{ "y": 357, "curve": 0.387, "c3": 0.613 },
+					{ "time": 0.5, "x": -263, "y": 238, "curve": 0.387, "c3": 0.613 },
+					{ "time": 1, "x": 263, "y": 119, "curve": 0.387, "c3": 0.613 },
+					{ "time": 1.5 }
+				]
+			},
+			"root": {
+				"translate": [
+					{ "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.2667, "y": -21.39, "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.5, "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.7667, "y": -21.39, "curve": 0.309, "c3": 0.691 },
+					{ "time": 1, "curve": 0.309, "c3": 0.691 },
+					{ "time": 1.2333, "y": -21.39, "curve": 0.309, "c3": 0.691 },
+					{ "time": 1.5 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 1.3333, "name": "hit" }
+		]
+	}
+}
+}

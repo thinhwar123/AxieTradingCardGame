@@ -1,0 +1,13 @@
+
+bird-horn-02-egg-bomb.png
+size: 159,179
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+egg-drop-1
+  rotate: false
+  xy: 2, 2
+  size: 155, 175
+  orig: 155, 175
+  offset: 0, 0
+  index: -1

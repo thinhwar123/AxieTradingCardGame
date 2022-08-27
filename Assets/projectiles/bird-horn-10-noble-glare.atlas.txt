@@ -1,0 +1,20 @@
+
+bird-horn-10-noble-glare.png
+size: 281,157
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ref-1
+  rotate: false
+  xy: 2, 2
+  size: 154, 153
+  orig: 154, 153
+  offset: 0, 0
+  index: -1
+ref-2
+  rotate: false
+  xy: 158, 22
+  size: 121, 133
+  orig: 121, 133
+  offset: 0, 0
+  index: -1

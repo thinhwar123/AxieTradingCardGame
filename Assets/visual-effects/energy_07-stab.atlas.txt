@@ -1,0 +1,48 @@
+
+energy_07-stab.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy_07_00000
+  rotate: false
+  xy: 2,179
+  size: 96,50
+  orig: 96,50
+  offset: 0, 0
+  index: -1
+energy_07_00001
+  rotate: false
+  xy: 334,2
+  size: 161,43
+  orig: 161,43
+  offset: 0, 0
+  index: -1
+energy_07_00002
+  rotate: false
+  xy: 2,50
+  size: 304,43
+  orig: 304,43
+  offset: 0, 0
+  index: -1
+energy_07_00003
+  rotate: false
+  xy: 2,2
+  size: 328,44
+  orig: 328,44
+  offset: 0, 0
+  index: -1
+energy_07_00004
+  rotate: false
+  xy: 2,97
+  size: 318,38
+  orig: 318,38
+  offset: 0, 0
+  index: -1
+energy_07_00005
+  rotate: false
+  xy: 2,139
+  size: 317,36
+  orig: 317,36
+  offset: 0, 0
+  index: -1

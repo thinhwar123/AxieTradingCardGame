@@ -1,0 +1,230 @@
+
+water-2-mi-poison.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-20-mi-poison_00
+  rotate: false
+  xy: 468,302
+  size: 28,17
+  orig: 28,17
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_01
+  rotate: false
+  xy: 265,482
+  size: 28,21
+  orig: 28,21
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_02
+  rotate: false
+  xy: 265,452
+  size: 27,26
+  orig: 27,26
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_03
+  rotate: false
+  xy: 422,415
+  size: 52,32
+  orig: 52,32
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_04
+  rotate: false
+  xy: 422,373
+  size: 53,38
+  orig: 53,38
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_05
+  rotate: false
+  xy: 208,452
+  size: 53,54
+  orig: 53,54
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_06
+  rotate: false
+  xy: 110,437
+  size: 52,71
+  orig: 52,71
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_07
+  rotate: false
+  xy: 416,118
+  size: 93,76
+  orig: 93,76
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_08
+  rotate: false
+  xy: 319,118
+  size: 93,81
+  orig: 93,81
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_09
+  rotate: false
+  xy: 400,205
+  size: 92,85
+  orig: 92,85
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_10
+  rotate: false
+  xy: 304,205
+  size: 92,89
+  orig: 92,89
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_11
+  rotate: false
+  xy: 208,205
+  size: 92,93
+  orig: 92,93
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_12
+  rotate: false
+  xy: 110,333
+  size: 93,100
+  orig: 93,100
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_13
+  rotate: false
+  xy: 110,227
+  size: 92,102
+  orig: 92,102
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_14
+  rotate: false
+  xy: 110,118
+  size: 94,105
+  orig: 94,105
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_15
+  rotate: false
+  xy: 411,2
+  size: 94,107
+  orig: 94,107
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_16
+  rotate: false
+  xy: 312,2
+  size: 95,109
+  orig: 95,109
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_17
+  rotate: false
+  xy: 212,2
+  size: 96,111
+  orig: 96,111
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_18
+  rotate: false
+  xy: 110,2
+  size: 98,112
+  orig: 98,112
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_19
+  rotate: false
+  xy: 2,380
+  size: 100,117
+  orig: 100,117
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_20
+  rotate: false
+  xy: 2,256
+  size: 102,120
+  orig: 102,120
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_21
+  rotate: false
+  xy: 2,130
+  size: 103,122
+  orig: 103,122
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_22
+  rotate: false
+  xy: 2,2
+  size: 104,124
+  orig: 104,124
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_23
+  rotate: false
+  xy: 208,118
+  size: 107,83
+  orig: 107,83
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_24
+  rotate: false
+  xy: 311,441
+  size: 106,61
+  orig: 106,61
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_25
+  rotate: false
+  xy: 311,373
+  size: 107,64
+  orig: 107,64
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_26
+  rotate: false
+  xy: 311,302
+  size: 106,67
+  orig: 106,67
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_27
+  rotate: false
+  xy: 208,302
+  size: 99,73
+  orig: 99,73
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_28
+  rotate: false
+  xy: 421,302
+  size: 43,61
+  orig: 43,61
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_29
+  rotate: false
+  xy: 260,379
+  size: 47,68
+  orig: 47,68
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_30
+  rotate: false
+  xy: 208,379
+  size: 48,69
+  orig: 48,69
+  offset: 0, 0
+  index: -1
+water-20-mi-poison_31
+  rotate: false
+  xy: 166,437
+  size: 32,68
+  orig: 32,68
+  offset: 0, 0
+  index: -1

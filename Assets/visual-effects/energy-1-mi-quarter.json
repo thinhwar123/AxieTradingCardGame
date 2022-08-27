@@ -1,0 +1,20 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "energy_24_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "energy_24_00000": {"x": 14, "y": -1, "width": 63, "height": 64},
+          "energy_24_00001": {"x": 10, "y": 3, "width": 165, "height": 179},
+          "energy_24_00002": {"x": 10, "y": 4, "width": 189, "height": 210},
+          "energy_24_00003": {"x": 11, "y": 1, "width": 197, "height": 225}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {"slots": {"frame": {"attachment": [{"time": 0.0, "name": "energy_24_00000"}, {"time": 0.1, "name": "energy_24_00001"}, {"time": 0.2, "name": "energy_24_00002"}, {"time": 0.30000000000000004, "name": "energy_24_00003"}]}}}
+  }
+}

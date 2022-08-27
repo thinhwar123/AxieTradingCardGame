@@ -1,0 +1,83 @@
+
+water_12-slash.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_12_00000
+  rotate: false
+  xy: 465,215
+  size: 109,48
+  orig: 109,48
+  offset: 0, 0
+  index: -1
+water_12_00001
+  rotate: false
+  xy: 302,2
+  size: 159,183
+  orig: 159,183
+  offset: 0, 0
+  index: -1
+water_12_00002
+  rotate: false
+  xy: 151,2
+  size: 147,205
+  orig: 147,205
+  offset: 0, 0
+  index: -1
+water_12_00003
+  rotate: false
+  xy: 2,2
+  size: 145,209
+  orig: 145,209
+  offset: 0, 0
+  index: -1
+water_12_00004
+  rotate: false
+  xy: 465,2
+  size: 122,209
+  orig: 122,209
+  offset: 0, 0
+  index: -1
+water_12_00005
+  rotate: false
+  xy: 151,211
+  size: 134,209
+  orig: 134,209
+  offset: 0, 0
+  index: -1
+water_12_00006
+  rotate: false
+  xy: 2,215
+  size: 142,208
+  orig: 142,208
+  offset: 0, 0
+  index: -1
+water_12_00007
+  rotate: false
+  xy: 302,189
+  size: 146,177
+  orig: 146,177
+  offset: 0, 0
+  index: -1
+water_12_00008
+  rotate: false
+  xy: 302,370
+  size: 146,134
+  orig: 146,134
+  offset: 0, 0
+  index: -1
+water_12_00009
+  rotate: false
+  xy: 2,427
+  size: 142,79
+  orig: 142,79
+  offset: 0, 0
+  index: -1
+water_12_00010
+  rotate: false
+  xy: 151,424
+  size: 106,54
+  orig: 106,54
+  offset: 0, 0
+  index: -1

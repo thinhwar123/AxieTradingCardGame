@@ -1,0 +1,37 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "spark-23-me-stab_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "spark-23-me-stab_00": {"x": 1, "y": 95, "width": 59, "height": 66},
+          "spark-23-me-stab_01": {"x": 3, "y": 34, "width": 69, "height": 168},
+          "spark-23-me-stab_02": {"x": 5, "y": 13, "width": 75, "height": 190},
+          "spark-23-me-stab_03": {"x": 5, "y": -1, "width": 75, "height": 192},
+          "spark-23-me-stab_04": {"x": 5, "y": -23, "width": 73, "height": 162},
+          "spark-23-me-stab_05": {"x": 2, "y": -30, "width": 67, "height": 160},
+          "spark-23-me-stab_06": {"x": 1, "y": -37, "width": 61, "height": 155},
+          "spark-23-me-stab_07": {"x": 0, "y": -38, "width": 57, "height": 157},
+          "spark-23-me-stab_08": {"x": 0, "y": -69, "width": 53, "height": 98},
+          "spark-23-me-stab_09": {"x": 0, "y": -72, "width": 46, "height": 89},
+          "spark-23-me-stab_10": {"x": 2, "y": -73, "width": 37, "height": 82}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "spark-23-me-stab_00"}, {"time": 0.1, "name": "spark-23-me-stab_01"}, {"time": 0.2, "name": "spark-23-me-stab_02"}, {"time": 0.30000000000000004, "name": "spark-23-me-stab_03"},
+            {"time": 0.4, "name": "spark-23-me-stab_04"}, {"time": 0.5, "name": "spark-23-me-stab_05"}, {"time": 0.6000000000000001, "name": "spark-23-me-stab_06"}, {"time": 0.7000000000000001, "name": "spark-23-me-stab_07"},
+            {"time": 0.8, "name": "spark-23-me-stab_08"}, {"time": 0.9, "name": "spark-23-me-stab_09"}, {"time": 1.0, "name": "spark-23-me-stab_10"}
+          ]
+        }
+      }
+    }
+  }
+}

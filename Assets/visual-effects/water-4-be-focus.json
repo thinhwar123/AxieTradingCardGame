@@ -1,0 +1,45 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water_22_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water_22_00000": {"x": -95, "y": 2, "width": 33, "height": 94},
+          "water_22_00001": {"x": -65, "y": 38, "width": 87, "height": 131},
+          "water_22_00002": {"x": -14, "y": 46, "width": 188, "height": 140},
+          "water_22_00003": {"x": -1, "y": 15, "width": 209, "height": 198},
+          "water_22_00004": {"x": 1, "y": 7, "width": 212, "height": 217},
+          "water_22_00005": {"x": 9, "y": 2, "width": 209, "height": 219},
+          "water_22_00006": {"x": 8, "y": 1, "width": 212, "height": 219},
+          "water_22_00007": {"x": 8, "y": -1, "width": 216, "height": 221},
+          "water_22_00008": {"x": 10, "y": -21, "width": 215, "height": 182},
+          "water_22_00009": {"x": 8, "y": -19, "width": 213, "height": 184},
+          "water_22_00010": {"x": 3, "y": -18, "width": 216, "height": 185},
+          "water_22_00011": {"x": -2, "y": -12, "width": 210, "height": 177},
+          "water_22_00012": {"x": -15, "y": 9, "width": 173, "height": 139},
+          "water_22_00013": {"x": -19, "y": 14, "width": 183, "height": 130},
+          "water_22_00014": {"x": -15, "y": 15, "width": 165, "height": 128},
+          "water_22_00015": {"x": -20, "y": 15, "width": 154, "height": 128},
+          "water_22_00016": {"x": 3, "y": 15, "width": 107, "height": 128},
+          "water_22_00017": {"x": 5, "y": 22, "width": 64, "height": 112}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water_22_00000"}, {"time": 0.1, "name": "water_22_00001"}, {"time": 0.2, "name": "water_22_00002"}, {"time": 0.30000000000000004, "name": "water_22_00003"}, {"time": 0.4, "name": "water_22_00004"},
+            {"time": 0.5, "name": "water_22_00005"}, {"time": 0.6000000000000001, "name": "water_22_00006"}, {"time": 0.7000000000000001, "name": "water_22_00007"}, {"time": 0.8, "name": "water_22_00008"},
+            {"time": 0.9, "name": "water_22_00009"}, {"time": 1.0, "name": "water_22_00010"}, {"time": 1.1, "name": "water_22_00011"}, {"time": 1.2000000000000002, "name": "water_22_00012"}, {"time": 1.3, "name": "water_22_00013"},
+            {"time": 1.4000000000000001, "name": "water_22_00014"}, {"time": 1.5, "name": "water_22_00015"}, {"time": 1.6, "name": "water_22_00016"}, {"time": 1.7000000000000002, "name": "water_22_00017"}
+          ]
+        }
+      }
+    }
+  }
+}

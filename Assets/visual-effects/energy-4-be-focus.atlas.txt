@@ -1,0 +1,118 @@
+
+energy-4-be-focus.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy-14-be-focus_00
+  rotate: false
+  xy: 2,2
+  size: 243,255
+  orig: 243,255
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_01
+  rotate: false
+  xy: 2,261
+  size: 236,256
+  orig: 236,256
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_02
+  rotate: false
+  xy: 2,521
+  size: 237,254
+  orig: 237,254
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_03
+  rotate: false
+  xy: 249,2
+  size: 233,251
+  orig: 233,251
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_04
+  rotate: false
+  xy: 2,779
+  size: 231,243
+  orig: 231,243
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_05
+  rotate: false
+  xy: 486,2
+  size: 228,239
+  orig: 228,239
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_06
+  rotate: false
+  xy: 718,2
+  size: 222,233
+  orig: 222,233
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_07
+  rotate: false
+  xy: 249,257
+  size: 217,222
+  orig: 217,222
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_08
+  rotate: false
+  xy: 249,483
+  size: 210,209
+  orig: 210,209
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_09
+  rotate: false
+  xy: 249,696
+  size: 197,190
+  orig: 197,190
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_10
+  rotate: false
+  xy: 470,257
+  size: 189,181
+  orig: 189,181
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_11
+  rotate: false
+  xy: 663,257
+  size: 185,176
+  orig: 185,176
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_12
+  rotate: false
+  xy: 584,442
+  size: 106,106
+  orig: 106,106
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_13
+  rotate: false
+  xy: 470,442
+  size: 110,110
+  orig: 110,110
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_14
+  rotate: false
+  xy: 249,890
+  size: 112,112
+  orig: 112,112
+  offset: 0, 0
+  index: -1
+energy-14-be-focus_15
+  rotate: false
+  xy: 852,257
+  size: 112,112
+  orig: 112,112
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+
+water_03-bubble.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_03_00000
+  rotate: false
+  xy: 270,679
+  size: 160,158
+  orig: 160,158
+  offset: 0, 0
+  index: -1
+water_03_00001
+  rotate: false
+  xy: 270,469
+  size: 160,206
+  orig: 160,206
+  offset: 0, 0
+  index: -1
+water_03_00002
+  rotate: false
+  xy: 434,469
+  size: 163,171
+  orig: 163,171
+  offset: 0, 0
+  index: -1
+water_03_00003
+  rotate: false
+  xy: 706,262
+  size: 171,171
+  orig: 171,171
+  offset: 0, 0
+  index: -1
+water_03_00004
+  rotate: false
+  xy: 516,262
+  size: 186,177
+  orig: 186,177
+  offset: 0, 0
+  index: -1
+water_03_00005
+  rotate: false
+  xy: 270,262
+  size: 242,203
+  orig: 242,203
+  offset: 0, 0
+  index: -1
+water_03_00006
+  rotate: false
+  xy: 2,737
+  size: 257,217
+  orig: 257,217
+  offset: 0, 0
+  index: -1
+water_03_00007
+  rotate: false
+  xy: 2,502
+  size: 263,231
+  orig: 263,231
+  offset: 0, 0
+  index: -1
+water_03_00008
+  rotate: false
+  xy: 735,2
+  size: 268,236
+  orig: 268,236
+  offset: 0, 0
+  index: -1
+water_03_00009
+  rotate: false
+  xy: 461,2
+  size: 270,239
+  orig: 270,239
+  offset: 0, 0
+  index: -1
+water_03_00010
+  rotate: false
+  xy: 2,262
+  size: 264,236
+  orig: 264,236
+  offset: 0, 0
+  index: -1
+water_03_00011
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

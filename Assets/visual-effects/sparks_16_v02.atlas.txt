@@ -1,0 +1,48 @@
+
+sparks_16_v02.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sparks_16_v02_00000
+  rotate: false
+  xy: 2,451
+  size: 91,53
+  orig: 91,53
+  offset: 0, 0
+  index: -1
+sparks_16_v02_00001
+  rotate: false
+  xy: 2,262
+  size: 283,185
+  orig: 283,185
+  offset: 0, 0
+  index: -1
+sparks_16_v02_00002
+  rotate: false
+  xy: 461,2
+  size: 279,170
+  orig: 279,170
+  offset: 0, 0
+  index: -1
+sparks_16_v02_00003
+  rotate: false
+  xy: 744,2
+  size: 275,170
+  orig: 275,170
+  offset: 0, 0
+  index: -1
+sparks_16_v02_00004
+  rotate: false
+  xy: 289,262
+  size: 99,101
+  orig: 99,101
+  offset: 0, 0
+  index: -1
+sparks_16_v02_00005
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

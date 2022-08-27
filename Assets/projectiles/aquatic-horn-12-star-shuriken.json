@@ -1,0 +1,58 @@
+{
+"skeleton": {
+	"hash": "DS3NO43TcYiW81m+SSSnJdPZIGA",
+	"spine": "3.8.79",
+	"x": -319.52,
+	"y": -122.83,
+	"width": 661.31,
+	"height": 260.71,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -128.13 },
+	{ "name": "star-shuriken-pivot", "parent": "root", "y": 128.13, "scaleY": 0.66, "shearY": -33 },
+	{ "name": "star-shuriken", "parent": "star-shuriken-pivot" }
+],
+"slots": [
+	{ "name": "star-shuriken", "bone": "star-shuriken", "attachment": "star-shuriken" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"star-shuriken": {
+				"star-shuriken": { "x": 6.24, "y": 13.6, "width": 492, "height": 471 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"bones": {
+			"star-shuriken": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "angle": 120 },
+					{ "time": 0.2667, "angle": -120 },
+					{ "time": 0.4 },
+					{ "time": 0.5333, "angle": 120 },
+					{ "time": 0.6667, "angle": -120 },
+					{ "time": 0.8 },
+					{ "time": 0.9333, "angle": 120 },
+					{ "time": 1.0667, "angle": -120 },
+					{ "time": 1.2 },
+					{ "time": 1.3333, "angle": 120 }
+				]
+			},
+			"star-shuriken-pivot": {
+				"shear": [
+					{ "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.6667, "y": -20, "curve": 0.313, "c3": 0.699 },
+					{ "time": 1.3333 }
+				]
+			}
+		}
+	}
+}
+}

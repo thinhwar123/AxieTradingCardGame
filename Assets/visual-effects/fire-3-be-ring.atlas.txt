@@ -1,0 +1,83 @@
+
+fire-3-be-ring.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire_10_00000
+  rotate: false
+  xy: 330,703
+  size: 31,27
+  orig: 31,27
+  offset: 0, 0
+  index: -1
+fire_10_00001
+  rotate: false
+  xy: 258,703
+  size: 68,66
+  orig: 68,66
+  offset: 0, 0
+  index: -1
+fire_10_00002
+  rotate: false
+  xy: 258,500
+  size: 219,199
+  orig: 219,199
+  offset: 0, 0
+  index: -1
+fire_10_00003
+  rotate: false
+  xy: 790,2
+  size: 229,225
+  orig: 229,225
+  offset: 0, 0
+  index: -1
+fire_10_00004
+  rotate: false
+  xy: 258,260
+  size: 235,236
+  orig: 235,236
+  offset: 0, 0
+  index: -1
+fire_10_00005
+  rotate: false
+  xy: 2,769
+  size: 240,239
+  orig: 240,239
+  offset: 0, 0
+  index: -1
+fire_10_00006
+  rotate: false
+  xy: 2,517
+  size: 248,248
+  orig: 248,248
+  offset: 0, 0
+  index: -1
+fire_10_00007
+  rotate: false
+  xy: 530,2
+  size: 256,252
+  orig: 256,252
+  offset: 0, 0
+  index: -1
+fire_10_00008
+  rotate: false
+  xy: 2,2
+  size: 261,254
+  orig: 261,254
+  offset: 0, 0
+  index: -1
+fire_10_00009
+  rotate: false
+  xy: 267,2
+  size: 259,254
+  orig: 259,254
+  offset: 0, 0
+  index: -1
+fire_10_00010
+  rotate: false
+  xy: 2,260
+  size: 252,253
+  orig: 252,253
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,97 @@
+
+spark-9-si-rear.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-9-si-rear_00
+  rotate: false
+  xy: 732,353
+  size: 55,81
+  orig: 55,81
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_01
+  rotate: false
+  xy: 857,2
+  size: 147,157
+  orig: 147,157
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_02
+  rotate: false
+  xy: 653,2
+  size: 200,194
+  orig: 200,194
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_03
+  rotate: false
+  xy: 225,2
+  size: 212,216
+  orig: 212,216
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_04
+  rotate: false
+  xy: 2,2
+  size: 219,224
+  orig: 219,224
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_05
+  rotate: false
+  xy: 2,230
+  size: 217,223
+  orig: 217,223
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_06
+  rotate: false
+  xy: 441,2
+  size: 208,218
+  orig: 208,218
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_07
+  rotate: false
+  xy: 441,224
+  size: 208,218
+  orig: 208,218
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_08
+  rotate: false
+  xy: 225,222
+  size: 209,219
+  orig: 209,219
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_09
+  rotate: false
+  xy: 653,200
+  size: 184,149
+  orig: 184,149
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_10
+  rotate: false
+  xy: 653,353
+  size: 75,148
+  orig: 75,148
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_11
+  rotate: false
+  xy: 791,353
+  size: 36,79
+  orig: 36,79
+  offset: 0, 0
+  index: -1
+spark-9-si-rear_12
+  rotate: false
+  xy: 2,457
+  size: 24,24
+  orig: 24,24
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+
+spark-25-si-tri.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-25-si-tri_00
+  rotate: false
+  xy: 339,453
+  size: 64,66
+  orig: 64,66
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_01
+  rotate: false
+  xy: 251,453
+  size: 84,140
+  orig: 84,140
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_02
+  rotate: false
+  xy: 251,252
+  size: 176,197
+  orig: 176,197
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_03
+  rotate: false
+  xy: 2,740
+  size: 222,226
+  orig: 222,226
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_04
+  rotate: false
+  xy: 2,497
+  size: 242,239
+  orig: 242,239
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_05
+  rotate: false
+  xy: 508,2
+  size: 249,246
+  orig: 249,246
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_06
+  rotate: false
+  xy: 2,2
+  size: 249,246
+  orig: 249,246
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_07
+  rotate: false
+  xy: 255,2
+  size: 249,246
+  orig: 249,246
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_08
+  rotate: false
+  xy: 761,2
+  size: 248,244
+  orig: 248,244
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_09
+  rotate: false
+  xy: 2,252
+  size: 245,241
+  orig: 245,241
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_10
+  rotate: false
+  xy: 251,597
+  size: 93,84
+  orig: 93,84
+  offset: 0, 0
+  index: -1
+spark-25-si-tri_11
+  rotate: false
+  xy: 251,685
+  size: 90,80
+  orig: 90,80
+  offset: 0, 0
+  index: -1

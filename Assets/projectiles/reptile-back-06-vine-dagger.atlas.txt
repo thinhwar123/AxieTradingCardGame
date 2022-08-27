@@ -1,0 +1,13 @@
+
+reptile-back-06-vine-dagger.png
+size: 275,79
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+vine-dagger
+  rotate: false
+  xy: 2, 2
+  size: 271, 75
+  orig: 271, 75
+  offset: 0, 0
+  index: -1

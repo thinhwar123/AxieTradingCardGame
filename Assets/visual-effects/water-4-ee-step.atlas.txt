@@ -1,0 +1,125 @@
+
+water-4-ee-step.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-4-ee-step00
+  rotate: false
+  xy: 120,355
+  size: 31,20
+  orig: 31,20
+  offset: 0, 0
+  index: -1
+water-4-ee-step01
+  rotate: false
+  xy: 2,437
+  size: 87,47
+  orig: 87,47
+  offset: 0, 0
+  index: -1
+water-4-ee-step02
+  rotate: false
+  xy: 2,355
+  size: 114,78
+  orig: 114,78
+  offset: 0, 0
+  index: -1
+water-4-ee-step03
+  rotate: false
+  xy: 2,269
+  size: 134,82
+  orig: 134,82
+  offset: 0, 0
+  index: -1
+water-4-ee-step04
+  rotate: false
+  xy: 2,181
+  size: 146,84
+  orig: 146,84
+  offset: 0, 0
+  index: -1
+water-4-ee-step05
+  rotate: false
+  xy: 2,92
+  size: 155,85
+  orig: 155,85
+  offset: 0, 0
+  index: -1
+water-4-ee-step06
+  rotate: false
+  xy: 2,2
+  size: 159,86
+  orig: 159,86
+  offset: 0, 0
+  index: -1
+water-4-ee-step07
+  rotate: false
+  xy: 165,2
+  size: 164,83
+  orig: 164,83
+  offset: 0, 0
+  index: -1
+water-4-ee-step08
+  rotate: false
+  xy: 333,2
+  size: 169,80
+  orig: 169,80
+  offset: 0, 0
+  index: -1
+water-4-ee-step09
+  rotate: false
+  xy: 506,2
+  size: 175,73
+  orig: 175,73
+  offset: 0, 0
+  index: -1
+water-4-ee-step10
+  rotate: false
+  xy: 506,79
+  size: 177,67
+  orig: 177,67
+  offset: 0, 0
+  index: -1
+water-4-ee-step11
+  rotate: false
+  xy: 685,2
+  size: 185,65
+  orig: 185,65
+  offset: 0, 0
+  index: -1
+water-4-ee-step12
+  rotate: false
+  xy: 687,79
+  size: 185,63
+  orig: 185,63
+  offset: 0, 0
+  index: -1
+water-4-ee-step13
+  rotate: false
+  xy: 506,150
+  size: 194,58
+  orig: 194,58
+  offset: 0, 0
+  index: -1
+water-4-ee-step14
+  rotate: false
+  xy: 704,150
+  size: 196,52
+  orig: 196,52
+  offset: 0, 0
+  index: -1
+water-4-ee-step15
+  rotate: false
+  xy: 333,86
+  size: 165,47
+  orig: 165,47
+  offset: 0, 0
+  index: -1
+water-4-ee-step16
+  rotate: false
+  xy: 165,89
+  size: 97,17
+  orig: 97,17
+  offset: 0, 0
+  index: -1

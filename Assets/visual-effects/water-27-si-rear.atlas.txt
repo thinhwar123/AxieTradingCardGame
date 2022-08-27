@@ -1,0 +1,76 @@
+
+water-27-si-rear.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-27-si-rear_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+water-27-si-rear_01
+  rotate: false
+  xy: 408,2
+  size: 90,44
+  orig: 90,44
+  offset: 0, 0
+  index: -1
+water-27-si-rear_02
+  rotate: false
+  xy: 152,262
+  size: 127,66
+  orig: 127,66
+  offset: 0, 0
+  index: -1
+water-27-si-rear_03
+  rotate: false
+  xy: 2,262
+  size: 146,100
+  orig: 146,100
+  offset: 0, 0
+  index: -1
+water-27-si-rear_04
+  rotate: false
+  xy: 262,124
+  size: 134,111
+  orig: 134,111
+  offset: 0, 0
+  index: -1
+water-27-si-rear_05
+  rotate: false
+  xy: 262,2
+  size: 142,118
+  orig: 142,118
+  offset: 0, 0
+  index: -1
+water-27-si-rear_06
+  rotate: false
+  xy: 2,366
+  size: 120,88
+  orig: 120,88
+  offset: 0, 0
+  index: -1
+water-27-si-rear_07
+  rotate: false
+  xy: 152,332
+  size: 117,68
+  orig: 117,68
+  offset: 0, 0
+  index: -1
+water-27-si-rear_08
+  rotate: false
+  xy: 152,404
+  size: 112,63
+  orig: 112,63
+  offset: 0, 0
+  index: -1
+water-27-si-rear_09
+  rotate: false
+  xy: 408,50
+  size: 32,43
+  orig: 32,43
+  offset: 0, 0
+  index: -1

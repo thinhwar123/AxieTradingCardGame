@@ -1,0 +1,244 @@
+
+electric-7-sre-ball.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-7-sre-ball_00
+  rotate: false
+  xy: 1822,2
+  size: 223,246
+  orig: 223,246
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_01
+  rotate: false
+  xy: 2,1562
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_02
+  rotate: false
+  xy: 522,1198
+  size: 215,240
+  orig: 215,240
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_03
+  rotate: false
+  xy: 1302,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_04
+  rotate: false
+  xy: 262,522
+  size: 256,225
+  orig: 256,225
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_05
+  rotate: false
+  xy: 2,1302
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_06
+  rotate: false
+  xy: 522,522
+  size: 256,216
+  orig: 256,216
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_07
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_08
+  rotate: false
+  xy: 1042,522
+  size: 256,205
+  orig: 256,205
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_09
+  rotate: false
+  xy: 1562,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_10
+  rotate: false
+  xy: 262,1209
+  size: 256,217
+  orig: 256,217
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_11
+  rotate: false
+  xy: 2,1042
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_12
+  rotate: false
+  xy: 2,782
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_13
+  rotate: false
+  xy: 262,980
+  size: 253,225
+  orig: 253,225
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_14
+  rotate: false
+  xy: 782,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_15
+  rotate: false
+  xy: 522,970
+  size: 235,224
+  orig: 235,224
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_16
+  rotate: false
+  xy: 1042,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_17
+  rotate: false
+  xy: 262,1430
+  size: 229,242
+  orig: 229,242
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_18
+  rotate: false
+  xy: 1042,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_19
+  rotate: false
+  xy: 1822,262
+  size: 215,240
+  orig: 215,240
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_20
+  rotate: false
+  xy: 1302,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_21
+  rotate: false
+  xy: 1562,262
+  size: 256,225
+  orig: 256,225
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_22
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_23
+  rotate: false
+  xy: 262,1676
+  size: 256,216
+  orig: 256,216
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_24
+  rotate: false
+  xy: 782,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_25
+  rotate: false
+  xy: 782,522
+  size: 256,205
+  orig: 256,205
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_26
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_27
+  rotate: false
+  xy: 2,1822
+  size: 256,217
+  orig: 256,217
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_28
+  rotate: false
+  xy: 522,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_29
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_30
+  rotate: false
+  xy: 262,751
+  size: 253,225
+  orig: 253,225
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_31
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_32
+  rotate: false
+  xy: 522,742
+  size: 235,224
+  orig: 235,224
+  offset: 0, 0
+  index: -1
+electric-7-sre-ball_33
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1

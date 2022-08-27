@@ -1,0 +1,167 @@
+
+fire-4-mi-round.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire-32-mi-round_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_01
+  rotate: false
+  xy: 1042,387
+  size: 147,150
+  orig: 147,150
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_02
+  rotate: false
+  xy: 1528,2
+  size: 201,192
+  orig: 201,192
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_03
+  rotate: false
+  xy: 262,782
+  size: 239,226
+  orig: 239,226
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_04
+  rotate: false
+  xy: 1042,2
+  size: 255,244
+  orig: 255,244
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_05
+  rotate: false
+  xy: 782,514
+  size: 256,249
+  orig: 256,249
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_06
+  rotate: false
+  xy: 782,258
+  size: 256,252
+  orig: 256,252
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_07
+  rotate: false
+  xy: 522,522
+  size: 256,254
+  orig: 256,254
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_08
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_09
+  rotate: false
+  xy: 522,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_10
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_11
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_12
+  rotate: false
+  xy: 262,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_13
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_14
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_15
+  rotate: false
+  xy: 782,2
+  size: 256,252
+  orig: 256,252
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_16
+  rotate: false
+  xy: 782,767
+  size: 254,246
+  orig: 254,246
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_17
+  rotate: false
+  xy: 2,782
+  size: 250,237
+  orig: 250,237
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_18
+  rotate: false
+  xy: 522,780
+  size: 239,220
+  orig: 239,220
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_19
+  rotate: false
+  xy: 1301,2
+  size: 223,201
+  orig: 223,201
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_20
+  rotate: false
+  xy: 1733,2
+  size: 200,169
+  orig: 200,169
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_21
+  rotate: false
+  xy: 1042,250
+  size: 167,133
+  orig: 167,133
+  offset: 0, 0
+  index: -1
+fire-32-mi-round_22
+  rotate: false
+  xy: 1733,175
+  size: 148,60
+  orig: 148,60
+  offset: 0, 0
+  index: -1

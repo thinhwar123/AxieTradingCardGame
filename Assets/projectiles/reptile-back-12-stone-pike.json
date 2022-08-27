@@ -1,0 +1,229 @@
+{
+"skeleton": {
+	"hash": "ENytwS1nCGslDnH5R/Gk3fvsbCk",
+	"spine": "3.8.79",
+	"x": -439.59,
+	"y": -120.66,
+	"width": 806,
+	"height": 514.74,
+	"images": "",
+	"audio": "/Users/Redness/Desktop/new-fx/bug/twin-needle"
+},
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "[back]stone-pike-1",
+		"parent": "root",
+		"rotation": 35.24,
+		"x": -226.7,
+		"y": 0.36,
+		"scaleX": 0.5043,
+		"scaleY": 0.5043
+	},
+	{
+		"name": "stone-pike-2",
+		"parent": "root",
+		"rotation": 25.96,
+		"x": -141.81,
+		"y": -55.99,
+		"scaleX": 0.7401,
+		"scaleY": 0.7401
+	},
+	{
+		"name": "stone-pike-3",
+		"parent": "root",
+		"rotation": -16.24,
+		"x": 87.72,
+		"y": -79.08,
+		"scaleX": 0.8476,
+		"scaleY": 0.8476
+	},
+	{
+		"name": "[back]stone-pike-4",
+		"parent": "root",
+		"rotation": -16.72,
+		"x": 58.89,
+		"y": 30.87,
+		"scaleX": 0.5704,
+		"scaleY": 0.5704
+	},
+	{
+		"name": "stone-pike-5",
+		"parent": "root",
+		"rotation": 6.07,
+		"x": -31.56,
+		"y": -92.83,
+		"scaleX": 0.9726,
+		"scaleY": 0.9726
+	},
+	{
+		"name": "[back]stone-pike-6",
+		"parent": "root",
+		"rotation": 11.43,
+		"x": -99.65,
+		"y": 35.74,
+		"scaleX": 0.5573,
+		"scaleY": 0.5573
+	},
+	{
+		"name": "[back]stone-pike-7",
+		"parent": "root",
+		"rotation": -31.81,
+		"x": 203.63,
+		"y": 3.73,
+		"scaleX": 0.6051,
+		"scaleY": 0.6051
+	}
+],
+"slots": [
+	{ "name": "stone-pike-clip", "bone": "root", "attachment": "stone-pike-clip" },
+	{ "name": "stone-pike-1", "bone": "[back]stone-pike-1", "attachment": "images/stone-pike" },
+	{ "name": "stone-pike-4", "bone": "[back]stone-pike-4", "attachment": "images/stone-pike" },
+	{ "name": "stone-pike-7", "bone": "[back]stone-pike-7", "attachment": "images/stone-pike" },
+	{ "name": "stone-pike-6", "bone": "[back]stone-pike-6", "attachment": "images/stone-pike" },
+	{ "name": "stone-pike-2", "bone": "stone-pike-2", "attachment": "images/stone-pike" },
+	{ "name": "stone-pike-3", "bone": "stone-pike-3", "attachment": "images/stone-pike" },
+	{ "name": "stone-pike-5", "bone": "stone-pike-5", "attachment": "images/stone-pike" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"stone-pike-1": {
+				"images/stone-pike": { "x": -20.88, "y": 220.81, "scaleX": -1, "rotation": 23.07, "width": 270, "height": 486 }
+			},
+			"stone-pike-2": {
+				"images/stone-pike": { "x": 6.09, "y": 224.74, "scaleX": -1, "rotation": 17.03, "width": 270, "height": 486 }
+			},
+			"stone-pike-3": {
+				"images/stone-pike": { "x": 6.09, "y": 224.74, "scaleX": -1, "rotation": 17.03, "width": 270, "height": 486 }
+			},
+			"stone-pike-4": {
+				"images/stone-pike": { "x": -20.88, "y": 220.81, "scaleX": -1, "rotation": 23.07, "width": 270, "height": 486 }
+			},
+			"stone-pike-5": {
+				"images/stone-pike": { "x": 6.09, "y": 224.74, "scaleX": -1, "rotation": 17.03, "width": 270, "height": 486 }
+			},
+			"stone-pike-6": {
+				"images/stone-pike": { "x": -20.88, "y": 220.81, "scaleX": -1, "rotation": 23.07, "width": 270, "height": 486 }
+			},
+			"stone-pike-7": {
+				"images/stone-pike": { "x": -20.88, "y": 220.81, "scaleX": -1, "rotation": 23.07, "width": 270, "height": 486 }
+			},
+			"stone-pike-clip": {
+				"stone-pike-clip": {
+					"type": "clipping",
+					"end": "stone-pike-clip",
+					"vertexCount": 17,
+					"vertices": [ -123.11, -71.25, -64.88, -120.66, 13.71, -113.77, 47.35, -90.23, 110.73, -112.83, 164.53, -96.04, 484.6, 158.64, 480.04, 496.08, 184.66, 629.4, -136.55, 640.7, -423.67, 524.07, -567.44, 411.23, -598.4, 148.38, -470.72, 41.22, -380.66, -19.2, -203.82, -71.71, -152.91, -87.97 ],
+					"color": "ce3a3aff"
+				}
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"stone-pike-1": {
+				"color": [
+					{ "time": 0.6, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.7667, "color": "ffffff00" }
+				]
+			},
+			"stone-pike-2": {
+				"color": [
+					{ "time": 0.6667, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"stone-pike-3": {
+				"color": [
+					{ "time": 0.6667, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"stone-pike-4": {
+				"color": [
+					{ "time": 0.6333, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8, "color": "ffffff00" }
+				]
+			},
+			"stone-pike-5": {
+				"color": [
+					{ "time": 0.6667, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"stone-pike-6": {
+				"color": [
+					{ "time": 0.6333, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8, "color": "ffffff00" }
+				]
+			},
+			"stone-pike-7": {
+				"color": [
+					{ "time": 0.6333, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.8, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"stone-pike-5": {
+				"translate": [
+					{ "y": -543.2, "curve": 0.776, "c4": 0.4 },
+					{ "time": 0.1333 }
+				]
+			},
+			"stone-pike-2": {
+				"translate": [
+					{ "x": 112.8, "y": -437.38, "curve": "stepped" },
+					{ "time": 0.0333, "x": 112.8, "y": -437.38, "curve": 0.776, "c4": 0.4 },
+					{ "time": 0.1667 }
+				]
+			},
+			"stone-pike-3": {
+				"translate": [
+					{ "x": -186.84, "y": -446.34, "curve": "stepped" },
+					{ "time": 0.2, "x": -186.84, "y": -446.34, "curve": 0.776, "c4": 0.4 },
+					{ "time": 0.3 }
+				]
+			},
+			"[back]stone-pike-6": {
+				"translate": [
+					{ "x": 67.47, "y": -438.55, "curve": "stepped" },
+					{ "time": 0.1, "x": 67.47, "y": -438.55, "curve": 0.776, "c4": 0.4 },
+					{ "time": 0.2333 }
+				]
+			},
+			"[back]stone-pike-1": {
+				"translate": [
+					{ "x": 215.39, "y": -316.59, "curve": "stepped" },
+					{ "time": 0.1667, "x": 215.39, "y": -316.59, "curve": 0.776, "c4": 0.4 },
+					{ "time": 0.2667 }
+				]
+			},
+			"[back]stone-pike-4": {
+				"translate": [
+					{ "x": -155.7, "y": -428.17, "curve": "stepped" },
+					{ "time": 0.1333, "x": -155.7, "y": -428.17, "curve": 0.776, "c4": 0.4 },
+					{ "time": 0.2333 }
+				]
+			},
+			"[back]stone-pike-7": {
+				"translate": [
+					{ "x": -285.45, "y": -394.44, "curve": "stepped" },
+					{ "time": 0.0667, "x": -285.45, "y": -394.44, "curve": 0.776, "c4": 0.4 },
+					{ "time": 0.2 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.2, "name": "hit" }
+		]
+	}
+}
+}

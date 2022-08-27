@@ -1,0 +1,153 @@
+
+water-14-me-slash.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-14-me-slash_00
+  rotate: false
+  xy: 426,116
+  size: 34,47
+  orig: 34,47
+  offset: 0, 0
+  index: -1
+water-14-me-slash_01
+  rotate: false
+  xy: 216,355
+  size: 53,96
+  orig: 53,96
+  offset: 0, 0
+  index: -1
+water-14-me-slash_02
+  rotate: false
+  xy: 152,355
+  size: 58,128
+  orig: 58,128
+  offset: 0, 0
+  index: -1
+water-14-me-slash_03
+  rotate: false
+  xy: 78,354
+  size: 55,155
+  orig: 55,155
+  offset: 0, 0
+  index: -1
+water-14-me-slash_04
+  rotate: false
+  xy: 370,2
+  size: 52,172
+  orig: 52,172
+  offset: 0, 0
+  index: -1
+water-14-me-slash_05
+  rotate: false
+  xy: 280,178
+  size: 56,173
+  orig: 56,173
+  offset: 0, 0
+  index: -1
+water-14-me-slash_06
+  rotate: false
+  xy: 152,178
+  size: 60,173
+  orig: 60,173
+  offset: 0, 0
+  index: -1
+water-14-me-slash_07
+  rotate: false
+  xy: 216,178
+  size: 60,173
+  orig: 60,173
+  offset: 0, 0
+  index: -1
+water-14-me-slash_08
+  rotate: false
+  xy: 152,2
+  size: 61,172
+  orig: 61,172
+  offset: 0, 0
+  index: -1
+water-14-me-slash_09
+  rotate: false
+  xy: 78,178
+  size: 66,172
+  orig: 66,172
+  offset: 0, 0
+  index: -1
+water-14-me-slash_10
+  rotate: false
+  xy: 78,2
+  size: 70,172
+  orig: 70,172
+  offset: 0, 0
+  index: -1
+water-14-me-slash_11
+  rotate: false
+  xy: 2,178
+  size: 71,172
+  orig: 71,172
+  offset: 0, 0
+  index: -1
+water-14-me-slash_12
+  rotate: false
+  xy: 2,2
+  size: 72,172
+  orig: 72,172
+  offset: 0, 0
+  index: -1
+water-14-me-slash_13
+  rotate: false
+  xy: 2,354
+  size: 72,140
+  orig: 72,140
+  offset: 0, 0
+  index: -1
+water-14-me-slash_14
+  rotate: false
+  xy: 294,2
+  size: 72,139
+  orig: 72,139
+  offset: 0, 0
+  index: -1
+water-14-me-slash_15
+  rotate: false
+  xy: 217,2
+  size: 73,139
+  orig: 73,139
+  offset: 0, 0
+  index: -1
+water-14-me-slash_16
+  rotate: false
+  xy: 426,2
+  size: 69,110
+  orig: 69,110
+  offset: 0, 0
+  index: -1
+water-14-me-slash_17
+  rotate: false
+  xy: 340,178
+  size: 63,79
+  orig: 63,79
+  offset: 0, 0
+  index: -1
+water-14-me-slash_18
+  rotate: false
+  xy: 464,116
+  size: 35,43
+  orig: 35,43
+  offset: 0, 0
+  index: -1
+water-14-me-slash_19
+  rotate: false
+  xy: 217,145
+  size: 25,14
+  orig: 25,14
+  offset: 0, 0
+  index: -1
+water-14-me-slash_20
+  rotate: false
+  xy: 2,498
+  size: 24,12
+  orig: 24,12
+  offset: 0, 0
+  index: -1

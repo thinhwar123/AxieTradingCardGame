@@ -1,0 +1,13 @@
+
+reptile-horn-08-backfire-catapult.png
+size: 126,125
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+backfire-catapult
+  rotate: false
+  xy: 2, 2
+  size: 122, 121
+  orig: 123, 122
+  offset: 0, 0
+  index: -1

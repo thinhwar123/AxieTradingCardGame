@@ -1,0 +1,104 @@
+
+spark-3-mi-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-15-mi-round_00
+  rotate: false
+  xy: 510,522
+  size: 110,110
+  orig: 110,110
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_01
+  rotate: false
+  xy: 2,782
+  size: 211,212
+  orig: 211,212
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_02
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_03
+  rotate: false
+  xy: 522,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_04
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_05
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_06
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_07
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_08
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_09
+  rotate: false
+  xy: 262,522
+  size: 244,256
+  orig: 244,256
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_10
+  rotate: false
+  xy: 782,2
+  size: 237,253
+  orig: 237,253
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_11
+  rotate: false
+  xy: 782,262
+  size: 222,245
+  orig: 222,245
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_12
+  rotate: false
+  xy: 262,782
+  size: 161,219
+  orig: 161,219
+  offset: 0, 0
+  index: -1
+spark-15-mi-round_13
+  rotate: false
+  xy: 624,522
+  size: 139,28
+  orig: 139,28
+  offset: 0, 0
+  index: -1

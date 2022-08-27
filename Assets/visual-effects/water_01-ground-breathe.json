@@ -1,0 +1,31 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water_01_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water_01_00000": {"x": -26, "y": -11, "width": 399, "height": 157},
+          "water_01_00001": {"x": -83, "y": 24, "width": 285, "height": 84},
+          "water_01_00002": {"x": -43, "y": 50, "width": 365, "height": 152},
+          "water_01_00003": {"x": -28, "y": -1, "width": 396, "height": 92},
+          "water_01_00004": {"x": -11, "y": -9, "width": 397, "height": 102},
+          "water_01_00005": {"x": -2, "y": -13, "width": 394, "height": 102}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water_01_00000"}, {"time": 0.1, "name": "water_01_00001"}, {"time": 0.2, "name": "water_01_00002"}, {"time": 0.30000000000000004, "name": "water_01_00003"}, {"time": 0.4, "name": "water_01_00004"},
+            {"time": 0.5, "name": "water_01_00005"}
+          ]
+        }
+      }
+    }
+  }
+}

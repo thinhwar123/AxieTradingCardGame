@@ -1,0 +1,97 @@
+
+water-1-be-snake.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_13_00000
+  rotate: false
+  xy: 152,396
+  size: 97,38
+  orig: 97,38
+  offset: 0, 0
+  index: -1
+water_13_00001
+  rotate: false
+  xy: 2,330
+  size: 161,62
+  orig: 161,62
+  offset: 0, 0
+  index: -1
+water_13_00002
+  rotate: false
+  xy: 262,2
+  size: 219,68
+  orig: 219,68
+  offset: 0, 0
+  index: -1
+water_13_00003
+  rotate: false
+  xy: 2,87
+  size: 264,77
+  orig: 264,77
+  offset: 0, 0
+  index: -1
+water_13_00004
+  rotate: false
+  xy: 2,168
+  size: 256,77
+  orig: 256,77
+  offset: 0, 0
+  index: -1
+water_13_00005
+  rotate: false
+  xy: 2,2
+  size: 256,81
+  orig: 256,81
+  offset: 0, 0
+  index: -1
+water_13_00006
+  rotate: false
+  xy: 2,249
+  size: 250,77
+  orig: 250,77
+  offset: 0, 0
+  index: -1
+water_13_00007
+  rotate: false
+  xy: 270,87
+  size: 192,73
+  orig: 192,73
+  offset: 0, 0
+  index: -1
+water_13_00008
+  rotate: false
+  xy: 262,168
+  size: 179,65
+  orig: 179,65
+  offset: 0, 0
+  index: -1
+water_13_00009
+  rotate: false
+  xy: 2,396
+  size: 146,59
+  orig: 146,59
+  offset: 0, 0
+  index: -1
+water_13_00010
+  rotate: false
+  xy: 2,459
+  size: 111,47
+  orig: 111,47
+  offset: 0, 0
+  index: -1
+water_13_00011
+  rotate: false
+  xy: 256,249
+  size: 110,45
+  orig: 110,45
+  offset: 0, 0
+  index: -1
+water_13_00012
+  rotate: false
+  xy: 445,168
+  size: 62,36
+  orig: 62,36
+  offset: 0, 0
+  index: -1

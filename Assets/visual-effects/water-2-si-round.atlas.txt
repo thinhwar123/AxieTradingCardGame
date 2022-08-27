@@ -1,0 +1,146 @@
+
+water-2-si-round.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-2-si-round_00
+  rotate: false
+  xy: 398,418
+  size: 118,51
+  orig: 118,51
+  offset: 0, 0
+  index: -1
+water-2-si-round_01
+  rotate: false
+  xy: 398,357
+  size: 126,57
+  orig: 126,57
+  offset: 0, 0
+  index: -1
+water-2-si-round_02
+  rotate: false
+  xy: 398,224
+  size: 133,62
+  orig: 133,62
+  offset: 0, 0
+  index: -1
+water-2-si-round_03
+  rotate: false
+  xy: 398,290
+  size: 129,63
+  orig: 129,63
+  offset: 0, 0
+  index: -1
+water-2-si-round_04
+  rotate: false
+  xy: 398,158
+  size: 146,62
+  orig: 146,62
+  offset: 0, 0
+  index: -1
+water-2-si-round_05
+  rotate: false
+  xy: 2,442
+  size: 158,68
+  orig: 158,68
+  offset: 0, 0
+  index: -1
+water-2-si-round_06
+  rotate: false
+  xy: 198,435
+  size: 177,75
+  orig: 177,75
+  offset: 0, 0
+  index: -1
+water-2-si-round_07
+  rotate: false
+  xy: 2,359
+  size: 186,79
+  orig: 186,79
+  offset: 0, 0
+  index: -1
+water-2-si-round_08
+  rotate: false
+  xy: 198,264
+  size: 194,82
+  orig: 194,82
+  offset: 0, 0
+  index: -1
+water-2-si-round_09
+  rotate: false
+  xy: 2,183
+  size: 191,83
+  orig: 191,83
+  offset: 0, 0
+  index: -1
+water-2-si-round_10
+  rotate: false
+  xy: 198,350
+  size: 194,81
+  orig: 194,81
+  offset: 0, 0
+  index: -1
+water-2-si-round_11
+  rotate: false
+  xy: 198,178
+  size: 194,82
+  orig: 194,82
+  offset: 0, 0
+  index: -1
+water-2-si-round_12
+  rotate: false
+  xy: 198,2
+  size: 196,84
+  orig: 196,84
+  offset: 0, 0
+  index: -1
+water-2-si-round_13
+  rotate: false
+  xy: 198,90
+  size: 195,84
+  orig: 195,84
+  offset: 0, 0
+  index: -1
+water-2-si-round_14
+  rotate: false
+  xy: 2,2
+  size: 192,86
+  orig: 192,86
+  offset: 0, 0
+  index: -1
+water-2-si-round_15
+  rotate: false
+  xy: 2,92
+  size: 189,87
+  orig: 189,87
+  offset: 0, 0
+  index: -1
+water-2-si-round_16
+  rotate: false
+  xy: 2,270
+  size: 183,85
+  orig: 183,85
+  offset: 0, 0
+  index: -1
+water-2-si-round_17
+  rotate: false
+  xy: 398,2
+  size: 157,81
+  orig: 157,81
+  offset: 0, 0
+  index: -1
+water-2-si-round_18
+  rotate: false
+  xy: 398,87
+  size: 145,67
+  orig: 145,67
+  offset: 0, 0
+  index: -1
+water-2-si-round_19
+  rotate: false
+  xy: 164,442
+  size: 8,8
+  orig: 8,8
+  offset: 0, 0
+  index: -1

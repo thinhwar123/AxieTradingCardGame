@@ -1,0 +1,118 @@
+
+water-2-be-half-bubble.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_16_00000
+  rotate: false
+  xy: 586,174
+  size: 67,20
+  orig: 67,20
+  offset: 0, 0
+  index: -1
+water_16_00001
+  rotate: false
+  xy: 461,174
+  size: 121,78
+  orig: 121,78
+  offset: 0, 0
+  index: -1
+water_16_00002
+  rotate: false
+  xy: 2,892
+  size: 179,126
+  orig: 179,126
+  offset: 0, 0
+  index: -1
+water_16_00003
+  rotate: false
+  xy: 337,538
+  size: 192,138
+  orig: 192,138
+  offset: 0, 0
+  index: -1
+water_16_00004
+  rotate: false
+  xy: 750,387
+  size: 198,142
+  orig: 198,142
+  offset: 0, 0
+  index: -1
+water_16_00005
+  rotate: false
+  xy: 544,387
+  size: 202,145
+  orig: 202,145
+  offset: 0, 0
+  index: -1
+water_16_00006
+  rotate: false
+  xy: 337,387
+  size: 203,147
+  orig: 203,147
+  offset: 0, 0
+  index: -1
+water_16_00007
+  rotate: false
+  xy: 2,586
+  size: 204,149
+  orig: 204,149
+  offset: 0, 0
+  index: -1
+water_16_00008
+  rotate: false
+  xy: 2,739
+  size: 204,149
+  orig: 204,149
+  offset: 0, 0
+  index: -1
+water_16_00009
+  rotate: false
+  xy: 793,2
+  size: 217,166
+  orig: 217,166
+  offset: 0, 0
+  index: -1
+water_16_00010
+  rotate: false
+  xy: 2,413
+  size: 271,169
+  orig: 271,169
+  offset: 0, 0
+  index: -1
+water_16_00011
+  rotate: false
+  xy: 461,2
+  size: 328,168
+  orig: 328,168
+  offset: 0, 0
+  index: -1
+water_16_00012
+  rotate: false
+  xy: 2,262
+  size: 331,147
+  orig: 331,147
+  offset: 0, 0
+  index: -1
+water_16_00013
+  rotate: false
+  xy: 337,262
+  size: 332,121
+  orig: 332,121
+  offset: 0, 0
+  index: -1
+water_16_00014
+  rotate: false
+  xy: 673,262
+  size: 333,75
+  orig: 333,75
+  offset: 0, 0
+  index: -1
+water_16_00015
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

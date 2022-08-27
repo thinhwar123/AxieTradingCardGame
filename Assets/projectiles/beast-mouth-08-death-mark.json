@@ -1,0 +1,76 @@
+{
+"skeleton": {
+	"hash": "Uc4TmRo1hX60Dm2oqOZ7gTRLAYY",
+	"spine": "3.8.79",
+	"x": -14.2,
+	"y": -52.9,
+	"width": 52.75,
+	"height": 105.25,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "scaleX": 0.25, "scaleY": 0.25 },
+	{ "name": "d-m", "parent": "root", "y": 63.8 }
+],
+"slots": [
+	{ "name": "d-m", "bone": "d-m", "attachment": "d-m-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"d-m": {
+				"d-m-1": { "x": 48.71, "y": -64.89, "width": 211, "height": 421 },
+				"d-m-2": { "x": -33.38, "y": -157.54, "width": 418, "height": 751 },
+				"d-m-3": { "x": 24.21, "y": -14.15, "width": 897, "height": 1330 },
+				"d-m-4": { "x": 35.31, "y": -14.15, "width": 1430, "height": 1428 },
+				"d-m-5": { "x": 35.31, "y": -14.15, "width": 1324, "height": 1403 },
+				"d-m-6": { "x": 17.38, "y": -14.41, "width": 1565, "height": 1403 },
+				"d-m-7": { "x": -3.73, "y": 28.23, "width": 1488, "height": 1403 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"d-m": {
+				"color": [
+					{ "time": 0.8333, "color": "ffffffff", "curve": 0.309, "c3": 0.691 },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.1, "name": "d-m-1" },
+					{ "time": 0.2, "name": "d-m-2" },
+					{ "time": 0.2667, "name": "d-m-3" },
+					{ "time": 0.3667, "name": "d-m-4" },
+					{ "time": 0.4333, "name": "d-m-5" },
+					{ "time": 0.5, "name": "d-m-7" },
+					{ "time": 0.5667, "name": "d-m-6" },
+					{ "time": 0.8333, "name": "d-m-6" },
+					{ "time": 1.1667, "name": "d-m-6" }
+				]
+			}
+		},
+		"bones": {
+			"d-m": {
+				"translate": [
+					{ "time": 0.2667, "x": -143.1, "y": -133.86, "curve": "stepped" },
+					{ "time": 0.3667, "x": -83.09, "y": -156.94, "curve": "stepped" },
+					{ "time": 0.4333, "x": -55.39, "y": -129.25, "curve": "stepped" },
+					{ "time": 0.5, "x": -83.09, "y": -180.02, "curve": "stepped" },
+					{ "time": 0.5667, "x": -156.94, "y": -138.48 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.5, "name": "hit" }
+		]
+	}
+}
+}

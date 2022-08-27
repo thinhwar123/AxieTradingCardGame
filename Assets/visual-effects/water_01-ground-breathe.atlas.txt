@@ -1,0 +1,48 @@
+
+water_01-ground-breathe.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_01_00000
+  rotate: false
+  xy: 2,2
+  size: 399,157
+  orig: 399,157
+  offset: 0, 0
+  index: -1
+water_01_00001
+  rotate: false
+  xy: 2,425
+  size: 285,84
+  orig: 285,84
+  offset: 0, 0
+  index: -1
+water_01_00002
+  rotate: false
+  xy: 2,163
+  size: 365,152
+  orig: 365,152
+  offset: 0, 0
+  index: -1
+water_01_00003
+  rotate: false
+  xy: 405,108
+  size: 396,92
+  orig: 396,92
+  offset: 0, 0
+  index: -1
+water_01_00004
+  rotate: false
+  xy: 2,319
+  size: 397,102
+  orig: 397,102
+  offset: 0, 0
+  index: -1
+water_01_00005
+  rotate: false
+  xy: 405,2
+  size: 394,102
+  orig: 394,102
+  offset: 0, 0
+  index: -1

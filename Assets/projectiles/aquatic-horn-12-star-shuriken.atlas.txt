@@ -1,0 +1,13 @@
+
+aquatic-horn-12-star-shuriken.png
+size: 248,239
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+star-shuriken
+  rotate: false
+  xy: 2, 2
+  size: 244, 235
+  orig: 246, 236
+  offset: 1, 0
+  index: -1

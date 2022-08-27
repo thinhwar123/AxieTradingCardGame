@@ -1,0 +1,90 @@
+
+water_20-stab.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_20_00000
+  rotate: false
+  xy: 236,428
+  size: 69,28
+  orig: 69,28
+  offset: 0, 0
+  index: -1
+water_20_00001
+  rotate: false
+  xy: 2,467
+  size: 201,39
+  orig: 201,39
+  offset: 0, 0
+  index: -1
+water_20_00002
+  rotate: false
+  xy: 2,387
+  size: 284,37
+  orig: 284,37
+  offset: 0, 0
+  index: -1
+water_20_00003
+  rotate: false
+  xy: 2,346
+  size: 324,37
+  orig: 324,37
+  offset: 0, 0
+  index: -1
+water_20_00004
+  rotate: false
+  xy: 2,262
+  size: 342,38
+  orig: 342,38
+  offset: 0, 0
+  index: -1
+water_20_00005
+  rotate: false
+  xy: 2,304
+  size: 330,38
+  orig: 330,38
+  offset: 0, 0
+  index: -1
+water_20_00006
+  rotate: false
+  xy: 2,428
+  size: 230,35
+  orig: 230,35
+  offset: 0, 0
+  index: -1
+water_20_00007
+  rotate: false
+  xy: 461,2
+  size: 207,33
+  orig: 207,33
+  offset: 0, 0
+  index: -1
+water_20_00008
+  rotate: false
+  xy: 672,2
+  size: 163,33
+  orig: 163,33
+  offset: 0, 0
+  index: -1
+water_20_00009
+  rotate: false
+  xy: 348,262
+  size: 91,32
+  orig: 91,32
+  offset: 0, 0
+  index: -1
+water_20_00010
+  rotate: false
+  xy: 336,304
+  size: 86,31
+  orig: 86,31
+  offset: 0, 0
+  index: -1
+water_20_00011
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

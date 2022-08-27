@@ -1,0 +1,40 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-18-mi-round_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-18-mi-round_00": {"x": 1, "y": -8, "width": 64, "height": 61},
+          "water-18-mi-round_01": {"x": -4, "y": -6, "width": 133, "height": 123},
+          "water-18-mi-round_02": {"x": -2, "y": -6, "width": 156, "height": 144},
+          "water-18-mi-round_03": {"x": -2, "y": -7, "width": 162, "height": 148},
+          "water-18-mi-round_04": {"x": -3, "y": -7, "width": 164, "height": 152},
+          "water-18-mi-round_05": {"x": -3, "y": -7, "width": 166, "height": 155},
+          "water-18-mi-round_06": {"x": -3, "y": -7, "width": 166, "height": 155},
+          "water-18-mi-round_07": {"x": -1, "y": -7, "width": 163, "height": 156},
+          "water-18-mi-round_08": {"x": 3, "y": -7, "width": 156, "height": 157},
+          "water-18-mi-round_09": {"x": 3, "y": -7, "width": 155, "height": 157},
+          "water-18-mi-round_10": {"x": 4, "y": -5, "width": 156, "height": 155},
+          "water-18-mi-round_11": {"x": 3, "y": -5, "width": 157, "height": 154},
+          "water-18-mi-round_12": {"x": -2, "y": -4, "width": 110, "height": 155}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-18-mi-round_00"}, {"time": 0.1, "name": "water-18-mi-round_01"}, {"time": 0.2, "name": "water-18-mi-round_02"}, {"time": 0.30000000000000004, "name": "water-18-mi-round_03"},
+            {"time": 0.4, "name": "water-18-mi-round_04"}, {"time": 0.5, "name": "water-18-mi-round_05"}, {"time": 0.6000000000000001, "name": "water-18-mi-round_06"}, {"time": 0.7000000000000001, "name": "water-18-mi-round_07"},
+            {"time": 0.8, "name": "water-18-mi-round_08"}, {"time": 0.9, "name": "water-18-mi-round_09"}, {"time": 1.0, "name": "water-18-mi-round_10"}, {"time": 1.1, "name": "water-18-mi-round_11"},
+            {"time": 1.2000000000000002, "name": "water-18-mi-round_12"}
+          ]
+        }
+      }
+    }
+  }
+}

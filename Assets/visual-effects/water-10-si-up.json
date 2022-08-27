@@ -1,0 +1,48 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-10-si-up_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-10-si-up_00": {"x": -9, "y": -108, "width": 89, "height": 14},
+          "water-10-si-up_01": {"x": 0, "y": -92, "width": 111, "height": 26},
+          "water-10-si-up_02": {"x": 0, "y": -70, "width": 124, "height": 37},
+          "water-10-si-up_03": {"x": -2, "y": -42, "width": 125, "height": 55},
+          "water-10-si-up_04": {"x": -4, "y": -22, "width": 124, "height": 63},
+          "water-10-si-up_05": {"x": -6, "y": -4, "width": 125, "height": 73},
+          "water-10-si-up_06": {"x": -8, "y": 5, "width": 125, "height": 79},
+          "water-10-si-up_07": {"x": -10, "y": 14, "width": 129, "height": 87},
+          "water-10-si-up_08": {"x": -10, "y": 20, "width": 128, "height": 91},
+          "water-10-si-up_09": {"x": -9, "y": 25, "width": 128, "height": 94},
+          "water-10-si-up_10": {"x": -10, "y": 30, "width": 127, "height": 94},
+          "water-10-si-up_11": {"x": -11, "y": 35, "width": 127, "height": 97},
+          "water-10-si-up_12": {"x": -11, "y": 38, "width": 124, "height": 95},
+          "water-10-si-up_13": {"x": -12, "y": 41, "width": 120, "height": 95},
+          "water-10-si-up_14": {"x": -12, "y": 43, "width": 118, "height": 96},
+          "water-10-si-up_15": {"x": -11, "y": 46, "width": 116, "height": 96},
+          "water-10-si-up_16": {"x": -11, "y": 48, "width": 114, "height": 97},
+          "water-10-si-up_17": {"x": -11, "y": 54, "width": 109, "height": 88},
+          "water-10-si-up_18": {"x": -23, "y": 56, "width": 82, "height": 87},
+          "water-10-si-up_19": {"x": -23, "y": 57, "width": 81, "height": 86}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-10-si-up_00"}, {"time": 0.1, "name": "water-10-si-up_01"}, {"time": 0.2, "name": "water-10-si-up_02"}, {"time": 0.30000000000000004, "name": "water-10-si-up_03"},
+            {"time": 0.4, "name": "water-10-si-up_04"}, {"time": 0.5, "name": "water-10-si-up_05"}, {"time": 0.6000000000000001, "name": "water-10-si-up_06"}, {"time": 0.7000000000000001, "name": "water-10-si-up_07"},
+            {"time": 0.8, "name": "water-10-si-up_08"}, {"time": 0.9, "name": "water-10-si-up_09"}, {"time": 1.0, "name": "water-10-si-up_10"}, {"time": 1.1, "name": "water-10-si-up_11"},
+            {"time": 1.2000000000000002, "name": "water-10-si-up_12"}, {"time": 1.3, "name": "water-10-si-up_13"}, {"time": 1.4000000000000001, "name": "water-10-si-up_14"}, {"time": 1.5, "name": "water-10-si-up_15"},
+            {"time": 1.6, "name": "water-10-si-up_16"}, {"time": 1.7000000000000002, "name": "water-10-si-up_17"}, {"time": 1.8, "name": "water-10-si-up_18"}, {"time": 1.9000000000000001, "name": "water-10-si-up_19"}
+          ]
+        }
+      }
+    }
+  }
+}

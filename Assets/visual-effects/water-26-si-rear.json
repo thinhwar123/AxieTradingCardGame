@@ -1,0 +1,38 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-26-si-rear_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-26-si-rear_00": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "water-26-si-rear_01": {"x": -58, "y": -2, "width": 98, "height": 25},
+          "water-26-si-rear_02": {"x": 1, "y": -1, "width": 160, "height": 38},
+          "water-26-si-rear_03": {"x": 19, "y": 0, "width": 170, "height": 39},
+          "water-26-si-rear_04": {"x": 26, "y": 0, "width": 165, "height": 39},
+          "water-26-si-rear_05": {"x": 29, "y": -1, "width": 166, "height": 38},
+          "water-26-si-rear_06": {"x": 38, "y": -1, "width": 152, "height": 36},
+          "water-26-si-rear_07": {"x": 40, "y": 2, "width": 151, "height": 29},
+          "water-26-si-rear_08": {"x": 78, "y": -4, "width": 80, "height": 18},
+          "water-26-si-rear_09": {"x": 81, "y": -5, "width": 74, "height": 18},
+          "water-26-si-rear_10": {"x": 84, "y": -4, "width": 70, "height": 15},
+          "water-26-si-rear_11": {"x": 128, "y": -128, "width": 256, "height": 256}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-26-si-rear_00"}, {"time": 0.1, "name": "water-26-si-rear_01"}, {"time": 0.2, "name": "water-26-si-rear_02"}, {"time": 0.30000000000000004, "name": "water-26-si-rear_03"},
+            {"time": 0.4, "name": "water-26-si-rear_04"}, {"time": 0.5, "name": "water-26-si-rear_05"}, {"time": 0.6000000000000001, "name": "water-26-si-rear_06"}, {"time": 0.7000000000000001, "name": "water-26-si-rear_07"},
+            {"time": 0.8, "name": "water-26-si-rear_08"}, {"time": 0.9, "name": "water-26-si-rear_09"}, {"time": 1.0, "name": "water-26-si-rear_10"}, {"time": 1.1, "name": "water-26-si-rear_11"}
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+
+bird-back-02-balloon-pop.png
+size: 303,295
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+balloon
+  rotate: false
+  xy: 2, 2
+  size: 176, 291
+  orig: 177, 291
+  offset: 1, 0
+  index: -1
+splash-1
+  rotate: false
+  xy: 180, 151
+  size: 121, 142
+  orig: 121, 142
+  offset: 0, 0
+  index: -1
+splash-2
+  rotate: false
+  xy: 180, 6
+  size: 95, 143
+  orig: 95, 143
+  offset: 0, 0
+  index: -1

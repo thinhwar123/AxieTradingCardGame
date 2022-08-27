@@ -1,0 +1,125 @@
+
+energy-8-me-claw-strike.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy-8-me-claw-strike_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_01
+  rotate: false
+  xy: 496,165
+  size: 72,79
+  orig: 72,79
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_02
+  rotate: false
+  xy: 496,80
+  size: 117,81
+  orig: 117,81
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_03
+  rotate: false
+  xy: 262,262
+  size: 204,81
+  orig: 204,81
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_04
+  rotate: false
+  xy: 2,350
+  size: 237,83
+  orig: 237,83
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_05
+  rotate: false
+  xy: 2,262
+  size: 235,84
+  orig: 235,84
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_06
+  rotate: false
+  xy: 262,2
+  size: 230,83
+  orig: 230,83
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_07
+  rotate: false
+  xy: 262,89
+  size: 224,83
+  orig: 224,83
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_08
+  rotate: false
+  xy: 262,176
+  size: 206,82
+  orig: 206,82
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_09
+  rotate: false
+  xy: 262,347
+  size: 204,80
+  orig: 204,80
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_10
+  rotate: false
+  xy: 262,431
+  size: 202,79
+  orig: 202,79
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_11
+  rotate: false
+  xy: 496,2
+  size: 155,74
+  orig: 155,74
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_12
+  rotate: false
+  xy: 655,2
+  size: 152,74
+  orig: 152,74
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_13
+  rotate: false
+  xy: 2,437
+  size: 152,72
+  orig: 152,72
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_14
+  rotate: false
+  xy: 158,437
+  size: 80,68
+  orig: 80,68
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_15
+  rotate: false
+  xy: 811,2
+  size: 76,63
+  orig: 76,63
+  offset: 0, 0
+  index: -1
+energy-8-me-claw-strike_16
+  rotate: false
+  xy: 891,2
+  size: 74,61
+  orig: 74,61
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,174 @@
+
+bird-back-06-dirty-bird.png
+size: 366,473
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bloody-fur/bloody-fur-1
+  rotate: true
+  xy: 2, 205
+  size: 59, 119
+  orig: 59, 119
+  offset: 0, 0
+  index: -1
+bloody-fur/bloody-fur-2
+  rotate: true
+  xy: 244, 265
+  size: 51, 119
+  orig: 51, 119
+  offset: 0, 0
+  index: -1
+bloody-fur/bloody-fur-3
+  rotate: true
+  xy: 2, 409
+  size: 37, 118
+  orig: 37, 118
+  offset: 0, 0
+  index: -1
+bloody-fur/bloody-fur-4
+  rotate: true
+  xy: 2, 448
+  size: 23, 118
+  orig: 23, 118
+  offset: 0, 0
+  index: -1
+bloody-fur/bloody-fur-5
+  rotate: true
+  xy: 122, 409
+  size: 37, 118
+  orig: 37, 118
+  offset: 0, 0
+  index: -1
+bloody-fur/bloody-fur-6
+  rotate: true
+  xy: 2, 318
+  size: 50, 120
+  orig: 50, 120
+  offset: 0, 0
+  index: -1
+green-fur/green-fur-1
+  rotate: false
+  xy: 123, 205
+  size: 119, 59
+  orig: 119, 59
+  offset: 0, 0
+  index: -1
+green-fur/green-fur-2
+  rotate: false
+  xy: 124, 318
+  size: 119, 50
+  orig: 119, 50
+  offset: 0, 0
+  index: -1
+green-fur/green-fur-3
+  rotate: false
+  xy: 242, 409
+  size: 118, 37
+  orig: 118, 37
+  offset: 0, 0
+  index: -1
+green-fur/green-fur-4
+  rotate: false
+  xy: 122, 448
+  size: 118, 23
+  orig: 118, 23
+  offset: 0, 0
+  index: -1
+green-fur/green-fur-5
+  rotate: false
+  xy: 2, 370
+  size: 118, 37
+  orig: 118, 37
+  offset: 0, 0
+  index: -1
+green-fur/green-fur-6
+  rotate: false
+  xy: 245, 318
+  size: 119, 50
+  orig: 119, 50
+  offset: 0, 0
+  index: -1
+target-fur/target-fur-1
+  rotate: false
+  xy: 2, 8
+  size: 119, 99
+  orig: 119, 99
+  offset: 0, 0
+  index: -1
+target-fur/target-fur-2
+  rotate: false
+  xy: 123, 8
+  size: 119, 99
+  orig: 119, 99
+  offset: 0, 0
+  index: -1
+target-fur/target-fur-3
+  rotate: false
+  xy: 2, 109
+  size: 119, 94
+  orig: 119, 94
+  offset: 0, 0
+  index: -1
+target-fur/target-fur-4
+  rotate: false
+  xy: 123, 109
+  size: 119, 94
+  orig: 119, 94
+  offset: 0, 0
+  index: -1
+target-fur/target-fur-5
+  rotate: false
+  xy: 244, 2
+  size: 119, 99
+  orig: 119, 99
+  offset: 0, 0
+  index: -1
+target-fur/target-fur-6
+  rotate: false
+  xy: 244, 103
+  size: 119, 99
+  orig: 119, 99
+  offset: 0, 0
+  index: -1
+white-fur/white-fur-1
+  rotate: true
+  xy: 244, 204
+  size: 59, 119
+  orig: 59, 119
+  offset: 0, 0
+  index: -1
+white-fur/white-fur-2
+  rotate: true
+  xy: 2, 266
+  size: 50, 119
+  orig: 50, 119
+  offset: 0, 0
+  index: -1
+white-fur/white-fur-3
+  rotate: true
+  xy: 122, 370
+  size: 37, 118
+  orig: 37, 118
+  offset: 0, 0
+  index: -1
+white-fur/white-fur-4
+  rotate: true
+  xy: 242, 448
+  size: 23, 118
+  orig: 23, 118
+  offset: 0, 0
+  index: -1
+white-fur/white-fur-5
+  rotate: true
+  xy: 242, 370
+  size: 37, 118
+  orig: 37, 118
+  offset: 0, 0
+  index: -1
+white-fur/white-fur-6
+  rotate: true
+  xy: 123, 266
+  size: 50, 119
+  orig: 50, 119
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,56 @@
+{
+"skeleton": {
+	"hash": "e+VZamFPSq6vIf41jrXmbItH630",
+	"spine": "3.8.79",
+	"x": -137.5,
+	"y": -133.5,
+	"width": 275,
+	"height": 267,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.05 },
+	{ "name": "luna-absorb", "parent": "root", "y": 63.05 }
+],
+"slots": [
+	{ "name": "luna-absorb", "bone": "luna-absorb", "attachment": "luna-absorb" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"luna-absorb": {
+				"luna-absorb": { "width": 275, "height": 267 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"slots": {
+			"luna-absorb": {
+				"color": [
+					{ "time": 0.6667, "color": "ffffffff", "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"luna-absorb": {
+				"translate": [
+					{ "y": 380, "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.7667 }
+				],
+				"scale": [
+					{ "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.2667, "x": 1.1, "y": 1.1, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.5, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.7667, "x": 1.1, "y": 1.1, "curve": 0.313, "c3": 0.699 },
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

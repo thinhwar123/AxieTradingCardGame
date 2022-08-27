@@ -1,0 +1,111 @@
+
+energy_20-whirlwind.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy_20_00000
+  rotate: false
+  xy: 938,158
+  size: 68,57
+  orig: 68,57
+  offset: 0, 0
+  index: -1
+energy_20_00001
+  rotate: false
+  xy: 2,871
+  size: 93,93
+  orig: 93,93
+  offset: 0, 0
+  index: -1
+energy_20_00002
+  rotate: false
+  xy: 212,592
+  size: 116,101
+  orig: 116,101
+  offset: 0, 0
+  index: -1
+energy_20_00003
+  rotate: false
+  xy: 2,745
+  size: 173,122
+  orig: 173,122
+  offset: 0, 0
+  index: -1
+energy_20_00004
+  rotate: false
+  xy: 735,158
+  size: 199,133
+  orig: 199,133
+  offset: 0, 0
+  index: -1
+energy_20_00005
+  rotate: false
+  xy: 2,592
+  size: 206,149
+  orig: 206,149
+  offset: 0, 0
+  index: -1
+energy_20_00006
+  rotate: false
+  xy: 717,2
+  size: 284,149
+  orig: 284,149
+  offset: 0, 0
+  index: -1
+energy_20_00007
+  rotate: false
+  xy: 2,435
+  size: 287,153
+  orig: 287,153
+  offset: 0, 0
+  index: -1
+energy_20_00008
+  rotate: false
+  xy: 2,2
+  size: 355,152
+  orig: 355,152
+  offset: 0, 0
+  index: -1
+energy_20_00009
+  rotate: false
+  xy: 361,2
+  size: 352,143
+  orig: 352,143
+  offset: 0, 0
+  index: -1
+energy_20_00010
+  rotate: false
+  xy: 2,158
+  size: 358,140
+  orig: 358,140
+  offset: 0, 0
+  index: -1
+energy_20_00011
+  rotate: false
+  xy: 364,158
+  size: 367,132
+  orig: 367,132
+  offset: 0, 0
+  index: -1
+energy_20_00012
+  rotate: false
+  xy: 2,302
+  size: 359,129
+  orig: 359,129
+  offset: 0, 0
+  index: -1
+energy_20_00013
+  rotate: false
+  xy: 365,302
+  size: 363,113
+  orig: 363,113
+  offset: 0, 0
+  index: -1
+energy_20_00014
+  rotate: false
+  xy: 365,419
+  size: 325,34
+  orig: 325,34
+  offset: 0, 0
+  index: -1

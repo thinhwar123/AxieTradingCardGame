@@ -1,0 +1,37 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "spark-8-si-rear_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "spark-8-si-rear_00": {"x": -89, "y": 4, "width": 79, "height": 56},
+          "spark-8-si-rear_01": {"x": -11, "y": 5, "width": 186, "height": 99},
+          "spark-8-si-rear_02": {"x": 9, "y": 11, "width": 203, "height": 117},
+          "spark-8-si-rear_03": {"x": 21, "y": 13, "width": 208, "height": 126},
+          "spark-8-si-rear_04": {"x": 25, "y": 17, "width": 205, "height": 132},
+          "spark-8-si-rear_05": {"x": 27, "y": 19, "width": 201, "height": 129},
+          "spark-8-si-rear_06": {"x": 29, "y": 20, "width": 197, "height": 128},
+          "spark-8-si-rear_07": {"x": 33, "y": 21, "width": 189, "height": 122},
+          "spark-8-si-rear_08": {"x": 25, "y": 18, "width": 169, "height": 112},
+          "spark-8-si-rear_09": {"x": 56, "y": 19, "width": 105, "height": 107},
+          "spark-8-si-rear_10": {"x": 24, "y": 17, "width": 28, "height": 29}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "spark-8-si-rear_00"}, {"time": 0.1, "name": "spark-8-si-rear_01"}, {"time": 0.2, "name": "spark-8-si-rear_02"}, {"time": 0.30000000000000004, "name": "spark-8-si-rear_03"},
+            {"time": 0.4, "name": "spark-8-si-rear_04"}, {"time": 0.5, "name": "spark-8-si-rear_05"}, {"time": 0.6000000000000001, "name": "spark-8-si-rear_06"}, {"time": 0.7000000000000001, "name": "spark-8-si-rear_07"},
+            {"time": 0.8, "name": "spark-8-si-rear_08"}, {"time": 0.9, "name": "spark-8-si-rear_09"}, {"time": 1.0, "name": "spark-8-si-rear_10"}
+          ]
+        }
+      }
+    }
+  }
+}

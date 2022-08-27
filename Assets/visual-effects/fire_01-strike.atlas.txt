@@ -1,0 +1,76 @@
+
+fire_01-strike.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire_01_00000
+  rotate: false
+  xy: 461,444
+  size: 103,139
+  orig: 103,139
+  offset: 0, 0
+  index: -1
+fire_01_00001
+  rotate: false
+  xy: 822,262
+  size: 152,165
+  orig: 152,165
+  offset: 0, 0
+  index: -1
+fire_01_00002
+  rotate: false
+  xy: 461,262
+  size: 182,178
+  orig: 182,178
+  offset: 0, 0
+  index: -1
+fire_01_00003
+  rotate: false
+  xy: 2,782
+  size: 185,187
+  orig: 185,187
+  offset: 0, 0
+  index: -1
+fire_01_00004
+  rotate: false
+  xy: 191,782
+  size: 168,197
+  orig: 168,197
+  offset: 0, 0
+  index: -1
+fire_01_00005
+  rotate: false
+  xy: 647,262
+  size: 171,170
+  orig: 171,170
+  offset: 0, 0
+  index: -1
+fire_01_00006
+  rotate: false
+  xy: 461,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+fire_01_00007
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+fire_01_00008
+  rotate: false
+  xy: 2,262
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+fire_01_00009
+  rotate: false
+  xy: 2,522
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

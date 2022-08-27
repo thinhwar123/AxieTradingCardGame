@@ -1,0 +1,37 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "energy-13-ee-ground_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "energy-13-ee-ground_00": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "energy-13-ee-ground_01": {"x": -2, "y": -89, "width": 80, "height": 77},
+          "energy-13-ee-ground_02": {"x": -3, "y": -85, "width": 128, "height": 85},
+          "energy-13-ee-ground_03": {"x": -4, "y": -83, "width": 169, "height": 90},
+          "energy-13-ee-ground_04": {"x": -3, "y": -82, "width": 198, "height": 92},
+          "energy-13-ee-ground_05": {"x": -5, "y": -81, "width": 209, "height": 94},
+          "energy-13-ee-ground_06": {"x": -4, "y": -83, "width": 216, "height": 89},
+          "energy-13-ee-ground_07": {"x": -4, "y": -84, "width": 218, "height": 87},
+          "energy-13-ee-ground_08": {"x": -4, "y": -85, "width": 218, "height": 85},
+          "energy-13-ee-ground_09": {"x": -5, "y": -86, "width": 215, "height": 83},
+          "energy-13-ee-ground_10": {"x": -7, "y": -92, "width": 197, "height": 72}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "energy-13-ee-ground_00"}, {"time": 0.1, "name": "energy-13-ee-ground_01"}, {"time": 0.2, "name": "energy-13-ee-ground_02"}, {"time": 0.30000000000000004, "name": "energy-13-ee-ground_03"},
+            {"time": 0.4, "name": "energy-13-ee-ground_04"}, {"time": 0.5, "name": "energy-13-ee-ground_05"}, {"time": 0.6000000000000001, "name": "energy-13-ee-ground_06"}, {"time": 0.7000000000000001, "name": "energy-13-ee-ground_07"},
+            {"time": 0.8, "name": "energy-13-ee-ground_08"}, {"time": 0.9, "name": "energy-13-ee-ground_09"}, {"time": 1.0, "name": "energy-13-ee-ground_10"}
+          ]
+        }
+      }
+    }
+  }
+}

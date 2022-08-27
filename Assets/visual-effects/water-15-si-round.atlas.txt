@@ -1,0 +1,104 @@
+
+water-15-si-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-15-si-round_00
+  rotate: false
+  xy: 678,205
+  size: 52,57
+  orig: 52,57
+  offset: 0, 0
+  index: -1
+water-15-si-round_01
+  rotate: false
+  xy: 557,205
+  size: 117,115
+  orig: 117,115
+  offset: 0, 0
+  index: -1
+water-15-si-round_02
+  rotate: false
+  xy: 404,205
+  size: 149,135
+  orig: 149,135
+  offset: 0, 0
+  index: -1
+water-15-si-round_03
+  rotate: false
+  xy: 833,2
+  size: 185,159
+  orig: 185,159
+  offset: 0, 0
+  index: -1
+water-15-si-round_04
+  rotate: false
+  xy: 207,205
+  size: 193,168
+  orig: 193,168
+  offset: 0, 0
+  index: -1
+water-15-si-round_05
+  rotate: false
+  xy: 2,785
+  size: 196,180
+  orig: 196,180
+  offset: 0, 0
+  index: -1
+water-15-si-round_06
+  rotate: false
+  xy: 2,596
+  size: 197,185
+  orig: 197,185
+  offset: 0, 0
+  index: -1
+water-15-si-round_07
+  rotate: false
+  xy: 2,402
+  size: 199,190
+  orig: 199,190
+  offset: 0, 0
+  index: -1
+water-15-si-round_08
+  rotate: false
+  xy: 2,205
+  size: 201,193
+  orig: 201,193
+  offset: 0, 0
+  index: -1
+water-15-si-round_09
+  rotate: false
+  xy: 625,2
+  size: 204,195
+  orig: 204,195
+  offset: 0, 0
+  index: -1
+water-15-si-round_10
+  rotate: false
+  xy: 417,2
+  size: 204,197
+  orig: 204,197
+  offset: 0, 0
+  index: -1
+water-15-si-round_11
+  rotate: false
+  xy: 209,2
+  size: 204,198
+  orig: 204,198
+  offset: 0, 0
+  index: -1
+water-15-si-round_12
+  rotate: false
+  xy: 2,2
+  size: 203,199
+  orig: 203,199
+  offset: 0, 0
+  index: -1
+water-15-si-round_13
+  rotate: false
+  xy: 207,377
+  size: 89,192
+  orig: 89,192
+  offset: 0, 0
+  index: -1

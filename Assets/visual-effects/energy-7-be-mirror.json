@@ -1,0 +1,46 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "energy-21-be-mirror_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "energy-21-be-mirror_00": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "energy-21-be-mirror_01": {"x": -72, "y": 0, "width": 113, "height": 173},
+          "energy-21-be-mirror_02": {"x": -70, "y": 1, "width": 117, "height": 187},
+          "energy-21-be-mirror_03": {"x": -64, "y": 0, "width": 128, "height": 225},
+          "energy-21-be-mirror_04": {"x": -61, "y": 2, "width": 135, "height": 235},
+          "energy-21-be-mirror_05": {"x": -56, "y": 0, "width": 144, "height": 256},
+          "energy-21-be-mirror_06": {"x": -46, "y": 0, "width": 164, "height": 256},
+          "energy-21-be-mirror_07": {"x": -29, "y": 0, "width": 199, "height": 256},
+          "energy-21-be-mirror_08": {"x": -9, "y": 0, "width": 238, "height": 256},
+          "energy-21-be-mirror_09": {"x": 2, "y": 0, "width": 251, "height": 256},
+          "energy-21-be-mirror_10": {"x": 9, "y": 0, "width": 237, "height": 256},
+          "energy-21-be-mirror_11": {"x": 16, "y": 0, "width": 223, "height": 256},
+          "energy-21-be-mirror_12": {"x": 29, "y": 0, "width": 197, "height": 256},
+          "energy-21-be-mirror_13": {"x": 43, "y": 0, "width": 170, "height": 256},
+          "energy-21-be-mirror_14": {"x": 43, "y": -4, "width": 170, "height": 247},
+          "energy-21-be-mirror_15": {"x": 46, "y": -23, "width": 164, "height": 210},
+          "energy-21-be-mirror_16": {"x": 60, "y": -36, "width": 135, "height": 184},
+          "energy-21-be-mirror_17": {"x": 66, "y": -51, "width": 124, "height": 154}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "energy-21-be-mirror_00"}, {"time": 0.1, "name": "energy-21-be-mirror_01"}, {"time": 0.2, "name": "energy-21-be-mirror_02"}, {"time": 0.30000000000000004, "name": "energy-21-be-mirror_03"},
+            {"time": 0.4, "name": "energy-21-be-mirror_04"}, {"time": 0.5, "name": "energy-21-be-mirror_05"}, {"time": 0.6000000000000001, "name": "energy-21-be-mirror_06"}, {"time": 0.7000000000000001, "name": "energy-21-be-mirror_07"},
+            {"time": 0.8, "name": "energy-21-be-mirror_08"}, {"time": 0.9, "name": "energy-21-be-mirror_09"}, {"time": 1.0, "name": "energy-21-be-mirror_10"}, {"time": 1.1, "name": "energy-21-be-mirror_11"},
+            {"time": 1.2000000000000002, "name": "energy-21-be-mirror_12"}, {"time": 1.3, "name": "energy-21-be-mirror_13"}, {"time": 1.4000000000000001, "name": "energy-21-be-mirror_14"}, {"time": 1.5, "name": "energy-21-be-mirror_15"},
+            {"time": 1.6, "name": "energy-21-be-mirror_16"}, {"time": 1.7000000000000002, "name": "energy-21-be-mirror_17"}
+          ]
+        }
+      }
+    }
+  }
+}

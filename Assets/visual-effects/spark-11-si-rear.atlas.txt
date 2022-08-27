@@ -1,0 +1,76 @@
+
+spark-11-si-rear.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-11-si-rear_00
+  rotate: false
+  xy: 221,315
+  size: 84,59
+  orig: 84,59
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_01
+  rotate: false
+  xy: 2,433
+  size: 172,74
+  orig: 172,74
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_02
+  rotate: false
+  xy: 2,339
+  size: 214,90
+  orig: 214,90
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_03
+  rotate: false
+  xy: 221,116
+  size: 217,98
+  orig: 217,98
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_04
+  rotate: false
+  xy: 225,2
+  size: 219,106
+  orig: 219,106
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_05
+  rotate: false
+  xy: 2,2
+  size: 219,110
+  orig: 219,110
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_06
+  rotate: false
+  xy: 2,116
+  size: 215,111
+  orig: 215,111
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_07
+  rotate: false
+  xy: 2,231
+  size: 203,104
+  orig: 203,104
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_08
+  rotate: false
+  xy: 221,218
+  size: 144,93
+  orig: 144,93
+  offset: 0, 0
+  index: -1
+spark-11-si-rear_09
+  rotate: false
+  xy: 369,218
+  size: 119,84
+  orig: 119,84
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,69 @@
+
+air-2-de-dash.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Air_24_00000
+  rotate: false
+  xy: 525,194
+  size: 164,52
+  orig: 164,52
+  offset: 0, 0
+  index: -1
+Air_24_00001
+  rotate: false
+  xy: 260,194
+  size: 261,120
+  orig: 261,120
+  offset: 0, 0
+  index: -1
+Air_24_00002
+  rotate: false
+  xy: 296,2
+  size: 304,179
+  orig: 304,179
+  offset: 0, 0
+  index: -1
+Air_24_00003
+  rotate: false
+  xy: 2,2
+  size: 290,188
+  orig: 290,188
+  offset: 0, 0
+  index: -1
+Air_24_00004
+  rotate: false
+  xy: 604,2
+  size: 260,188
+  orig: 260,188
+  offset: 0, 0
+  index: -1
+Air_24_00005
+  rotate: false
+  xy: 2,194
+  size: 254,191
+  orig: 254,191
+  offset: 0, 0
+  index: -1
+Air_24_00006
+  rotate: false
+  xy: 2,389
+  size: 238,194
+  orig: 238,194
+  offset: 0, 0
+  index: -1
+Air_24_00007
+  rotate: false
+  xy: 2,587
+  size: 218,194
+  orig: 218,194
+  offset: 0, 0
+  index: -1
+Air_24_00008
+  rotate: false
+  xy: 2,785
+  size: 201,195
+  orig: 201,195
+  offset: 0, 0
+  index: -1

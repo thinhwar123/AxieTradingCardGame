@@ -1,0 +1,45 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-19-ee-ground-db_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-19-ee-ground-db_00": {"x": -2, "y": -16, "width": 76, "height": 25},
+          "water-19-ee-ground-db_01": {"x": 0, "y": -17, "width": 106, "height": 31},
+          "water-19-ee-ground-db_02": {"x": -1, "y": -19, "width": 127, "height": 40},
+          "water-19-ee-ground-db_03": {"x": 1, "y": -19, "width": 149, "height": 47},
+          "water-19-ee-ground-db_04": {"x": 1, "y": -20, "width": 167, "height": 54},
+          "water-19-ee-ground-db_05": {"x": 0, "y": -22, "width": 171, "height": 58},
+          "water-19-ee-ground-db_06": {"x": -1, "y": -23, "width": 177, "height": 62},
+          "water-19-ee-ground-db_07": {"x": 0, "y": -23, "width": 180, "height": 63},
+          "water-19-ee-ground-db_08": {"x": 0, "y": -25, "width": 185, "height": 66},
+          "water-19-ee-ground-db_09": {"x": 1, "y": -25, "width": 188, "height": 67},
+          "water-19-ee-ground-db_10": {"x": 0, "y": -25, "width": 191, "height": 69},
+          "water-19-ee-ground-db_11": {"x": 0, "y": -25, "width": 192, "height": 69},
+          "water-19-ee-ground-db_12": {"x": 0, "y": -25, "width": 194, "height": 69},
+          "water-19-ee-ground-db_13": {"x": -1, "y": -30, "width": 193, "height": 62},
+          "water-19-ee-ground-db_14": {"x": -1, "y": -31, "width": 194, "height": 59},
+          "water-19-ee-ground-db_15": {"x": -2, "y": -33, "width": 192, "height": 53},
+          "water-19-ee-ground-db_16": {"x": -4, "y": -34, "width": 190, "height": 51}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-19-ee-ground-db_00"}, {"time": 0.1, "name": "water-19-ee-ground-db_01"}, {"time": 0.2, "name": "water-19-ee-ground-db_02"}, {"time": 0.30000000000000004, "name": "water-19-ee-ground-db_03"},
+            {"time": 0.4, "name": "water-19-ee-ground-db_04"}, {"time": 0.5, "name": "water-19-ee-ground-db_05"}, {"time": 0.6000000000000001, "name": "water-19-ee-ground-db_06"},
+            {"time": 0.7000000000000001, "name": "water-19-ee-ground-db_07"}, {"time": 0.8, "name": "water-19-ee-ground-db_08"}, {"time": 0.9, "name": "water-19-ee-ground-db_09"}, {"time": 1.0, "name": "water-19-ee-ground-db_10"},
+            {"time": 1.1, "name": "water-19-ee-ground-db_11"}, {"time": 1.2000000000000002, "name": "water-19-ee-ground-db_12"}, {"time": 1.3, "name": "water-19-ee-ground-db_13"},
+            {"time": 1.4000000000000001, "name": "water-19-ee-ground-db_14"}, {"time": 1.5, "name": "water-19-ee-ground-db_15"}, {"time": 1.6, "name": "water-19-ee-ground-db_16"}
+          ]
+        }
+      }
+    }
+  }
+}

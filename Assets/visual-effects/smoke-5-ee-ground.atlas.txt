@@ -1,0 +1,104 @@
+
+smoke-5-ee-ground.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_18_00000
+  rotate: false
+  xy: 220,945
+  size: 83,25
+  orig: 83,25
+  offset: 0, 0
+  index: -1
+smoke_18_00001
+  rotate: false
+  xy: 2,945
+  size: 214,65
+  orig: 214,65
+  offset: 0, 0
+  index: -1
+smoke_18_00002
+  rotate: false
+  xy: 1660,2
+  size: 339,107
+  orig: 339,107
+  offset: 0, 0
+  index: -1
+smoke_18_00003
+  rotate: false
+  xy: 1298,2
+  size: 358,129
+  orig: 358,129
+  offset: 0, 0
+  index: -1
+smoke_18_00004
+  rotate: false
+  xy: 920,2
+  size: 374,149
+  orig: 374,149
+  offset: 0, 0
+  index: -1
+smoke_18_00005
+  rotate: false
+  xy: 461,685
+  size: 392,158
+  orig: 392,158
+  offset: 0, 0
+  index: -1
+smoke_18_00006
+  rotate: false
+  xy: 461,522
+  size: 396,159
+  orig: 396,159
+  offset: 0, 0
+  index: -1
+smoke_18_00007
+  rotate: false
+  xy: 2,782
+  size: 404,159
+  orig: 404,159
+  offset: 0, 0
+  index: -1
+smoke_18_00008
+  rotate: false
+  xy: 461,847
+  size: 403,149
+  orig: 403,149
+  offset: 0, 0
+  index: -1
+smoke_18_00009
+  rotate: false
+  xy: 461,262
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+smoke_18_00010
+  rotate: false
+  xy: 2,522
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+smoke_18_00011
+  rotate: false
+  xy: 461,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+smoke_18_00012
+  rotate: false
+  xy: 2,262
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+smoke_18_00013
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

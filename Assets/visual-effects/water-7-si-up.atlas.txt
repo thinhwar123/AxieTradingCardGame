@@ -1,0 +1,132 @@
+
+water-7-si-up.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-7-si-up_00
+  rotate: false
+  xy: 384,54
+  size: 32,75
+  orig: 32,75
+  offset: 0, 0
+  index: -1
+water-7-si-up_01
+  rotate: false
+  xy: 320,131
+  size: 55,120
+  orig: 55,120
+  offset: 0, 0
+  index: -1
+water-7-si-up_02
+  rotate: false
+  xy: 66,2
+  size: 60,139
+  orig: 60,139
+  offset: 0, 0
+  index: -1
+water-7-si-up_03
+  rotate: false
+  xy: 130,2
+  size: 57,139
+  orig: 57,139
+  offset: 0, 0
+  index: -1
+water-7-si-up_04
+  rotate: false
+  xy: 2,2
+  size: 60,143
+  orig: 60,143
+  offset: 0, 0
+  index: -1
+water-7-si-up_05
+  rotate: false
+  xy: 320,2
+  size: 60,125
+  orig: 60,125
+  offset: 0, 0
+  index: -1
+water-7-si-up_06
+  rotate: false
+  xy: 256,2
+  size: 60,126
+  orig: 60,126
+  offset: 0, 0
+  index: -1
+water-7-si-up_07
+  rotate: false
+  xy: 191,2
+  size: 61,126
+  orig: 61,126
+  offset: 0, 0
+  index: -1
+water-7-si-up_08
+  rotate: false
+  xy: 191,132
+  size: 61,119
+  orig: 61,119
+  offset: 0, 0
+  index: -1
+water-7-si-up_09
+  rotate: false
+  xy: 256,132
+  size: 60,119
+  orig: 60,119
+  offset: 0, 0
+  index: -1
+water-7-si-up_10
+  rotate: false
+  xy: 2,149
+  size: 58,103
+  orig: 58,103
+  offset: 0, 0
+  index: -1
+water-7-si-up_11
+  rotate: false
+  xy: 66,145
+  size: 55,94
+  orig: 55,94
+  offset: 0, 0
+  index: -1
+water-7-si-up_12
+  rotate: false
+  xy: 130,145
+  size: 55,91
+  orig: 55,91
+  offset: 0, 0
+  index: -1
+water-7-si-up_13
+  rotate: false
+  xy: 384,2
+  size: 53,48
+  orig: 53,48
+  offset: 0, 0
+  index: -1
+water-7-si-up_14
+  rotate: false
+  xy: 441,2
+  size: 52,48
+  orig: 52,48
+  offset: 0, 0
+  index: -1
+water-7-si-up_15
+  rotate: false
+  xy: 420,54
+  size: 51,46
+  orig: 51,46
+  offset: 0, 0
+  index: -1
+water-7-si-up_16
+  rotate: false
+  xy: 384,133
+  size: 51,46
+  orig: 51,46
+  offset: 0, 0
+  index: -1
+water-7-si-up_17
+  rotate: false
+  xy: 439,133
+  size: 49,45
+  orig: 49,45
+  offset: 0, 0
+  index: -1

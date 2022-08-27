@@ -1,0 +1,111 @@
+
+water-5-ee-ground.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-9-ee-ground_00
+  rotate: false
+  xy: 414,2
+  size: 77,24
+  orig: 77,24
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_01
+  rotate: false
+  xy: 2,376
+  size: 163,41
+  orig: 163,41
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_02
+  rotate: false
+  xy: 2,326
+  size: 183,46
+  orig: 183,46
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_03
+  rotate: false
+  xy: 2,274
+  size: 189,48
+  orig: 189,48
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_04
+  rotate: false
+  xy: 2,220
+  size: 194,50
+  orig: 194,50
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_05
+  rotate: false
+  xy: 2,166
+  size: 196,50
+  orig: 196,50
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_06
+  rotate: false
+  xy: 2,57
+  size: 198,52
+  orig: 198,52
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_07
+  rotate: false
+  xy: 204,57
+  size: 200,51
+  orig: 200,51
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_08
+  rotate: false
+  xy: 2,2
+  size: 202,51
+  orig: 202,51
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_09
+  rotate: false
+  xy: 208,2
+  size: 202,51
+  orig: 202,51
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_10
+  rotate: false
+  xy: 2,113
+  size: 203,49
+  orig: 203,49
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_11
+  rotate: false
+  xy: 209,113
+  size: 204,48
+  orig: 204,48
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_12
+  rotate: false
+  xy: 202,166
+  size: 204,47
+  orig: 204,47
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_13
+  rotate: false
+  xy: 202,217
+  size: 205,43
+  orig: 205,43
+  offset: 0, 0
+  index: -1
+water-9-ee-ground_14
+  rotate: false
+  xy: 2,421
+  size: 183,11
+  orig: 183,11
+  offset: 0, 0
+  index: -1

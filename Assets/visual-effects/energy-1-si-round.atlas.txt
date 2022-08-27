@@ -1,0 +1,118 @@
+
+energy-1-si-round.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-15-si-round_00
+  rotate: false
+  xy: 898,258
+  size: 112,111
+  orig: 112,111
+  offset: 0, 0
+  index: -1
+electric-15-si-round_01
+  rotate: false
+  xy: 782,258
+  size: 112,111
+  orig: 112,111
+  offset: 0, 0
+  index: -1
+electric-15-si-round_02
+  rotate: false
+  xy: 522,782
+  size: 156,153
+  orig: 156,153
+  offset: 0, 0
+  index: -1
+electric-15-si-round_03
+  rotate: false
+  xy: 262,782
+  size: 182,182
+  orig: 182,182
+  offset: 0, 0
+  index: -1
+electric-15-si-round_04
+  rotate: false
+  xy: 2,782
+  size: 218,212
+  orig: 218,212
+  offset: 0, 0
+  index: -1
+electric-15-si-round_05
+  rotate: false
+  xy: 1038,2
+  size: 256,244
+  orig: 256,244
+  offset: 0, 0
+  index: -1
+electric-15-si-round_06
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_07
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_08
+  rotate: false
+  xy: 522,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_09
+  rotate: false
+  xy: 522,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_10
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_11
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_12
+  rotate: false
+  xy: 262,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_13
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_14
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-15-si-round_15
+  rotate: false
+  xy: 782,2
+  size: 252,252
+  orig: 252,252
+  offset: 0, 0
+  index: -1

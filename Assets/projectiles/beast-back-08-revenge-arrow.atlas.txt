@@ -1,0 +1,13 @@
+
+beast-back-08-revenge-arrow.png
+size: 248,65
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+revenge-arrow
+  rotate: false
+  xy: 2, 2
+  size: 244, 61
+  orig: 244, 61
+  offset: 0, 0
+  index: -1

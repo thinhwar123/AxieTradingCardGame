@@ -1,0 +1,65 @@
+
+bird-tail-10-cool-breeze.png
+size: 1154,1055
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tornado-3
+  rotate: false
+  xy: 2, 2
+  size: 1150, 1051
+  orig: 1151, 1051
+  offset: 1, 0
+  index: -1
+
+cool-breeze2.png
+size: 1134,1057
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tornado-2
+  rotate: false
+  xy: 2, 2
+  size: 1130, 1053
+  orig: 1130, 1053
+  offset: 0, 0
+  index: -1
+
+cool-breeze3.png
+size: 1197,1070
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tornado-1
+  rotate: false
+  xy: 2, 2
+  size: 1193, 1066
+  orig: 1193, 1067
+  offset: 0, 1
+  index: -1
+
+cool-breeze4.png
+size: 1123,1085
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tornado-5
+  rotate: true
+  xy: 2, 2
+  size: 1081, 1119
+  orig: 1081, 1119
+  offset: 0, 0
+  index: -1
+
+cool-breeze5.png
+size: 1244,1104
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tornado-4
+  rotate: false
+  xy: 2, 2
+  size: 1240, 1100
+  orig: 1241, 1100
+  offset: 1, 0
+  index: -1

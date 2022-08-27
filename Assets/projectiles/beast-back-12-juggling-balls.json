@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "hrzH+JOUTTorKuByP2+4O8wTmfo",
+	"spine": "3.8.79",
+	"x": -136.5,
+	"y": -134.5,
+	"width": 273,
+	"height": 269,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.05 },
+	{ "name": "juggling-balls", "parent": "root", "y": 63.05 }
+],
+"slots": [
+	{ "name": "juggling-balls", "bone": "juggling-balls", "attachment": "juggling-balls" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"juggling-balls": {
+				"juggling-balls": { "width": 273, "height": 269 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {}
+}
+}
