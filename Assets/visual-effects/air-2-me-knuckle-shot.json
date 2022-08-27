@@ -1,0 +1,32 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "Air_11_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "Air_11_00000": {"x": 195, "y": -10, "width": 46, "height": 16},
+          "Air_11_00001": {"x": 150, "y": -33, "width": 116, "height": 102},
+          "Air_11_00002": {"x": 105, "y": -11, "width": 244, "height": 37},
+          "Air_11_00003": {"x": 44, "y": -14, "width": 253, "height": 179},
+          "Air_11_00004": {"x": -24, "y": -4, "width": 310, "height": 230},
+          "Air_11_00005": {"x": -47, "y": -4, "width": 337, "height": 239},
+          "Air_11_00006": {"x": -107, "y": -3, "width": 239, "height": 240}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "Air_11_00000"}, {"time": 0.1, "name": "Air_11_00001"}, {"time": 0.2, "name": "Air_11_00002"}, {"time": 0.30000000000000004, "name": "Air_11_00003"}, {"time": 0.4, "name": "Air_11_00004"},
+            {"time": 0.5, "name": "Air_11_00005"}, {"time": 0.6000000000000001, "name": "Air_11_00006"}
+          ]
+        }
+      }
+    }
+  }
+}

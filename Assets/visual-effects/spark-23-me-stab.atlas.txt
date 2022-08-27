@@ -1,0 +1,83 @@
+
+spark-23-me-stab.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-23-me-stab_00
+  rotate: false
+  xy: 273,2
+  size: 59,66
+  orig: 59,66
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_01
+  rotate: false
+  xy: 81,168
+  size: 69,168
+  orig: 69,168
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_02
+  rotate: false
+  xy: 2,198
+  size: 75,190
+  orig: 75,190
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_03
+  rotate: false
+  xy: 2,2
+  size: 75,192
+  orig: 75,192
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_04
+  rotate: false
+  xy: 81,2
+  size: 73,162
+  orig: 73,162
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_05
+  rotate: false
+  xy: 81,340
+  size: 67,160
+  orig: 67,160
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_06
+  rotate: false
+  xy: 158,2
+  size: 61,155
+  orig: 61,155
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_07
+  rotate: false
+  xy: 158,161
+  size: 57,157
+  orig: 57,157
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_08
+  rotate: false
+  xy: 2,392
+  size: 53,98
+  orig: 53,98
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_09
+  rotate: false
+  xy: 223,2
+  size: 46,89
+  orig: 46,89
+  offset: 0, 0
+  index: -1
+spark-23-me-stab_10
+  rotate: false
+  xy: 273,72
+  size: 37,82
+  orig: 37,82
+  offset: 0, 0
+  index: -1

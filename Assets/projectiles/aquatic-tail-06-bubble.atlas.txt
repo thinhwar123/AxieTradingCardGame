@@ -1,0 +1,27 @@
+
+aquatic-tail-06-bubble.png
+size: 591,224
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bubble-1
+  rotate: true
+  xy: 2, 2
+  size: 220, 218
+  orig: 221, 218
+  offset: 1, 0
+  index: -1
+bubble-2
+  rotate: true
+  xy: 437, 69
+  size: 153, 152
+  orig: 153, 152
+  offset: 0, 0
+  index: -1
+bubble-3
+  rotate: true
+  xy: 222, 5
+  size: 217, 213
+  orig: 217, 213
+  offset: 0, 0
+  index: -1

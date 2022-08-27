@@ -2960,7 +2960,7 @@ MonoBehaviour:
   offlineScene: 
   onlineScene: Assets/_Game/Scene/BattleScene.unity
   transport: {fileID: 794572639}
-  networkAddress: localhost
+  networkAddress: 0.0.0.0
   maxConnections: 2
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 4322532396386617348, guid: 6725afe615943664192e1c3e2bde6ea5,

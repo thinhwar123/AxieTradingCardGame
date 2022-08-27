@@ -1,0 +1,13 @@
+
+bug-horn-06-nest-buddies.png
+size: 147,94
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nest-buddies
+  rotate: false
+  xy: 2, 2
+  size: 143, 90
+  orig: 143, 90
+  offset: 0, 0
+  index: -1

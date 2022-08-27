@@ -1,0 +1,146 @@
+
+line-1-be-up.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+line-1-be-up_00
+  rotate: false
+  xy: 158,476
+  size: 64,30
+  orig: 64,30
+  offset: 0, 0
+  index: -1
+line-1-be-up_01
+  rotate: false
+  xy: 316,251
+  size: 81,67
+  orig: 81,67
+  offset: 0, 0
+  index: -1
+line-1-be-up_02
+  rotate: false
+  xy: 158,421
+  size: 112,51
+  orig: 112,51
+  offset: 0, 0
+  index: -1
+line-1-be-up_03
+  rotate: false
+  xy: 439,104
+  size: 122,43
+  orig: 122,43
+  offset: 0, 0
+  index: -1
+line-1-be-up_04
+  rotate: false
+  xy: 2,434
+  size: 137,65
+  orig: 137,65
+  offset: 0, 0
+  index: -1
+line-1-be-up_05
+  rotate: false
+  xy: 597,2
+  size: 157,96
+  orig: 157,96
+  offset: 0, 0
+  index: -1
+line-1-be-up_06
+  rotate: false
+  xy: 758,2
+  size: 157,96
+  orig: 157,96
+  offset: 0, 0
+  index: -1
+line-1-be-up_07
+  rotate: false
+  xy: 757,102
+  size: 156,93
+  orig: 156,93
+  offset: 0, 0
+  index: -1
+line-1-be-up_08
+  rotate: false
+  xy: 597,102
+  size: 156,94
+  orig: 156,94
+  offset: 0, 0
+  index: -1
+line-1-be-up_09
+  rotate: false
+  xy: 439,2
+  size: 154,98
+  orig: 154,98
+  offset: 0, 0
+  index: -1
+line-1-be-up_10
+  rotate: false
+  xy: 158,2
+  size: 154,126
+  orig: 154,126
+  offset: 0, 0
+  index: -1
+line-1-be-up_11
+  rotate: false
+  xy: 2,2
+  size: 152,138
+  orig: 152,138
+  offset: 0, 0
+  index: -1
+line-1-be-up_12
+  rotate: false
+  xy: 2,144
+  size: 144,141
+  orig: 144,141
+  offset: 0, 0
+  index: -1
+line-1-be-up_13
+  rotate: false
+  xy: 2,289
+  size: 139,141
+  orig: 139,141
+  offset: 0, 0
+  index: -1
+line-1-be-up_14
+  rotate: false
+  xy: 158,132
+  size: 131,141
+  orig: 131,141
+  offset: 0, 0
+  index: -1
+line-1-be-up_15
+  rotate: false
+  xy: 316,2
+  size: 119,140
+  orig: 119,140
+  offset: 0, 0
+  index: -1
+line-1-be-up_16
+  rotate: false
+  xy: 158,277
+  size: 119,140
+  orig: 119,140
+  offset: 0, 0
+  index: -1
+line-1-be-up_17
+  rotate: false
+  xy: 316,146
+  size: 108,101
+  orig: 108,101
+  offset: 0, 0
+  index: -1
+line-1-be-up_18
+  rotate: false
+  xy: 281,277
+  size: 24,93
+  orig: 24,93
+  offset: 0, 0
+  index: -1
+line-1-be-up_19
+  rotate: false
+  xy: 145,289
+  size: 9,9
+  orig: 9,9
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+air-2-me-knuckle-shot.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Air_11_00000
+  rotate: false
+  xy: 2,479
+  size: 46,16
+  orig: 46,16
+  offset: 0, 0
+  index: -1
+Air_11_00001
+  rotate: false
+  xy: 343,246
+  size: 116,102
+  orig: 116,102
+  offset: 0, 0
+  index: -1
+Air_11_00002
+  rotate: false
+  xy: 586,185
+  size: 244,37
+  orig: 244,37
+  offset: 0, 0
+  index: -1
+Air_11_00003
+  rotate: false
+  xy: 586,2
+  size: 253,179
+  orig: 253,179
+  offset: 0, 0
+  index: -1
+Air_11_00004
+  rotate: false
+  xy: 2,245
+  size: 310,230
+  orig: 310,230
+  offset: 0, 0
+  index: -1
+Air_11_00005
+  rotate: false
+  xy: 2,2
+  size: 337,239
+  orig: 337,239
+  offset: 0, 0
+  index: -1
+Air_11_00006
+  rotate: false
+  xy: 343,2
+  size: 239,240
+  orig: 239,240
+  offset: 0, 0
+  index: -1

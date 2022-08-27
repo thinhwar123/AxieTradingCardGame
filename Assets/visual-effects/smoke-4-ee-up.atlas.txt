@@ -1,0 +1,97 @@
+
+smoke-4-ee-up.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_08_00000
+  rotate: false
+  xy: 136,384
+  size: 37,58
+  orig: 37,58
+  offset: 0, 0
+  index: -1
+smoke_08_00001
+  rotate: false
+  xy: 190,383
+  size: 84,111
+  orig: 84,111
+  offset: 0, 0
+  index: -1
+smoke_08_00002
+  rotate: false
+  xy: 692,2
+  size: 99,154
+  orig: 99,154
+  offset: 0, 0
+  index: -1
+smoke_08_00003
+  rotate: false
+  xy: 360,339
+  size: 122,165
+  orig: 122,165
+  offset: 0, 0
+  index: -1
+smoke_08_00004
+  rotate: false
+  xy: 537,186
+  size: 138,174
+  orig: 138,174
+  offset: 0, 0
+  index: -1
+smoke_08_00005
+  rotate: false
+  xy: 537,2
+  size: 151,180
+  orig: 151,180
+  offset: 0, 0
+  index: -1
+smoke_08_00006
+  rotate: false
+  xy: 190,194
+  size: 159,185
+  orig: 159,185
+  offset: 0, 0
+  index: -1
+smoke_08_00007
+  rotate: false
+  xy: 190,2
+  size: 166,188
+  orig: 166,188
+  offset: 0, 0
+  index: -1
+smoke_08_00008
+  rotate: false
+  xy: 2,192
+  size: 173,188
+  orig: 173,188
+  offset: 0, 0
+  index: -1
+smoke_08_00009
+  rotate: false
+  xy: 2,2
+  size: 184,186
+  orig: 184,186
+  offset: 0, 0
+  index: -1
+smoke_08_00010
+  rotate: false
+  xy: 360,2
+  size: 173,166
+  orig: 173,166
+  offset: 0, 0
+  index: -1
+smoke_08_00011
+  rotate: false
+  xy: 360,172
+  size: 173,163
+  orig: 173,163
+  offset: 0, 0
+  index: -1
+smoke_08_00012
+  rotate: false
+  xy: 2,384
+  size: 130,75
+  orig: 130,75
+  offset: 0, 0
+  index: -1

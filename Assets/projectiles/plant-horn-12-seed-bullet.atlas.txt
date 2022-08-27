@@ -1,0 +1,62 @@
+
+plant-horn-12-seed-bullet.png
+size: 206,72
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dash-seed-1
+  rotate: false
+  xy: 2, 20
+  size: 139, 16
+  orig: 139, 16
+  offset: 0, 0
+  index: -1
+dash-seed-2
+  rotate: false
+  xy: 2, 2
+  size: 131, 16
+  orig: 131, 16
+  offset: 0, 0
+  index: -1
+dash-seed-3
+  rotate: false
+  xy: 2, 55
+  size: 141, 15
+  orig: 141, 15
+  offset: 0, 0
+  index: -1
+dash-seed-4
+  rotate: false
+  xy: 2, 38
+  size: 141, 15
+  orig: 141, 15
+  offset: 0, 0
+  index: -1
+seed-bullet-1
+  rotate: false
+  xy: 143, 7
+  size: 37, 25
+  orig: 37, 25
+  offset: 0, 0
+  index: -1
+seed-bullet-2
+  rotate: true
+  xy: 183, 33
+  size: 37, 21
+  orig: 37, 21
+  offset: 0, 0
+  index: -1
+seed-bullet-3
+  rotate: false
+  xy: 145, 34
+  size: 36, 18
+  orig: 36, 18
+  offset: 0, 0
+  index: -1
+seed-bullet-4
+  rotate: false
+  xy: 145, 54
+  size: 36, 16
+  orig: 36, 16
+  offset: 0, 0
+  index: -1

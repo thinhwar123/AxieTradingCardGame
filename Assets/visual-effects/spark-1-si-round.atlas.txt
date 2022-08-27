@@ -1,0 +1,167 @@
+
+spark-1-si-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-1-si-round_00
+  rotate: false
+  xy: 934,71
+  size: 49,49
+  orig: 49,49
+  offset: 0, 0
+  index: -1
+spark-1-si-round_01
+  rotate: false
+  xy: 934,2
+  size: 73,65
+  orig: 73,65
+  offset: 0, 0
+  index: -1
+spark-1-si-round_02
+  rotate: false
+  xy: 884,414
+  size: 99,81
+  orig: 99,81
+  offset: 0, 0
+  index: -1
+spark-1-si-round_03
+  rotate: false
+  xy: 608,414
+  size: 125,101
+  orig: 125,101
+  offset: 0, 0
+  index: -1
+spark-1-si-round_04
+  rotate: false
+  xy: 856,215
+  size: 148,119
+  orig: 148,119
+  offset: 0, 0
+  index: -1
+spark-1-si-round_05
+  rotate: false
+  xy: 220,889
+  size: 169,133
+  orig: 169,133
+  offset: 0, 0
+  index: -1
+spark-1-si-round_06
+  rotate: false
+  xy: 220,738
+  size: 184,147
+  orig: 184,147
+  offset: 0, 0
+  index: -1
+spark-1-si-round_07
+  rotate: false
+  xy: 220,573
+  size: 194,161
+  orig: 194,161
+  offset: 0, 0
+  index: -1
+spark-1-si-round_08
+  rotate: false
+  xy: 652,215
+  size: 200,171
+  orig: 200,171
+  offset: 0, 0
+  index: -1
+spark-1-si-round_09
+  rotate: false
+  xy: 2,837
+  size: 207,180
+  orig: 207,180
+  offset: 0, 0
+  index: -1
+spark-1-si-round_10
+  rotate: false
+  xy: 2,645
+  size: 214,188
+  orig: 214,188
+  offset: 0, 0
+  index: -1
+spark-1-si-round_11
+  rotate: false
+  xy: 220,215
+  size: 221,195
+  orig: 221,195
+  offset: 0, 0
+  index: -1
+spark-1-si-round_12
+  rotate: false
+  xy: 704,2
+  size: 226,200
+  orig: 226,200
+  offset: 0, 0
+  index: -1
+spark-1-si-round_13
+  rotate: false
+  xy: 470,2
+  size: 230,204
+  orig: 230,204
+  offset: 0, 0
+  index: -1
+spark-1-si-round_14
+  rotate: false
+  xy: 236,2
+  size: 230,207
+  orig: 230,207
+  offset: 0, 0
+  index: -1
+spark-1-si-round_15
+  rotate: false
+  xy: 2,2
+  size: 230,209
+  orig: 230,209
+  offset: 0, 0
+  index: -1
+spark-1-si-round_16
+  rotate: false
+  xy: 2,215
+  size: 214,211
+  orig: 214,211
+  offset: 0, 0
+  index: -1
+spark-1-si-round_17
+  rotate: false
+  xy: 2,430
+  size: 213,211
+  orig: 213,211
+  offset: 0, 0
+  index: -1
+spark-1-si-round_18
+  rotate: false
+  xy: 445,215
+  size: 203,179
+  orig: 203,179
+  offset: 0, 0
+  index: -1
+spark-1-si-round_19
+  rotate: false
+  xy: 220,414
+  size: 202,155
+  orig: 202,155
+  offset: 0, 0
+  index: -1
+spark-1-si-round_20
+  rotate: false
+  xy: 426,414
+  size: 178,148
+  orig: 178,148
+  offset: 0, 0
+  index: -1
+spark-1-si-round_21
+  rotate: false
+  xy: 737,414
+  size: 143,87
+  orig: 143,87
+  offset: 0, 0
+  index: -1
+spark-1-si-round_22
+  rotate: false
+  xy: 856,338
+  size: 122,52
+  orig: 122,52
+  offset: 0, 0
+  index: -1

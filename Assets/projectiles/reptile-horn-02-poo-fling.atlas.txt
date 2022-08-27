@@ -1,0 +1,13 @@
+
+reptile-horn-02-poo-fling.png
+size: 219,182
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shit-drop-1
+  rotate: false
+  xy: 2, 2
+  size: 215, 178
+  orig: 216, 178
+  offset: 0, 0
+  index: -1

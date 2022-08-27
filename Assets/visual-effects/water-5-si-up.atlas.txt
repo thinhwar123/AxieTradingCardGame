@@ -1,0 +1,90 @@
+
+water-5-si-up.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-5-si-up_00
+  rotate: false
+  xy: 383,38
+  size: 58,20
+  orig: 58,20
+  offset: 0, 0
+  index: -1
+water-5-si-up_01
+  rotate: false
+  xy: 383,2
+  size: 109,32
+  orig: 109,32
+  offset: 0, 0
+  index: -1
+water-5-si-up_02
+  rotate: false
+  xy: 360,67
+  size: 144,48
+  orig: 144,48
+  offset: 0, 0
+  index: -1
+water-5-si-up_03
+  rotate: false
+  xy: 2,133
+  size: 168,56
+  orig: 168,56
+  offset: 0, 0
+  index: -1
+water-5-si-up_04
+  rotate: false
+  xy: 184,67
+  size: 172,59
+  orig: 172,59
+  offset: 0, 0
+  index: -1
+water-5-si-up_05
+  rotate: false
+  xy: 2,67
+  size: 178,62
+  orig: 178,62
+  offset: 0, 0
+  index: -1
+water-5-si-up_06
+  rotate: false
+  xy: 2,2
+  size: 182,61
+  orig: 182,61
+  offset: 0, 0
+  index: -1
+water-5-si-up_07
+  rotate: false
+  xy: 188,2
+  size: 191,55
+  orig: 191,55
+  offset: 0, 0
+  index: -1
+water-5-si-up_08
+  rotate: false
+  xy: 174,133
+  size: 194,42
+  orig: 194,42
+  offset: 0, 0
+  index: -1
+water-5-si-up_09
+  rotate: false
+  xy: 174,179
+  size: 190,30
+  orig: 190,30
+  offset: 0, 0
+  index: -1
+water-5-si-up_10
+  rotate: false
+  xy: 445,38
+  size: 46,11
+  orig: 46,11
+  offset: 0, 0
+  index: -1
+water-5-si-up_11
+  rotate: false
+  xy: 496,2
+  size: 10,8
+  orig: 10,8
+  offset: 0, 0
+  index: -1

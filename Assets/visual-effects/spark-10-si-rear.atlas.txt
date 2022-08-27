@@ -1,0 +1,62 @@
+
+spark-10-si-rear.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-10-si-rear_00
+  rotate: false
+  xy: 293,135
+  size: 90,66
+  orig: 90,66
+  offset: 0, 0
+  index: -1
+spark-10-si-rear_01
+  rotate: false
+  xy: 2,372
+  size: 163,92
+  orig: 163,92
+  offset: 0, 0
+  index: -1
+spark-10-si-rear_02
+  rotate: false
+  xy: 2,135
+  size: 174,107
+  orig: 174,107
+  offset: 0, 0
+  index: -1
+spark-10-si-rear_03
+  rotate: false
+  xy: 326,2
+  size: 171,116
+  orig: 171,116
+  offset: 0, 0
+  index: -1
+spark-10-si-rear_04
+  rotate: false
+  xy: 2,2
+  size: 160,129
+  orig: 160,129
+  offset: 0, 0
+  index: -1
+spark-10-si-rear_05
+  rotate: false
+  xy: 166,2
+  size: 156,129
+  orig: 156,129
+  offset: 0, 0
+  index: -1
+spark-10-si-rear_06
+  rotate: false
+  xy: 2,246
+  size: 135,122
+  orig: 135,122
+  offset: 0, 0
+  index: -1
+spark-10-si-rear_07
+  rotate: false
+  xy: 180,135
+  size: 109,113
+  orig: 109,113
+  offset: 0, 0
+  index: -1

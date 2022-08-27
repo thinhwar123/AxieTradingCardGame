@@ -1,0 +1,90 @@
+
+fire-22-si-up.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire-22-si-up_00
+  rotate: false
+  xy: 214,368
+  size: 92,97
+  orig: 92,97
+  offset: 0, 0
+  index: -1
+fire-22-si-up_01
+  rotate: false
+  xy: 817,2
+  size: 151,154
+  orig: 151,154
+  offset: 0, 0
+  index: -1
+fire-22-si-up_02
+  rotate: false
+  xy: 649,2
+  size: 164,187
+  orig: 164,187
+  offset: 0, 0
+  index: -1
+fire-22-si-up_03
+  rotate: false
+  xy: 2,190
+  size: 190,191
+  orig: 190,191
+  offset: 0, 0
+  index: -1
+fire-22-si-up_04
+  rotate: false
+  xy: 2,2
+  size: 208,184
+  orig: 208,184
+  offset: 0, 0
+  index: -1
+fire-22-si-up_05
+  rotate: false
+  xy: 214,2
+  size: 212,180
+  orig: 212,180
+  offset: 0, 0
+  index: -1
+fire-22-si-up_06
+  rotate: false
+  xy: 214,186
+  size: 212,178
+  orig: 212,178
+  offset: 0, 0
+  index: -1
+fire-22-si-up_07
+  rotate: false
+  xy: 430,2
+  size: 215,174
+  orig: 215,174
+  offset: 0, 0
+  index: -1
+fire-22-si-up_08
+  rotate: false
+  xy: 430,180
+  size: 209,161
+  orig: 209,161
+  offset: 0, 0
+  index: -1
+fire-22-si-up_09
+  rotate: false
+  xy: 430,345
+  size: 188,143
+  orig: 188,143
+  offset: 0, 0
+  index: -1
+fire-22-si-up_10
+  rotate: false
+  xy: 2,385
+  size: 118,117
+  orig: 118,117
+  offset: 0, 0
+  index: -1
+fire-22-si-up_11
+  rotate: false
+  xy: 124,385
+  size: 36,36
+  orig: 36,36
+  offset: 0, 0
+  index: -1

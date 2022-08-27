@@ -1,0 +1,34 @@
+
+bird-mouth-02-soothing-song.png
+size: 169,192
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+soothing-song-1
+  rotate: true
+  xy: 50, 101
+  size: 89, 97
+  orig: 89, 98
+  offset: 0, 0
+  index: -1
+soothing-song-2
+  rotate: false
+  xy: 2, 2
+  size: 85, 73
+  orig: 85, 75
+  offset: 0, 1
+  index: -1
+soothing-song-3
+  rotate: false
+  xy: 2, 77
+  size: 46, 113
+  orig: 47, 115
+  offset: 0, 1
+  index: -1
+soothing-song-4
+  rotate: true
+  xy: 89, 18
+  size: 81, 78
+  orig: 81, 78
+  offset: 0, 0
+  index: -1

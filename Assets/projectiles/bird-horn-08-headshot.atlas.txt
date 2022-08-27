@@ -1,0 +1,20 @@
+
+bird-horn-08-headshot.png
+size: 350,122
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+orange-fur-1
+  rotate: true
+  xy: 190, 2
+  size: 118, 158
+  orig: 118, 158
+  offset: 0, 0
+  index: -1
+orange-fur-2
+  rotate: false
+  xy: 2, 9
+  size: 186, 111
+  orig: 187, 112
+  offset: 1, 1
+  index: -1

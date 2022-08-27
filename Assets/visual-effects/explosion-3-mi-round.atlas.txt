@@ -1,0 +1,244 @@
+
+explosion-3-mi-round.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+explosion-9-mi-round_00
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_01
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_02
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_03
+  rotate: false
+  xy: 1806,2
+  size: 125,122
+  orig: 125,122
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_04
+  rotate: false
+  xy: 501,443
+  size: 193,191
+  orig: 193,191
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_05
+  rotate: false
+  xy: 262,456
+  size: 234,222
+  orig: 234,222
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_06
+  rotate: false
+  xy: 262,2
+  size: 235,223
+  orig: 235,223
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_07
+  rotate: false
+  xy: 2,782
+  size: 235,223
+  orig: 235,223
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_08
+  rotate: false
+  xy: 262,229
+  size: 235,223
+  orig: 235,223
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_09
+  rotate: false
+  xy: 501,2
+  size: 227,219
+  orig: 227,219
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_10
+  rotate: false
+  xy: 262,682
+  size: 227,219
+  orig: 227,219
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_11
+  rotate: false
+  xy: 501,225
+  size: 217,214
+  orig: 217,214
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_12
+  rotate: false
+  xy: 501,638
+  size: 201,151
+  orig: 201,151
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_13
+  rotate: false
+  xy: 501,793
+  size: 198,153
+  orig: 198,153
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_14
+  rotate: false
+  xy: 922,2
+  size: 191,155
+  orig: 191,155
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_15
+  rotate: false
+  xy: 732,330
+  size: 185,157
+  orig: 185,157
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_16
+  rotate: false
+  xy: 732,166
+  size: 185,160
+  orig: 185,160
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_17
+  rotate: false
+  xy: 732,2
+  size: 186,160
+  orig: 186,160
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_18
+  rotate: false
+  xy: 732,664
+  size: 170,161
+  orig: 170,161
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_19
+  rotate: false
+  xy: 922,329
+  size: 168,161
+  orig: 168,161
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_20
+  rotate: false
+  xy: 922,669
+  size: 166,162
+  orig: 166,162
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_21
+  rotate: false
+  xy: 922,161
+  size: 166,164
+  orig: 166,164
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_22
+  rotate: false
+  xy: 732,829
+  size: 164,166
+  orig: 164,166
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_23
+  rotate: false
+  xy: 732,491
+  size: 163,169
+  orig: 163,169
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_24
+  rotate: false
+  xy: 922,494
+  size: 158,171
+  orig: 158,171
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_25
+  rotate: false
+  xy: 922,835
+  size: 156,172
+  orig: 156,172
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_26
+  rotate: false
+  xy: 1117,2
+  size: 136,173
+  orig: 136,173
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_27
+  rotate: false
+  xy: 1257,2
+  size: 133,172
+  orig: 133,172
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_28
+  rotate: false
+  xy: 1117,179
+  size: 134,174
+  orig: 134,174
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_29
+  rotate: false
+  xy: 1394,2
+  size: 134,170
+  orig: 134,170
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_30
+  rotate: false
+  xy: 1532,2
+  size: 134,166
+  orig: 134,166
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_31
+  rotate: false
+  xy: 1670,2
+  size: 132,164
+  orig: 132,164
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_32
+  rotate: false
+  xy: 262,905
+  size: 129,79
+  orig: 129,79
+  offset: 0, 0
+  index: -1
+explosion-9-mi-round_33
+  rotate: false
+  xy: 1117,357
+  size: 127,77
+  orig: 127,77
+  offset: 0, 0
+  index: -1

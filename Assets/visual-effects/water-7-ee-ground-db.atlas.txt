@@ -1,0 +1,125 @@
+
+water-7-ee-ground-db.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-19-ee-ground-db_00
+  rotate: false
+  xy: 396,37
+  size: 76,25
+  orig: 76,25
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_01
+  rotate: false
+  xy: 396,2
+  size: 106,31
+  orig: 106,31
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_02
+  rotate: false
+  xy: 191,440
+  size: 127,40
+  orig: 127,40
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_03
+  rotate: false
+  xy: 191,389
+  size: 149,47
+  orig: 149,47
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_04
+  rotate: false
+  xy: 2,413
+  size: 167,54
+  orig: 167,54
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_05
+  rotate: false
+  xy: 2,351
+  size: 171,58
+  orig: 171,58
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_06
+  rotate: false
+  xy: 2,285
+  size: 177,62
+  orig: 177,62
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_07
+  rotate: false
+  xy: 2,218
+  size: 180,63
+  orig: 180,63
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_08
+  rotate: false
+  xy: 2,148
+  size: 185,66
+  orig: 185,66
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_09
+  rotate: false
+  xy: 197,75
+  size: 188,67
+  orig: 188,67
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_10
+  rotate: false
+  xy: 2,75
+  size: 191,69
+  orig: 191,69
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_11
+  rotate: false
+  xy: 200,2
+  size: 192,69
+  orig: 192,69
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_12
+  rotate: false
+  xy: 2,2
+  size: 194,69
+  orig: 194,69
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_13
+  rotate: false
+  xy: 191,148
+  size: 193,62
+  orig: 193,62
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_14
+  rotate: false
+  xy: 191,214
+  size: 194,59
+  orig: 194,59
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_15
+  rotate: false
+  xy: 191,277
+  size: 192,53
+  orig: 192,53
+  offset: 0, 0
+  index: -1
+water-19-ee-ground-db_16
+  rotate: false
+  xy: 191,334
+  size: 190,51
+  orig: 190,51
+  offset: 0, 0
+  index: -1

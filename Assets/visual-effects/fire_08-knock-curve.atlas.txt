@@ -1,0 +1,62 @@
+
+fire_08-knock-curve.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire_08_00000
+  rotate: false
+  xy: 336,157
+  size: 141,50
+  orig: 141,50
+  offset: 0, 0
+  index: -1
+fire_08_00001
+  rotate: false
+  xy: 2,231
+  size: 364,58
+  orig: 364,58
+  offset: 0, 0
+  index: -1
+fire_08_00002
+  rotate: false
+  xy: 2,81
+  size: 386,72
+  orig: 386,72
+  offset: 0, 0
+  index: -1
+fire_08_00003
+  rotate: false
+  xy: 2,2
+  size: 388,75
+  orig: 388,75
+  offset: 0, 0
+  index: -1
+fire_08_00004
+  rotate: false
+  xy: 2,157
+  size: 330,70
+  orig: 330,70
+  offset: 0, 0
+  index: -1
+fire_08_00005
+  rotate: false
+  xy: 2,293
+  size: 218,67
+  orig: 218,67
+  offset: 0, 0
+  index: -1
+fire_08_00006
+  rotate: false
+  xy: 2,364
+  size: 204,62
+  orig: 204,62
+  offset: 0, 0
+  index: -1
+fire_08_00007
+  rotate: false
+  xy: 2,430
+  size: 203,46
+  orig: 203,46
+  offset: 0, 0
+  index: -1

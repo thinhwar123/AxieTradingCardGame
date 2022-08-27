@@ -1,0 +1,174 @@
+
+fire-2-de-charge.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire-2-de-charge_00
+  rotate: false
+  xy: 576,275
+  size: 58,49
+  orig: 58,49
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_01
+  rotate: false
+  xy: 931,264
+  size: 84,53
+  orig: 84,53
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_02
+  rotate: false
+  xy: 799,321
+  size: 112,58
+  orig: 112,58
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_03
+  rotate: false
+  xy: 643,437
+  size: 121,57
+  orig: 121,57
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_04
+  rotate: false
+  xy: 799,264
+  size: 128,53
+  orig: 128,53
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_05
+  rotate: false
+  xy: 643,381
+  size: 140,52
+  orig: 140,52
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_06
+  rotate: false
+  xy: 643,322
+  size: 148,55
+  orig: 148,55
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_07
+  rotate: false
+  xy: 643,264
+  size: 152,54
+  orig: 152,54
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_08
+  rotate: false
+  xy: 818,162
+  size: 157,58
+  orig: 157,58
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_09
+  rotate: false
+  xy: 441,436
+  size: 168,70
+  orig: 168,70
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_10
+  rotate: false
+  xy: 643,162
+  size: 171,98
+  orig: 171,98
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_11
+  rotate: false
+  xy: 441,152
+  size: 186,119
+  orig: 186,119
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_12
+  rotate: false
+  xy: 441,2
+  size: 198,146
+  orig: 198,146
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_13
+  rotate: false
+  xy: 221,321
+  size: 204,150
+  orig: 204,150
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_14
+  rotate: false
+  xy: 221,2
+  size: 216,153
+  orig: 216,153
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_15
+  rotate: false
+  xy: 2,2
+  size: 215,158
+  orig: 215,158
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_16
+  rotate: false
+  xy: 2,164
+  size: 212,159
+  orig: 212,159
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_17
+  rotate: false
+  xy: 2,327
+  size: 204,158
+  orig: 204,158
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_18
+  rotate: false
+  xy: 221,159
+  size: 202,158
+  orig: 202,158
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_19
+  rotate: false
+  xy: 441,275
+  size: 131,157
+  orig: 131,157
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_20
+  rotate: false
+  xy: 643,2
+  size: 119,156
+  orig: 119,156
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_21
+  rotate: false
+  xy: 766,2
+  size: 112,154
+  orig: 112,154
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_22
+  rotate: false
+  xy: 882,2
+  size: 104,150
+  orig: 104,150
+  offset: 0, 0
+  index: -1
+fire-2-de-charge_23
+  rotate: false
+  xy: 799,383
+  size: 66,69
+  orig: 66,69
+  offset: 0, 0
+  index: -1

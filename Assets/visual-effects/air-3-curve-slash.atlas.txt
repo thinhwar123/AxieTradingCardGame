@@ -1,0 +1,83 @@
+
+air-3-curve-slash.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Air_03_00001
+  rotate: false
+  xy: 2,421
+  size: 122,55
+  orig: 122,55
+  offset: 0, 0
+  index: -1
+Air_03_00002
+  rotate: false
+  xy: 2,2
+  size: 125,200
+  orig: 125,200
+  offset: 0, 0
+  index: -1
+Air_03_00003
+  rotate: false
+  xy: 2,206
+  size: 100,211
+  orig: 100,211
+  offset: 0, 0
+  index: -1
+Air_03_00004
+  rotate: false
+  xy: 131,187
+  size: 92,209
+  orig: 92,209
+  offset: 0, 0
+  index: -1
+Air_03_00005
+  rotate: false
+  xy: 131,2
+  size: 111,181
+  orig: 111,181
+  offset: 0, 0
+  index: -1
+Air_03_00006
+  rotate: false
+  xy: 246,2
+  size: 116,124
+  orig: 116,124
+  offset: 0, 0
+  index: -1
+Air_03_00007
+  rotate: false
+  xy: 366,2
+  size: 124,116
+  orig: 124,116
+  offset: 0, 0
+  index: -1
+Air_03_00008
+  rotate: false
+  xy: 246,130
+  size: 83,39
+  orig: 83,39
+  offset: 0, 0
+  index: -1
+Air_03_00009
+  rotate: false
+  xy: 366,122
+  size: 50,40
+  orig: 50,40
+  offset: 0, 0
+  index: -1
+Air_03_00010
+  rotate: false
+  xy: 420,122
+  size: 41,35
+  orig: 41,35
+  offset: 0, 0
+  index: -1
+Air_03_00011
+  rotate: false
+  xy: 106,206
+  size: 13,16
+  orig: 13,16
+  offset: 0, 0
+  index: -1

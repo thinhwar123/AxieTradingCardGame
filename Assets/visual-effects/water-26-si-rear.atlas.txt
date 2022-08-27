@@ -1,0 +1,90 @@
+
+water-26-si-rear.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-26-si-rear_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+water-26-si-rear_01
+  rotate: false
+  xy: 262,262
+  size: 98,25
+  orig: 98,25
+  offset: 0, 0
+  index: -1
+water-26-si-rear_02
+  rotate: false
+  xy: 2,390
+  size: 160,38
+  orig: 160,38
+  offset: 0, 0
+  index: -1
+water-26-si-rear_03
+  rotate: false
+  xy: 2,262
+  size: 170,39
+  orig: 170,39
+  offset: 0, 0
+  index: -1
+water-26-si-rear_04
+  rotate: false
+  xy: 2,305
+  size: 165,39
+  orig: 165,39
+  offset: 0, 0
+  index: -1
+water-26-si-rear_05
+  rotate: false
+  xy: 2,348
+  size: 166,38
+  orig: 166,38
+  offset: 0, 0
+  index: -1
+water-26-si-rear_06
+  rotate: false
+  xy: 2,432
+  size: 152,36
+  orig: 152,36
+  offset: 0, 0
+  index: -1
+water-26-si-rear_07
+  rotate: false
+  xy: 2,472
+  size: 151,29
+  orig: 151,29
+  offset: 0, 0
+  index: -1
+water-26-si-rear_08
+  rotate: false
+  xy: 176,262
+  size: 80,18
+  orig: 80,18
+  offset: 0, 0
+  index: -1
+water-26-si-rear_09
+  rotate: false
+  xy: 171,305
+  size: 74,18
+  orig: 74,18
+  offset: 0, 0
+  index: -1
+water-26-si-rear_10
+  rotate: false
+  xy: 176,284
+  size: 70,15
+  orig: 70,15
+  offset: 0, 0
+  index: -1
+water-26-si-rear_11
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1

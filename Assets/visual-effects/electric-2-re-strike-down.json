@@ -1,0 +1,39 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "electric-2-re-strike-down_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "electric-2-re-strike-down_00": {"x": -13, "y": 40, "width": 75, "height": 156},
+          "electric-2-re-strike-down_01": {"x": -4, "y": -6, "width": 97, "height": 244},
+          "electric-2-re-strike-down_02": {"x": 1, "y": -8, "width": 135, "height": 240},
+          "electric-2-re-strike-down_03": {"x": 8, "y": -6, "width": 156, "height": 244},
+          "electric-2-re-strike-down_04": {"x": 9, "y": -9, "width": 141, "height": 237},
+          "electric-2-re-strike-down_05": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "electric-2-re-strike-down_06": {"x": 0, "y": -6, "width": 159, "height": 243},
+          "electric-2-re-strike-down_07": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "electric-2-re-strike-down_08": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "electric-2-re-strike-down_09": {"x": -9, "y": -58, "width": 133, "height": 117},
+          "electric-2-re-strike-down_10": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "electric-2-re-strike-down_11": {"x": -9, "y": -59, "width": 130, "height": 118}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "electric-2-re-strike-down_00"}, {"time": 0.1, "name": "electric-2-re-strike-down_01"}, {"time": 0.2, "name": "electric-2-re-strike-down_02"},
+            {"time": 0.30000000000000004, "name": "electric-2-re-strike-down_03"}, {"time": 0.4, "name": "electric-2-re-strike-down_04"}, {"time": 0.5, "name": "electric-2-re-strike-down_05"},
+            {"time": 0.6000000000000001, "name": "electric-2-re-strike-down_06"}, {"time": 0.7000000000000001, "name": "electric-2-re-strike-down_07"}, {"time": 0.8, "name": "electric-2-re-strike-down_08"},
+            {"time": 0.9, "name": "electric-2-re-strike-down_09"}, {"time": 1.0, "name": "electric-2-re-strike-down_10"}, {"time": 1.1, "name": "electric-2-re-strike-down_11"}
+          ]
+        }
+      }
+    }
+  }
+}

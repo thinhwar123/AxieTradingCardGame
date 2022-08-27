@@ -1,0 +1,55 @@
+
+beast-mouth-08-death-mark.png
+size: 1902,1410
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+d-m-1
+  rotate: false
+  xy: 1502, 820
+  size: 106, 210
+  orig: 106, 211
+  offset: 0, 1
+  index: -1
+d-m-2
+  rotate: false
+  xy: 1502, 1032
+  size: 207, 376
+  orig: 209, 376
+  offset: 1, 0
+  index: -1
+d-m-3
+  rotate: false
+  xy: 1451, 30
+  size: 449, 663
+  orig: 449, 665
+  offset: 0, 1
+  index: -1
+d-m-4
+  rotate: false
+  xy: 786, 695
+  size: 714, 713
+  orig: 715, 714
+  offset: 0, 0
+  index: -1
+d-m-5
+  rotate: true
+  xy: 747, 32
+  size: 661, 702
+  orig: 662, 702
+  offset: 0, 0
+  index: -1
+d-m-6
+  rotate: false
+  xy: 2, 706
+  size: 782, 702
+  orig: 783, 702
+  offset: 1, 0
+  index: -1
+d-m-7
+  rotate: false
+  xy: 2, 2
+  size: 743, 702
+  orig: 744, 702
+  offset: 0, 0
+  index: -1

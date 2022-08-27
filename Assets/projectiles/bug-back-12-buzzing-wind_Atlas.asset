@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: bug-back-12-buzzing-wind_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 961d6d57c0c404f8ea0ab96c06ab2925, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 5d8cf1a5ae0cb43e5a1d3df9496871d2, type: 2}
+  - {fileID: 2100000, guid: 9484cae17a25e4631a896121334963e1, type: 2}
+  - {fileID: 2100000, guid: 4be4205b8f67b4d31960f37d83ba9d89, type: 2}
+  - {fileID: 2100000, guid: 84553b8264f9c481a89cec8293d9978c, type: 2}
+  - {fileID: 2100000, guid: d31a4d9a026cd4d27b79f257abdb076e, type: 2}

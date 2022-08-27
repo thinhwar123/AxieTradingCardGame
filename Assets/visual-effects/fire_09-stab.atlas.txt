@@ -1,0 +1,83 @@
+
+fire_09-stab.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire_09_00000
+  rotate: false
+  xy: 811,64
+  size: 67,43
+  orig: 67,43
+  offset: 0, 0
+  index: -1
+fire_09_00001
+  rotate: false
+  xy: 811,2
+  size: 176,58
+  orig: 176,58
+  offset: 0, 0
+  index: -1
+fire_09_00002
+  rotate: false
+  xy: 2,397
+  size: 285,69
+  orig: 285,69
+  offset: 0, 0
+  index: -1
+fire_09_00003
+  rotate: false
+  xy: 461,145
+  size: 313,69
+  orig: 313,69
+  offset: 0, 0
+  index: -1
+fire_09_00004
+  rotate: false
+  xy: 461,2
+  size: 346,69
+  orig: 346,69
+  offset: 0, 0
+  index: -1
+fire_09_00005
+  rotate: false
+  xy: 461,75
+  size: 340,66
+  orig: 340,66
+  offset: 0, 0
+  index: -1
+fire_09_00006
+  rotate: false
+  xy: 2,262
+  size: 351,66
+  orig: 351,66
+  offset: 0, 0
+  index: -1
+fire_09_00007
+  rotate: false
+  xy: 357,262
+  size: 354,64
+  orig: 354,64
+  offset: 0, 0
+  index: -1
+fire_09_00008
+  rotate: false
+  xy: 2,332
+  size: 357,61
+  orig: 357,61
+  offset: 0, 0
+  index: -1
+fire_09_00009
+  rotate: false
+  xy: 2,470
+  size: 344,54
+  orig: 344,54
+  offset: 0, 0
+  index: -1
+fire_09_00010
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

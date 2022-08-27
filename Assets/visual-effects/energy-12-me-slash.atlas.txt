@@ -1,0 +1,90 @@
+
+energy-12-me-slash.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy-12-me-slash_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_01
+  rotate: false
+  xy: 489,111
+  size: 110,107
+  orig: 110,107
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_02
+  rotate: false
+  xy: 2,262
+  size: 234,124
+  orig: 234,124
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_03
+  rotate: false
+  xy: 262,2
+  size: 223,121
+  orig: 223,121
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_04
+  rotate: false
+  xy: 2,390
+  size: 216,118
+  orig: 216,118
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_05
+  rotate: false
+  xy: 262,127
+  size: 214,116
+  orig: 214,116
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_06
+  rotate: false
+  xy: 262,247
+  size: 208,112
+  orig: 208,112
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_07
+  rotate: false
+  xy: 262,363
+  size: 202,108
+  orig: 202,108
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_08
+  rotate: false
+  xy: 489,2
+  size: 195,105
+  orig: 195,105
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_09
+  rotate: false
+  xy: 688,2
+  size: 190,101
+  orig: 190,101
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_10
+  rotate: false
+  xy: 882,2
+  size: 80,91
+  orig: 80,91
+  offset: 0, 0
+  index: -1
+energy-12-me-slash_11
+  rotate: false
+  xy: 489,222
+  size: 74,82
+  orig: 74,82
+  offset: 0, 0
+  index: -1

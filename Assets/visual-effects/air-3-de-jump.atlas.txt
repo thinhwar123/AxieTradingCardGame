@@ -1,0 +1,97 @@
+
+air-3-de-jump.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Air_18_00000
+  rotate: false
+  xy: 297,647
+  size: 65,45
+  orig: 65,45
+  offset: 0, 0
+  index: -1
+Air_18_00001
+  rotate: false
+  xy: 667,244
+  size: 95,58
+  orig: 95,58
+  offset: 0, 0
+  index: -1
+Air_18_00002
+  rotate: false
+  xy: 306,525
+  size: 63,51
+  orig: 63,51
+  offset: 0, 0
+  index: -1
+Air_18_00003
+  rotate: false
+  xy: 306,460
+  size: 63,61
+  orig: 63,61
+  offset: 0, 0
+  index: -1
+Air_18_00004
+  rotate: false
+  xy: 2,460
+  size: 300,183
+  orig: 300,183
+  offset: 0, 0
+  index: -1
+Air_18_00005
+  rotate: false
+  xy: 2,244
+  size: 367,212
+  orig: 367,212
+  offset: 0, 0
+  index: -1
+Air_18_00006
+  rotate: false
+  xy: 412,2
+  size: 385,221
+  orig: 385,221
+  offset: 0, 0
+  index: -1
+Air_18_00007
+  rotate: false
+  xy: 2,2
+  size: 406,238
+  orig: 406,238
+  offset: 0, 0
+  index: -1
+Air_18_00008
+  rotate: false
+  xy: 2,647
+  size: 291,181
+  orig: 291,181
+  offset: 0, 0
+  index: -1
+Air_18_00009
+  rotate: false
+  xy: 2,832
+  size: 293,171
+  orig: 293,171
+  offset: 0, 0
+  index: -1
+Air_18_00010
+  rotate: false
+  xy: 373,244
+  size: 290,162
+  orig: 290,162
+  offset: 0, 0
+  index: -1
+Air_18_00011
+  rotate: false
+  xy: 801,2
+  size: 219,113
+  orig: 219,113
+  offset: 0, 0
+  index: -1
+Air_18_00012
+  rotate: false
+  xy: 801,119
+  size: 156,102
+  orig: 156,102
+  offset: 0, 0
+  index: -1

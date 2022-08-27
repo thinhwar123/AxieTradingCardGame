@@ -1,0 +1,146 @@
+
+spark-1-be-focus.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-27-be-focus_00
+  rotate: false
+  xy: 704,171
+  size: 32,31
+  orig: 32,31
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_01
+  rotate: false
+  xy: 212,602
+  size: 165,111
+  orig: 165,111
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_02
+  rotate: false
+  xy: 381,219
+  size: 168,159
+  orig: 168,159
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_03
+  rotate: false
+  xy: 704,2
+  size: 170,165
+  orig: 170,165
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_04
+  rotate: false
+  xy: 212,2
+  size: 169,213
+  orig: 169,213
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_05
+  rotate: false
+  xy: 2,2
+  size: 206,234
+  orig: 206,234
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_06
+  rotate: false
+  xy: 2,240
+  size: 192,230
+  orig: 192,230
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_07
+  rotate: false
+  xy: 2,474
+  size: 184,225
+  orig: 184,225
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_08
+  rotate: false
+  xy: 2,703
+  size: 175,222
+  orig: 175,222
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_09
+  rotate: false
+  xy: 212,219
+  size: 165,216
+  orig: 165,216
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_10
+  rotate: false
+  xy: 385,2
+  size: 159,210
+  orig: 159,210
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_11
+  rotate: false
+  xy: 548,2
+  size: 152,198
+  orig: 152,198
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_12
+  rotate: false
+  xy: 878,2
+  size: 143,183
+  orig: 143,183
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_13
+  rotate: false
+  xy: 212,439
+  size: 137,159
+  orig: 137,159
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_14
+  rotate: false
+  xy: 212,717
+  size: 127,136
+  orig: 127,136
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_15
+  rotate: false
+  xy: 212,857
+  size: 117,109
+  orig: 117,109
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_16
+  rotate: false
+  xy: 2,929
+  size: 101,85
+  orig: 101,85
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_17
+  rotate: false
+  xy: 107,929
+  size: 80,71
+  orig: 80,71
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_18
+  rotate: false
+  xy: 553,219
+  size: 63,62
+  orig: 63,62
+  offset: 0, 0
+  index: -1
+spark-27-be-focus_19
+  rotate: false
+  xy: 553,285
+  size: 55,55
+  orig: 55,55
+  offset: 0, 0
+  index: -1

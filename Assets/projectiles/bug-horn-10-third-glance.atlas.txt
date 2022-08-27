@@ -1,0 +1,62 @@
+
+bug-horn-10-third-glance.png
+size: 122,398
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light-1
+  rotate: false
+  xy: 9, 386
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+light-2
+  rotate: true
+  xy: 2, 392
+  size: 4, 5
+  orig: 4, 5
+  offset: 0, 0
+  index: -1
+pupil
+  rotate: false
+  xy: 21, 364
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+third-glance-1
+  rotate: false
+  xy: 2, 338
+  size: 114, 24
+  orig: 142, 55
+  offset: 14, 15
+  index: -1
+third-glance-2
+  rotate: false
+  xy: 2, 296
+  size: 115, 40
+  orig: 143, 66
+  offset: 14, 13
+  index: -1
+third-glance-3
+  rotate: false
+  xy: 2, 224
+  size: 116, 70
+  orig: 143, 96
+  offset: 13, 13
+  index: -1
+third-glance-4
+  rotate: false
+  xy: 2, 122
+  size: 117, 100
+  orig: 143, 126
+  offset: 13, 13
+  index: -1
+third-glance-5
+  rotate: false
+  xy: 2, 2
+  size: 118, 118
+  orig: 144, 144
+  offset: 13, 13
+  index: -1

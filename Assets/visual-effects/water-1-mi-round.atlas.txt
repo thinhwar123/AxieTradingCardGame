@@ -1,0 +1,97 @@
+
+water-1-mi-round.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-18-mi-round_00
+  rotate: false
+  xy: 500,287
+  size: 64,61
+  orig: 64,61
+  offset: 0, 0
+  index: -1
+water-18-mi-round_01
+  rotate: false
+  xy: 500,160
+  size: 133,123
+  orig: 133,123
+  offset: 0, 0
+  index: -1
+water-18-mi-round_02
+  rotate: false
+  xy: 340,161
+  size: 156,144
+  orig: 156,144
+  offset: 0, 0
+  index: -1
+water-18-mi-round_03
+  rotate: false
+  xy: 661,2
+  size: 162,148
+  orig: 162,148
+  offset: 0, 0
+  index: -1
+water-18-mi-round_04
+  rotate: false
+  xy: 172,2
+  size: 164,152
+  orig: 164,152
+  offset: 0, 0
+  index: -1
+water-18-mi-round_05
+  rotate: false
+  xy: 2,161
+  size: 166,155
+  orig: 166,155
+  offset: 0, 0
+  index: -1
+water-18-mi-round_06
+  rotate: false
+  xy: 2,2
+  size: 166,155
+  orig: 166,155
+  offset: 0, 0
+  index: -1
+water-18-mi-round_07
+  rotate: false
+  xy: 2,320
+  size: 163,156
+  orig: 163,156
+  offset: 0, 0
+  index: -1
+water-18-mi-round_08
+  rotate: false
+  xy: 172,158
+  size: 156,157
+  orig: 156,157
+  offset: 0, 0
+  index: -1
+water-18-mi-round_09
+  rotate: false
+  xy: 172,319
+  size: 155,157
+  orig: 155,157
+  offset: 0, 0
+  index: -1
+water-18-mi-round_10
+  rotate: false
+  xy: 340,2
+  size: 156,155
+  orig: 156,155
+  offset: 0, 0
+  index: -1
+water-18-mi-round_11
+  rotate: false
+  xy: 500,2
+  size: 157,154
+  orig: 157,154
+  offset: 0, 0
+  index: -1
+water-18-mi-round_12
+  rotate: false
+  xy: 340,309
+  size: 110,155
+  orig: 110,155
+  offset: 0, 0
+  index: -1

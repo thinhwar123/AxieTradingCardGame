@@ -1,0 +1,55 @@
+
+air-1-me-stab.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Air_01_00001
+  rotate: false
+  xy: 449,31
+  size: 52,20
+  orig: 52,20
+  offset: 0, 0
+  index: -1
+Air_01_00002
+  rotate: false
+  xy: 2,2
+  size: 356,25
+  orig: 356,25
+  offset: 0, 0
+  index: -1
+Air_01_00003
+  rotate: false
+  xy: 2,31
+  size: 349,21
+  orig: 349,21
+  offset: 0, 0
+  index: -1
+Air_01_00004
+  rotate: false
+  xy: 2,56
+  size: 261,21
+  orig: 261,21
+  offset: 0, 0
+  index: -1
+Air_01_00005
+  rotate: false
+  xy: 2,81
+  size: 236,20
+  orig: 236,20
+  offset: 0, 0
+  index: -1
+Air_01_00006
+  rotate: false
+  xy: 362,2
+  size: 101,19
+  orig: 101,19
+  offset: 0, 0
+  index: -1
+Air_01_00007
+  rotate: false
+  xy: 355,31
+  size: 90,18
+  orig: 90,18
+  offset: 0, 0
+  index: -1

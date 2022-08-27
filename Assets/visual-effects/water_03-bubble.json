@@ -1,0 +1,38 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water_03_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water_03_00000": {"x": 3, "y": -7, "width": 160, "height": 158},
+          "water_03_00001": {"x": 3, "y": -25, "width": 160, "height": 206},
+          "water_03_00002": {"x": 4, "y": -5, "width": 163, "height": 171},
+          "water_03_00003": {"x": 3, "y": -5, "width": 171, "height": 171},
+          "water_03_00004": {"x": 2, "y": -4, "width": 186, "height": 177},
+          "water_03_00005": {"x": -4, "y": -7, "width": 242, "height": 203},
+          "water_03_00006": {"x": -3, "y": -6, "width": 257, "height": 217},
+          "water_03_00007": {"x": -4, "y": -6, "width": 263, "height": 231},
+          "water_03_00008": {"x": -4, "y": -6, "width": 268, "height": 236},
+          "water_03_00009": {"x": -4, "y": -6, "width": 270, "height": 239},
+          "water_03_00010": {"x": -6, "y": -4, "width": 264, "height": 236},
+          "water_03_00011": {"x": 227, "y": -128, "width": 455, "height": 256}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water_03_00000"}, {"time": 0.1, "name": "water_03_00001"}, {"time": 0.2, "name": "water_03_00002"}, {"time": 0.30000000000000004, "name": "water_03_00003"}, {"time": 0.4, "name": "water_03_00004"},
+            {"time": 0.5, "name": "water_03_00005"}, {"time": 0.6000000000000001, "name": "water_03_00006"}, {"time": 0.7000000000000001, "name": "water_03_00007"}, {"time": 0.8, "name": "water_03_00008"},
+            {"time": 0.9, "name": "water_03_00009"}, {"time": 1.0, "name": "water_03_00010"}, {"time": 1.1, "name": "water_03_00011"}
+          ]
+        }
+      }
+    }
+  }
+}

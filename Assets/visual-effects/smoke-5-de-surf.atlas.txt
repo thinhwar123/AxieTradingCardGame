@@ -1,0 +1,48 @@
+
+smoke-5-de-surf.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Smoke_22_00000
+  rotate: false
+  xy: 211,2
+  size: 210,65
+  orig: 210,65
+  offset: 0, 0
+  index: -1
+Smoke_22_00001
+  rotate: false
+  xy: 2,2
+  size: 205,72
+  orig: 205,72
+  offset: 0, 0
+  index: -1
+Smoke_22_00002
+  rotate: false
+  xy: 2,78
+  size: 185,68
+  orig: 185,68
+  offset: 0, 0
+  index: -1
+Smoke_22_00003
+  rotate: false
+  xy: 211,132
+  size: 184,58
+  orig: 184,58
+  offset: 0, 0
+  index: -1
+Smoke_22_00004
+  rotate: false
+  xy: 211,71
+  size: 209,57
+  orig: 209,57
+  offset: 0, 0
+  index: -1
+Smoke_22_00005
+  rotate: false
+  xy: 2,150
+  size: 199,61
+  orig: 199,61
+  offset: 0, 0
+  index: -1

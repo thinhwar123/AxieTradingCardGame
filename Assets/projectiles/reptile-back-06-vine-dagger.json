@@ -1,0 +1,43 @@
+{
+"skeleton": {
+	"hash": "dZMiQHHXsj3S6USLePrJw7i+htI",
+	"spine": "3.8.79",
+	"x": -334.5,
+	"y": -74.5,
+	"width": 541,
+	"height": 149,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -125.58 },
+	{ "name": "vine-dagger", "parent": "root", "y": 125.58 }
+],
+"slots": [
+	{ "name": "vine-dagger", "bone": "vine-dagger", "attachment": "vine-dagger" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"vine-dagger": {
+				"vine-dagger": { "x": -64, "width": 541, "height": 149 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"slots": {
+			"vine-dagger": {
+				"attachment": [
+					{ "name": "vine-dagger" },
+					{ "time": 0.3333, "name": "vine-dagger" },
+					{ "time": 0.6667, "name": "vine-dagger" },
+					{ "time": 1, "name": "vine-dagger" }
+				]
+			}
+		}
+	}
+}
+}

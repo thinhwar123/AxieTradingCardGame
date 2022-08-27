@@ -1,0 +1,35 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "Air_25_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "Air_25_00000": {"x": -20, "y": -16, "width": 72, "height": 81},
+          "Air_25_00001": {"x": -15, "y": -1, "width": 162, "height": 122},
+          "Air_25_00002": {"x": -12, "y": -8, "width": 195, "height": 161},
+          "Air_25_00003": {"x": -13, "y": -7, "width": 206, "height": 172},
+          "Air_25_00004": {"x": -12, "y": -5, "width": 210, "height": 179},
+          "Air_25_00005": {"x": -12, "y": -5, "width": 213, "height": 182},
+          "Air_25_00006": {"x": -12, "y": -5, "width": 216, "height": 183},
+          "Air_25_00007": {"x": -11, "y": -5, "width": 219, "height": 185},
+          "Air_25_00008": {"x": -11, "y": -6, "width": 221, "height": 186},
+          "Air_25_00009": {"x": -11, "y": -3, "width": 221, "height": 182}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "Air_25_00000"}, {"time": 0.1, "name": "Air_25_00001"}, {"time": 0.2, "name": "Air_25_00002"}, {"time": 0.30000000000000004, "name": "Air_25_00003"}, {"time": 0.4, "name": "Air_25_00004"},
+            {"time": 0.5, "name": "Air_25_00005"}, {"time": 0.6000000000000001, "name": "Air_25_00006"}, {"time": 0.7000000000000001, "name": "Air_25_00007"}, {"time": 0.8, "name": "Air_25_00008"}, {"time": 0.9, "name": "Air_25_00009"}
+          ]
+        }
+      }
+    }
+  }
+}

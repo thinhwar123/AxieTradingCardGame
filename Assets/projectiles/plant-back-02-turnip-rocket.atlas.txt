@@ -1,0 +1,13 @@
+
+plant-back-02-turnip-rocket.png
+size: 166,113
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+turnip-rocket
+  rotate: false
+  xy: 2, 2
+  size: 162, 109
+  orig: 162, 109
+  offset: 0, 0
+  index: -1

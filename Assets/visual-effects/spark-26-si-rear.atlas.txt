@@ -1,0 +1,83 @@
+
+spark-26-si-rear.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-26-si-rear_00
+  rotate: false
+  xy: 99,393
+  size: 58,56
+  orig: 58,56
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_01
+  rotate: false
+  xy: 2,393
+  size: 93,82
+  orig: 93,82
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_02
+  rotate: false
+  xy: 604,195
+  size: 131,130
+  orig: 131,130
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_03
+  rotate: false
+  xy: 781,2
+  size: 175,183
+  orig: 175,183
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_04
+  rotate: false
+  xy: 2,202
+  size: 198,187
+  orig: 198,187
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_05
+  rotate: false
+  xy: 210,198
+  size: 205,187
+  orig: 205,187
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_06
+  rotate: false
+  xy: 210,2
+  size: 205,192
+  orig: 205,192
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_07
+  rotate: false
+  xy: 2,2
+  size: 204,196
+  orig: 204,196
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_08
+  rotate: false
+  xy: 419,2
+  size: 181,194
+  orig: 181,194
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_09
+  rotate: false
+  xy: 419,200
+  size: 176,192
+  orig: 176,192
+  offset: 0, 0
+  index: -1
+spark-26-si-rear_10
+  rotate: false
+  xy: 604,2
+  size: 173,189
+  orig: 173,189
+  offset: 0, 0
+  index: -1

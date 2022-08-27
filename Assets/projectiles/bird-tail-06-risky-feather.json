@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "EWNfbI/kL0WVEHhGCDPqKqVLRwo",
+	"spine": "3.8.79",
+	"x": -306.45,
+	"y": -171.06,
+	"width": 586.45,
+	"height": 396.41,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.5 },
+	{ "name": "risky-feather", "parent": "root", "rotation": -18, "y": 63.5 }
+],
+"slots": [
+	{ "name": "risky-feather", "bone": "risky-feather", "attachment": "risky-feather" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"risky-feather": {
+				"risky-feather": { "x": -20.97, "y": 21.73, "width": 538, "height": 242 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {}
+}
+}

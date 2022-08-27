@@ -1,0 +1,90 @@
+{
+"skeleton": {
+	"hash": "R8/nX0wD76E8fHWuTK8K02efsKo",
+	"spine": "3.8.79",
+	"x": -119,
+	"y": -58.5,
+	"width": 238,
+	"height": 117,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.7 },
+	{ "name": "projectile", "parent": "root", "rotation": -90, "y": 63.7 }
+],
+"slots": [
+	{ "name": "projectile", "bone": "projectile", "attachment": "projectile-1" }
+],
+"skins": [
+	{
+		"name": "all-out-shot",
+		"attachments": {
+			"projectile": {
+				"projectile-1": { "name": "bloody-fur/bloody-fur-1", "width": 117, "height": 238 },
+				"projectile-2": { "name": "bloody-fur/bloody-fur-2", "width": 101, "height": 237 },
+				"projectile-3": { "name": "bloody-fur/bloody-fur-3", "width": 73, "height": 236 },
+				"projectile-4": { "name": "bloody-fur/bloody-fur-4", "width": 46, "height": 236 },
+				"projectile-5": { "name": "bloody-fur/bloody-fur-5", "width": 73, "height": 236 },
+				"projectile-6": { "name": "bloody-fur/bloody-fur-6", "width": 100, "height": 239 }
+			}
+		}
+	},
+	{
+		"name": "dirty-bird",
+		"attachments": {
+			"projectile": {
+				"projectile-1": { "name": "green-fur/green-fur-1", "rotation": 90, "width": 237, "height": 118 },
+				"projectile-2": { "name": "green-fur/green-fur-2", "rotation": 90, "width": 237, "height": 100 },
+				"projectile-3": { "name": "green-fur/green-fur-3", "rotation": 90, "width": 236, "height": 73 },
+				"projectile-4": { "name": "green-fur/green-fur-4", "rotation": 90, "width": 236, "height": 45 },
+				"projectile-5": { "name": "green-fur/green-fur-5", "rotation": 90, "width": 236, "height": 73 },
+				"projectile-6": { "name": "green-fur/green-fur-6", "rotation": 90, "width": 237, "height": 100 }
+			}
+		}
+	},
+	{
+		"name": "hennery-bolt",
+		"attachments": {
+			"projectile": {
+				"projectile-1": { "name": "white-fur/white-fur-1", "width": 118, "height": 237 },
+				"projectile-2": { "name": "white-fur/white-fur-2", "width": 100, "height": 237 },
+				"projectile-3": { "name": "white-fur/white-fur-3", "width": 73, "height": 236 },
+				"projectile-4": { "name": "white-fur/white-fur-4", "width": 45, "height": 236 },
+				"projectile-5": { "name": "white-fur/white-fur-5", "width": 73, "height": 236 },
+				"projectile-6": { "name": "white-fur/white-fur-6", "width": 100, "height": 238 }
+			}
+		}
+	},
+	{
+		"name": "risky-feather",
+		"attachments": {
+			"projectile": {
+				"projectile-1": { "name": "target-fur/target-fur-1", "rotation": 90, "width": 237, "height": 198 },
+				"projectile-2": { "name": "target-fur/target-fur-2", "rotation": 90, "width": 237, "height": 197 },
+				"projectile-3": { "name": "target-fur/target-fur-3", "rotation": 90, "width": 237, "height": 188 },
+				"projectile-4": { "name": "target-fur/target-fur-4", "rotation": 90, "width": 237, "height": 188 },
+				"projectile-5": { "name": "target-fur/target-fur-5", "rotation": 90, "width": 237, "height": 198 },
+				"projectile-6": { "name": "target-fur/target-fur-6", "rotation": 90, "width": 237, "height": 197 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"slots": {
+			"projectile": {
+				"attachment": [
+					{ "name": "projectile-1" },
+					{ "time": 0.0667, "name": "projectile-2" },
+					{ "time": 0.1333, "name": "projectile-3" },
+					{ "time": 0.2, "name": "projectile-4" },
+					{ "time": 0.2667, "name": "projectile-5" },
+					{ "time": 0.3333, "name": "projectile-6" },
+					{ "time": 0.4, "name": "projectile-1" }
+				]
+			}
+		}
+	}
+}
+}

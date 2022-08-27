@@ -1,0 +1,13 @@
+
+bug-back-06-bug-noise.png
+size: 218,218
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bug-noise-1
+  rotate: false
+  xy: 2, 2
+  size: 214, 214
+  orig: 214, 214
+  offset: 0, 0
+  index: -1

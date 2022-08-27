@@ -1,0 +1,46 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "energy-5-mi-round_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "energy-5-mi-round_00": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "energy-5-mi-round_01": {"x": 0, "y": 1, "width": 118, "height": 108},
+          "energy-5-mi-round_02": {"x": 2, "y": 1, "width": 171, "height": 167},
+          "energy-5-mi-round_03": {"x": -6, "y": -1, "width": 209, "height": 197},
+          "energy-5-mi-round_04": {"x": -4, "y": 0, "width": 227, "height": 215},
+          "energy-5-mi-round_05": {"x": -3, "y": 2, "width": 243, "height": 230},
+          "energy-5-mi-round_06": {"x": -2, "y": -1, "width": 251, "height": 250},
+          "energy-5-mi-round_07": {"x": 0, "y": 0, "width": 256, "height": 256},
+          "energy-5-mi-round_08": {"x": 0, "y": 0, "width": 256, "height": 256},
+          "energy-5-mi-round_09": {"x": 0, "y": 0, "width": 256, "height": 256},
+          "energy-5-mi-round_10": {"x": 0, "y": 0, "width": 256, "height": 256},
+          "energy-5-mi-round_11": {"x": 0, "y": 0, "width": 256, "height": 256},
+          "energy-5-mi-round_12": {"x": 0, "y": 0, "width": 256, "height": 256},
+          "energy-5-mi-round_13": {"x": 0, "y": 3, "width": 256, "height": 251},
+          "energy-5-mi-round_14": {"x": 0, "y": 3, "width": 256, "height": 250},
+          "energy-5-mi-round_15": {"x": 0, "y": 5, "width": 256, "height": 247},
+          "energy-5-mi-round_16": {"x": 0, "y": 6, "width": 256, "height": 245},
+          "energy-5-mi-round_17": {"x": -3, "y": 8, "width": 149, "height": 237}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "energy-5-mi-round_00"}, {"time": 0.1, "name": "energy-5-mi-round_01"}, {"time": 0.2, "name": "energy-5-mi-round_02"}, {"time": 0.30000000000000004, "name": "energy-5-mi-round_03"},
+            {"time": 0.4, "name": "energy-5-mi-round_04"}, {"time": 0.5, "name": "energy-5-mi-round_05"}, {"time": 0.6000000000000001, "name": "energy-5-mi-round_06"}, {"time": 0.7000000000000001, "name": "energy-5-mi-round_07"},
+            {"time": 0.8, "name": "energy-5-mi-round_08"}, {"time": 0.9, "name": "energy-5-mi-round_09"}, {"time": 1.0, "name": "energy-5-mi-round_10"}, {"time": 1.1, "name": "energy-5-mi-round_11"},
+            {"time": 1.2000000000000002, "name": "energy-5-mi-round_12"}, {"time": 1.3, "name": "energy-5-mi-round_13"}, {"time": 1.4000000000000001, "name": "energy-5-mi-round_14"}, {"time": 1.5, "name": "energy-5-mi-round_15"},
+            {"time": 1.6, "name": "energy-5-mi-round_16"}, {"time": 1.7000000000000002, "name": "energy-5-mi-round_17"}
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+
+smoke-2-mi-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke-11-mi-round_00
+  rotate: false
+  xy: 244,914
+  size: 106,101
+  orig: 106,101
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_01
+  rotate: false
+  xy: 466,875
+  size: 127,132
+  orig: 127,132
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_02
+  rotate: false
+  xy: 676,637
+  size: 166,164
+  orig: 166,164
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_03
+  rotate: false
+  xy: 466,690
+  size: 184,181
+  orig: 184,181
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_04
+  rotate: false
+  xy: 466,478
+  size: 206,208
+  orig: 206,208
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_05
+  rotate: false
+  xy: 244,698
+  size: 211,212
+  orig: 211,212
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_06
+  rotate: false
+  xy: 244,478
+  size: 218,216
+  orig: 218,216
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_07
+  rotate: false
+  xy: 716,242
+  size: 225,220
+  orig: 225,220
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_08
+  rotate: false
+  xy: 481,242
+  size: 231,229
+  orig: 231,229
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_09
+  rotate: false
+  xy: 244,242
+  size: 233,232
+  orig: 233,232
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_10
+  rotate: false
+  xy: 2,717
+  size: 235,233
+  orig: 235,233
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_11
+  rotate: false
+  xy: 2,480
+  size: 237,233
+  orig: 237,233
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_12
+  rotate: false
+  xy: 2,242
+  size: 238,234
+  orig: 238,234
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_13
+  rotate: false
+  xy: 735,2
+  size: 239,235
+  orig: 239,235
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_14
+  rotate: false
+  xy: 492,2
+  size: 239,235
+  orig: 239,235
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_15
+  rotate: false
+  xy: 2,2
+  size: 241,236
+  orig: 241,236
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_16
+  rotate: false
+  xy: 247,2
+  size: 241,235
+  orig: 241,235
+  offset: 0, 0
+  index: -1
+smoke-11-mi-round_17
+  rotate: false
+  xy: 676,478
+  size: 200,155
+  orig: 200,155
+  offset: 0, 0
+  index: -1

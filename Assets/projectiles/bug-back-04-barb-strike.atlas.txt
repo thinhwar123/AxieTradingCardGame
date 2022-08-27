@@ -1,0 +1,13 @@
+
+bug-back-04-barb-strike.png
+size: 227,228
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+barb-strike
+  rotate: false
+  xy: 2, 2
+  size: 223, 224
+  orig: 223, 224
+  offset: 0, 0
+  index: -1

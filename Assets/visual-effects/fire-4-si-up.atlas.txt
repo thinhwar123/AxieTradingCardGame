@@ -1,0 +1,153 @@
+
+fire-4-si-up.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire-4-si-up_00
+  rotate: false
+  xy: 887,2
+  size: 108,142
+  orig: 108,142
+  offset: 0, 0
+  index: -1
+fire-4-si-up_01
+  rotate: false
+  xy: 615,802
+  size: 162,187
+  orig: 162,187
+  offset: 0, 0
+  index: -1
+fire-4-si-up_02
+  rotate: false
+  xy: 615,601
+  size: 173,197
+  orig: 173,197
+  offset: 0, 0
+  index: -1
+fire-4-si-up_03
+  rotate: false
+  xy: 422,639
+  size: 185,210
+  orig: 185,210
+  offset: 0, 0
+  index: -1
+fire-4-si-up_04
+  rotate: false
+  xy: 422,423
+  size: 189,212
+  orig: 189,212
+  offset: 0, 0
+  index: -1
+fire-4-si-up_05
+  rotate: false
+  xy: 219,643
+  size: 193,216
+  orig: 193,216
+  offset: 0, 0
+  index: -1
+fire-4-si-up_06
+  rotate: false
+  xy: 219,423
+  size: 199,216
+  orig: 199,216
+  offset: 0, 0
+  index: -1
+fire-4-si-up_07
+  rotate: false
+  xy: 2,436
+  size: 207,217
+  orig: 207,217
+  offset: 0, 0
+  index: -1
+fire-4-si-up_08
+  rotate: false
+  xy: 2,657
+  size: 209,214
+  orig: 209,214
+  offset: 0, 0
+  index: -1
+fire-4-si-up_09
+  rotate: false
+  xy: 2,220
+  size: 213,212
+  orig: 213,212
+  offset: 0, 0
+  index: -1
+fire-4-si-up_10
+  rotate: false
+  xy: 2,2
+  size: 215,214
+  orig: 215,214
+  offset: 0, 0
+  index: -1
+fire-4-si-up_11
+  rotate: false
+  xy: 221,2
+  size: 217,212
+  orig: 217,212
+  offset: 0, 0
+  index: -1
+fire-4-si-up_12
+  rotate: false
+  xy: 442,2
+  size: 218,209
+  orig: 218,209
+  offset: 0, 0
+  index: -1
+fire-4-si-up_13
+  rotate: false
+  xy: 664,2
+  size: 219,208
+  orig: 219,208
+  offset: 0, 0
+  index: -1
+fire-4-si-up_14
+  rotate: false
+  xy: 219,220
+  size: 218,199
+  orig: 218,199
+  offset: 0, 0
+  index: -1
+fire-4-si-up_15
+  rotate: false
+  xy: 441,220
+  size: 216,196
+  orig: 216,196
+  offset: 0, 0
+  index: -1
+fire-4-si-up_16
+  rotate: false
+  xy: 661,220
+  size: 211,186
+  orig: 211,186
+  offset: 0, 0
+  index: -1
+fire-4-si-up_17
+  rotate: false
+  xy: 615,423
+  size: 207,174
+  orig: 207,174
+  offset: 0, 0
+  index: -1
+fire-4-si-up_18
+  rotate: false
+  xy: 2,875
+  size: 200,136
+  orig: 200,136
+  offset: 0, 0
+  index: -1
+fire-4-si-up_19
+  rotate: false
+  xy: 219,863
+  size: 196,123
+  orig: 196,123
+  offset: 0, 0
+  index: -1
+fire-4-si-up_20
+  rotate: false
+  xy: 422,853
+  size: 188,102
+  orig: 188,102
+  offset: 0, 0
+  index: -1

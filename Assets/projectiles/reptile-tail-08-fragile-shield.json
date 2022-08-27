@@ -1,0 +1,46 @@
+{
+"skeleton": {
+	"hash": "2aeB9pZ9wZ2NEnd27qv+8HFfN40",
+	"spine": "3.8.79",
+	"x": -189.23,
+	"y": -176.11,
+	"width": 378,
+	"height": 340,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -128.21 },
+	{ "name": "fragile-shield", "parent": "root", "y": 128.21 }
+],
+"slots": [
+	{ "name": "fragile-shield", "bone": "fragile-shield", "attachment": "jar-barrage-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"fragile-shield": {
+				"jar-barrage-1": { "x": -0.23, "y": -6.11, "width": 378, "height": 340 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"bones": {
+			"fragile-shield": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 3 },
+					{ "time": 0.3333 },
+					{ "time": 0.5, "angle": 3 },
+					{ "time": 0.6667 },
+					{ "time": 0.8333, "angle": 3 },
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

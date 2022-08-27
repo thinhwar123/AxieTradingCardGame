@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "v4lp0TaHahbc3n0qV+bMc/K4vhU",
+	"spine": "3.8.79",
+	"x": -257.64,
+	"y": -65.3,
+	"width": 487,
+	"height": 132,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.5 },
+	{ "name": "heart-piercing", "parent": "root", "y": 63.5 }
+],
+"slots": [
+	{ "name": "heart-piercing", "bone": "heart-piercing", "attachment": "heart-piercing" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"heart-piercing": {
+				"heart-piercing": { "x": -14.14, "y": 0.7, "width": 487, "height": 132 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {}
+}
+}

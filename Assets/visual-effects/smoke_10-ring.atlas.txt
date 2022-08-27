@@ -1,0 +1,90 @@
+
+smoke_10-ring.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_10_00000
+  rotate: false
+  xy: 986,2
+  size: 32,33
+  orig: 32,33
+  offset: 0, 0
+  index: -1
+smoke_10_00001
+  rotate: false
+  xy: 242,646
+  size: 147,132
+  orig: 147,132
+  offset: 0, 0
+  index: -1
+smoke_10_00002
+  rotate: false
+  xy: 242,468
+  size: 189,174
+  orig: 189,174
+  offset: 0, 0
+  index: -1
+smoke_10_00003
+  rotate: false
+  xy: 439,236
+  size: 210,201
+  orig: 210,201
+  offset: 0, 0
+  index: -1
+smoke_10_00004
+  rotate: false
+  xy: 2,683
+  size: 221,211
+  orig: 221,211
+  offset: 0, 0
+  index: -1
+smoke_10_00005
+  rotate: false
+  xy: 2,461
+  size: 229,218
+  orig: 229,218
+  offset: 0, 0
+  index: -1
+smoke_10_00006
+  rotate: false
+  xy: 2,236
+  size: 236,221
+  orig: 236,221
+  offset: 0, 0
+  index: -1
+smoke_10_00007
+  rotate: false
+  xy: 739,2
+  size: 243,225
+  orig: 243,225
+  offset: 0, 0
+  index: -1
+smoke_10_00008
+  rotate: false
+  xy: 248,2
+  size: 243,229
+  orig: 243,229
+  offset: 0, 0
+  index: -1
+smoke_10_00009
+  rotate: false
+  xy: 2,2
+  size: 242,230
+  orig: 242,230
+  offset: 0, 0
+  index: -1
+smoke_10_00010
+  rotate: false
+  xy: 495,2
+  size: 240,228
+  orig: 240,228
+  offset: 0, 0
+  index: -1
+smoke_10_00011
+  rotate: false
+  xy: 242,236
+  size: 193,228
+  orig: 193,228
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,83 @@
+
+Water_25.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Water_26_00000
+  rotate: false
+  xy: 2,427
+  size: 64,53
+  orig: 64,53
+  offset: 0, 0
+  index: -1
+Water_26_00001
+  rotate: false
+  xy: 186,134
+  size: 104,91
+  orig: 104,91
+  offset: 0, 0
+  index: -1
+Water_26_00002
+  rotate: false
+  xy: 2,2
+  size: 299,128
+  orig: 299,128
+  offset: 0, 0
+  index: -1
+Water_26_00003
+  rotate: false
+  xy: 2,134
+  size: 180,147
+  orig: 180,147
+  offset: 0, 0
+  index: -1
+Water_26_00004
+  rotate: false
+  xy: 2,285
+  size: 188,138
+  orig: 188,138
+  offset: 0, 0
+  index: -1
+Water_26_00005
+  rotate: false
+  xy: 305,128
+  size: 197,128
+  orig: 197,128
+  offset: 0, 0
+  index: -1
+Water_26_00006
+  rotate: false
+  xy: 305,2
+  size: 210,122
+  orig: 210,122
+  offset: 0, 0
+  index: -1
+Water_26_00007
+  rotate: false
+  xy: 519,2
+  size: 220,116
+  orig: 220,116
+  offset: 0, 0
+  index: -1
+Water_26_00008
+  rotate: false
+  xy: 743,2
+  size: 232,106
+  orig: 232,106
+  offset: 0, 0
+  index: -1
+Water_26_00009
+  rotate: false
+  xy: 519,122
+  size: 253,69
+  orig: 253,69
+  offset: 0, 0
+  index: -1
+Water_26_00010
+  rotate: false
+  xy: 776,122
+  size: 242,44
+  orig: 242,44
+  offset: 0, 0
+  index: -1

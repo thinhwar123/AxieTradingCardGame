@@ -1,0 +1,97 @@
+
+water-1-de-dash.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_14_00000
+  rotate: false
+  xy: 241,422
+  size: 132,50
+  orig: 132,50
+  offset: 0, 0
+  index: -1
+water_14_00001
+  rotate: false
+  xy: 241,305
+  size: 231,113
+  orig: 231,113
+  offset: 0, 0
+  index: -1
+water_14_00002
+  rotate: false
+  xy: 241,2
+  size: 242,144
+  orig: 242,144
+  offset: 0, 0
+  index: -1
+water_14_00003
+  rotate: false
+  xy: 2,2
+  size: 235,151
+  orig: 235,151
+  offset: 0, 0
+  index: -1
+water_14_00004
+  rotate: false
+  xy: 2,157
+  size: 207,155
+  orig: 207,155
+  offset: 0, 0
+  index: -1
+water_14_00005
+  rotate: false
+  xy: 2,316
+  size: 196,155
+  orig: 196,155
+  offset: 0, 0
+  index: -1
+water_14_00006
+  rotate: false
+  xy: 241,150
+  size: 187,151
+  orig: 187,151
+  offset: 0, 0
+  index: -1
+water_14_00007
+  rotate: false
+  xy: 487,2
+  size: 143,144
+  orig: 143,144
+  offset: 0, 0
+  index: -1
+water_14_00008
+  rotate: false
+  xy: 487,150
+  size: 131,137
+  orig: 131,137
+  offset: 0, 0
+  index: -1
+water_14_00009
+  rotate: false
+  xy: 487,291
+  size: 128,124
+  orig: 128,124
+  offset: 0, 0
+  index: -1
+water_14_00010
+  rotate: false
+  xy: 634,2
+  size: 110,108
+  orig: 110,108
+  offset: 0, 0
+  index: -1
+water_14_00011
+  rotate: false
+  xy: 748,2
+  size: 109,92
+  orig: 109,92
+  offset: 0, 0
+  index: -1
+water_14_00012
+  rotate: false
+  xy: 202,316
+  size: 32,76
+  orig: 32,76
+  offset: 0, 0
+  index: -1

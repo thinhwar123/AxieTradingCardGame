@@ -1,0 +1,43 @@
+{
+"skeleton": {
+	"hash": "mUxtVQRu4StXzkdUHfSRN3KUi1g",
+	"spine": "3.8.79",
+	"x": -81,
+	"y": -83.5,
+	"width": 162,
+	"height": 167,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -129.49 },
+	{ "name": "aquaponics-1", "parent": "root", "y": 129.49 }
+],
+"slots": [
+	{ "name": "aquaponics-1", "bone": "aquaponics-1", "attachment": "aquaponics-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"aquaponics-1": {
+				"aquaponics-1": { "width": 162, "height": 167 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"bones": {
+			"aquaponics-1": {
+				"rotate": [
+					{},
+					{ "time": 0.4, "angle": 120 },
+					{ "time": 0.8, "angle": -120 },
+					{ "time": 1.2 }
+				]
+			}
+		}
+	}
+}
+}

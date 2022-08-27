@@ -1,0 +1,41 @@
+
+sparks_10.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sparks_10_00000
+  rotate: false
+  xy: 167,198
+  size: 103,56
+  orig: 103,56
+  offset: 0, 0
+  index: -1
+sparks_10_00001
+  rotate: false
+  xy: 2,397
+  size: 144,113
+  orig: 144,113
+  offset: 0, 0
+  index: -1
+sparks_10_00002
+  rotate: false
+  xy: 255,2
+  size: 218,186
+  orig: 218,186
+  offset: 0, 0
+  index: -1
+sparks_10_00003
+  rotate: false
+  xy: 2,2
+  size: 249,192
+  orig: 249,192
+  offset: 0, 0
+  index: -1
+sparks_10_00004
+  rotate: false
+  xy: 2,198
+  size: 161,195
+  orig: 161,195
+  offset: 0, 0
+  index: -1

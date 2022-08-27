@@ -1,0 +1,132 @@
+
+energy-3-mi-round.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy-5-mi-round_00
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_01
+  rotate: false
+  xy: 782,869
+  size: 118,108
+  orig: 118,108
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_02
+  rotate: false
+  xy: 782,698
+  size: 171,167
+  orig: 171,167
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_03
+  rotate: false
+  xy: 782,256
+  size: 209,197
+  orig: 209,197
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_04
+  rotate: false
+  xy: 262,782
+  size: 227,215
+  orig: 227,215
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_05
+  rotate: false
+  xy: 2,782
+  size: 243,230
+  orig: 243,230
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_06
+  rotate: false
+  xy: 782,2
+  size: 251,250
+  orig: 251,250
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_07
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_08
+  rotate: false
+  xy: 262,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_09
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_10
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_11
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_12
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_13
+  rotate: false
+  xy: 522,262
+  size: 256,251
+  orig: 256,251
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_14
+  rotate: false
+  xy: 522,517
+  size: 256,250
+  orig: 256,250
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_15
+  rotate: false
+  xy: 522,771
+  size: 256,247
+  orig: 256,247
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_16
+  rotate: false
+  xy: 1037,2
+  size: 256,245
+  orig: 256,245
+  offset: 0, 0
+  index: -1
+energy-5-mi-round_17
+  rotate: false
+  xy: 782,457
+  size: 149,237
+  orig: 149,237
+  offset: 0, 0
+  index: -1

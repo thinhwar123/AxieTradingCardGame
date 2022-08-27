@@ -1,0 +1,56 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-21-mi-rear_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-21-mi-rear_00": {"x": -94, "y": -3, "width": 27, "height": 93},
+          "water-21-mi-rear_01": {"x": -80, "y": 1, "width": 52, "height": 131},
+          "water-21-mi-rear_02": {"x": -75, "y": 1, "width": 65, "height": 155},
+          "water-21-mi-rear_03": {"x": -65, "y": 4, "width": 84, "height": 176},
+          "water-21-mi-rear_04": {"x": -60, "y": 4, "width": 94, "height": 180},
+          "water-21-mi-rear_05": {"x": -56, "y": 4, "width": 103, "height": 184},
+          "water-21-mi-rear_06": {"x": -55, "y": 5, "width": 105, "height": 187},
+          "water-21-mi-rear_07": {"x": -54, "y": 5, "width": 106, "height": 189},
+          "water-21-mi-rear_08": {"x": -54, "y": 5, "width": 107, "height": 190},
+          "water-21-mi-rear_09": {"x": -54, "y": 5, "width": 107, "height": 190},
+          "water-21-mi-rear_10": {"x": -53, "y": 6, "width": 109, "height": 191},
+          "water-21-mi-rear_11": {"x": -52, "y": 6, "width": 109, "height": 193},
+          "water-21-mi-rear_12": {"x": -51, "y": 6, "width": 110, "height": 194},
+          "water-21-mi-rear_13": {"x": -50, "y": 6, "width": 110, "height": 194},
+          "water-21-mi-rear_14": {"x": -50, "y": 7, "width": 110, "height": 195},
+          "water-21-mi-rear_15": {"x": -50, "y": 7, "width": 111, "height": 197},
+          "water-21-mi-rear_16": {"x": -49, "y": 7, "width": 110, "height": 196},
+          "water-21-mi-rear_17": {"x": -49, "y": 7, "width": 111, "height": 197},
+          "water-21-mi-rear_18": {"x": -28, "y": 7, "width": 69, "height": 196},
+          "water-21-mi-rear_19": {"x": -26, "y": 31, "width": 67, "height": 148},
+          "water-21-mi-rear_20": {"x": -25, "y": 32, "width": 65, "height": 147},
+          "water-21-mi-rear_21": {"x": -24, "y": 35, "width": 63, "height": 135},
+          "water-21-mi-rear_22": {"x": -38, "y": 40, "width": 33, "height": 124},
+          "water-21-mi-rear_23": {"x": -37, "y": 40, "width": 33, "height": 123},
+          "water-21-mi-rear_24": {"x": -42, "y": 35, "width": 19, "height": 13},
+          "water-21-mi-rear_25": {"x": -35, "y": 33, "width": 8, "height": 7}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-21-mi-rear_00"}, {"time": 0.1, "name": "water-21-mi-rear_01"}, {"time": 0.2, "name": "water-21-mi-rear_02"}, {"time": 0.30000000000000004, "name": "water-21-mi-rear_03"},
+            {"time": 0.4, "name": "water-21-mi-rear_04"}, {"time": 0.5, "name": "water-21-mi-rear_05"}, {"time": 0.6000000000000001, "name": "water-21-mi-rear_06"}, {"time": 0.7000000000000001, "name": "water-21-mi-rear_07"},
+            {"time": 0.8, "name": "water-21-mi-rear_08"}, {"time": 0.9, "name": "water-21-mi-rear_09"}, {"time": 1.0, "name": "water-21-mi-rear_10"}, {"time": 1.1, "name": "water-21-mi-rear_11"},
+            {"time": 1.2000000000000002, "name": "water-21-mi-rear_12"}, {"time": 1.3, "name": "water-21-mi-rear_13"}, {"time": 1.4000000000000001, "name": "water-21-mi-rear_14"}, {"time": 1.5, "name": "water-21-mi-rear_15"},
+            {"time": 1.6, "name": "water-21-mi-rear_16"}, {"time": 1.7000000000000002, "name": "water-21-mi-rear_17"}, {"time": 1.8, "name": "water-21-mi-rear_18"}, {"time": 1.9000000000000001, "name": "water-21-mi-rear_19"},
+            {"time": 2.0, "name": "water-21-mi-rear_20"}, {"time": 2.1, "name": "water-21-mi-rear_21"}, {"time": 2.2, "name": "water-21-mi-rear_22"}, {"time": 2.3000000000000003, "name": "water-21-mi-rear_23"},
+            {"time": 2.4000000000000004, "name": "water-21-mi-rear_24"}, {"time": 2.5, "name": "water-21-mi-rear_25"}
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+"skeleton": {
+	"hash": "fdwcbsSs3RdiklKATICuGLEjlyo",
+	"spine": "3.8.79",
+	"x": -468.73,
+	"y": 46.74,
+	"width": 838.45,
+	"height": 435.08,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -64.87 },
+	{ "name": "soothing-song-1", "parent": "root", "x": 144.66, "y": 429.13 },
+	{ "name": "soothing-song-4", "parent": "root", "x": -156.37, "y": 443.01 },
+	{ "name": "soothing-song-2", "parent": "root", "x": -364.56, "y": 218.13 },
+	{ "name": "soothing-song-3", "parent": "root", "x": 340.23, "y": 194.56 }
+],
+"slots": [
+	{ "name": "soothing-song-1", "bone": "soothing-song-1", "attachment": "soothing-song-1" },
+	{ "name": "soothing-song-2", "bone": "soothing-song-2", "attachment": "soothing-song-2" },
+	{ "name": "soothing-song-3", "bone": "soothing-song-3", "attachment": "soothing-song-3" },
+	{ "name": "soothing-song-4", "bone": "soothing-song-4", "attachment": "soothing-song-4" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"soothing-song-1": {
+				"soothing-song-1": { "x": -3.96, "y": -3.47, "width": 177, "height": 195 }
+			},
+			"soothing-song-2": {
+				"soothing-song-2": { "x": -19.18, "y": 9.57, "width": 170, "height": 150 }
+			},
+			"soothing-song-3": {
+				"soothing-song-3": { "x": -17.02, "y": 32.04, "width": 93, "height": 230 }
+			},
+			"soothing-song-4": {
+				"soothing-song-4": { "x": -2.89, "y": 25.67, "width": 162, "height": 156 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"soothing-song-1": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 0.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"soothing-song-2": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 0.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"soothing-song-3": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 0.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"soothing-song-4": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 0.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"soothing-song-2": {
+				"translate": [
+					{ "y": 12.44, "curve": 0.35, "c2": 0.59, "c3": 0.687 },
+					{ "time": 0.0667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "y": 58.82, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.5667, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.8333, "y": 58.82, "curve": 0.308, "c3": 0.668, "c4": 0.64 },
+					{ "time": 1, "y": 12.44 }
+				]
+			},
+			"soothing-song-4": {
+				"translate": [
+					{ "y": -31.81, "curve": 0.347, "c2": 0.46, "c3": 0.698 },
+					{ "time": 0.1333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4, "y": -49.61, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.6333, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.9, "y": -52.33, "curve": 0.312, "c3": 0.655, "c4": 0.47 },
+					{ "time": 1, "y": -31.81 }
+				]
+			},
+			"soothing-song-1": {
+				"translate": [
+					{ "y": 38.6, "curve": 0.338, "c2": 0.33, "c3": 0.7 },
+					{ "time": 0.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4333, "y": 46.19, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.7, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.9333, "y": 46.19, "curve": 0.318, "c3": 0.655, "c4": 0.4 },
+					{ "time": 1, "y": 38.6 }
+				]
+			},
+			"soothing-song-3": {
+				"translate": [
+					{ "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.2333, "y": -35.32, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.5, "curve": 0.313, "c3": 0.699 },
+					{ "time": 0.7333, "y": -35.32, "curve": 0.313, "c3": 0.699 },
+					{ "time": 1 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.6667, "name": "hit" }
+		]
+	}
+}
+}

@@ -1,0 +1,52 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "flash-si-round_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "flash-si-round_00": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_01": {"x": 0, "y": 0, "width": 88, "height": 88},
+          "flash-si-round_02": {"x": 0, "y": 0, "width": 122, "height": 122},
+          "flash-si-round_03": {"x": 0, "y": 0, "width": 146, "height": 144},
+          "flash-si-round_04": {"x": 0, "y": 0, "width": 166, "height": 166},
+          "flash-si-round_05": {"x": 0, "y": 0, "width": 164, "height": 164},
+          "flash-si-round_06": {"x": 0, "y": 0, "width": 152, "height": 152},
+          "flash-si-round_07": {"x": 0, "y": 0, "width": 160, "height": 160},
+          "flash-si-round_08": {"x": 0, "y": 0, "width": 168, "height": 168},
+          "flash-si-round_09": {"x": 0, "y": 0, "width": 174, "height": 174},
+          "flash-si-round_10": {"x": 0, "y": 0, "width": 178, "height": 178},
+          "flash-si-round_11": {"x": 0, "y": 0, "width": 182, "height": 182},
+          "flash-si-round_12": {"x": 0, "y": 0, "width": 186, "height": 186},
+          "flash-si-round_13": {"x": 0, "y": 0, "width": 184, "height": 184},
+          "flash-si-round_14": {"x": 0, "y": 0, "width": 186, "height": 186},
+          "flash-si-round_15": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_16": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_17": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_18": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_19": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_20": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_21": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "flash-si-round_22": {"x": 128, "y": -128, "width": 256, "height": 256}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "flash-si-round_00"}, {"time": 0.1, "name": "flash-si-round_01"}, {"time": 0.2, "name": "flash-si-round_02"}, {"time": 0.30000000000000004, "name": "flash-si-round_03"},
+            {"time": 0.4, "name": "flash-si-round_04"}, {"time": 0.5, "name": "flash-si-round_05"}, {"time": 0.6000000000000001, "name": "flash-si-round_06"}, {"time": 0.7000000000000001, "name": "flash-si-round_07"},
+            {"time": 0.8, "name": "flash-si-round_08"}, {"time": 0.9, "name": "flash-si-round_09"}, {"time": 1.0, "name": "flash-si-round_10"}, {"time": 1.1, "name": "flash-si-round_11"},
+            {"time": 1.2000000000000002, "name": "flash-si-round_12"}, {"time": 1.3, "name": "flash-si-round_13"}, {"time": 1.4000000000000001, "name": "flash-si-round_14"}, {"time": 1.5, "name": "flash-si-round_15"},
+            {"time": 1.6, "name": "flash-si-round_16"}, {"time": 1.7000000000000002, "name": "flash-si-round_17"}, {"time": 1.8, "name": "flash-si-round_18"}, {"time": 1.9000000000000001, "name": "flash-si-round_19"},
+            {"time": 2.0, "name": "flash-si-round_20"}, {"time": 2.1, "name": "flash-si-round_21"}, {"time": 2.2, "name": "flash-si-round_22"}
+          ]
+        }
+      }
+    }
+  }
+}

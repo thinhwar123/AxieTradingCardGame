@@ -1,0 +1,41 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-16-ee-ground_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-16-ee-ground_00": {"x": -1, "y": -19, "width": 48, "height": 16},
+          "water-16-ee-ground_01": {"x": -2, "y": -18, "width": 86, "height": 23},
+          "water-16-ee-ground_02": {"x": 1, "y": -18, "width": 114, "height": 31},
+          "water-16-ee-ground_03": {"x": 1, "y": -19, "width": 146, "height": 36},
+          "water-16-ee-ground_04": {"x": -1, "y": -19, "width": 171, "height": 41},
+          "water-16-ee-ground_05": {"x": -3, "y": -20, "width": 181, "height": 44},
+          "water-16-ee-ground_06": {"x": -3, "y": -21, "width": 196, "height": 48},
+          "water-16-ee-ground_07": {"x": -4, "y": -21, "width": 197, "height": 49},
+          "water-16-ee-ground_08": {"x": -4, "y": -22, "width": 198, "height": 50},
+          "water-16-ee-ground_09": {"x": -4, "y": -21, "width": 200, "height": 51},
+          "water-16-ee-ground_10": {"x": -4, "y": -21, "width": 200, "height": 51},
+          "water-16-ee-ground_11": {"x": -4, "y": -25, "width": 200, "height": 43},
+          "water-16-ee-ground_12": {"x": -6, "y": -26, "width": 199, "height": 43},
+          "water-16-ee-ground_13": {"x": -3, "y": -27, "width": 200, "height": 41}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-16-ee-ground_00"}, {"time": 0.1, "name": "water-16-ee-ground_01"}, {"time": 0.2, "name": "water-16-ee-ground_02"}, {"time": 0.30000000000000004, "name": "water-16-ee-ground_03"},
+            {"time": 0.4, "name": "water-16-ee-ground_04"}, {"time": 0.5, "name": "water-16-ee-ground_05"}, {"time": 0.6000000000000001, "name": "water-16-ee-ground_06"}, {"time": 0.7000000000000001, "name": "water-16-ee-ground_07"},
+            {"time": 0.8, "name": "water-16-ee-ground_08"}, {"time": 0.9, "name": "water-16-ee-ground_09"}, {"time": 1.0, "name": "water-16-ee-ground_10"}, {"time": 1.1, "name": "water-16-ee-ground_11"},
+            {"time": 1.2000000000000002, "name": "water-16-ee-ground_12"}, {"time": 1.3, "name": "water-16-ee-ground_13"}
+          ]
+        }
+      }
+    }
+  }
+}

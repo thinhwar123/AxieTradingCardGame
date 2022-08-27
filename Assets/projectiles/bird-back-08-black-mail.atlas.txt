@@ -1,0 +1,13 @@
+
+bird-back-08-black-mail.png
+size: 222,84
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mail
+  rotate: false
+  xy: 2, 2
+  size: 218, 80
+  orig: 219, 80
+  offset: 0, 0
+  index: -1

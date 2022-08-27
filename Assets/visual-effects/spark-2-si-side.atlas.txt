@@ -1,0 +1,167 @@
+
+spark-2-si-side.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-2-si-side_00
+  rotate: false
+  xy: 418,753
+  size: 58,51
+  orig: 58,51
+  offset: 0, 0
+  index: -1
+spark-2-si-side_01
+  rotate: false
+  xy: 762,337
+  size: 97,66
+  orig: 97,66
+  offset: 0, 0
+  index: -1
+spark-2-si-side_02
+  rotate: false
+  xy: 632,337
+  size: 126,81
+  orig: 126,81
+  offset: 0, 0
+  index: -1
+spark-2-si-side_03
+  rotate: false
+  xy: 480,337
+  size: 148,98
+  orig: 148,98
+  offset: 0, 0
+  index: -1
+spark-2-si-side_04
+  rotate: false
+  xy: 237,862
+  size: 165,112
+  orig: 165,112
+  offset: 0, 0
+  index: -1
+spark-2-si-side_05
+  rotate: false
+  xy: 237,624
+  size: 183,125
+  orig: 183,125
+  offset: 0, 0
+  index: -1
+spark-2-si-side_06
+  rotate: false
+  xy: 237,485
+  size: 196,135
+  orig: 196,135
+  offset: 0, 0
+  index: -1
+spark-2-si-side_07
+  rotate: false
+  xy: 2,825
+  size: 202,144
+  orig: 202,144
+  offset: 0, 0
+  index: -1
+spark-2-si-side_08
+  rotate: false
+  xy: 2,672
+  size: 207,149
+  orig: 207,149
+  offset: 0, 0
+  index: -1
+spark-2-si-side_09
+  rotate: false
+  xy: 2,515
+  size: 214,153
+  orig: 214,153
+  offset: 0, 0
+  index: -1
+spark-2-si-side_10
+  rotate: false
+  xy: 2,354
+  size: 222,157
+  orig: 222,157
+  offset: 0, 0
+  index: -1
+spark-2-si-side_11
+  rotate: false
+  xy: 2,185
+  size: 231,165
+  orig: 231,165
+  offset: 0, 0
+  index: -1
+spark-2-si-side_12
+  rotate: false
+  xy: 739,2
+  size: 238,171
+  orig: 238,171
+  offset: 0, 0
+  index: -1
+spark-2-si-side_13
+  rotate: false
+  xy: 493,2
+  size: 242,175
+  orig: 242,175
+  offset: 0, 0
+  index: -1
+spark-2-si-side_14
+  rotate: false
+  xy: 248,2
+  size: 241,178
+  orig: 241,178
+  offset: 0, 0
+  index: -1
+spark-2-si-side_15
+  rotate: false
+  xy: 2,2
+  size: 242,179
+  orig: 242,179
+  offset: 0, 0
+  index: -1
+spark-2-si-side_16
+  rotate: false
+  xy: 237,185
+  size: 241,148
+  orig: 241,148
+  offset: 0, 0
+  index: -1
+spark-2-si-side_17
+  rotate: false
+  xy: 482,185
+  size: 241,148
+  orig: 241,148
+  offset: 0, 0
+  index: -1
+spark-2-si-side_18
+  rotate: false
+  xy: 727,185
+  size: 240,147
+  orig: 240,147
+  offset: 0, 0
+  index: -1
+spark-2-si-side_19
+  rotate: false
+  xy: 237,337
+  size: 239,144
+  orig: 239,144
+  offset: 0, 0
+  index: -1
+spark-2-si-side_20
+  rotate: false
+  xy: 237,753
+  size: 177,105
+  orig: 177,105
+  offset: 0, 0
+  index: -1
+spark-2-si-side_21
+  rotate: false
+  xy: 480,439
+  size: 133,104
+  orig: 133,104
+  offset: 0, 0
+  index: -1
+spark-2-si-side_22
+  rotate: false
+  xy: 981,2
+  size: 30,30
+  orig: 30,30
+  offset: 0, 0
+  index: -1

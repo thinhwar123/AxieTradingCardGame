@@ -1,0 +1,55 @@
+
+energy_08-slash.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy_08_00000
+  rotate: false
+  xy: 2,456
+  size: 59,49
+  orig: 59,49
+  offset: 0, 0
+  index: -1
+energy_08_00001
+  rotate: false
+  xy: 338,262
+  size: 104,58
+  orig: 104,58
+  offset: 0, 0
+  index: -1
+energy_08_00002
+  rotate: false
+  xy: 2,262
+  size: 134,190
+  orig: 134,190
+  offset: 0, 0
+  index: -1
+energy_08_00003
+  rotate: false
+  xy: 140,262
+  size: 74,206
+  orig: 74,206
+  offset: 0, 0
+  index: -1
+energy_08_00004
+  rotate: false
+  xy: 218,262
+  size: 116,105
+  orig: 116,105
+  offset: 0, 0
+  index: -1
+energy_08_00005
+  rotate: false
+  xy: 218,371
+  size: 101,120
+  orig: 101,120
+  offset: 0, 0
+  index: -1
+energy_08_00006
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

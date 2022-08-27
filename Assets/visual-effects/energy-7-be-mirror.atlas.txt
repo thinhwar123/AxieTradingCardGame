@@ -1,0 +1,132 @@
+
+energy-7-be-mirror.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy-21-be-mirror_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_01
+  rotate: false
+  xy: 430,773
+  size: 113,173
+  orig: 113,173
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_02
+  rotate: false
+  xy: 875,262
+  size: 117,187
+  orig: 117,187
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_03
+  rotate: false
+  xy: 604,262
+  size: 128,225
+  orig: 128,225
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_04
+  rotate: false
+  xy: 229,782
+  size: 135,235
+  orig: 135,235
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_05
+  rotate: false
+  xy: 598,513
+  size: 144,256
+  orig: 144,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_06
+  rotate: false
+  xy: 430,513
+  size: 164,256
+  orig: 164,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_07
+  rotate: false
+  xy: 2,522
+  size: 199,256
+  orig: 199,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_08
+  rotate: false
+  xy: 517,2
+  size: 238,256
+  orig: 238,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_09
+  rotate: false
+  xy: 262,2
+  size: 251,256
+  orig: 251,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_10
+  rotate: false
+  xy: 759,2
+  size: 237,256
+  orig: 237,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_11
+  rotate: false
+  xy: 2,262
+  size: 223,256
+  orig: 223,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_12
+  rotate: false
+  xy: 229,262
+  size: 197,256
+  orig: 197,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_13
+  rotate: false
+  xy: 229,522
+  size: 170,256
+  orig: 170,256
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_14
+  rotate: false
+  xy: 430,262
+  size: 170,247
+  orig: 170,247
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_15
+  rotate: false
+  xy: 2,782
+  size: 164,210
+  orig: 164,210
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_16
+  rotate: false
+  xy: 736,262
+  size: 135,184
+  orig: 135,184
+  offset: 0, 0
+  index: -1
+energy-21-be-mirror_17
+  rotate: false
+  xy: 598,773
+  size: 124,154
+  orig: 124,154
+  offset: 0, 0
+  index: -1

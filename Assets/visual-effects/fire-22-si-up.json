@@ -1,0 +1,38 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "fire-22-si-up_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "fire-22-si-up_00": {"x": 3, "y": -69, "width": 92, "height": 97},
+          "fire-22-si-up_01": {"x": 3, "y": -39, "width": 151, "height": 154},
+          "fire-22-si-up_02": {"x": 13, "y": -22, "width": 164, "height": 187},
+          "fire-22-si-up_03": {"x": 4, "y": 1, "width": 190, "height": 191},
+          "fire-22-si-up_04": {"x": 0, "y": 14, "width": 208, "height": 184},
+          "fire-22-si-up_05": {"x": -3, "y": 26, "width": 212, "height": 180},
+          "fire-22-si-up_06": {"x": -5, "y": 28, "width": 212, "height": 178},
+          "fire-22-si-up_07": {"x": -6, "y": 33, "width": 215, "height": 174},
+          "fire-22-si-up_08": {"x": -4, "y": 43, "width": 209, "height": 161},
+          "fire-22-si-up_09": {"x": 3, "y": 48, "width": 188, "height": 143},
+          "fire-22-si-up_10": {"x": 10, "y": 48, "width": 118, "height": 117},
+          "fire-22-si-up_11": {"x": -15, "y": 57, "width": 36, "height": 36}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "fire-22-si-up_00"}, {"time": 0.1, "name": "fire-22-si-up_01"}, {"time": 0.2, "name": "fire-22-si-up_02"}, {"time": 0.30000000000000004, "name": "fire-22-si-up_03"},
+            {"time": 0.4, "name": "fire-22-si-up_04"}, {"time": 0.5, "name": "fire-22-si-up_05"}, {"time": 0.6000000000000001, "name": "fire-22-si-up_06"}, {"time": 0.7000000000000001, "name": "fire-22-si-up_07"},
+            {"time": 0.8, "name": "fire-22-si-up_08"}, {"time": 0.9, "name": "fire-22-si-up_09"}, {"time": 1.0, "name": "fire-22-si-up_10"}, {"time": 1.1, "name": "fire-22-si-up_11"}
+          ]
+        }
+      }
+    }
+  }
+}

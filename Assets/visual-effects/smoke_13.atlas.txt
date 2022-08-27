@@ -1,0 +1,76 @@
+
+smoke_13.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_13_00000
+  rotate: false
+  xy: 272,53
+  size: 109,40
+  orig: 109,40
+  offset: 0, 0
+  index: -1
+smoke_13_00001
+  rotate: false
+  xy: 286,2
+  size: 195,39
+  orig: 195,39
+  offset: 0, 0
+  index: -1
+smoke_13_00002
+  rotate: false
+  xy: 2,148
+  size: 241,44
+  orig: 241,44
+  offset: 0, 0
+  index: -1
+smoke_13_00003
+  rotate: false
+  xy: 2,53
+  size: 266,47
+  orig: 266,47
+  offset: 0, 0
+  index: -1
+smoke_13_00004
+  rotate: false
+  xy: 2,2
+  size: 280,47
+  orig: 280,47
+  offset: 0, 0
+  index: -1
+smoke_13_00005
+  rotate: false
+  xy: 2,104
+  size: 266,40
+  orig: 266,40
+  offset: 0, 0
+  index: -1
+smoke_13_00006
+  rotate: false
+  xy: 2,196
+  size: 268,37
+  orig: 268,37
+  offset: 0, 0
+  index: -1
+smoke_13_00007
+  rotate: false
+  xy: 2,237
+  size: 270,35
+  orig: 270,35
+  offset: 0, 0
+  index: -1
+smoke_13_00008
+  rotate: false
+  xy: 247,148
+  size: 254,33
+  orig: 254,33
+  offset: 0, 0
+  index: -1
+smoke_13_00009
+  rotate: false
+  xy: 272,104
+  size: 227,11
+  orig: 227,11
+  offset: 0, 0
+  index: -1

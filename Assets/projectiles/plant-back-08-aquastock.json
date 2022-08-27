@@ -1,0 +1,61 @@
+{
+"skeleton": {
+	"hash": "Ne0AbCIVyBI4KK+klDjEgxBcEsg",
+	"spine": "3.8.79",
+	"x": -95.09,
+	"y": -90.63,
+	"width": 192,
+	"height": 190,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -95.3 },
+	{ "name": "aquastock-1", "parent": "root", "y": 95.3 },
+	{ "name": "aquastock-3", "parent": "aquastock-1", "x": 15.25, "y": -16.2 },
+	{ "name": "aquastock-5", "parent": "aquastock-1", "x": -17.15, "y": 48.6 }
+],
+"slots": [
+	{ "name": "aquastock-1", "bone": "aquastock-1", "attachment": "aquastock-1" },
+	{ "name": "aquastock-2", "bone": "aquastock-3", "attachment": "aquastock-2" },
+	{ "name": "aquastock-3", "bone": "aquastock-5", "attachment": "aquastock-3" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"aquastock-1": {
+				"aquastock-1": { "x": 0.91, "y": 4.37, "width": 192, "height": 190 }
+			},
+			"aquastock-2": {
+				"aquastock-2": { "x": 1.55, "y": -2.58, "width": 75, "height": 74 }
+			},
+			"aquastock-3": {
+				"aquastock-3": { "x": 33.37, "y": -33.43, "width": 132, "height": 130 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"bones": {
+			"aquastock-1": {
+				"scale": [
+					{ "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.2333, "x": 1.01, "y": 0.92, "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.5, "x": 0.91, "y": 1.01, "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.7667, "x": 1.01, "y": 0.92, "curve": 0.309, "c3": 0.691 },
+					{ "time": 1 }
+				]
+			},
+			"aquastock-3": {
+				"translate": [
+					{ "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.5, "x": -4.07, "curve": 0.309, "c3": 0.691 },
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

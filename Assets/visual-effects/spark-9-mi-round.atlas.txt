@@ -1,0 +1,41 @@
+
+spark-9-mi-round.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sparks_04_00000
+  rotate: false
+  xy: 2,457
+  size: 35,39
+  orig: 35,39
+  offset: 0, 0
+  index: -1
+sparks_04_00001
+  rotate: false
+  xy: 200,251
+  size: 137,111
+  orig: 137,111
+  offset: 0, 0
+  index: -1
+sparks_04_00002
+  rotate: false
+  xy: 2,251
+  size: 194,202
+  orig: 194,202
+  offset: 0, 0
+  index: -1
+sparks_04_00003
+  rotate: false
+  xy: 259,2
+  size: 225,222
+  orig: 225,222
+  offset: 0, 0
+  index: -1
+sparks_04_00004
+  rotate: false
+  xy: 2,2
+  size: 253,245
+  orig: 253,245
+  offset: 0, 0
+  index: -1
