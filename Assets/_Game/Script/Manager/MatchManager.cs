@@ -224,7 +224,7 @@ public class MatchManager : Singleton<MatchManager>
         m_UICIngame.ClearBattle();
         TempData.Instance.GetPlayerData().SwapRole();
         TempData.Instance.GetPlayerData().m_Round++;
-        if (TempData.Instance.GetPlayerData().m_Round < 6)
+        if (TempData.Instance.GetPlayerData().m_Round < 1)
         {
             DelayAction(StartDrawPhase, 2);
         }

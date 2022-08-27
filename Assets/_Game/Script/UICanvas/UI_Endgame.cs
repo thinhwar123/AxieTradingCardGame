@@ -62,9 +62,16 @@ public class UI_Endgame : UICanvas
         UI_Game.Instance.CloseUI(UIID.UICIngame);
         UI_Game.Instance.CloseUI(UIID.UICEndGame);
         //Stophost
-        if (MatchManager.Instance.GetPlayerHandler().isServerOnly)
+        if (MatchManager.Instance.GetPlayerHandler().isServer)
         {
+            Debug.Log("server");
             AxieNetworkManager.Instance.StopHost();
+            AxieNetworkManager.Instance.StopServer();
+        }
+        if (MatchManager.Instance.GetPlayerHandler().isClient)
+        {
+            Debug.Log("client");
+            AxieNetworkManager.Instance.StopClient();
         }
     }
 

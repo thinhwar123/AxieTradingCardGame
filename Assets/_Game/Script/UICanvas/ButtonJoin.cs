@@ -11,6 +11,7 @@ public class ButtonJoin : MonoBehaviour
     {
         if(info.uri != null)
         {
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StopDiscovery();
             AxieNetworkManager.singleton.StartClient(info.uri);
         }
     }

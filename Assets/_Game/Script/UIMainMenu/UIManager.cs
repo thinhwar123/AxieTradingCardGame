@@ -95,8 +95,8 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        AxieNetworkDiscovery.Instance.networkDiscovery.OnServerFound.RemoveAllListeners();
-        AxieNetworkDiscovery.Instance.networkDiscovery.OnServerFound.AddListener(OnDiscoveredServer);
+        AxieNetworkDiscovery.Instance.NetworkDiscovery.OnServerFound.RemoveAllListeners();
+        AxieNetworkDiscovery.Instance.NetworkDiscovery.OnServerFound.AddListener(OnDiscoveredServer);
         isLoading = true;
         InitAllCard();
         InitAllCopyCard();
@@ -388,7 +388,7 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             mainMenu = false;
-            AxieNetworkDiscovery.Instance.networkDiscovery.StartDiscovery();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StartDiscovery();
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyServer(indexAvatar);
             //AxieNetworkManager.Instance.StartClient();
@@ -426,8 +426,9 @@ public class UIManager : MonoBehaviour
             isServer = true;
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyClient(indexAvatar);
-            AxieNetworkManager.Instance.StartHost();
-            AxieNetworkDiscovery.Instance.networkDiscovery.AdvertiseServer();
+            discoveredServers.Clear();
+            AxieNetworkManager.singleton.StartHost();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.AdvertiseServer();
             //isWaiting = true;
             //minute = 0;
             //second = 0;
@@ -655,6 +656,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenJoinScreen()
     {
+        discoveredServers.Clear();
         joinScreen.SetActive(true);
     }
 
