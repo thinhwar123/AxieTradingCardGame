@@ -233,14 +233,17 @@ public class MatchManager : Singleton<MatchManager>
             if (m_UICIngame.m_Score1 > m_UICIngame.m_Score2)
             {
                 Debug.Log("Win Game");
+                UI_Game.Instance.OpenUI<UI_Endgame>(UIID.UICEndGame).Setup(1);
             }
             else if (m_UICIngame.m_Score1 < m_UICIngame.m_Score2)
             {
                 Debug.Log("Lose Game");
+                UI_Game.Instance.OpenUI<UI_Endgame>(UIID.UICEndGame).Setup(-1);
             }
             else
             {
                 Debug.Log("Draw Game");
+                UI_Game.Instance.OpenUI<UI_Endgame>(UIID.UICEndGame).Setup(0);
             }
 
         }
