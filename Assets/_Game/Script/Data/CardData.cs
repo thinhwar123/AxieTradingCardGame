@@ -10,8 +10,9 @@ public class CardData
     public Symbol m_Symbol;
     public AbilityType m_AbilityType;
     public string m_EffectDescription;
-    public List<string> m_WinAnimation;
-    public List<string> m_LoseAnimation;
+    public string m_MeleeAnimation;
+    public string m_RangeAnimation;
+    public string m_DefenceAnimation;
     
     public CardData()
     {
@@ -21,11 +22,9 @@ public class CardData
         m_Symbol = Symbol.ROCK;
         m_AbilityType = AbilityType.ACTIVE;
         m_EffectDescription = "Swap this card with your previous card";
-        m_WinAnimation = new List<string>() { "attack/melee/horn-gore", "attack/melee/mouth-bite", "attack/melee/multi-attack", "attack/melee/normal-attack", "attack/melee/shrimp" };
-        m_LoseAnimation = new List<string>() { "defense/hit-by-normal", "defense/hit-by-ranged-attack" };
     }
 
-    public CardData(string iD, string name, string archetype, Symbol symbol, AbilityType abilityType, string effectDescription, List<string> winAnimation, List<string> loseAnimation)
+    public CardData(string iD, string name, string archetype, Symbol symbol, AbilityType abilityType, string effectDescription, string meleeAnimation, string rangeAnimation, string defenceAnimation)
     {
         m_ID = iD;
         m_Name = name;
@@ -33,8 +32,9 @@ public class CardData
         m_Symbol = symbol;
         m_AbilityType = abilityType;
         m_EffectDescription = effectDescription;
-        m_WinAnimation = winAnimation;
-        m_LoseAnimation = loseAnimation;
+        m_MeleeAnimation = meleeAnimation;
+        m_RangeAnimation = rangeAnimation;
+        m_DefenceAnimation = defenceAnimation;
     }
 }
 

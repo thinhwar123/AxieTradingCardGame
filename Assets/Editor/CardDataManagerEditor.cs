@@ -24,7 +24,7 @@ public class CardDataManagerEditor : Editor
             {
                 JSONNode node = root[i];
 
-                cardData = new CardData(node["id"], node["name"], node["archetype"], GetSymbol(node["symbol"]), GetAbilityType(node["active"]), node["effect_description"], GetListAnimation(node["win_animation"]), GetListAnimation(node["lost_animation"]));
+                cardData = new CardData(node["id"], node["name"], node["archetype"], GetSymbol(node["symbol"]), GetAbilityType(node["active"]), node["effect_description"], node["melee_animation"], node["ranged_animation"], node["defense_animation"]);
                 cardDataManager.m_CardDatas.Add(cardData);
             }
 
