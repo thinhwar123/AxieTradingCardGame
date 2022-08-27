@@ -4256,7 +4256,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIProjectiles:
+  - {fileID: 3202539834946183984, guid: b6975ff5882ae2441b7ac22ddf4204df, type: 3}
+  - {fileID: 3202539834946183984, guid: 30cb51b8ab88f5842a9d1b3e01a96ccd, type: 3}
+  - {fileID: 3202539834946183984, guid: 1bc797a2d72609949a2b477bcb730a83, type: 3}
+  - {fileID: 3202539834946183984, guid: fb3962bd577bd8445abbb13e25454588, type: 3}
+  - {fileID: 3202539834946183984, guid: 23a72e7cf44ac874ba7d1e0501c52687, type: 3}
   - {fileID: 3202539834946183984, guid: 23126dd41dd088b4087494390766af0e, type: 3}
+  - {fileID: 3202539834946183984, guid: 8704a5f4a35dc944aba32e6fdcf78ec8, type: 3}
+  - {fileID: 3202539834946183984, guid: a7b5dab59a35639499637ccbf5bc2968, type: 3}
+  - {fileID: 3202539834946183984, guid: a51bf0d0d016e2d4bbf756e1b834baa2, type: 3}
 --- !u!1 &1585754960
 GameObject:
   m_ObjectHideFlags: 0
