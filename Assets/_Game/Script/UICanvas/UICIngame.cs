@@ -39,10 +39,17 @@ public class UICIngame : UICanvas
     {
         m_CardIndex = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 };
         base.Setup();
+ 
+        m_PlayerHand.ClearHand();
         m_Score1 = 0;
         m_Score2 = 0;
         m_TextScore1.text = string.Format("Score: {0}", m_Score1);
         m_TextScore2.text = string.Format("Score: {0}", m_Score2);
+    }
+    public override void Close()
+    {
+        base.Close();
+        m_Border.position = m_PhaseList[(int)Phase.DRAW].position;
     }
     private void Update()
     {

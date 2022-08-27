@@ -23,4 +23,8 @@ public class Hand : MonoBehaviour
     {
         return m_DropZone.m_ListBasicCard;
     }
+    public void ClearHand()
+    {
+        m_DropZone.ClearDropZone();
+    }
 }

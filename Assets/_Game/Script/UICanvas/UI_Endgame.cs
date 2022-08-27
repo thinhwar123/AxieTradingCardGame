@@ -1,3 +1,4 @@
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,11 @@ public class UI_Endgame : UICanvas
     public float count;
     //public GameObject enemyLose;
     //public AvatarData list;
+    public override void Setup()
+    {
+        base.Setup();
+        count = 0f;
+    }
 
     private void Update()
     {
@@ -57,22 +63,24 @@ public class UI_Endgame : UICanvas
 
     public void BackToMainMenu()
     {
-        //code
-        Debug.Log("Back");
+        if (NetworkServer.active && NetworkClient.isConnected)
+        {
+            NetworkManager.singleton.StopHost();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StopDiscovery();
+        }
+        // stop client if client-only
+        else if (NetworkClient.isConnected)
+        {
+            NetworkManager.singleton.StopClient();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StopDiscovery();
+        }
+        // stop server if server-only
+        else if (NetworkServer.active)
+        {
+            NetworkManager.singleton.StopServer();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StopDiscovery();
+        }
         UI_Game.Instance.CloseUI(UIID.UICIngame);
         UI_Game.Instance.CloseUI(UIID.UICEndGame);
-        //Stophost
-        if (MatchManager.Instance.GetPlayerHandler().isServer)
-        {
-            Debug.Log("server");
-            AxieNetworkManager.Instance.StopHost();
-            AxieNetworkManager.Instance.StopServer();
-        }
-        if (MatchManager.Instance.GetPlayerHandler().isClient)
-        {
-            Debug.Log("client");
-            AxieNetworkManager.Instance.StopClient();
-        }
     }
-
 }

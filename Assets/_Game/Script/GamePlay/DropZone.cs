@@ -68,4 +68,13 @@ public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 		}
 		m_HorizontalLayoutGroup.spacing = space;
 	}
+	public void ClearDropZone()
+    {
+		while(m_ListBasicCard.Count > 0)
+        {
+			BasicCard temp = m_ListBasicCard[0];
+			RemoveBasicCard(temp);
+			temp.DestroyCard();
+        }
+    }
 }

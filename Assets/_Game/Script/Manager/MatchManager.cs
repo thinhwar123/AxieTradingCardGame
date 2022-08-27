@@ -21,7 +21,11 @@ public class MatchManager : Singleton<MatchManager>
     #region Unity Functions
     protected override void Awake()
     {
-        base.Awake();
+        transform.SetParent(null);
+        if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
         m_SavedDataDeskCard = new List<CardData>();
         for (int i = 0; i < 24; i++)
         {
