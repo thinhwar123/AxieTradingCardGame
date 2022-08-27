@@ -5284,38 +5284,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1738230386
+--- !u!1 &1776503358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1776503359}
+  - component: {fileID: 1776503360}
+  m_Layer: 0
+  m_Name: UIEffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1776503359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776503358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1990043596}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1776503360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738230383}
+  m_GameObject: {fileID: 1776503358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c761308e733c51245b2e8bb4201f46dc, type: 3}
+  m_Script: {fileID: 11500000, guid: cf4018a3535d1644b9f7df1545cbb727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secretHandshake: 6208288417181960902
-  serverBroadcastListenPort: 47777
-  enableActiveDiscovery: 1
-  ActiveDiscoveryInterval: 3
-  transport: {fileID: 0}
-  OnServerFound:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1738230384}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: InitRoom
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_Effects:
+  - {fileID: 2673231788002424781, guid: 11ce9b5e96d815c4d888fb6a7870ea15, type: 3}
 --- !u!114 &1906801424 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1687315722042762991, guid: 9cdb7313f37cd554d8056932782feec8,
@@ -5446,7 +5459,7 @@ Transform:
   - {fileID: 26384634}
   - {fileID: 516893206}
   - {fileID: 1585754961}
-  - {fileID: 692092147}
+  - {fileID: 1776503359}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
