@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class TImeCount : MonoBehaviour
+public class UICTimeCount : UICanvas
 {
     // Start is called before the first frame update
     private int second;
@@ -12,10 +12,10 @@ public class TImeCount : MonoBehaviour
     private float countTime = 0f;
     public bool isWaiting;
     public TextMeshProUGUI timeWait;
-    public GameObject waitPanel;
     
-    void Start()
+    public override void Setup()
     {
+        base.Setup();
         second = 0;
         minute = 0;
         countTime = 0f;
@@ -71,7 +71,6 @@ public class TImeCount : MonoBehaviour
     public void StopWaiting()
     {
         isWaiting = false;
-        waitPanel.SetActive(false);
-        //isWaiting = false;
+        Close();
     }
 }

@@ -13,7 +13,7 @@ public enum UIID
     UICIngame,
     UICEndGame,
     UICShowCardInfor,
-
+    UICTimeCount,
 }
 
 
