@@ -7,32 +7,17 @@ using Thinh;
 
 public class UIProjectilesManager : Singleton<UIProjectilesManager>
 {
-    public Dictionary<string, UIProjectiles> projectiles;
-
-    private void Start()
+    public List<UIProjectiles> m_UIProjectiles;
+    
+    public UIProjectiles GetUIProjectile(string name)
     {
-        projectiles = new Dictionary<string, UIProjectiles>();
-    }
-    public void Spawn()
-    {
-        Spawn("aquatic-back-04-scale-dart");
-    }
-    public UIProjectiles Spawn(string key)
-    {
-        if (!projectiles.ContainsKey(key))
+        for (int i = 0; i < m_UIProjectiles.Count; i++)
         {
-            Debug.Log(key);
-            UIProjectiles pt = SimplePool.Spawn(Resources.Load<UIProjectiles>("Projectiles/Spine GameObject (" + key + ")"));
-            projectiles.Add(key, pt);
+            if (m_UIProjectiles[i].m_ProjectileName == name)
+            {
+                return m_UIProjectiles[i];
+            }
         }
-        projectiles[key].gameObject.SetActive(true);
-        return projectiles[key];
-    }
-    public void DeSpawn(string key)
-    {
-        if (projectiles.ContainsKey(key))
-        {
-            projectiles[key].gameObject.SetActive(false);
-        }
+        return m_UIProjectiles[0];
     }
 }

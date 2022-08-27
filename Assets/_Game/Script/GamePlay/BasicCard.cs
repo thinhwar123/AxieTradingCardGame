@@ -477,50 +477,91 @@ public class BasicCard : MonoBehaviour
     #endregion
 
     #region Combat Functions
-    public void Battle(BasicCard basicCard)
+    public void MeleeBattle(BasicCard basicCard)
     {
         Vector3 pos = (Transform.position + basicCard.transform.position) /2;
         skeletonGraphic.rectTransform.DOMoveX((pos + m_CardLookDirection * Vector3.right).x, 1);
 
         if (GetLoseSymbol(m_Symbol) == basicCard.m_Symbol)
         {
-            StartCoroutine(OnAttack());
+            StartCoroutine(OnMeleeAttack());
             m_OnWinBattleCallback?.Invoke();
         }
         else if (GetWinSymbol(m_Symbol) == basicCard.m_Symbol)
         {
-            StartCoroutine(OnHit());
+            StartCoroutine(OnMeleeHit());
         }
         else
         {
-            StartCoroutine(OnAttack());
+            StartCoroutine(OnMeleeAttack());
         }
     }
-    IEnumerator OnAttack()
+    IEnumerator OnMeleeAttack()
     {
-        Debug.Log("Attack");
         skeletonGraphic.transform.SetParent( UI_Game.Instance.CanvasParentTF);
         skeletonGraphic.AnimationState.SetAnimation(0, "action/run", true);
-        yield return new WaitForSeconds(1);
         m_CanvasGroup.DOFade(0, 1);
-        skeletonGraphic.AnimationState.SetAnimation(0, m_WinAnimation[Random.Range(0, m_WinAnimation.Count)], false);
+        yield return new WaitForSeconds(1);
+        
+        skeletonGraphic.AnimationState.SetAnimation(0, m_WinAnimation[0], false);
         yield return new WaitForSeconds(1.5f);
         skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
         yield return new WaitForSeconds(2f);
 
         DestroyCard();
     }
-    IEnumerator OnHit()
+    IEnumerator OnMeleeHit()
     {
-        Debug.Log("Hit");
         skeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
         skeletonGraphic.AnimationState.SetAnimation(0, "action/run", true);
-        yield return new WaitForSeconds(1f);
         m_CanvasGroup.DOFade(0, 1);
+        yield return new WaitForSeconds(1f);
+        
         skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
         yield return new WaitForSeconds(0.75f);
-        skeletonGraphic.AnimationState.SetAnimation(0, m_LoseAnimation[Random.Range(0, m_LoseAnimation.Count)], false);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_LoseAnimation[0], false);
         yield return new WaitForSeconds(2.75f);
+        DestroyCard();
+    }
+    public void RangeBattle(BasicCard basicCard)
+    {
+
+        if (GetLoseSymbol(m_Symbol) == basicCard.m_Symbol)
+        {
+            StartCoroutine(OnRangeAttack(basicCard));
+            m_OnWinBattleCallback?.Invoke();
+        }
+        else if (GetWinSymbol(m_Symbol) == basicCard.m_Symbol)
+        {
+            StartCoroutine(OnRangeHit());
+        }
+        else
+        {
+            StartCoroutine(OnRangeAttack(basicCard));
+        }
+    }
+    IEnumerator OnRangeAttack(BasicCard basicCard)
+    {
+        skeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_WinAnimation[0], true);
+        m_CanvasGroup.DOFade(0, 1);
+        yield return new WaitForSeconds(0.5f);
+        Thinh.SimplePool.Spawn(UIProjectilesManager.Instance.GetUIProjectile(m_AbilityName)).Setup(Transform.position, basicCard.Transform.position, 1);
+        yield return new WaitForSeconds(0.5f);
+        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        yield return new WaitForSeconds(3.5f);
+
+        DestroyCard();
+    }
+    IEnumerator OnRangeHit()
+    {
+        skeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
+        m_CanvasGroup.DOFade(0, 1);
+        yield return new WaitForSeconds(1.5f);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_LoseAnimation[0], false);
+        yield return new WaitForSeconds(1);
+        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        yield return new WaitForSeconds(1f);
         DestroyCard();
     }
     public void DestroyCard()
