@@ -200,6 +200,7 @@ public class BasicCard : MonoBehaviour
         else
         {
             skeletonGraphic.AnimationState.SetAnimation(0, "battle/get-buff", false);
+            UIEffectManager.Instance.PlayEffect(m_AbilityName, Transform, Transform.position);
             switch (m_AbilityName)
             {
                 case "Swap Back":                    
