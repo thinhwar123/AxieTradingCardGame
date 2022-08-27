@@ -62,7 +62,7 @@ CanvasGroup:
   m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
+  m_IgnoreParentGroups: 1
 --- !u!1 &8689722347470618258
 GameObject:
   m_ObjectHideFlags: 0

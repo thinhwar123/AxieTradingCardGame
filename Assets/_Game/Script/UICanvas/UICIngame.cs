@@ -9,9 +9,11 @@ public class UICIngame : UICanvas
 {
     [SerializeField] public Deck m_PlayerDeck;
     [SerializeField] public Hand m_PlayerHand;
+    [SerializeField] private CanvasGroup m_PlayerSingleDropZone;
     [SerializeField] private List<SingleDropZone> m_PlayerSingleDropZones;
 
     [SerializeField] private Deck m_OpponentDeck;
+    [SerializeField] private CanvasGroup m_OpponentSingleDropZone;
     [SerializeField] private List<SingleDropZone> m_OpponentSingleDropZones;
 
     [SerializeField] private Image m_ImageSliderFill;
@@ -25,8 +27,8 @@ public class UICIngame : UICanvas
     [SerializeField] private RectTransform m_DefenderRole;
 
     [SerializeField] private CanvasGroup m_ButtonEndPhase;
-    private int m_Score1;
-    private int m_Score2;
+    public int m_Score1;
+    public int m_Score2;
     [SerializeField] private TextMeshProUGUI m_TextScore1;
     [SerializeField] private TextMeshProUGUI m_TextScore2;
 
@@ -128,6 +130,7 @@ public class UICIngame : UICanvas
 
         MatchManager.Instance.StartEndPhase();
     }
+    
     public void ClearBattle()
     {
         for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
@@ -223,6 +226,14 @@ public class UICIngame : UICanvas
     public void SetupRole(BattleRole playerRole)
     {
         float pos = playerRole == BattleRole.ATTACKER ? -400 : 400;
+        if (playerRole == BattleRole.ATTACKER)
+        {
+            m_DefenderRole.SetAsFirstSibling();
+        }
+        else
+        {
+            m_AttackerRole.SetAsFirstSibling();
+        }
         m_AttackerRole.DOLocalMoveX(pos, 0.5f);
         m_DefenderRole.DOLocalMoveX(-pos, 0.5f);
     }
@@ -272,6 +283,11 @@ public class UICIngame : UICanvas
     {
         m_Score2++;
         m_TextScore2.text = string.Format("Score: {0}", m_Score2);
+    }
+    public void SetFadeDropZone(bool value)
+    {
+        m_PlayerSingleDropZone.alpha = value ? 0 : 1;
+        m_OpponentSingleDropZone.alpha = value ? 0 : 1;
     }
 }
 

@@ -202,7 +202,7 @@ public class BasicCard : MonoBehaviour
             skeletonGraphic.AnimationState.SetAnimation(0, "battle/get-buff", false);
             switch (m_AbilityName)
             {
-                case "Swap Back":
+                case "Swap Back":                    
                     SwapBack();
                     break;
                 case "Twin Power":
@@ -316,7 +316,6 @@ public class BasicCard : MonoBehaviour
     #region Ability Functions
     public void SwapBack()
     {
-
         UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
         List<SingleDropZone> singleDropZones = uicIngame.GetSelectSingleDropZoneByTurn();
         for (int i = 0; i < singleDropZones.Count - 2; i++)
