@@ -49,8 +49,9 @@ public class BasicCard : MonoBehaviour
     [SerializeField] private string m_AbilityName;
     [SerializeField] private string m_AbilityDescription;
 
-    [SerializeField] private List<string> m_WinAnimation;
-    [SerializeField] private List<string> m_LoseAnimation;
+    [SerializeField] private string m_MeleeAnimation;
+    [SerializeField] private string m_RangeAnimation;
+    [SerializeField] private string m_DefenceAnimation;
 
     public CardData m_CardData { get; private set; }
 
@@ -139,8 +140,9 @@ public class BasicCard : MonoBehaviour
         m_AbilityType = cardData.m_AbilityType;
         m_AbilityName = cardData.m_Archetype;
         m_AbilityDescription = cardData.m_EffectDescription;
-        m_WinAnimation = cardData.m_WinAnimation;
-        m_LoseAnimation = cardData.m_LoseAnimation;
+        m_MeleeAnimation = cardData.m_MeleeAnimation;
+        m_RangeAnimation = cardData.m_RangeAnimation;
+        m_DefenceAnimation = cardData.m_DefenceAnimation;
     }
 
     public string GetID()
@@ -503,7 +505,7 @@ public class BasicCard : MonoBehaviour
         m_CanvasGroup.DOFade(0, 1);
         yield return new WaitForSeconds(1);
         
-        skeletonGraphic.AnimationState.SetAnimation(0, m_WinAnimation[0], false);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_MeleeAnimation, false);
         yield return new WaitForSeconds(1.5f);
         skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
         yield return new WaitForSeconds(2f);
@@ -519,7 +521,7 @@ public class BasicCard : MonoBehaviour
         
         skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
         yield return new WaitForSeconds(0.75f);
-        skeletonGraphic.AnimationState.SetAnimation(0, m_LoseAnimation[0], false);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_DefenceAnimation, false);
         yield return new WaitForSeconds(2.75f);
         DestroyCard();
     }
@@ -543,7 +545,7 @@ public class BasicCard : MonoBehaviour
     IEnumerator OnRangeAttack(BasicCard basicCard)
     {
         skeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
-        skeletonGraphic.AnimationState.SetAnimation(0, m_WinAnimation[0], true);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_RangeAnimation, true);
         m_CanvasGroup.DOFade(0, 1);
         yield return new WaitForSeconds(0.5f);
         Thinh.SimplePool.Spawn(UIProjectilesManager.Instance.GetUIProjectile(m_AbilityName)).Setup(Transform.position, basicCard.Transform.position, 1);
@@ -558,7 +560,7 @@ public class BasicCard : MonoBehaviour
         skeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
         m_CanvasGroup.DOFade(0, 1);
         yield return new WaitForSeconds(1.5f);
-        skeletonGraphic.AnimationState.SetAnimation(0, m_LoseAnimation[0], false);
+        skeletonGraphic.AnimationState.SetAnimation(0, m_DefenceAnimation, false);
         yield return new WaitForSeconds(1);
         skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
         yield return new WaitForSeconds(1f);
