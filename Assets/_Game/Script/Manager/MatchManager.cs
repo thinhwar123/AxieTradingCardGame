@@ -69,6 +69,10 @@ public class MatchManager : Singleton<MatchManager>
     }
     #endregion
 
+    public PlayerHandler GetPlayerHandler()
+    {
+        return this.m_PlayerHandler;
+    }
 
     #region Phase Functions
     /// <summary>

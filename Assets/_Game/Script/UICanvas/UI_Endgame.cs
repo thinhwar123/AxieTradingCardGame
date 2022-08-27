@@ -20,11 +20,12 @@ public class UI_Endgame : UICanvas
     {
         if (isLoading)
         {
-            loadIcon.transform.Rotate(Vector3.back * 50f * Time.deltaTime);
+            loadIcon.transform.Rotate(Vector3.forward * 50f * Time.deltaTime);
             count += Time.deltaTime;
             if(count >= 5f)
             {
                 BackToMainMenu();
+                isLoading = false;
             }
         }
     }
@@ -58,6 +59,13 @@ public class UI_Endgame : UICanvas
     {
         //code
         Debug.Log("Back");
+        UI_Game.Instance.CloseUI(UIID.UICIngame);
+        UI_Game.Instance.CloseUI(UIID.UICEndGame);
+        //Stophost
+        if (MatchManager.Instance.GetPlayerHandler().isServerOnly)
+        {
+            AxieNetworkManager.Instance.StopHost();
+        }
     }
 
 }

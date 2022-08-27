@@ -11,14 +11,19 @@ using Mirror;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Start is called before the first frame update    
     public Slider loadingBar;
+    public Slider loadingBackBar;
     public float speedLoad;
+    public float speedLoadBack;
     public float fill;
+    public float fillBack;
     public bool isLoading;    
     public TextMeshProUGUI loadingText;
+    public TextMeshProUGUI loadingBackText;
     public TextMeshProUGUI loadingMatchText;
     public GameObject loadingPanel;
+    public GameObject loadingBackPanel;
     public GameObject mainMenuPanel;
     public GameObject WaitJoin;
     //public Button soundSetting;
@@ -41,6 +46,8 @@ public class UIManager : MonoBehaviour
     public List<BasicCard> listCopyCards = new List<BasicCard>();
     public List<BasicCard> listDeckCards = new List<BasicCard>();
     public List<CardData> listCardDatas = new List<CardData>();
+    public List<Sprite> bg;
+    public Image bgBack;
     public static bool mainMenu = true;
 
     [SerializeField] private BasicCard m_BasicCard;
@@ -55,13 +62,14 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI numberOfCards;
     public TextMeshProUGUI timeWait;
 
-    [Scene]
-    public string onlineScene;
+    //[Scene]
+    //public string onlineScene;
 
     //public bool goGame = false;
     public bool isFirstTime = true;
     public bool isCanStart = true;
     public bool isWaiting = false;
+    //public int isLoadingYet = 0;
     private int second;
     private int minute;
     private float countTime = 0f;
@@ -82,6 +90,19 @@ public class UIManager : MonoBehaviour
         //goGame = false;
         isCanStart = true;
         isWaiting = false;
+        //PlayerPrefs.SetInt("IsLoadingYet", 0);
+        //isLoadingYet = PlayerPrefs.GetInt("IsLoadingYet");
+        if (!PlayerData.Instance.isLoad)
+        {
+            loadingBackPanel.SetActive(false);
+            loadingPanel.SetActive(true);
+        }
+        else
+        {
+            loadingBackPanel.SetActive(true);
+            loadingPanel.SetActive(false);
+            SetBackGroundBack();
+        }
         second = 0;
         minute = 0;
         countTime = 0f;
@@ -119,7 +140,14 @@ public class UIManager : MonoBehaviour
 
         if (isLoading)
         {
-            LoadingGame();
+            if (!PlayerData.Instance.isLoad)
+            {
+                LoadingGame();
+            }
+            else
+            {
+
+            }
         }
 
         //if (isWaiting)
@@ -212,6 +240,8 @@ public class UIManager : MonoBehaviour
         else
         {
             isLoading = false;
+            PlayerData.Instance.isLoad = true;            
+            //PlayerPrefs.SetInt("IsLoadingYet", 1);
             Invoke("EndLoading", 1);
             SwitchToBuildSpace();
             LoadDeck();
@@ -222,6 +252,33 @@ public class UIManager : MonoBehaviour
     {
         //yield return new WaitForSeconds(1f);
         loadingPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
+        //SwitchToBuildSpace();
+    }
+
+    public void LoadingBack()
+    {
+        fillBack += speedLoadBack * Time.deltaTime;
+
+        if (fillBack < 1f)
+        {
+            loadingBackBar.value = fillBack;
+            loadingBackText.text = ((int)(100 * fillBack)).ToString() + "%";
+        }
+        else
+        {
+            isLoading = false;            
+            //PlayerPrefs.SetInt("IsLoadingYet", 1);
+            Invoke("EndLoadingBack", 1);
+            SwitchToBuildSpace();
+            LoadDeck();
+        }
+    }
+
+    public void EndLoadingBack()
+    {
+        //yield return new WaitForSeconds(1f);
+        loadingBackPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
         //SwitchToBuildSpace();
     }
@@ -324,8 +381,8 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             mainMenu = false;
-            PlayerPrefs.SetInt("player", indexAvatar);
-            serverClient.AvatarEnemyServer(indexAvatar);
+            //PlayerPrefs.SetInt("player", indexAvatar);
+            //serverClient.AvatarEnemyServer(indexAvatar);
             networkManager.StartClient();
             //serverClient.AvatarEnemyServer(indexAvatar);
         }
@@ -357,8 +414,8 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             isServer = true;
-            PlayerPrefs.SetInt("player", indexAvatar);
-            serverClient.AvatarEnemyClient(indexAvatar);
+            //PlayerPrefs.SetInt("player", indexAvatar);
+            //serverClient.AvatarEnemyClient(indexAvatar);
             networkManager.StartHost();
             //isWaiting = true;
             //minute = 0;
@@ -776,10 +833,13 @@ public class UIManager : MonoBehaviour
             avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
         }
     }
-    //public IEnumerator FullCard()
-    //{
-
-    //}
+    
+    public void SetBackGroundBack()
+    {
+        System.Random rd = new System.Random();
+        var index = rd.Next(0, bg.Count());
+        bgBack.sprite = bg[index];
+    }
 }
 
 
