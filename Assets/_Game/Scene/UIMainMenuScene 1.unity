@@ -368,9 +368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b70d8dec58bc84a8aeda11e508a5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDestroyOnClose: 0
   isWaiting: 1
   timeWait: {fileID: 1004822702}
-  waitPanel: {fileID: 21271666}
 --- !u!224 &21271668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1578,7 +1578,7 @@ MonoBehaviour:
     m_RangeAnimation: attack/ranged/cast-high
     m_DefenceAnimation: defense/hit-by-normal
   - m_ID: 11410738
-    m_Name: 
+    m_Name: UwU
     m_Archetype: Breaker
     m_Symbol: 0
     m_AbilityType: 0
@@ -1787,6 +1787,36 @@ MonoBehaviour:
     m_EffectDescription: When faced with a Rock Symbol has a 50% chance to become
       Paper Symbol but also has a 50% chance to become a Rock Symbol when encountering
       Paper Symbol
+    m_MeleeAnimation: attack/melee/mouth-bite
+    m_RangeAnimation: attack/ranged/cast-low
+    m_DefenceAnimation: defense/hit-by-normal
+  - m_ID: 3454047
+    m_Name: Slime 1
+    m_Archetype: Slime Power
+    m_Symbol: 0
+    m_AbilityType: 1
+    m_EffectDescription: When you are losing by 3 or more, change this card symbol
+      to a win symbol against your opponent's Axie
+    m_MeleeAnimation: attack/melee/mouth-bite
+    m_RangeAnimation: attack/ranged/cast-low
+    m_DefenceAnimation: defense/hit-by-normal
+  - m_ID: 9016125
+    m_Name: Slime 2
+    m_Archetype: Slime Power
+    m_Symbol: 1
+    m_AbilityType: 1
+    m_EffectDescription: When you are losing by 3 or more, change this card symbol
+      to a win symbol against your opponent's Axie
+    m_MeleeAnimation: attack/melee/mouth-bite
+    m_RangeAnimation: attack/ranged/cast-low
+    m_DefenceAnimation: defense/hit-by-normal
+  - m_ID: 3801858
+    m_Name: Slime 3
+    m_Archetype: Slime Power
+    m_Symbol: 2
+    m_AbilityType: 1
+    m_EffectDescription: When you are losing by 3 or more, change this card symbol
+      to a win symbol against your opponent's Axie
     m_MeleeAnimation: attack/melee/mouth-bite
     m_RangeAnimation: attack/ranged/cast-low
     m_DefenceAnimation: defense/hit-by-normal

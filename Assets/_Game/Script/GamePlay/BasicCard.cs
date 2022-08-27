@@ -231,8 +231,10 @@ public class BasicCard : MonoBehaviour
                     break;
                 case "Two Face":
                     TwoFace();
+                    break;                    
+                case "Slime Power":
+                    SlimePower();
                     break;
-
             }
         }
         yield return new WaitForSeconds(2);
@@ -438,21 +440,14 @@ public class BasicCard : MonoBehaviour
         List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
         int index = basicCards.IndexOf(this);
         BasicCard opponentCard = basicCards[index + (index % 2 == 0 ? 1 : -1)];
-        //if (MatchManager.Instance.get)
-        //{
 
-        //}
-        //if (uicIngame.m_Score1 + 3 < uicIngame)
+        int playerScore = MatchManager.Instance.IsPlayerCard(this) ? uicIngame.m_Score1 : uicIngame.m_Score2;
+        int opponentScore = MatchManager.Instance.IsPlayerCard(this) ? uicIngame.m_Score2 : uicIngame.m_Score1;
+        //if (playerScore + 2 < opponentScore)
         //{
-        //    if (opponentCard.m_Symbol == GetWinSymbol(m_Symbol))
-        //    {
-        //        ChangeSymbol(GetWinSymbol(opponentCard.m_Symbol));
-        //    }
-        //    else if (opponentCard.m_Symbol == GetLoseSymbol(m_Symbol))
-        //    {
-        //        ChangeSymbol(GetLoseSymbol(opponentCard.m_Symbol));
-        //    }
+        //    ChangeSymbol(GetWinSymbol(opponentCard.m_Symbol));
         //}
+        ChangeSymbol(GetWinSymbol(opponentCard.m_Symbol));
     }
     public void ChangeSymbol(Symbol symbol)
     {
