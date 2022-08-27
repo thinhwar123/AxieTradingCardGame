@@ -286,6 +286,8 @@ public class MatchManager : Singleton<MatchManager>
         SetCanDragCard(false);
         m_UICIngame.SetShowTimeCount(false);
         m_UICIngame.SetButtonEndPhase(false);
+        m_UICIngame.AutoScaleCardToNormal();
+        yield return new WaitForSeconds(0.5f);
 
         if (m_UICIngame.HasEmptyDropZone())
         {
@@ -302,6 +304,7 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void StartBattlePhase()
     {
+        m_UICIngame.AutoScaleCardToNormal();
         TempData.Instance.GetPlayerData().m_SelectSkill = m_UICIngame.GetSelectSkill();
         m_PlayerHandler.SetUpMatchData(TempData.Instance.GetPlayerData());
         DelayAction(() => StateMachine.ChangeState(BattleState.Instance), 0.5f);

@@ -249,16 +249,58 @@ public class UICIngame : UICanvas
     public void OnClickButtonEndPhasePhase()
     {
         SetButtonEndPhase(false);
+
         MatchManager.Instance.EndPhase(m_CurrentPhase);
     }
+    //public List<BasicCard> GetAllBasicCard()
+    //{
+    //    List<BasicCard> listResult = new List<BasicCard>();
+    //    BasicCard basicCard;
+    //    for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
+    //    {
+    //        basicCard = m_PlayerSingleDropZones[i].GetBasicCard();
+    //        if (basicCard != null)
+    //        {
+    //            listResult.Add(basicCard);
+    //        }            
+    //    }
+    //    for (int i = 0; i < m_OpponentSingleDropZones.Count; i++)
+    //    {
+    //        basicCard = m_OpponentSingleDropZones[i].GetBasicCard();
+    //        if (basicCard != null)
+    //        {
+    //            listResult.Add(basicCard);
+    //        }
+    //    }
+    //    List<BasicCard> listBasicCardInHand = m_PlayerHand.GetListBasicCardInHand();
+    //    for (int i = 0; i < listBasicCardInHand.Count; i++)
+    //    {
+    //        basicCard = listBasicCardInHand[i];
+    //        if (basicCard != null)
+    //        {
+    //            listResult.Add(basicCard);
+    //        }
+    //    }
+    //    return listResult;
+    //}
     public void AutoFillSingleDropZone()
     {
+
         for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
         {
             if (m_PlayerSingleDropZones[i].IsEmpty())
             {
                 StartCoroutine(m_PlayerHand.GetRandomBasicCardInHand().m_CardController.MoveCardToDropZone(m_PlayerSingleDropZones[i].m_DropZone, null));
             }
+        }
+    }
+    public void AutoScaleCardToNormal()
+    {
+        if (UI_Game.Instance.IsOpenedUI(UIID.UICShowCardInfor))
+        {
+            UICShowCardInfor UICShowCardInfor = UI_Game.Instance.GetUI<UICShowCardInfor>(UIID.UICShowCardInfor);
+            BasicCard basicCard = UICShowCardInfor.GetComponentInChildren<BasicCard>();
+            basicCard.m_CardController.ScaleToNormal();
         }
     }
     private CardData GetRandomCardInList()
