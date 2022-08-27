@@ -43,7 +43,7 @@ public class CardController : NetworkBehaviour
         m_CurrentCardSlot.SetParentTransform(Transform.parent);
         m_CurrentCardSlot.Transform.localScale = Vector3.one;
         m_CurrentCardSlot.SaveLastParentTransform();
-        Transform.parent = m_CurrentCardSlot.Transform;
+        Transform.SetParent(m_CurrentCardSlot.Transform);
         Transform.localScale = Vector3.one;
 
     }
@@ -75,8 +75,8 @@ public class CardController : NetworkBehaviour
         Debug.Log(dropZone.gameObject.name);
         ChangeDropZone(dropZone);
 
-        Transform.parent = UI_Game.Instance.CanvasParentTF;
-        m_CurrentCardSlot.Transform.parent = dropZone.Transform;
+        Transform.SetParent(UI_Game.Instance.CanvasParentTF);
+        m_CurrentCardSlot.Transform.SetParent(dropZone.Transform);
         m_CurrentCardSlot.Transform.localScale = Vector3.one;
         yield return new WaitForSeconds(0.5f);
         m_Tweens.Add(Transform.DOMove(m_CurrentCardSlot.Transform.position, 0.5f).SetEase(Ease.InOutSine).OnComplete(() => m_Transform.SetParent(m_CurrentCardSlot.Transform)));
@@ -95,5 +95,9 @@ public class CardController : NetworkBehaviour
     {
         Thinh.SimplePool.Despawn(m_CurrentCardSlot.gameObject);
         m_CurrentCardSlot = null;
+    }
+    public virtual void ScaleToNormal()
+    {
+
     }
 }
