@@ -146,7 +146,7 @@ public class UIManager : MonoBehaviour
             }
             else
             {
-
+                LoadingBack();
             }
         }
 
