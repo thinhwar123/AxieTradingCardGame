@@ -120,10 +120,14 @@ public class UICIngame : UICanvas
         }
 
         listCard = GetSelectBasicCardByTurn();
-        for (int i = 0; i < listCard.Count; i+=2)
+
+        listCard[0].MeleeBattle(listCard[1]);
+        listCard[1].MeleeBattle(listCard[0]);
+        yield return new WaitForSeconds(5);
+        for (int i = 2; i < listCard.Count; i += 2)
         {
-            listCard[i].Battle(listCard[i+1]);
-            listCard[i+1].Battle(listCard[i]);
+            listCard[i].RangeBattle(listCard[i + 1]);
+            listCard[i + 1].RangeBattle(listCard[i]);
             yield return new WaitForSeconds(5);
         }
         yield return new WaitForSeconds(1);
