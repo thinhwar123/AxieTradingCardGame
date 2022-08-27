@@ -47,9 +47,10 @@ public class AxieNetworkManager : NetworkManager
             // call base functionality (actually destroys the player)
             base.OnServerDisconnect(conn);
         }
-    public override void OnClientDisconnect(NetworkConnection conn)
+
+    public override void OnClientDisconnect()
     {
-        base.OnClientDisconnect(conn);
+        base.OnClientDisconnect();
         UI_Game.Instance.CloseUI(UIID.UICIngame);
     }
 }

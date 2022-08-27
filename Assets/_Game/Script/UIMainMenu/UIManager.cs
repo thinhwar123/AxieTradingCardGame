@@ -8,6 +8,7 @@ using DG.Tweening;
 using Thinh;
 using System.Linq;
 using Mirror;
+using Mirror.Discovery;
 
 public class UIManager : MonoBehaviour
 {
@@ -44,9 +45,9 @@ public class UIManager : MonoBehaviour
     public List<BasicCard> listCopyCards = new List<BasicCard>();
     public List<BasicCard> listDeckCards = new List<BasicCard>();
     public List<CardData> listCardDatas = new List<CardData>();
-    public List<Button> listRooms = new List<Button>();
+    public List<ButtonJoin> listRooms = new List<ButtonJoin>();
     public List<Sprite> bg;
-    public Button roomPrefab;
+    public ButtonJoin roomPrefab;
     public Image bgBack;
     public Sprite mainBG;
     public Sprite mainFill;
@@ -87,10 +88,15 @@ public class UIManager : MonoBehaviour
 
     public ServerClient serverClient;
 
+    readonly Dictionary<long, ServerResponse> discoveredServers = new Dictionary<long, ServerResponse>();
+
     //network
     //public AxieNetworkManager networkManager;
+
     void Start()
     {
+        AxieNetworkDiscovery.Instance.networkDiscovery.OnServerFound.RemoveAllListeners();
+        AxieNetworkDiscovery.Instance.networkDiscovery.OnServerFound.AddListener(OnDiscoveredServer);
         isLoading = true;
         InitAllCard();
         InitAllCopyCard();
@@ -382,11 +388,12 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             mainMenu = false;
+            AxieNetworkDiscovery.Instance.networkDiscovery.StartDiscovery();
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyServer(indexAvatar);
             //AxieNetworkManager.Instance.StartClient();
             OpenJoinScreen();
-            InitRoom(16);
+            //InitRoom(16);
             //serverClient.AvatarEnemyServer(indexAvatar);
         }
         else
@@ -420,6 +427,7 @@ public class UIManager : MonoBehaviour
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyClient(indexAvatar);
             AxieNetworkManager.Instance.StartHost();
+            AxieNetworkDiscovery.Instance.networkDiscovery.AdvertiseServer();
             //isWaiting = true;
             //minute = 0;
             //second = 0;
@@ -609,26 +617,37 @@ public class UIManager : MonoBehaviour
             //listCardSlots.Add(card.m_CardController.GetCardSlot());
         }
     }    
-    public void InitRoom(int amount)
+    public void InitRoom()
     {
-        var empty = listRooms.Count() - amount;
-        Debug.Log(empty);
+        var empty = listRooms.Count() - discoveredServers.Count;
         if (empty < 0)
         {
             for (int i = 0; i < -empty; i++)
             {
-                Button newButton = Instantiate(roomPrefab);
+                //ButtonJoin newButton = SimplePool.Spawn<ButtonJoin>(roomPrefab);
+                ButtonJoin newButton = Instantiate<ButtonJoin>(roomPrefab);
                 newButton.gameObject.SetActive(false);
                 newButton.transform.SetParent(m_StartSpawnButton.transform, false);
                 listRooms.Add(newButton);
             }
         }
+        List<long> list_key = discoveredServers.Keys.ToList();
         for (int j = 0; j < listRooms.Count(); j++)
         {
-            if (!listRooms[j].gameObject.activeInHierarchy)
+            if (j < discoveredServers.Count)
             {
-                listRooms[j].transform.SetParent(boxRoom, false);
-                listRooms[j].gameObject.SetActive(true);
+                //if (!listRooms[j].gameObject.activeInHierarchy)
+                {
+                    listRooms[j].transform.SetParent(boxRoom, false);
+                    listRooms[j].gameObject.SetActive(true);
+                    //SimplePool.Spawn<ButtonJoin>(listRooms[j]);
+                    listRooms[j].info = discoveredServers[list_key[j]];
+                }
+            }
+            else
+            {
+                listRooms[j].gameObject.SetActive(false);
+                //SimplePool.Despawn(listRooms[j].gameObject);
             }
         }
 
@@ -875,6 +894,12 @@ public class UIManager : MonoBehaviour
         System.Random rd = new System.Random();
         var index = rd.Next(0, bg.Count());
         bgBack.sprite = bg[index];
+    }
+    public void OnDiscoveredServer(ServerResponse info)
+    {
+        // Note that you can check the versioning to decide if you can connect to the server or not using this method
+        discoveredServers[info.serverId] = info;
+        InitRoom();
     }
 }
 
