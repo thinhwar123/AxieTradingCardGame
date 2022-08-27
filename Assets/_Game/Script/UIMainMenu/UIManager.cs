@@ -202,7 +202,7 @@ public class UIManager : MonoBehaviour
     {
         //isLoading = false;
 
-        fill += speedLoad;        
+        fill += speedLoad * Time.deltaTime;        
 
         if(fill < 1f)
         {
