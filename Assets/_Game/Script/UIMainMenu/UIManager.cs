@@ -416,6 +416,7 @@ public class UIManager : MonoBehaviour
             isServer = true;
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyClient(indexAvatar);
+            UI_Game.Instance.OpenUI(UIID.UICTimeCount);
             networkManager.StartHost();
             //isWaiting = true;
             //minute = 0;

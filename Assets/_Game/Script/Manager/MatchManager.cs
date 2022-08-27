@@ -18,8 +18,6 @@ public class MatchManager : Singleton<MatchManager>
     private bool m_StartCountTime;
     public List<CardData> m_SavedDataDeskCard;
 
-    public TImeCount timeCount;
-
     #region Unity Functions
     protected override void Awake()
     {
@@ -41,7 +39,10 @@ public class MatchManager : Singleton<MatchManager>
    // }
     public void StartGame(PlayerHandler handler)
     {
-        timeCount.StopWaiting();
+        if (UI_Game.Instance.IsOpenedUI(UIID.UICTimeCount))
+        {
+            UI_Game.Instance.GetUI<UICTimeCount>(UIID.UICTimeCount).StopWaiting();
+        }
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
         m_UICIngame.m_PlayerDeck.InitDeck();
         TempData.Instance.InitNewData();

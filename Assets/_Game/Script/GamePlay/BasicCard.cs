@@ -432,6 +432,28 @@ public class BasicCard : MonoBehaviour
             }
         }
     }
+    public void SlimePower()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        BasicCard opponentCard = basicCards[index + (index % 2 == 0 ? 1 : -1)];
+        //if (MatchManager.Instance.get)
+        //{
+
+        //}
+        //if (uicIngame.m_Score1 + 3 < uicIngame)
+        //{
+        //    if (opponentCard.m_Symbol == GetWinSymbol(m_Symbol))
+        //    {
+        //        ChangeSymbol(GetWinSymbol(opponentCard.m_Symbol));
+        //    }
+        //    else if (opponentCard.m_Symbol == GetLoseSymbol(m_Symbol))
+        //    {
+        //        ChangeSymbol(GetLoseSymbol(opponentCard.m_Symbol));
+        //    }
+        //}
+    }
     public void ChangeSymbol(Symbol symbol)
     {
         Debug.Log("ChangeSymbol");
