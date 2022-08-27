@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1954347144248083262}
   - component: {fileID: 3202539834946183984}
   m_Layer: 5
-  m_Name: ProjectilesSwap
+  m_Name: ProjectilesTwoFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782b37e91f7129645ba7f6a8477ed9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ProjectileName: Swap Back
+  m_ProjectileName: Two Face
 --- !u!1 &7301554416716518687
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  skeletonDataAsset: {fileID: 11400000, guid: 4a4d3d10f90e34c9a8a362517f6d1569, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 391c8f5abd6c0436db265466e1169a4d, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
