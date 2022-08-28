@@ -330,50 +330,18 @@
     "symbol": "sciccors",
     "active": false,
     "effect_description": "When faced with a Rock Symbol has a 50% chance to become Paper Symbol but also has a 50% chance to become a Rock Symbol when encountering Paper Symbol",
-
-    "melee_animation": "attack/melee/mouth-bite",
-    "ranged_animation": "attack/ranged/cast-low",
-    "defense_animation": "defense/hit-by-normal"
-
-  },
-
-  "27": {
-    "id": "3454047",
-    "name": "Slime 1",
-    "archetype": "Slime Power",
-    "symbol": "rock",
-    "active": false,
-    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
-
-    "melee_animation": "attack/melee/mouth-bite",
-    "ranged_animation": "attack/ranged/cast-low",
-    "defense_animation": "defense/hit-by-normal"
-  },
-
-  "28": {
-    "id": "9016125",
-    "name": "Slime 2",
-    "archetype": "Slime Power",
-    "symbol": "paper",
-    "active": false,
-    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
-
-    "melee_animation": "attack/melee/mouth-bite",
-    "ranged_animation": "attack/ranged/cast-low",
-    "defense_animation": "defense/hit-by-normal"
-  },
-
-  "29": {
-    "id": "3801858",
-    "name": "Slime 3",
-    "archetype": "Slime Power",
-    "symbol": "sciccors",
-    "active": false,
-    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
-
-    "melee_animation": "attack/melee/mouth-bite",
-    "ranged_animation": "attack/ranged/cast-low",
-    "defense_animation": "defense/hit-by-normal"
+    "win_animation": [
+      "attack/melee/normal-attack",
+      "attack/melee/shrimp",
+      "attack/ranged/cast-low",
+      "attack/ranged/cast-multi",
+      "attack/ranged/cast-tail"
+    ],
+    "lost_animation": [
+      "defense/hit-by-normal-crit",
+      "defense/hit-by-normal-dramatic",
+      "defense/hit-by-ranged-attack"
+    ]
   }
 
 }
