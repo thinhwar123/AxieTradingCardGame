@@ -10,6 +10,11 @@ using UnityEngine.Networking;
 public class AxieMixerManager : Singleton<AxieMixerManager>
 {
     private Dictionary<string, Axie2dBuilderResult> Axie2dBuilderResults;
+    public SkeletonDataAsset m_SlimeSkeletonDataAsset;
+    public string slimeMoveAnimation;
+    public string slimeMeleeAnimation;
+    public string slimeRangeAnimation;
+    public string slimeDefenceAnimation;
     protected override void Awake()
     {
         base.Awake();
@@ -29,4 +34,5 @@ public class AxieMixerManager : Singleton<AxieMixerManager>
         if (Axie2dBuilderResults.ContainsKey(axieId)) return;
         Axie2dBuilderResults.Add(axieId, axie2DBuilderResult);
     }
+
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Mirror;
 
 public class UICTimeCount : UICanvas
 {
@@ -71,6 +72,27 @@ public class UICTimeCount : UICanvas
     public void StopWaiting()
     {
         isWaiting = false;
-        Close();
+        //Close();
+        UI_Game.Instance.CloseUI(UIID.UICTimeCount);
+    }
+    public void StopHosting()
+    {
+        if (NetworkServer.active && NetworkClient.isConnected)
+        {
+            NetworkManager.singleton.StopHost();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StopDiscovery();
+        }
+        // stop client if client-only
+        else if (NetworkClient.isConnected)
+        {
+            NetworkManager.singleton.StopClient();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StopDiscovery();
+        }
+        // stop server if server-only
+        else if (NetworkServer.active)
+        {
+            NetworkManager.singleton.StopServer();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StopDiscovery();
+        }
     }
 }

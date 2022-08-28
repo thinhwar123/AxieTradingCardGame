@@ -15,7 +15,7 @@ public class MatchManager : Singleton<MatchManager>
     private StateMachine<MatchManager> m_StateMachine;
     public StateMachine<MatchManager> StateMachine { get { return m_StateMachine; } }
     public UICIngame m_UICIngame;
-    private bool m_StartCountTime;
+    public bool m_StartCountTime;
     public List<CardData> m_SavedDataDeskCard;
 
     #region Unity Functions
@@ -60,9 +60,13 @@ public class MatchManager : Singleton<MatchManager>
         switch (curPhase)
         {
             case Phase.SETUP_CARD:
+                //m_StartCountTime = false;
+                SetCanDragCard(false);
                 m_PlayerHandler.NextPhase(Phase.SHOW_CARD);
                 break;
             case Phase.SETUP_ABILITY:
+                //m_StartCountTime = false;
+                m_UICIngame.ShowAbilityOptionButton(false);
                 m_PlayerHandler.NextPhase(Phase.BATTLE);
                 break;
         }
@@ -136,13 +140,13 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void OnExecuteSetupCardState()
     {
-        if (!m_StartCountTime) return;
+
         if (m_CurrentTimeThinking > 0)
         {
             m_CurrentTimeThinking = Mathf.Clamp(m_CurrentTimeThinking - Time.deltaTime, 0, m_TimeThinking);
             UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame).UpdateTime((int)m_CurrentTimeThinking, m_CurrentTimeThinking / m_TimeThinking);
         }
-        else
+        else if(m_StartCountTime)
         {
             m_StartCountTime = false;
             StartShowCardPhase();
@@ -184,16 +188,17 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void OnExecuteSetupSkillState()
     {
-        if (!m_StartCountTime) return;
         if (m_CurrentTimeThinking > 0)
         {
             m_CurrentTimeThinking = Mathf.Clamp(m_CurrentTimeThinking - Time.deltaTime, 0, m_TimeThinking);
             UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame).UpdateTime((int)m_CurrentTimeThinking, m_CurrentTimeThinking / m_TimeThinking);
         }
-        else
+        else if(m_StartCountTime)
         {
             m_StartCountTime = false;
-             StartBattlePhase();
+            StartBattlePhase();
+            //SetButtonEndPhase(false);
+            //MatchManager.Instance.EndPhase(m_CurrentPhase);
         }
     }
     public void OnExitSetupSkillState()
@@ -229,7 +234,7 @@ public class MatchManager : Singleton<MatchManager>
         m_UICIngame.ClearBattle();
         TempData.Instance.GetPlayerData().SwapRole();
         TempData.Instance.GetPlayerData().m_Round++;
-        if (TempData.Instance.GetPlayerData().m_Round < 1)
+        if (TempData.Instance.GetPlayerData().m_Round < 6)
         {
             DelayAction(StartDrawPhase, 2);
         }
@@ -312,6 +317,7 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void StartBattlePhase()
     {
+
         m_UICIngame.AutoScaleCardToNormal();
         TempData.Instance.GetPlayerData().m_SelectSkill = m_UICIngame.GetSelectSkill();
         m_PlayerHandler.SetUpMatchData(TempData.Instance.GetPlayerData());

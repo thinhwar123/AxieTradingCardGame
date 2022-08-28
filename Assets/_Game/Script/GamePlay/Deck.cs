@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Thinh;
+using TMPro;
 public class Deck : MonoBehaviour
 {
     private Transform m_Transform;
@@ -9,6 +10,7 @@ public class Deck : MonoBehaviour
 
     [SerializeField] private BasicCard m_BasicCard;
     [SerializeField] private List<CardData> m_ListCardDataInDeck;
+    public TextMeshProUGUI m_CardInDeck;
 
     public void InitDeck()
     {
@@ -17,6 +19,11 @@ public class Deck : MonoBehaviour
         {
             m_ListCardDataInDeck.Add(CardDataManager.Instance.GetCardData(PlayerPrefs.GetString(i.ToString())));
         }
+        if (m_CardInDeck != null)
+        {
+            m_CardInDeck.text = "24/24";
+        }
+
     }
 
     public void DrawACard(DropZone dropZone, int cardLookDirection)
@@ -31,6 +38,11 @@ public class Deck : MonoBehaviour
 
         MatchManager.Instance.m_BasicCards.Add(card);
         StartCoroutine(card.m_CardController.MoveCardToDropZone(dropZone, () => card.FlipCard(true)));
+        if (m_CardInDeck !=null)
+        {
+            m_CardInDeck.text = string.Format("{0}/24", m_ListCardDataInDeck.Count);
+        }
+
     }
     public void DrawACard(CardData cardData, DropZone dropZone, int cardLookDirection)
     {
@@ -44,6 +56,10 @@ public class Deck : MonoBehaviour
 
         MatchManager.Instance.m_BasicCards.Add(card);
         StartCoroutine(card.m_CardController.MoveCardToDropZone(dropZone, () => card.FlipCard(true)));
+        if (m_CardInDeck != null)
+        {
+            m_CardInDeck.text = string.Format("{0}/24", m_ListCardDataInDeck.Count);
+        }
     }
     public void DrawACardFormDeck(DropZone dropZone, int cardLookDirection)
     {
@@ -60,5 +76,9 @@ public class Deck : MonoBehaviour
 
         MatchManager.Instance.m_BasicCards.Add(card);
         StartCoroutine(card.m_CardController.MoveCardToDropZone(dropZone, () => card.FlipCard(true)));
+        if (m_CardInDeck != null)
+        {
+            m_CardInDeck.text = string.Format("{0}/24", m_ListCardDataInDeck.Count);
+        }
     }
 }

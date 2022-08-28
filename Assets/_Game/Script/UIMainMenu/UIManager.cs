@@ -13,6 +13,7 @@ using Mirror.Discovery;
 public class UIManager : MonoBehaviour
 {
     // Start is called before the first frame update    
+    public Canvas mainCanvas;
     public Slider loadingBar;
     public Image loadingFill;
     public float speedLoad;
@@ -28,9 +29,7 @@ public class UIManager : MonoBehaviour
     public Button soundOnOff;
     public Sprite soundOn;
     public Sprite soundOff;
-    //public List<Sprite> listAvatars = new List<Sprite>();
-    public AvatarData listAvatars;
-    public int indexAvatar = 0;
+    //public List<Sprite> listAvatars = new List<Sprite>();    
     public Image avatarMain;
     public Image avatarEnemy;
     public Image avatar;
@@ -97,6 +96,7 @@ public class UIManager : MonoBehaviour
     {
         AxieNetworkDiscovery.Instance.NetworkDiscovery.OnServerFound.RemoveAllListeners();
         AxieNetworkDiscovery.Instance.NetworkDiscovery.OnServerFound.AddListener(OnDiscoveredServer);
+        mainCanvas.worldCamera = Camera.main;
         isLoading = true;
         InitAllCard();
         InitAllCopyCard();
@@ -426,9 +426,11 @@ public class UIManager : MonoBehaviour
             isServer = true;
             //PlayerPrefs.SetInt("player", indexAvatar);
             //serverClient.AvatarEnemyClient(indexAvatar);
+            UI_Game.Instance.OpenUI(UIID.UICTimeCount);
             discoveredServers.Clear();
             AxieNetworkManager.singleton.StartHost();
             AxieNetworkDiscovery.Instance.NetworkDiscovery.AdvertiseServer();
+
             //isWaiting = true;
             //minute = 0;
             //second = 0;
@@ -643,6 +645,7 @@ public class UIManager : MonoBehaviour
                     listRooms[j].gameObject.SetActive(true);
                     //SimplePool.Spawn<ButtonJoin>(listRooms[j]);
                     listRooms[j].info = discoveredServers[list_key[j]];
+                    listRooms[j].textPlayer.SetText(listRooms[j].info.EndPoint.ToString());
                 }
             }
             else
@@ -767,7 +770,7 @@ public class UIManager : MonoBehaviour
         listCardDatas.Clear();
         for(int i = 0; i < 24; i++)
         {
-            string id = PlayerPrefs.GetString(i.ToString(), CardDataManager.Instance.m_CardDatas[i/3].m_ID);
+            string id = PlayerPrefs.GetString(i.ToString(), CardDataManager.Instance.m_CardDatas[i].m_ID);
             //Debug.Log(id);
             //CardData crData;
             //if (id == "") continue;
@@ -793,7 +796,8 @@ public class UIManager : MonoBehaviour
                     //crData.m_WinAnimation = CardDataManager.Instance.m_CardDatas[i].m_WinAnimation;
                     //crData.m_LoseAnimation = CardDataManager.Instance.m_CardDatas[i].m_LoseAnimation;
                     
-                    listCardDatas.Add(crData);                    
+                    listCardDatas.Add(crData);
+                    break;
                 }
             }
         }
@@ -871,33 +875,33 @@ public class UIManager : MonoBehaviour
         bsCard.m_CardController.GetCardSlot().transform.SetParent(m_AllCopyCard.transform, false);
     }
 
-    public void ButtonLeft()
-    {
-        if(indexAvatar == 0)
-        {
-            indexAvatar = listAvatars.listAvatar.Count - 1;
-            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
-        }
-        else
-        {
-            indexAvatar--;
-            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
-        }
-    }
+    //public void ButtonLeft()
+    //{
+    //    if(indexAvatar == 0)
+    //    {
+    //        indexAvatar = listAvatars.listAvatar.Count - 1;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
+    //    else
+    //    {
+    //        indexAvatar--;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
+    //}
 
-    public void ButtonRight()
-    {
-        if (indexAvatar == listAvatars.listAvatar.Count-1)
-        {
-            indexAvatar = 0;
-            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
-        }
-        else
-        {
-            indexAvatar++;
-            avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
-        }
-    }
+    //public void ButtonRight()
+    //{
+    //    if (indexAvatar == listAvatars.listAvatar.Count-1)
+    //    {
+    //        indexAvatar = 0;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
+    //    else
+    //    {
+    //        indexAvatar++;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
+    //}
     
     public void SetBackGroundBack()
     {

@@ -31,6 +31,7 @@ public class UICIngame : UICanvas
     public int m_Score2;
     [SerializeField] private TextMeshProUGUI m_TextScore1;
     [SerializeField] private TextMeshProUGUI m_TextScore2;
+    [SerializeField] private TextMeshProUGUI m_TextTurnCount;
 
     private List<int> m_CardIndex = new List<int>();
     private Tween m_FadeTimeCountTween;
@@ -38,6 +39,7 @@ public class UICIngame : UICanvas
     public override void Setup()
     {
         m_CardIndex = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 };
+        m_TextTurnCount.text = string.Format("TURN {0}", 1);
         base.Setup();
  
         m_PlayerHand.ClearHand();
@@ -64,6 +66,7 @@ public class UICIngame : UICanvas
     }
     IEnumerator PlayerStartDraw(int count)
     {
+        m_TextTurnCount.text = string.Format("TURN {0}", TempData.Instance.GetPlayerData().m_Round + 1);
         for (int i = 0; i < count; i++)
         {
             //m_PlayerDeck.DrawACard(GetRandomCardInList(), m_PlayerHand.m_DropZone, -1);
@@ -130,7 +133,7 @@ public class UICIngame : UICanvas
 
         listCard[0].MeleeBattle(listCard[1]);
         listCard[1].MeleeBattle(listCard[0]);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         for (int i = 2; i < listCard.Count; i += 2)
         {
             listCard[i].RangeBattle(listCard[i + 1]);
@@ -256,7 +259,6 @@ public class UICIngame : UICanvas
     public void OnClickButtonEndPhasePhase()
     {
         SetButtonEndPhase(false);
-
         MatchManager.Instance.EndPhase(m_CurrentPhase);
     }
     //public List<BasicCard> GetAllBasicCard()

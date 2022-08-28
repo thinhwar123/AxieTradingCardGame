@@ -11,6 +11,7 @@ public class UIProjectilesManager : Singleton<UIProjectilesManager>
     
     public UIProjectiles GetUIProjectile(string name)
     {
+        Debug.Log(name);
         for (int i = 0; i < m_UIProjectiles.Count; i++)
         {
             if (m_UIProjectiles[i].m_ProjectileName == name)

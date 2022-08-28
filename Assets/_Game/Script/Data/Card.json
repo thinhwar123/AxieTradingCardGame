@@ -37,7 +37,7 @@
   },
   "3": {
     "id": "11411237",
-    "name": "Tjinki-Tjinki",
+    "name": "Tjinki-ki",
     "archetype": "Twin Power",
     "symbol": "rock",
     "active": true,
@@ -49,7 +49,7 @@
   },
   "4": {
     "id": "11411350",
-    "name": "Tkino-Tkino",
+    "name": "Tkino-no",
     "archetype": "Twin Power",
     "symbol": "paper",
     "active": true,
@@ -61,7 +61,7 @@
   },
   "5": {
     "id": "11411195",
-    "name": "Twimo-Twimo",
+    "name": "Twimo-mo",
     "archetype": "Twin Power",
     "symbol": "sciccors",
     "active": true,
@@ -74,7 +74,7 @@
   },
   "6": {
     "id": "11410738",
-    "name": "UwU",
+    "name": "Crecked",
     "archetype": "Breaker",
     "symbol": "rock",
     "active": true,
@@ -85,7 +85,7 @@
   },
   "7": {
     "id": "11411211",
-    "name": "Paper Eater",
+    "name": "Bookworm",
     "archetype": "Breaker",
     "symbol": "paper",
     "active": true,
@@ -97,7 +97,7 @@
   },
   "8": {
     "id": "11411074",
-    "name": "Sciccors Breaker",
+    "name": "Skoria",
     "archetype": "Breaker",
     "symbol": "sciccors",
     "active": true,
@@ -109,7 +109,7 @@
   },
   "9": {
     "id": "11410055",
-    "name": "Card Maker 1",
+    "name": "Dou-Rock",
     "archetype": "Card Maker",
     "symbol": "rock",
     "active": false,
@@ -121,7 +121,7 @@
   },
   "10": {
     "id": "11410599",
-    "name": "Card Maker 2",
+    "name": "PaperSSt",
     "archetype": "Card Maker",
     "symbol": "paper",
     "active": false,
@@ -133,7 +133,7 @@
   },
   "11": {
     "id": "11410849",
-    "name": "Card Maker 3",
+    "name": "Scci-cc",
     "archetype": "Card Maker",
     "symbol": "sciccors",
     "active": false,
@@ -146,7 +146,7 @@
 
   "12": {
     "id": "11409409",
-    "name": "The Nope 1",
+    "name": "Nopock",
     "archetype": "Silencer",
     "symbol": "rock",
     "active": false,
@@ -158,7 +158,7 @@
   },
   "13": {
     "id": "11410174",
-    "name": "The Nope 2",
+    "name": "Nopape",
     "archetype": "Silencer",
     "symbol": "paper",
     "active": false,
@@ -170,7 +170,7 @@
   },
   "14": {
     "id": "11409398",
-    "name": "The Nope 3",
+    "name": "Nopiccor",
     "archetype": "Silencer",
     "symbol": "sciccors",
     "active": false,
@@ -183,7 +183,7 @@
 
   "15": {
     "id": "11408569",
-    "name": "Card Eater 1",
+    "name": "R-Hunger",
     "archetype": "Card Eater",
     "symbol": "rock",
     "active": false,
@@ -195,7 +195,7 @@
   },
   "16": {
     "id": "11409888",
-    "name": "Card Eater 2",
+    "name": "P-Hunger",
     "archetype": "Card Eater",
     "symbol": "paper",
     "active": false,
@@ -208,7 +208,7 @@
   },
   "17": {
     "id": "11406536",
-    "name": "Card Eater 3",
+    "name": "S-Hunger",
     "archetype": "Card Eater",
     "symbol": "sciccors",
     "active": false,
@@ -221,7 +221,7 @@
   },
   "18": {
     "id": "11406953",
-    "name": "The Surprise 1",
+    "name": "Surprock",
     "archetype": "Surprise",
     "symbol": "rock",
     "active": true,
@@ -234,7 +234,7 @@
   },
   "19": {
     "id": "11409824",
-    "name": "The Surprise 2",
+    "name": "Surpraper",
     "archetype": "Surprise",
     "symbol": "paper",
     "active": true,
@@ -247,7 +247,7 @@
   },
   "20": {
     "id": "2727",
-    "name": "The Surprise 3",
+    "name": "Surpriccor",
     "archetype": "Surprise",
     "symbol": "sciccors",
     "active": true,
@@ -260,7 +260,7 @@
   },
   "21": {
     "id": "11404770",
-    "name": "The Crusader 1",
+    "name": "A-Crusader",
     "archetype": "Crusader",
     "symbol": "rock",
     "active": false,
@@ -273,7 +273,7 @@
   },
   "22": {
     "id": "11409245",
-    "name": "The Crusader 2",
+    "name": "B-Crusader",
     "archetype": "Crusader",
     "symbol": "paper",
     "active": false,
@@ -286,7 +286,7 @@
   },
   "23": {
     "id": "11406536",
-    "name": "The Crusader 3",
+    "name": "C-Crusader",
     "archetype": "Crusader",
     "symbol": "sciccors",
     "active": false,
@@ -299,7 +299,7 @@
   },
   "24": {
     "id": "11404770",
-    "name": "Two Face 1",
+    "name": "DouFrock",
     "archetype": "Two Face",
     "active": false,
     "symbol": "rock",
@@ -312,7 +312,7 @@
   },
   "25": {
     "id": "11409390",
-    "name": "Two Face 2",
+    "name": "Doper",
     "archetype": "Two Face",
     "symbol": "paper",
     "active": false,
@@ -325,23 +325,55 @@
   },
   "26": {
     "id": "5509",
-    "name": "Two Face 3",
+    "name": "Doccer",
     "archetype": "Two Face",
     "symbol": "sciccors",
     "active": false,
     "effect_description": "When faced with a Rock Symbol has a 50% chance to become Paper Symbol but also has a 50% chance to become a Rock Symbol when encountering Paper Symbol",
-    "win_animation": [
-      "attack/melee/normal-attack",
-      "attack/melee/shrimp",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+
+  },
+
+  "27": {
+    "id": "3454047",
+    "name": "Slimock",
+    "archetype": "Slime Power",
+    "symbol": "rock",
+    "active": false,
+    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+  },
+
+  "28": {
+    "id": "9016125",
+    "name": "Slimaper",
+    "archetype": "Slime Power",
+    "symbol": "paper",
+    "active": false,
+    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+  },
+
+  "29": {
+    "id": "3801858",
+    "name": "Sliccors",
+    "archetype": "Slime Power",
+    "symbol": "sciccors",
+    "active": false,
+    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
   }
 
 }
