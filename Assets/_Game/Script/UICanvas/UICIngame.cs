@@ -43,6 +43,14 @@ public class UICIngame : UICanvas
         base.Setup();
  
         m_PlayerHand.ClearHand();
+        for (int i = 0; i < m_PlayerSingleDropZones.Count; i++)
+        {
+            m_PlayerSingleDropZones[i].ClearDropZone();
+        }
+        for (int i = 0; i < m_OpponentSingleDropZones.Count; i++)
+        {
+            m_OpponentSingleDropZones[i].ClearDropZone();
+        }
         m_Score1 = 0;
         m_Score2 = 0;
         m_TextScore1.text = string.Format("Score: {0}", m_Score1);
