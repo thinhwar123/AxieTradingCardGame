@@ -1,0 +1,70 @@
+{
+"skeleton": {
+	"hash": "q3gNcqQPNDHEIKVL7YYZ017Oy9s",
+	"spine": "3.8.79",
+	"x": -218.21,
+	"y": -211.19,
+	"width": 441,
+	"height": 436,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -255.15 },
+	{ "name": "bubble-1", "parent": "root", "y": 255.15 }
+],
+"slots": [
+	{ "name": "bubble-1", "bone": "bubble-1", "attachment": "bubble-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bubble-1": {
+				"bubble-1": { "x": 2.29, "y": 6.81, "width": 441, "height": 436 },
+				"bubble-2": { "x": 2.29, "y": 6.81, "width": 306, "height": 304 },
+				"bubble-3": { "x": 2.28, "y": 6.81, "width": 434, "height": 426 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"bubble-1": {
+				"color": [
+					{ "time": 0.7667, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.6667, "name": "bubble-1" },
+					{ "time": 0.7333, "name": "bubble-2" },
+					{ "time": 0.7667, "name": "bubble-3" }
+				]
+			}
+		},
+		"bones": {
+			"bubble-1": {
+				"translate": [
+					{ "y": 357, "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.7333 }
+				],
+				"scale": [
+					{ "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.3333, "y": 0.9, "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.6667, "x": 0.9, "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 0.7333, "curve": "stepped" },
+					{ "time": 0.7667 },
+					{ "time": 1, "x": 1.2, "y": 1.2 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.7333, "name": "hit" }
+		]
+	}
+}
+}

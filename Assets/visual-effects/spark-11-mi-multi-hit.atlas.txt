@@ -1,0 +1,76 @@
+
+spark-11-mi-multi-hit.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sparks_27_new_00000
+  rotate: false
+  xy: 423,376
+  size: 101,98
+  orig: 101,98
+  offset: 0, 0
+  index: -1
+sparks_27_new_00001
+  rotate: false
+  xy: 611,164
+  size: 101,98
+  orig: 101,98
+  offset: 0, 0
+  index: -1
+sparks_27_new_00002
+  rotate: false
+  xy: 778,2
+  size: 163,158
+  orig: 163,158
+  offset: 0, 0
+  index: -1
+sparks_27_new_00003
+  rotate: false
+  xy: 611,2
+  size: 163,158
+  orig: 163,158
+  offset: 0, 0
+  index: -1
+sparks_27_new_00004
+  rotate: false
+  xy: 423,189
+  size: 184,183
+  orig: 184,183
+  offset: 0, 0
+  index: -1
+sparks_27_new_00005
+  rotate: false
+  xy: 423,2
+  size: 184,183
+  orig: 184,183
+  offset: 0, 0
+  index: -1
+sparks_27_new_00006
+  rotate: false
+  xy: 214,2
+  size: 205,203
+  orig: 205,203
+  offset: 0, 0
+  index: -1
+sparks_27_new_00007
+  rotate: false
+  xy: 214,209
+  size: 205,203
+  orig: 205,203
+  offset: 0, 0
+  index: -1
+sparks_27_new_00008
+  rotate: false
+  xy: 2,218
+  size: 208,212
+  orig: 208,212
+  offset: 0, 0
+  index: -1
+sparks_27_new_00009
+  rotate: false
+  xy: 2,2
+  size: 208,212
+  orig: 208,212
+  offset: 0, 0
+  index: -1

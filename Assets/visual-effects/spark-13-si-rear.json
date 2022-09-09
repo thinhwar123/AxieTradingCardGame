@@ -1,0 +1,38 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "spark-13-si-rear_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "spark-13-si-rear_00": {"x": -103, "y": -5, "width": 50, "height": 65},
+          "spark-13-si-rear_01": {"x": -26, "y": 7, "width": 205, "height": 122},
+          "spark-13-si-rear_02": {"x": -18, "y": 2, "width": 220, "height": 177},
+          "spark-13-si-rear_03": {"x": -12, "y": 8, "width": 233, "height": 201},
+          "spark-13-si-rear_04": {"x": -1, "y": 15, "width": 254, "height": 226},
+          "spark-13-si-rear_05": {"x": 1, "y": 14, "width": 253, "height": 228},
+          "spark-13-si-rear_06": {"x": 2, "y": 16, "width": 251, "height": 225},
+          "spark-13-si-rear_07": {"x": 5, "y": 18, "width": 245, "height": 220},
+          "spark-13-si-rear_08": {"x": 53, "y": -5, "width": 149, "height": 167},
+          "spark-13-si-rear_09": {"x": 55, "y": 22, "width": 145, "height": 103},
+          "spark-13-si-rear_10": {"x": 57, "y": 22, "width": 141, "height": 98},
+          "spark-13-si-rear_11": {"x": 122, "y": -4, "width": 9, "height": 10}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "spark-13-si-rear_00"}, {"time": 0.1, "name": "spark-13-si-rear_01"}, {"time": 0.2, "name": "spark-13-si-rear_02"}, {"time": 0.30000000000000004, "name": "spark-13-si-rear_03"},
+            {"time": 0.4, "name": "spark-13-si-rear_04"}, {"time": 0.5, "name": "spark-13-si-rear_05"}, {"time": 0.6000000000000001, "name": "spark-13-si-rear_06"}, {"time": 0.7000000000000001, "name": "spark-13-si-rear_07"},
+            {"time": 0.8, "name": "spark-13-si-rear_08"}, {"time": 0.9, "name": "spark-13-si-rear_09"}, {"time": 1.0, "name": "spark-13-si-rear_10"}, {"time": 1.1, "name": "spark-13-si-rear_11"}
+          ]
+        }
+      }
+    }
+  }
+}

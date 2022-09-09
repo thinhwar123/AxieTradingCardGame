@@ -1,0 +1,39 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-24-sre-mi-shot_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-24-sre-mi-shot_00": {"x": -75, "y": 4, "width": 62, "height": 59},
+          "water-24-sre-mi-shot_01": {"x": -53, "y": 2, "width": 118, "height": 122},
+          "water-24-sre-mi-shot_02": {"x": -36, "y": 1, "width": 157, "height": 137},
+          "water-24-sre-mi-shot_03": {"x": -32, "y": 0, "width": 168, "height": 140},
+          "water-24-sre-mi-shot_04": {"x": -30, "y": 1, "width": 178, "height": 155},
+          "water-24-sre-mi-shot_05": {"x": -28, "y": 3, "width": 185, "height": 166},
+          "water-24-sre-mi-shot_06": {"x": -27, "y": 4, "width": 186, "height": 179},
+          "water-24-sre-mi-shot_07": {"x": -26, "y": 3, "width": 188, "height": 178},
+          "water-24-sre-mi-shot_08": {"x": -25, "y": 5, "width": 190, "height": 181},
+          "water-24-sre-mi-shot_09": {"x": -25, "y": 5, "width": 192, "height": 182},
+          "water-24-sre-mi-shot_10": {"x": -25, "y": 5, "width": 193, "height": 181},
+          "water-24-sre-mi-shot_11": {"x": -24, "y": 5, "width": 195, "height": 182}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-24-sre-mi-shot_00"}, {"time": 0.1, "name": "water-24-sre-mi-shot_01"}, {"time": 0.2, "name": "water-24-sre-mi-shot_02"}, {"time": 0.30000000000000004, "name": "water-24-sre-mi-shot_03"},
+            {"time": 0.4, "name": "water-24-sre-mi-shot_04"}, {"time": 0.5, "name": "water-24-sre-mi-shot_05"}, {"time": 0.6000000000000001, "name": "water-24-sre-mi-shot_06"},
+            {"time": 0.7000000000000001, "name": "water-24-sre-mi-shot_07"}, {"time": 0.8, "name": "water-24-sre-mi-shot_08"}, {"time": 0.9, "name": "water-24-sre-mi-shot_09"}, {"time": 1.0, "name": "water-24-sre-mi-shot_10"},
+            {"time": 1.1, "name": "water-24-sre-mi-shot_11"}
+          ]
+        }
+      }
+    }
+  }
+}

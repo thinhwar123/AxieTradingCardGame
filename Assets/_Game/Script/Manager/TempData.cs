@@ -6,7 +6,7 @@ public class TempData : Singleton<TempData>
 {
     public System.Random m_Random;
     [Header("Player Match Data")]
-    public List<PlayerMatchData> m_AllMatchData;
+    public PlayerMatchData m_PlayerData;
     public PlayerMatchData m_OpponentData;
     private int m_ID;
 
@@ -28,24 +28,15 @@ public class TempData : Singleton<TempData>
     }
     public void AddPlayerMathData(PlayerMatchData playerMatchData)
     {
-        m_ID = m_AllMatchData.Count;
-        m_AllMatchData.Add(playerMatchData);
+        m_PlayerData = playerMatchData;
     }
     public PlayerMatchData GetPlayerData()
     {
-        return m_AllMatchData[m_ID];
+        return m_PlayerData;
     }
     public PlayerMatchData GetOpponentData()
     {
         return m_OpponentData;
-        for (int i = 0; i < m_AllMatchData.Count; i++)
-        {
-            if (i != m_ID)
-            {
-                return m_AllMatchData[i];
-            }
-        }
-        return null;
     }
     public List<bool> GetSkillActiveByTurn()
     {

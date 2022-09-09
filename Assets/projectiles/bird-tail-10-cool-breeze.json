@@ -1,0 +1,49 @@
+{
+"skeleton": {
+	"hash": "Y99os3boJeDfqKpM+soumy9Wg5g",
+	"spine": "3.8.84",
+	"x": -302.15,
+	"y": -1.61,
+	"width": 575.5,
+	"height": 525.5,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -32.76 },
+	{ "name": "tornado", "parent": "root", "y": 32.76, "scaleX": 0.25, "scaleY": 0.25 }
+],
+"slots": [
+	{ "name": "tornado", "bone": "tornado", "attachment": "tornado-3" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"tornado": {
+				"tornado-1": { "x": -255.85, "y": 1064.92, "width": 2386, "height": 2134 },
+				"tornado-2": { "x": -70.56, "y": 1046.16, "width": 2259, "height": 2106 },
+				"tornado-3": { "x": -57.59, "y": 1044.57, "width": 2302, "height": 2102 },
+				"tornado-4": { "x": -289.07, "y": 1095.56, "width": 2481, "height": 2199 },
+				"tornado-5": { "x": -353.4, "y": 1112.86, "width": 2162, "height": 2237 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"slots": {
+			"tornado": {
+				"attachment": [
+					{ "name": "tornado-1" },
+					{ "time": 0.0667, "name": "tornado-2" },
+					{ "time": 0.1333, "name": "tornado-3" },
+					{ "time": 0.2, "name": "tornado-4" },
+					{ "time": 0.2667, "name": "tornado-5" },
+					{ "time": 0.3333, "name": "tornado-1" }
+				]
+			}
+		}
+	}
+}
+}

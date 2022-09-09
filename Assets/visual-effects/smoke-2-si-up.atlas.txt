@@ -1,0 +1,146 @@
+
+smoke-2-si-up.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke-2-up_00000
+  rotate: false
+  xy: 96,855
+  size: 77,87
+  orig: 77,87
+  offset: 0, 0
+  index: -1
+smoke-2-up_00001
+  rotate: false
+  xy: 2,855
+  size: 90,133
+  orig: 90,133
+  offset: 0, 0
+  index: -1
+smoke-2-up_00002
+  rotate: false
+  xy: 907,189
+  size: 108,175
+  orig: 108,175
+  offset: 0, 0
+  index: -1
+smoke-2-up_00003
+  rotate: false
+  xy: 377,189
+  size: 125,183
+  orig: 125,183
+  offset: 0, 0
+  index: -1
+smoke-2-up_00004
+  rotate: false
+  xy: 370,566
+  size: 138,190
+  orig: 138,190
+  offset: 0, 0
+  index: -1
+smoke-2-up_00005
+  rotate: false
+  xy: 182,762
+  size: 146,198
+  orig: 146,198
+  offset: 0, 0
+  index: -1
+smoke-2-up_00006
+  rotate: false
+  xy: 2,644
+  size: 157,207
+  orig: 157,207
+  offset: 0, 0
+  index: -1
+smoke-2-up_00007
+  rotate: false
+  xy: 2,432
+  size: 163,208
+  orig: 163,208
+  offset: 0, 0
+  index: -1
+smoke-2-up_00008
+  rotate: false
+  xy: 2,218
+  size: 172,210
+  orig: 172,210
+  offset: 0, 0
+  index: -1
+smoke-2-up_00009
+  rotate: false
+  xy: 2,2
+  size: 176,212
+  orig: 176,212
+  offset: 0, 0
+  index: -1
+smoke-2-up_00010
+  rotate: false
+  xy: 182,569
+  size: 180,189
+  orig: 180,189
+  offset: 0, 0
+  index: -1
+smoke-2-up_00011
+  rotate: false
+  xy: 182,377
+  size: 184,188
+  orig: 184,188
+  offset: 0, 0
+  index: -1
+smoke-2-up_00012
+  rotate: false
+  xy: 370,377
+  size: 186,185
+  orig: 186,185
+  offset: 0, 0
+  index: -1
+smoke-2-up_00013
+  rotate: false
+  xy: 182,189
+  size: 191,184
+  orig: 191,184
+  offset: 0, 0
+  index: -1
+smoke-2-up_00014
+  rotate: false
+  xy: 783,2
+  size: 193,183
+  orig: 193,183
+  offset: 0, 0
+  index: -1
+smoke-2-up_00015
+  rotate: false
+  xy: 383,2
+  size: 195,183
+  orig: 195,183
+  offset: 0, 0
+  index: -1
+smoke-2-up_00016
+  rotate: false
+  xy: 182,2
+  size: 197,183
+  orig: 197,183
+  offset: 0, 0
+  index: -1
+smoke-2-up_00017
+  rotate: false
+  xy: 582,2
+  size: 197,181
+  orig: 197,181
+  offset: 0, 0
+  index: -1
+smoke-2-up_00018
+  rotate: false
+  xy: 506,189
+  size: 197,103
+  orig: 197,103
+  offset: 0, 0
+  index: -1
+smoke-2-up_00019
+  rotate: false
+  xy: 707,189
+  size: 196,98
+  orig: 196,98
+  offset: 0, 0
+  index: -1

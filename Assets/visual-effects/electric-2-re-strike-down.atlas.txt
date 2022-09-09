@@ -1,0 +1,90 @@
+
+electric-2-re-strike-down.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-2-re-strike-down_00
+  rotate: false
+  xy: 945,2
+  size: 75,156
+  orig: 75,156
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_01
+  rotate: false
+  xy: 147,770
+  size: 97,244
+  orig: 97,244
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_02
+  rotate: false
+  xy: 262,262
+  size: 135,240
+  orig: 135,240
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_03
+  rotate: false
+  xy: 2,522
+  size: 156,244
+  orig: 156,244
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_04
+  rotate: false
+  xy: 2,770
+  size: 141,237
+  orig: 141,237
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_05
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_06
+  rotate: false
+  xy: 782,2
+  size: 159,243
+  orig: 159,243
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_07
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_08
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_09
+  rotate: false
+  xy: 262,506
+  size: 133,117
+  orig: 133,117
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_10
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-2-re-strike-down_11
+  rotate: false
+  xy: 262,627
+  size: 130,118
+  orig: 130,118
+  offset: 0, 0
+  index: -1

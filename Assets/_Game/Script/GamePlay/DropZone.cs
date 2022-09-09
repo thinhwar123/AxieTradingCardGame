@@ -23,7 +23,6 @@ public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
-        Debug.Log("OnPointerEnter");
         if (eventData.pointerDrag == null || IsMaxCard() || !m_CanDropCard)
 			return;
 
@@ -38,7 +37,7 @@ public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 	}
 	public void OnPointerExit(PointerEventData eventData)
 	{
-		Debug.Log("OnPointerExit");
+
 	}
 	public bool IsMaxCard()
     {
@@ -69,4 +68,13 @@ public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 		}
 		m_HorizontalLayoutGroup.spacing = space;
 	}
+	public void ClearDropZone()
+    {
+		while(m_ListBasicCard.Count > 0)
+        {
+			BasicCard temp = m_ListBasicCard[0];
+			RemoveBasicCard(temp);
+			temp.DestroyCard();
+        }
+    }
 }

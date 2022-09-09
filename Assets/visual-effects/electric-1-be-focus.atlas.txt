@@ -1,0 +1,195 @@
+
+electric-1-be-focus.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-10-be-focus_00
+  rotate: false
+  xy: 1820,180
+  size: 76,75
+  orig: 76,75
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_01
+  rotate: false
+  xy: 1557,262
+  size: 141,130
+  orig: 141,130
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_02
+  rotate: false
+  xy: 1820,2
+  size: 178,174
+  orig: 178,174
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_03
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_04
+  rotate: false
+  xy: 522,782
+  size: 215,206
+  orig: 215,206
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_05
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_06
+  rotate: false
+  xy: 262,782
+  size: 239,231
+  orig: 239,231
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_07
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_08
+  rotate: false
+  xy: 1298,262
+  size: 255,242
+  orig: 255,242
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_09
+  rotate: false
+  xy: 782,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_10
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_11
+  rotate: false
+  xy: 262,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_12
+  rotate: false
+  xy: 1042,262
+  size: 252,256
+  orig: 252,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_13
+  rotate: false
+  xy: 522,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_14
+  rotate: false
+  xy: 1562,2
+  size: 254,254
+  orig: 254,254
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_15
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_16
+  rotate: false
+  xy: 1042,522
+  size: 248,249
+  orig: 248,249
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_17
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_18
+  rotate: false
+  xy: 2,782
+  size: 240,240
+  orig: 240,240
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_19
+  rotate: false
+  xy: 782,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_20
+  rotate: false
+  xy: 782,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_21
+  rotate: false
+  xy: 782,782
+  size: 225,192
+  orig: 225,192
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_22
+  rotate: false
+  xy: 522,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_23
+  rotate: false
+  xy: 1042,775
+  size: 147,146
+  orig: 147,146
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_24
+  rotate: false
+  xy: 1042,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_25
+  rotate: false
+  xy: 1702,262
+  size: 109,110
+  orig: 109,110
+  offset: 0, 0
+  index: -1
+electric-10-be-focus_26
+  rotate: false
+  xy: 1302,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1

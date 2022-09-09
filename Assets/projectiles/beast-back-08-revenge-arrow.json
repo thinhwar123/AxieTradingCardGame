@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "6qZvs58ThD4cOgDH13QP33d2Cx0",
+	"spine": "3.8.79",
+	"x": -258.14,
+	"y": -60.3,
+	"width": 488,
+	"height": 122,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.5 },
+	{ "name": "revenge-arrow", "parent": "root", "y": 63.5 }
+],
+"slots": [
+	{ "name": "revenge-arrow", "bone": "revenge-arrow", "attachment": "revenge-arrow" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"revenge-arrow": {
+				"revenge-arrow": { "x": -14.14, "y": 0.7, "width": 488, "height": 122 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {}
+}
+}

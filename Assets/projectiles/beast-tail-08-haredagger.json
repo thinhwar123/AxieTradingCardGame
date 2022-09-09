@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "ASN6/7Ivv8pP1tDyhZSSLMPjwtY",
+	"spine": "3.8.79",
+	"x": -263,
+	"y": -101,
+	"width": 526,
+	"height": 202,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.05 },
+	{ "name": "hare-1", "parent": "root", "y": 63.05 }
+],
+"slots": [
+	{ "name": "hare-1", "bone": "hare-1", "attachment": "hare-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"hare-1": {
+				"hare-1": { "width": 526, "height": 202 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {}
+}
+}

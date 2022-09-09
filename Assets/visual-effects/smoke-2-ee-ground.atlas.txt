@@ -1,0 +1,153 @@
+
+smoke-2-ee-ground.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke-6-ee-ground_00
+  rotate: false
+  xy: 375,48
+  size: 48,14
+  orig: 48,14
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_01
+  rotate: false
+  xy: 369,66
+  size: 91,23
+  orig: 91,23
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_02
+  rotate: false
+  xy: 375,2
+  size: 119,42
+  orig: 119,42
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_03
+  rotate: false
+  xy: 184,446
+  size: 147,49
+  orig: 147,49
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_04
+  rotate: false
+  xy: 2,438
+  size: 170,55
+  orig: 170,55
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_05
+  rotate: false
+  xy: 2,378
+  size: 172,56
+  orig: 172,56
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_06
+  rotate: false
+  xy: 2,316
+  size: 174,58
+  orig: 174,58
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_07
+  rotate: false
+  xy: 2,254
+  size: 175,58
+  orig: 175,58
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_08
+  rotate: false
+  xy: 2,192
+  size: 176,58
+  orig: 176,58
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_09
+  rotate: false
+  xy: 2,130
+  size: 178,58
+  orig: 178,58
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_10
+  rotate: false
+  xy: 186,66
+  size: 179,59
+  orig: 179,59
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_11
+  rotate: false
+  xy: 2,66
+  size: 180,60
+  orig: 180,60
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_12
+  rotate: false
+  xy: 2,2
+  size: 183,60
+  orig: 183,60
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_13
+  rotate: false
+  xy: 189,2
+  size: 182,60
+  orig: 182,60
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_14
+  rotate: false
+  xy: 184,130
+  size: 181,53
+  orig: 181,53
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_15
+  rotate: false
+  xy: 184,187
+  size: 182,52
+  orig: 182,52
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_16
+  rotate: false
+  xy: 184,243
+  size: 178,51
+  orig: 178,51
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_17
+  rotate: false
+  xy: 184,298
+  size: 179,46
+  orig: 179,46
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_18
+  rotate: false
+  xy: 184,348
+  size: 177,46
+  orig: 177,46
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_19
+  rotate: false
+  xy: 184,398
+  size: 176,44
+  orig: 176,44
+  offset: 0, 0
+  index: -1
+smoke-6-ee-ground_20
+  rotate: false
+  xy: 464,66
+  size: 13,43
+  orig: 13,43
+  offset: 0, 0
+  index: -1

@@ -49,8 +49,10 @@ public class BasicCard : MonoBehaviour
     [SerializeField] private string m_AbilityName;
     [SerializeField] private string m_AbilityDescription;
 
-    [SerializeField] private List<string> m_WinAnimation;
-    [SerializeField] private List<string> m_LoseAnimation;
+    [SerializeField] private string m_MoveAnimation;
+    [SerializeField] private string m_MeleeAnimation;
+    [SerializeField] private string m_RangeAnimation;
+    [SerializeField] private string m_DefenceAnimation;
 
     public CardData m_CardData { get; private set; }
 
@@ -60,7 +62,7 @@ public class BasicCard : MonoBehaviour
     public UnityAction m_OnWinBattleCallback;
     public UnityAction m_OnLoseBattleCallback;
     private int m_CardLookDirection;
-    private SkeletonGraphic skeletonGraphic;
+    private SkeletonGraphic m_SkeletonGraphic;
     private List<Tween> m_Tweens;
     private static string m_ActiveDescription = "- Active: The player can choose to use this ability or not after flipping the cards.";
     private static string m_PassiveDescription = "- Passive: This ability activates automatically after the card is flipped.";
@@ -139,8 +141,10 @@ public class BasicCard : MonoBehaviour
         m_AbilityType = cardData.m_AbilityType;
         m_AbilityName = cardData.m_Archetype;
         m_AbilityDescription = cardData.m_EffectDescription;
-        m_WinAnimation = cardData.m_WinAnimation;
-        m_LoseAnimation = cardData.m_LoseAnimation;
+        m_MoveAnimation = "action/run";
+        m_MeleeAnimation = cardData.m_MeleeAnimation;
+        m_RangeAnimation = cardData.m_RangeAnimation;
+        m_DefenceAnimation = cardData.m_DefenceAnimation;
     }
 
     public string GetID()
@@ -155,11 +159,11 @@ public class BasicCard : MonoBehaviour
     }
     public void ResetCard()
     {
-        if (skeletonGraphic != null)
+        if (m_SkeletonGraphic != null)
         {
-            Destroy(skeletonGraphic.gameObject);
+            Destroy(m_SkeletonGraphic.gameObject);
         }
-        skeletonGraphic = null;
+        m_SkeletonGraphic = null;
     }
     public void FlipCard(bool isFlipped)
     {
@@ -195,14 +199,15 @@ public class BasicCard : MonoBehaviour
     {
         if (m_IsSilent)
         {
-            skeletonGraphic.AnimationState.SetAnimation(0, "battle/get-debuff", false);
+            m_SkeletonGraphic.AnimationState.SetAnimation(0, "battle/get-debuff", false);
         }
         else
         {
-            skeletonGraphic.AnimationState.SetAnimation(0, "battle/get-buff", false);
+            m_SkeletonGraphic.AnimationState.SetAnimation(0, "battle/get-buff", false);
+            UIEffectManager.Instance.PlayEffect(m_AbilityName, Transform, Transform.position);
             switch (m_AbilityName)
             {
-                case "Swap Back":
+                case "Swap Back":                    
                     SwapBack();
                     break;
                 case "Twin Power":
@@ -228,12 +233,14 @@ public class BasicCard : MonoBehaviour
                     break;
                 case "Two Face":
                     TwoFace();
+                    break;                    
+                case "Slime Power":
+                    SlimePower();
                     break;
-
             }
         }
         yield return new WaitForSeconds(2);
-        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
 
     }
 
@@ -290,23 +297,23 @@ public class BasicCard : MonoBehaviour
     private void SpawnSkeletonGraphic(Axie2dBuilderResult builderResult)
     {
 
-        skeletonGraphic = SkeletonGraphic.NewSkeletonGraphicGameObject(builderResult.skeletonDataAsset, m_CardGraphic, builderResult.sharedGraphicMaterial);
-        skeletonGraphic.rectTransform.sizeDelta = new Vector2(1, 1);
-        skeletonGraphic.rectTransform.localScale = Vector3.one;
-        skeletonGraphic.rectTransform.anchoredPosition = new Vector2(0f, 0f);
-        skeletonGraphic.Initialize(true);
-        skeletonGraphic.Skeleton.SetSkin("default");
-        skeletonGraphic.Skeleton.SetSlotsToSetupPose();
+        m_SkeletonGraphic = SkeletonGraphic.NewSkeletonGraphicGameObject(builderResult.skeletonDataAsset, m_CardGraphic, builderResult.sharedGraphicMaterial);
+        m_SkeletonGraphic.rectTransform.sizeDelta = new Vector2(1, 1);
+        m_SkeletonGraphic.rectTransform.localScale = Vector3.one;
+        m_SkeletonGraphic.rectTransform.anchoredPosition = new Vector2(0f, 0f);
+        m_SkeletonGraphic.Initialize(true);
+        m_SkeletonGraphic.Skeleton.SetSkin("default");
+        m_SkeletonGraphic.Skeleton.SetSlotsToSetupPose();
         
-        skeletonGraphic.gameObject.AddComponent<AutoBlendAnimGraphicController>();
-        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        m_SkeletonGraphic.gameObject.AddComponent<AutoBlendAnimGraphicController>();
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
 
         if (builderResult.adultCombo.ContainsKey("body") &&
          builderResult.adultCombo["body"].Contains("mystic") &&
          builderResult.adultCombo.TryGetValue("body-class", out var bodyClass) &&
          builderResult.adultCombo.TryGetValue("body-id", out var bodyId))
         {
-            skeletonGraphic.gameObject.AddComponent<MysticIdGraphicController>().Init(bodyClass, bodyId);
+            m_SkeletonGraphic.gameObject.AddComponent<MysticIdGraphicController>().Init(bodyClass, bodyId);
         }
 
     }
@@ -316,7 +323,6 @@ public class BasicCard : MonoBehaviour
     #region Ability Functions
     public void SwapBack()
     {
-
         UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
         List<SingleDropZone> singleDropZones = uicIngame.GetSelectSingleDropZoneByTurn();
         for (int i = 0; i < singleDropZones.Count - 2; i++)
@@ -363,17 +369,23 @@ public class BasicCard : MonoBehaviour
     }
     public void CardMaker()
     {
-        m_OnWinBattleCallback = () =>
+        if (MatchManager.Instance.IsPlayerCard(this))
         {
-            TempData.Instance.GetPlayerData().m_MaxCardInHand = 8;
-        };
+            m_OnWinBattleCallback = () =>
+            {
+                TempData.Instance.GetPlayerData().m_MaxCardInHand = 8;
+            };
+        }
     }
     public void CardEater()
     {
-        m_OnWinBattleCallback = () =>
+        if (!MatchManager.Instance.IsPlayerCard(this))
         {
-            TempData.Instance.GetOpponentData().m_MaxCardInHand = 4;
-        };
+            m_OnWinBattleCallback = () =>
+            {
+                TempData.Instance.GetPlayerData().m_MaxCardInHand = 4;
+            };
+        }
     }
     public void Silencer()
     {
@@ -424,6 +436,34 @@ public class BasicCard : MonoBehaviour
             }
         }
     }
+    public void SlimePower()
+    {
+        UICIngame uicIngame = UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame);
+        List<BasicCard> basicCards = uicIngame.GetSelectBasicCardByTurn();
+        int index = basicCards.IndexOf(this);
+        BasicCard opponentCard = basicCards[index + (index % 2 == 0 ? 1 : -1)];
+
+        int playerScore = MatchManager.Instance.IsPlayerCard(this) ? uicIngame.m_Score1 : uicIngame.m_Score2;
+        int opponentScore = MatchManager.Instance.IsPlayerCard(this) ? uicIngame.m_Score2 : uicIngame.m_Score1;
+        //if (playerScore + 2 < opponentScore)
+        //{
+        //    ChangeSymbol(GetWinSymbol(opponentCard.m_Symbol));
+        //}
+        m_SkeletonGraphic.skeletonDataAsset = AxieMixerManager.Instance.m_SlimeSkeletonDataAsset;
+        m_SkeletonGraphic.rectTransform.sizeDelta = new Vector2(1, 1);
+        m_SkeletonGraphic.rectTransform.localScale = Vector3.one;
+        m_SkeletonGraphic.rectTransform.anchoredPosition = new Vector2(0f, 0f);
+        m_SkeletonGraphic.material = null;
+        m_SkeletonGraphic.Initialize(true);
+        m_SkeletonGraphic.Skeleton.SetSkin("default");
+        m_SkeletonGraphic.Skeleton.SetSlotsToSetupPose();
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        m_MoveAnimation = AxieMixerManager.Instance.slimeMoveAnimation;
+        m_MeleeAnimation = AxieMixerManager.Instance.slimeMeleeAnimation;
+        m_RangeAnimation = AxieMixerManager.Instance.slimeRangeAnimation;
+        m_DefenceAnimation = AxieMixerManager.Instance.slimeDefenceAnimation;
+        ChangeSymbol(GetWinSymbol(opponentCard.m_Symbol));
+    }
     public void ChangeSymbol(Symbol symbol)
     {
         Debug.Log("ChangeSymbol");
@@ -471,55 +511,96 @@ public class BasicCard : MonoBehaviour
     #endregion
 
     #region Combat Functions
-    public void Battle(BasicCard basicCard)
+    public void MeleeBattle(BasicCard basicCard)
     {
         Vector3 pos = (Transform.position + basicCard.transform.position) /2;
-        skeletonGraphic.rectTransform.DOMoveX((pos + m_CardLookDirection * Vector3.right * 75).x, 1);
+        m_SkeletonGraphic.rectTransform.DOMoveX((pos + m_CardLookDirection * Vector3.right).x, 1);
 
         if (GetLoseSymbol(m_Symbol) == basicCard.m_Symbol)
         {
-            StartCoroutine(OnAttack());
+            StartCoroutine(OnMeleeAttack());
             m_OnWinBattleCallback?.Invoke();
         }
         else if (GetWinSymbol(m_Symbol) == basicCard.m_Symbol)
         {
-            StartCoroutine(OnHit());
+            StartCoroutine(OnMeleeHit());
         }
         else
         {
-            StartCoroutine(OnAttack());
+            StartCoroutine(OnMeleeAttack());
         }
     }
-    IEnumerator OnAttack()
+    IEnumerator OnMeleeAttack()
     {
-        Debug.Log("Attack");
-        skeletonGraphic.transform.SetParent( UI_Game.Instance.CanvasParentTF);
-        skeletonGraphic.AnimationState.SetAnimation(0, "action/run", true);
-        yield return new WaitForSeconds(1);
-        m_CanvasGroup.DOFade(0, 1);
-        skeletonGraphic.AnimationState.SetAnimation(0, m_WinAnimation[Random.Range(0, m_WinAnimation.Count)], false);
+        m_SkeletonGraphic.transform.SetParent( UI_Game.Instance.CanvasParentTF);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, m_MoveAnimation, true);
+        m_CanvasGroup.DOFade(0, 0.5f);
+        yield return new WaitForSeconds(1f);
+        
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, m_MeleeAnimation, false);
         yield return new WaitForSeconds(1.5f);
-        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        yield return new WaitForSeconds(0.5f);
+
+        DestroyCard();
+    }
+    IEnumerator OnMeleeHit()
+    {
+        m_SkeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, m_MoveAnimation, true);
+        m_CanvasGroup.DOFade(0, 0.5f);
+        yield return new WaitForSeconds(1f);
+        
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        yield return new WaitForSeconds(0.5f);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, m_DefenceAnimation, false);
+        yield return new WaitForSeconds(1.5f);
+        DestroyCard();
+    }
+    public void RangeBattle(BasicCard basicCard)
+    {
+
+        if (GetLoseSymbol(m_Symbol) == basicCard.m_Symbol)
+        {
+            StartCoroutine(OnRangeAttack(basicCard));
+            m_OnWinBattleCallback?.Invoke();
+        }
+        else if (GetWinSymbol(m_Symbol) == basicCard.m_Symbol)
+        {
+            StartCoroutine(OnRangeHit());
+        }
+        else
+        {
+            StartCoroutine(OnRangeAttack(basicCard));
+        }
+    }
+    IEnumerator OnRangeAttack(BasicCard basicCard)
+    {
+        m_SkeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, m_RangeAnimation, true);
+        m_CanvasGroup.DOFade(0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        Thinh.SimplePool.Spawn(UIProjectilesManager.Instance.GetUIProjectile(m_AbilityName)).Setup(Transform.position, basicCard.Transform.position, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
         yield return new WaitForSeconds(2f);
 
         DestroyCard();
     }
-    IEnumerator OnHit()
+    IEnumerator OnRangeHit()
     {
-        Debug.Log("Hit");
-        skeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
-        skeletonGraphic.AnimationState.SetAnimation(0, "action/run", true);
+        m_SkeletonGraphic.transform.SetParent(UI_Game.Instance.CanvasParentTF);
+        m_CanvasGroup.DOFade(0, 0.5f);
         yield return new WaitForSeconds(1f);
-        m_CanvasGroup.DOFade(0, 1);
-        skeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
-        yield return new WaitForSeconds(0.75f);
-        skeletonGraphic.AnimationState.SetAnimation(0, m_LoseAnimation[Random.Range(0, m_LoseAnimation.Count)], false);
-        yield return new WaitForSeconds(2.75f);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, m_DefenceAnimation, false);
+        yield return new WaitForSeconds(0.5f);
+        m_SkeletonGraphic.AnimationState.SetAnimation(0, "action/idle/normal", true);
+        yield return new WaitForSeconds(0.5f);
         DestroyCard();
     }
     public void DestroyCard()
     {
-        Destroy(skeletonGraphic.gameObject);
+        Destroy(m_SkeletonGraphic.gameObject);
         m_CardController.DespawnCardSlot();
         Thinh.SimplePool.Despawn(gameObject);
     }

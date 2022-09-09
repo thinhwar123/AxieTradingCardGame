@@ -1,0 +1,80 @@
+{
+"skeleton": {
+	"hash": "J9p1H7KF2v38mNXWo+WhDrxGwCo",
+	"spine": "3.8.79",
+	"x": -452.74,
+	"y": -27.11,
+	"width": 548.35,
+	"height": 624.37,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -64.46 },
+	{ "name": "orange-fur-1", "parent": "root", "x": -346.51, "y": 505.51, "scaleX": -1 },
+	{ "name": "orange_fur", "parent": "root", "y": 64.46, "scaleX": -1, "shearY": 0.14 }
+],
+"slots": [
+	{ "name": "orange_fur", "bone": "orange_fur", "attachment": "orange-fur-2" },
+	{ "name": "orange-fur-1", "bone": "orange-fur-1", "attachment": "orange-fur-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"orange-fur-1": {
+				"orange-fur-1": { "x": -11.27, "y": -1.8, "width": 235, "height": 316 }
+			},
+			"orange_fur": {
+				"orange-fur-2": { "x": 120.95, "y": 156.99, "rotation": 26.82, "width": 373, "height": 224 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"orange-fur-1": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff" },
+					{ "time": 0.0667, "color": "ffffff00" }
+				]
+			},
+			"orange_fur": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0, "c2": 0.4, "c3": 0.47 },
+					{ "time": 0.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.4333, "color": "ffffffff", "curve": 0.315, "c4": 0.8 },
+					{ "time": 0.7667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"orange_fur": {
+				"rotate": [
+					{ "curve": 0, "c2": 0.4, "c3": 0.47 },
+					{ "time": 0.0667, "angle": 8, "curve": 0, "c2": 0.4, "c3": 0.47 },
+					{ "time": 0.1, "angle": -8, "curve": 0, "c2": 0.31, "c3": 0.39, "c4": 0.69 },
+					{ "time": 0.1333, "angle": 6, "curve": 0.263, "c2": 0.57, "c3": 0.621 },
+					{ "time": 0.1667, "angle": -5, "curve": 0, "c2": 0.4, "c3": 0.47 },
+					{ "time": 0.2, "angle": 2, "curve": 0, "c2": 0.31, "c3": 0.39, "c4": 0.69 },
+					{ "time": 0.2333, "angle": -1, "curve": 0.263, "c2": 0.57, "c3": 0.621 },
+					{ "time": 0.2667, "curve": "stepped" },
+					{ "time": 0.7667 }
+				],
+				"translate": [
+					{ "x": 15, "y": 15, "curve": 0, "c2": 0.39, "c3": 0.384 },
+					{ "time": 0.0667 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.0333, "name": "hit" }
+		]
+	}
+}
+}

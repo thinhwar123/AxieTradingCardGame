@@ -1,0 +1,76 @@
+
+air-2-ee-ground.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Air_25_00000
+  rotate: false
+  xy: 227,375
+  size: 72,81
+  orig: 72,81
+  offset: 0, 0
+  index: -1
+Air_25_00001
+  rotate: false
+  xy: 2,381
+  size: 162,122
+  orig: 162,122
+  offset: 0, 0
+  index: -1
+Air_25_00002
+  rotate: false
+  xy: 669,178
+  size: 195,161
+  orig: 195,161
+  offset: 0, 0
+  index: -1
+Air_25_00003
+  rotate: false
+  xy: 669,2
+  size: 206,172
+  orig: 206,172
+  offset: 0, 0
+  index: -1
+Air_25_00004
+  rotate: false
+  xy: 452,188
+  size: 210,179
+  orig: 210,179
+  offset: 0, 0
+  index: -1
+Air_25_00005
+  rotate: false
+  xy: 452,2
+  size: 213,182
+  orig: 213,182
+  offset: 0, 0
+  index: -1
+Air_25_00006
+  rotate: false
+  xy: 227,188
+  size: 216,183
+  orig: 216,183
+  offset: 0, 0
+  index: -1
+Air_25_00007
+  rotate: false
+  xy: 2,192
+  size: 219,185
+  orig: 219,185
+  offset: 0, 0
+  index: -1
+Air_25_00008
+  rotate: false
+  xy: 2,2
+  size: 221,186
+  orig: 221,186
+  offset: 0, 0
+  index: -1
+Air_25_00009
+  rotate: false
+  xy: 227,2
+  size: 221,182
+  orig: 221,182
+  offset: 0, 0
+  index: -1

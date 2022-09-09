@@ -1,0 +1,90 @@
+
+spark-13-si-rear.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-13-si-rear_00
+  rotate: false
+  xy: 670,333
+  size: 50,65
+  orig: 50,65
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_01
+  rotate: false
+  xy: 517,207
+  size: 205,122
+  orig: 205,122
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_02
+  rotate: false
+  xy: 754,2
+  size: 220,177
+  orig: 220,177
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_03
+  rotate: false
+  xy: 517,2
+  size: 233,201
+  orig: 233,201
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_04
+  rotate: false
+  xy: 259,2
+  size: 254,226
+  orig: 254,226
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_05
+  rotate: false
+  xy: 2,2
+  size: 253,228
+  orig: 253,228
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_06
+  rotate: false
+  xy: 2,234
+  size: 251,225
+  orig: 251,225
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_07
+  rotate: false
+  xy: 259,232
+  size: 245,220
+  orig: 245,220
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_08
+  rotate: false
+  xy: 517,333
+  size: 149,167
+  orig: 149,167
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_09
+  rotate: false
+  xy: 726,207
+  size: 145,103
+  orig: 145,103
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_10
+  rotate: false
+  xy: 875,207
+  size: 141,98
+  orig: 141,98
+  offset: 0, 0
+  index: -1
+spark-13-si-rear_11
+  rotate: false
+  xy: 2,463
+  size: 9,10
+  orig: 9,10
+  offset: 0, 0
+  index: -1

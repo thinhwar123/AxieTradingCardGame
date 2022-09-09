@@ -1,0 +1,118 @@
+
+spark-6-mi-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-24-mi-round_00
+  rotate: false
+  xy: 454,781
+  size: 53,53
+  orig: 53,53
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_01
+  rotate: false
+  xy: 855,449
+  size: 153,153
+  orig: 153,153
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_02
+  rotate: false
+  xy: 259,781
+  size: 191,186
+  orig: 191,186
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_03
+  rotate: false
+  xy: 2,782
+  size: 217,214
+  orig: 217,214
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_04
+  rotate: false
+  xy: 767,2
+  size: 244,241
+  orig: 244,241
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_05
+  rotate: false
+  xy: 513,2
+  size: 250,253
+  orig: 250,253
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_06
+  rotate: false
+  xy: 2,262
+  size: 251,256
+  orig: 251,256
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_07
+  rotate: false
+  xy: 2,2
+  size: 253,256
+  orig: 253,256
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_08
+  rotate: false
+  xy: 259,521
+  size: 222,256
+  orig: 222,256
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_09
+  rotate: false
+  xy: 2,522
+  size: 251,256
+  orig: 251,256
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_10
+  rotate: false
+  xy: 259,261
+  size: 249,256
+  orig: 249,256
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_11
+  rotate: false
+  xy: 259,2
+  size: 250,255
+  orig: 250,255
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_12
+  rotate: false
+  xy: 512,261
+  size: 184,184
+  orig: 184,184
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_13
+  rotate: false
+  xy: 700,261
+  size: 182,183
+  orig: 182,183
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_14
+  rotate: false
+  xy: 512,449
+  size: 173,172
+  orig: 173,172
+  offset: 0, 0
+  index: -1
+spark-24-mi-round_15
+  rotate: false
+  xy: 689,449
+  size: 162,166
+  orig: 162,166
+  offset: 0, 0
+  index: -1

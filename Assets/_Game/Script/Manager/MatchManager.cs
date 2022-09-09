@@ -15,15 +15,17 @@ public class MatchManager : Singleton<MatchManager>
     private StateMachine<MatchManager> m_StateMachine;
     public StateMachine<MatchManager> StateMachine { get { return m_StateMachine; } }
     public UICIngame m_UICIngame;
-    private bool m_StartCountTime;
+    public bool m_StartCountTime;
     public List<CardData> m_SavedDataDeskCard;
-
-    public TImeCount timeCount;
 
     #region Unity Functions
     protected override void Awake()
     {
-        base.Awake();
+        transform.SetParent(null);
+        if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
         m_SavedDataDeskCard = new List<CardData>();
         for (int i = 0; i < 24; i++)
         {
@@ -41,10 +43,15 @@ public class MatchManager : Singleton<MatchManager>
    // }
     public void StartGame(PlayerHandler handler)
     {
-        timeCount.StopWaiting();
+        if (UI_Game.Instance.IsOpenedUI(UIID.UICTimeCount))
+        {
+            UI_Game.Instance.GetUI<UICTimeCount>(UIID.UICTimeCount).StopWaiting();
+        }
         m_UICIngame = UI_Game.Instance.OpenUI<UICIngame>(UIID.UICIngame);
+        m_UICIngame.m_PlayerDeck.InitDeck();
         TempData.Instance.InitNewData();
         this.m_PlayerHandler = handler;
+        CreatePlayerMathData();
         DelayAction(StartDrawPhase, 2);
     }
 
@@ -53,9 +60,13 @@ public class MatchManager : Singleton<MatchManager>
         switch (curPhase)
         {
             case Phase.SETUP_CARD:
+                //m_StartCountTime = false;
+                SetCanDragCard(false);
                 m_PlayerHandler.NextPhase(Phase.SHOW_CARD);
                 break;
             case Phase.SETUP_ABILITY:
+                //m_StartCountTime = false;
+                m_UICIngame.ShowAbilityOptionButton(false);
                 m_PlayerHandler.NextPhase(Phase.BATTLE);
                 break;
         }
@@ -67,6 +78,10 @@ public class MatchManager : Singleton<MatchManager>
     }
     #endregion
 
+    public PlayerHandler GetPlayerHandler()
+    {
+        return this.m_PlayerHandler;
+    }
 
     #region Phase Functions
     /// <summary>
@@ -89,10 +104,11 @@ public class MatchManager : Singleton<MatchManager>
     /// </summary>
     public void OnEnterDrawState()
     {
-        CreatePlayerMathData();
-
         m_UICIngame.SetupRole(TempData.Instance.GetPlayerData().m_BattleRole);
-        m_UICIngame.PlayerDrawCard(TempData.Instance.GetPlayerData().m_MaxCardInHand - m_UICIngame.m_PlayerHand.GetCardInHandCount());        
+        m_UICIngame.SetFadeDropZone(false);
+        int cardDraw = (TempData.Instance.GetPlayerData().m_MaxCardInHand - m_UICIngame.m_PlayerHand.GetCardInHandCount());
+        TempData.Instance.GetPlayerData().m_MaxCardInHand = 6;
+        m_UICIngame.PlayerDrawCard(cardDraw < 0 ? 0 : cardDraw);        
         m_UICIngame.ChangePhase(Phase.DRAW);
 
         
@@ -124,13 +140,13 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void OnExecuteSetupCardState()
     {
-        if (!m_StartCountTime) return;
+
         if (m_CurrentTimeThinking > 0)
         {
             m_CurrentTimeThinking = Mathf.Clamp(m_CurrentTimeThinking - Time.deltaTime, 0, m_TimeThinking);
             UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame).UpdateTime((int)m_CurrentTimeThinking, m_CurrentTimeThinking / m_TimeThinking);
         }
-        else
+        else if(m_StartCountTime)
         {
             m_StartCountTime = false;
             StartShowCardPhase();
@@ -172,16 +188,17 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void OnExecuteSetupSkillState()
     {
-        if (!m_StartCountTime) return;
         if (m_CurrentTimeThinking > 0)
         {
             m_CurrentTimeThinking = Mathf.Clamp(m_CurrentTimeThinking - Time.deltaTime, 0, m_TimeThinking);
             UI_Game.Instance.GetUI<UICIngame>(UIID.UICIngame).UpdateTime((int)m_CurrentTimeThinking, m_CurrentTimeThinking / m_TimeThinking);
         }
-        else
+        else if(m_StartCountTime)
         {
             m_StartCountTime = false;
-             StartBattlePhase();
+            StartBattlePhase();
+            //SetButtonEndPhase(false);
+            //MatchManager.Instance.EndPhase(m_CurrentPhase);
         }
     }
     public void OnExitSetupSkillState()
@@ -196,6 +213,7 @@ public class MatchManager : Singleton<MatchManager>
     public void OnEnterBattleState()
     {
         m_UICIngame.ChangePhase(Phase.BATTLE);
+        m_UICIngame.SetFadeDropZone(true);
         m_UICIngame.EndSetupRole();
         m_UICIngame.StartBattle();
     }
@@ -214,7 +232,32 @@ public class MatchManager : Singleton<MatchManager>
     {
         m_UICIngame.ChangePhase(Phase.END_TURN);
         m_UICIngame.ClearBattle();
-        DelayAction(StartDrawPhase, 2);
+        TempData.Instance.GetPlayerData().SwapRole();
+        TempData.Instance.GetPlayerData().m_Round++;
+        if (TempData.Instance.GetPlayerData().m_Round < 6)
+        {
+            DelayAction(StartDrawPhase, 2);
+        }
+        else
+        {
+            if (m_UICIngame.m_Score1 > m_UICIngame.m_Score2)
+            {
+                Debug.Log("Win Game");
+                UI_Game.Instance.OpenUI<UI_Endgame>(UIID.UICEndGame).Setup(1);
+            }
+            else if (m_UICIngame.m_Score1 < m_UICIngame.m_Score2)
+            {
+                Debug.Log("Lose Game");
+                UI_Game.Instance.OpenUI<UI_Endgame>(UIID.UICEndGame).Setup(-1);
+            }
+            else
+            {
+                Debug.Log("Draw Game");
+                UI_Game.Instance.OpenUI<UI_Endgame>(UIID.UICEndGame).Setup(0);
+            }
+
+        }
+
     }
     public void OnExecuteEndTurnState()
     {
@@ -230,7 +273,14 @@ public class MatchManager : Singleton<MatchManager>
     public void CreatePlayerMathData()
     {
         PlayerMatchData playerMatchData = new PlayerMatchData();
+        if (m_PlayerHandler.isClientOnly)
+        {
+            playerMatchData.m_BattleRole = BattleRole.DEFENDER;
+        }
+        
         TempData.Instance.AddPlayerMathData(playerMatchData);
+        
+
     }
     public void StartDrawPhase()
     {
@@ -249,6 +299,8 @@ public class MatchManager : Singleton<MatchManager>
         SetCanDragCard(false);
         m_UICIngame.SetShowTimeCount(false);
         m_UICIngame.SetButtonEndPhase(false);
+        m_UICIngame.AutoScaleCardToNormal();
+        yield return new WaitForSeconds(0.5f);
 
         if (m_UICIngame.HasEmptyDropZone())
         {
@@ -265,6 +317,8 @@ public class MatchManager : Singleton<MatchManager>
     }
     public void StartBattlePhase()
     {
+
+        m_UICIngame.AutoScaleCardToNormal();
         TempData.Instance.GetPlayerData().m_SelectSkill = m_UICIngame.GetSelectSkill();
         m_PlayerHandler.SetUpMatchData(TempData.Instance.GetPlayerData());
         DelayAction(() => StateMachine.ChangeState(BattleState.Instance), 0.5f);
@@ -293,12 +347,25 @@ public class MatchManager : Singleton<MatchManager>
         yield return new WaitForSeconds(time);
         action?.Invoke();
     }
+    public bool IsPlayerCard(BasicCard basicCard)
+    {
+        List<CardData> cardDatas = m_UICIngame.GetSelectCardData();
+        for (int i = 0; i < cardDatas.Count; i+=2)
+        {
+            if (cardDatas[i].m_ID == basicCard.GetID())
+            {
+                return true;
+            }
+        } 
+        return false;
+    }
     #endregion
 }
 [System.Serializable]
 public class PlayerMatchData
 {
     public int m_MaxCardInHand;
+    public int m_Round;
     public BattleRole m_BattleRole;
     public List<CardData> m_Deck;
     public List<CardData> m_SelectCard;
@@ -306,11 +373,25 @@ public class PlayerMatchData
 
     public PlayerMatchData()
     {
+        m_Round = 0;
         m_MaxCardInHand = 6;
         m_BattleRole = BattleRole.ATTACKER;
         m_Deck = new List<CardData>();
         m_SelectCard = new List<CardData>();
         m_SelectSkill = new List<bool>();
+    }
+    public void SwapRole()
+    {
+        switch (m_BattleRole)
+        {
+            case BattleRole.ATTACKER:
+                m_BattleRole = BattleRole.DEFENDER;
+                break;
+            case BattleRole.DEFENDER:
+                m_BattleRole = BattleRole.ATTACKER;
+                break;
+
+        }
     }
 }
 public enum BattleRole

@@ -1,0 +1,90 @@
+
+electric-2-mi-up.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-4-mi-up_00
+  rotate: false
+  xy: 324,412
+  size: 80,62
+  orig: 80,62
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_01
+  rotate: false
+  xy: 450,2
+  size: 150,109
+  orig: 150,109
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_02
+  rotate: false
+  xy: 262,289
+  size: 153,119
+  orig: 153,119
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_03
+  rotate: false
+  xy: 2,420
+  size: 103,79
+  orig: 103,79
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_04
+  rotate: false
+  xy: 262,2
+  size: 184,137
+  orig: 184,137
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_05
+  rotate: false
+  xy: 262,143
+  size: 137,142
+  orig: 137,142
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_06
+  rotate: false
+  xy: 2,262
+  size: 243,154
+  orig: 243,154
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_07
+  rotate: false
+  xy: 450,266
+  size: 63,102
+  orig: 63,102
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_08
+  rotate: false
+  xy: 262,412
+  size: 58,96
+  orig: 58,96
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_09
+  rotate: false
+  xy: 450,115
+  size: 103,147
+  orig: 103,147
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_10
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-4-mi-up_11
+  rotate: false
+  xy: 109,420
+  size: 91,86
+  orig: 91,86
+  offset: 0, 0
+  index: -1

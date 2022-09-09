@@ -1,0 +1,57 @@
+{
+"skeleton": {
+	"hash": "XDVEOwDPyjpXTmb/lFoXbcyO6X4",
+	"spine": "3.8.79",
+	"x": -548.37,
+	"y": -108.5,
+	"width": 631.1,
+	"height": 542.36,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -32.03 },
+	{ "name": "energy-shot", "parent": "root", "y": 32.03 }
+],
+"slots": [
+	{ "name": "energy-shot", "bone": "energy-shot", "attachment": "energy-shot-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"energy-shot": {
+				"energy-shot-1": { "x": -232.82, "y": 162.68, "scaleX": -1, "rotation": -15.65, "width": 540, "height": 412 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"energy-shot": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0.154, "c4": 0.9 },
+					{ "time": 0.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.2667, "color": "ffffffff", "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.3667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"energy-shot": {
+				"translate": [
+					{ "x": -679.88, "y": 379.79, "curve": 0.617, "c4": 0.6 },
+					{ "time": 0.1667 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "hit" }
+		]
+	}
+}
+}

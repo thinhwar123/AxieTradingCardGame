@@ -1,0 +1,146 @@
+
+smoke-3-si-round.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke-3-round_00000
+  rotate: false
+  xy: 505,940
+  size: 56,54
+  orig: 56,54
+  offset: 0, 0
+  index: -1
+smoke-3-round_00001
+  rotate: false
+  xy: 961,389
+  size: 159,166
+  orig: 159,166
+  offset: 0, 0
+  index: -1
+smoke-3-round_00002
+  rotate: false
+  xy: 961,204
+  size: 177,181
+  orig: 177,181
+  offset: 0, 0
+  index: -1
+smoke-3-round_00003
+  rotate: false
+  xy: 961,2
+  size: 195,198
+  orig: 195,198
+  offset: 0, 0
+  index: -1
+smoke-3-round_00004
+  rotate: false
+  xy: 745,654
+  size: 200,203
+  orig: 200,203
+  offset: 0, 0
+  index: -1
+smoke-3-round_00005
+  rotate: false
+  xy: 745,439
+  size: 206,211
+  orig: 206,211
+  offset: 0, 0
+  index: -1
+smoke-3-round_00006
+  rotate: false
+  xy: 745,222
+  size: 209,213
+  orig: 209,213
+  offset: 0, 0
+  index: -1
+smoke-3-round_00007
+  rotate: false
+  xy: 745,2
+  size: 212,216
+  orig: 212,216
+  offset: 0, 0
+  index: -1
+smoke-3-round_00008
+  rotate: false
+  xy: 505,710
+  size: 220,226
+  orig: 220,226
+  offset: 0, 0
+  index: -1
+smoke-3-round_00009
+  rotate: false
+  xy: 505,476
+  size: 226,230
+  orig: 226,230
+  offset: 0, 0
+  index: -1
+smoke-3-round_00010
+  rotate: false
+  xy: 505,240
+  size: 231,232
+  orig: 231,232
+  offset: 0, 0
+  index: -1
+smoke-3-round_00011
+  rotate: false
+  xy: 505,2
+  size: 236,234
+  orig: 236,234
+  offset: 0, 0
+  index: -1
+smoke-3-round_00012
+  rotate: false
+  xy: 255,738
+  size: 240,238
+  orig: 240,238
+  offset: 0, 0
+  index: -1
+smoke-3-round_00013
+  rotate: false
+  xy: 255,495
+  size: 242,239
+  orig: 242,239
+  offset: 0, 0
+  index: -1
+smoke-3-round_00014
+  rotate: false
+  xy: 255,249
+  size: 245,242
+  orig: 245,242
+  offset: 0, 0
+  index: -1
+smoke-3-round_00015
+  rotate: false
+  xy: 255,2
+  size: 246,243
+  orig: 246,243
+  offset: 0, 0
+  index: -1
+smoke-3-round_00016
+  rotate: false
+  xy: 2,753
+  size: 247,244
+  orig: 247,244
+  offset: 0, 0
+  index: -1
+smoke-3-round_00017
+  rotate: false
+  xy: 2,503
+  size: 248,246
+  orig: 248,246
+  offset: 0, 0
+  index: -1
+smoke-3-round_00018
+  rotate: false
+  xy: 2,253
+  size: 248,246
+  orig: 248,246
+  offset: 0, 0
+  index: -1
+smoke-3-round_00019
+  rotate: false
+  xy: 2,2
+  size: 249,247
+  orig: 249,247
+  offset: 0, 0
+  index: -1

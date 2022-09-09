@@ -1,0 +1,27 @@
+
+plant-back-08-aquastock.png
+size: 167,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+aquastock-1
+  rotate: true
+  xy: 2, 10
+  size: 96, 95
+  orig: 96, 95
+  offset: 0, 0
+  index: -1
+aquastock-2
+  rotate: false
+  xy: 99, 2
+  size: 38, 37
+  orig: 38, 37
+  offset: 0, 0
+  index: -1
+aquastock-3
+  rotate: false
+  xy: 99, 41
+  size: 66, 65
+  orig: 66, 65
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,36 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "electric_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "electric_00000": {"x": -24, "y": -82, "width": 82, "height": 86},
+          "electric_00001": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "electric_00002": {"x": -9, "y": -43, "width": 198, "height": 156},
+          "electric_00003": {"x": -2, "y": -27, "width": 223, "height": 186},
+          "electric_00004": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "electric_00005": {"x": 0, "y": 1, "width": 255, "height": 186},
+          "electric_00006": {"x": 1, "y": 3, "width": 253, "height": 180},
+          "electric_00007": {"x": 46, "y": 10, "width": 159, "height": 104},
+          "electric_00008": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "electric_00009": {"x": 128, "y": -128, "width": 256, "height": 256}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "electric_00000"}, {"time": 0.1, "name": "electric_00001"}, {"time": 0.2, "name": "electric_00002"}, {"time": 0.30000000000000004, "name": "electric_00003"}, {"time": 0.4, "name": "electric_00004"},
+            {"time": 0.5, "name": "electric_00005"}, {"time": 0.6000000000000001, "name": "electric_00006"}, {"time": 0.7000000000000001, "name": "electric_00007"}, {"time": 0.8, "name": "electric_00008"},
+            {"time": 0.9, "name": "electric_00009"}
+          ]
+        }
+      }
+    }
+  }
+}

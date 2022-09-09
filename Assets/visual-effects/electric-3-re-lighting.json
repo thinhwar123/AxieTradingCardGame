@@ -1,0 +1,37 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "electric-3-re-lighting_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "electric-3-re-lighting_00": {"x": -2, "y": -97, "width": 72, "height": 62},
+          "electric-3-re-lighting_01": {"x": -6, "y": -26, "width": 77, "height": 204},
+          "electric-3-re-lighting_02": {"x": -5, "y": -17, "width": 91, "height": 222},
+          "electric-3-re-lighting_03": {"x": -1, "y": -16, "width": 107, "height": 223},
+          "electric-3-re-lighting_04": {"x": 8, "y": -14, "width": 107, "height": 227},
+          "electric-3-re-lighting_05": {"x": -1, "y": -12, "width": 112, "height": 232},
+          "electric-3-re-lighting_06": {"x": 9, "y": 1, "width": 108, "height": 225},
+          "electric-3-re-lighting_07": {"x": -3, "y": 12, "width": 91, "height": 183},
+          "electric-3-re-lighting_08": {"x": -7, "y": 22, "width": 94, "height": 185},
+          "electric-3-re-lighting_09": {"x": -10, "y": 17, "width": 90, "height": 160},
+          "electric-3-re-lighting_10": {"x": -6, "y": 28, "width": 76, "height": 177}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "electric-3-re-lighting_00"}, {"time": 0.1, "name": "electric-3-re-lighting_01"}, {"time": 0.2, "name": "electric-3-re-lighting_02"}, {"time": 0.30000000000000004, "name": "electric-3-re-lighting_03"},
+            {"time": 0.4, "name": "electric-3-re-lighting_04"}, {"time": 0.5, "name": "electric-3-re-lighting_05"}, {"time": 0.6000000000000001, "name": "electric-3-re-lighting_06"},
+            {"time": 0.7000000000000001, "name": "electric-3-re-lighting_07"}, {"time": 0.8, "name": "electric-3-re-lighting_08"}, {"time": 0.9, "name": "electric-3-re-lighting_09"}, {"time": 1.0, "name": "electric-3-re-lighting_10"}
+          ]
+        }
+      }
+    }
+  }
+}

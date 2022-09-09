@@ -1,0 +1,62 @@
+
+energy_16-dash-slash.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy_16_00000
+  rotate: false
+  xy: 386,2
+  size: 34,52
+  orig: 34,52
+  offset: 0, 0
+  index: -1
+energy_16_00001
+  rotate: false
+  xy: 2,73
+  size: 381,66
+  orig: 381,66
+  offset: 0, 0
+  index: -1
+energy_16_00002
+  rotate: false
+  xy: 2,2
+  size: 380,67
+  orig: 380,67
+  offset: 0, 0
+  index: -1
+energy_16_00003
+  rotate: false
+  xy: 2,143
+  size: 360,67
+  orig: 360,67
+  offset: 0, 0
+  index: -1
+energy_16_00004
+  rotate: false
+  xy: 2,214
+  size: 350,66
+  orig: 350,66
+  offset: 0, 0
+  index: -1
+energy_16_00005
+  rotate: false
+  xy: 2,354
+  size: 347,66
+  orig: 347,66
+  offset: 0, 0
+  index: -1
+energy_16_00006
+  rotate: false
+  xy: 2,284
+  size: 348,66
+  orig: 348,66
+  offset: 0, 0
+  index: -1
+energy_16_00007
+  rotate: false
+  xy: 2,424
+  size: 347,64
+  orig: 347,64
+  offset: 0, 0
+  index: -1

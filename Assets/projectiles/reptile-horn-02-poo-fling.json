@@ -1,0 +1,58 @@
+{
+"skeleton": {
+	"hash": "yTGzrhHe+bIvTepQbg62gzR10WI",
+	"spine": "3.8.79",
+	"x": -220.04,
+	"y": -32.59,
+	"width": 432,
+	"height": 356,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -97.92 },
+	{ "name": "poo-fling", "parent": "root", "y": 97.92 }
+],
+"slots": [
+	{ "name": "poo-fling", "bone": "poo-fling", "attachment": "shit-drop-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"poo-fling": {
+				"shit-drop-1": { "x": -4.04, "y": 145.41, "width": 432, "height": 356 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"poo-fling": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0.315, "c4": 0.8 },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff", "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"poo-fling": {
+				"translate": [
+					{ "y": 550, "curve": 0.698, "c4": 0.3 },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 0.8333 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.8333, "name": "hit" }
+		]
+	}
+}
+}

@@ -1,0 +1,58 @@
+{
+"skeleton": {
+	"hash": "1TiYQdI6EDQKwt4BtRadi4+CzDI",
+	"spine": "3.8.79",
+	"x": -155.44,
+	"y": -96.77,
+	"width": 309,
+	"height": 350,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.5 },
+	{ "name": "egg-drop", "parent": "root", "y": 63.5 }
+],
+"slots": [
+	{ "name": "egg-drop", "bone": "egg-drop", "attachment": "egg-drop-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"egg-drop": {
+				"egg-drop-1": { "x": -0.94, "y": 78.23, "width": 309, "height": 350 }
+			}
+		}
+	}
+],
+"events": {
+	"hit": {}
+},
+"animations": {
+	"cast": {
+		"slots": {
+			"egg-drop": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0.315, "c4": 0.8 },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff", "curve": 0, "c2": 0.2, "c3": 0.694 },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"egg-drop": {
+				"translate": [
+					{ "y": 550, "curve": 0.698, "c4": 0.3 },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 0.8333 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.6667, "name": "hit" }
+		]
+	}
+}
+}

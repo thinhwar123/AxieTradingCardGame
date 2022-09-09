@@ -59,12 +59,15 @@ public class PlayerHandler : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
+            
             switch (m_phase)
             {
                 case Phase.SHOW_CARD:
+                    MatchManager.Instance.m_StartCountTime = false;
                     MatchManager.Instance.StartShowCardPhase();
                     break;
                 case Phase.BATTLE:
+                    MatchManager.Instance.m_StartCountTime = false;
                     MatchManager.Instance.StartBattlePhase();
                     break;
             }

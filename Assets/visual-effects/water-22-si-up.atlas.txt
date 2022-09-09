@@ -1,0 +1,132 @@
+
+water-22-si-up.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-22-si-up_00
+  rotate: false
+  xy: 959,2
+  size: 63,53
+  orig: 63,53
+  offset: 0, 0
+  index: -1
+water-22-si-up_01
+  rotate: false
+  xy: 837,2
+  size: 118,151
+  orig: 118,151
+  offset: 0, 0
+  index: -1
+water-22-si-up_02
+  rotate: false
+  xy: 569,2
+  size: 130,168
+  orig: 130,168
+  offset: 0, 0
+  index: -1
+water-22-si-up_03
+  rotate: false
+  xy: 427,2
+  size: 138,176
+  orig: 138,176
+  offset: 0, 0
+  index: -1
+water-22-si-up_04
+  rotate: false
+  xy: 144,188
+  size: 139,180
+  orig: 139,180
+  offset: 0, 0
+  index: -1
+water-22-si-up_05
+  rotate: false
+  xy: 287,2
+  size: 136,183
+  orig: 136,183
+  offset: 0, 0
+  index: -1
+water-22-si-up_06
+  rotate: false
+  xy: 2,190
+  size: 138,183
+  orig: 138,183
+  offset: 0, 0
+  index: -1
+water-22-si-up_07
+  rotate: false
+  xy: 2,2
+  size: 138,184
+  orig: 138,184
+  offset: 0, 0
+  index: -1
+water-22-si-up_08
+  rotate: false
+  xy: 144,2
+  size: 139,182
+  orig: 139,182
+  offset: 0, 0
+  index: -1
+water-22-si-up_09
+  rotate: false
+  xy: 287,189
+  size: 133,184
+  orig: 133,184
+  offset: 0, 0
+  index: -1
+water-22-si-up_10
+  rotate: false
+  xy: 427,182
+  size: 132,182
+  orig: 132,182
+  offset: 0, 0
+  index: -1
+water-22-si-up_11
+  rotate: false
+  xy: 703,2
+  size: 130,147
+  orig: 130,147
+  offset: 0, 0
+  index: -1
+water-22-si-up_12
+  rotate: false
+  xy: 427,368
+  size: 130,142
+  orig: 130,142
+  offset: 0, 0
+  index: -1
+water-22-si-up_13
+  rotate: false
+  xy: 2,377
+  size: 126,122
+  orig: 126,122
+  offset: 0, 0
+  index: -1
+water-22-si-up_14
+  rotate: false
+  xy: 144,372
+  size: 125,121
+  orig: 125,121
+  offset: 0, 0
+  index: -1
+water-22-si-up_15
+  rotate: false
+  xy: 287,377
+  size: 102,82
+  orig: 102,82
+  offset: 0, 0
+  index: -1
+water-22-si-up_16
+  rotate: false
+  xy: 569,174
+  size: 100,81
+  orig: 100,81
+  offset: 0, 0
+  index: -1
+water-22-si-up_17
+  rotate: false
+  xy: 569,259
+  size: 89,79
+  orig: 89,79
+  offset: 0, 0
+  index: -1

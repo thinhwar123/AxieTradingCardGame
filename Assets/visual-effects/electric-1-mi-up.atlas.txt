@@ -1,0 +1,76 @@
+
+electric-1-mi-up.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric_00000
+  rotate: false
+  xy: 165,896
+  size: 82,86
+  orig: 82,86
+  offset: 0, 0
+  index: -1
+electric_00001
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric_00002
+  rotate: false
+  xy: 262,262
+  size: 198,156
+  orig: 198,156
+  offset: 0, 0
+  index: -1
+electric_00003
+  rotate: false
+  xy: 782,2
+  size: 223,186
+  orig: 223,186
+  offset: 0, 0
+  index: -1
+electric_00004
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric_00005
+  rotate: false
+  xy: 2,522
+  size: 255,186
+  orig: 255,186
+  offset: 0, 0
+  index: -1
+electric_00006
+  rotate: false
+  xy: 2,712
+  size: 253,180
+  orig: 253,180
+  offset: 0, 0
+  index: -1
+electric_00007
+  rotate: false
+  xy: 2,896
+  size: 159,104
+  orig: 159,104
+  offset: 0, 0
+  index: -1
+electric_00008
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric_00009
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1

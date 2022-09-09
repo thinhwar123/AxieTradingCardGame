@@ -1,0 +1,46 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-8-de-dash_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-8-de-dash_00": {"x": -73, "y": 8, "width": 76, "height": 36},
+          "water-8-de-dash_01": {"x": -49, "y": 11, "width": 117, "height": 40},
+          "water-8-de-dash_02": {"x": -30, "y": 27, "width": 143, "height": 75},
+          "water-8-de-dash_03": {"x": -21, "y": 38, "width": 148, "height": 94},
+          "water-8-de-dash_04": {"x": -9, "y": 42, "width": 132, "height": 98},
+          "water-8-de-dash_05": {"x": -4, "y": 45, "width": 134, "height": 101},
+          "water-8-de-dash_06": {"x": -2, "y": 46, "width": 134, "height": 101},
+          "water-8-de-dash_07": {"x": 0, "y": 46, "width": 134, "height": 102},
+          "water-8-de-dash_08": {"x": 2, "y": 46, "width": 132, "height": 101},
+          "water-8-de-dash_09": {"x": 10, "y": 45, "width": 119, "height": 98},
+          "water-8-de-dash_10": {"x": 13, "y": 43, "width": 117, "height": 92},
+          "water-8-de-dash_11": {"x": 37, "y": 41, "width": 74, "height": 85},
+          "water-8-de-dash_12": {"x": 40, "y": 36, "width": 69, "height": 74},
+          "water-8-de-dash_13": {"x": 46, "y": 32, "width": 65, "height": 66},
+          "water-8-de-dash_14": {"x": 49, "y": 27, "width": 62, "height": 57},
+          "water-8-de-dash_15": {"x": 50, "y": 23, "width": 62, "height": 44},
+          "water-8-de-dash_16": {"x": 63, "y": 16, "width": 40, "height": 26},
+          "water-8-de-dash_17": {"x": 72, "y": 11, "width": 24, "height": 14}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-8-de-dash_00"}, {"time": 0.1, "name": "water-8-de-dash_01"}, {"time": 0.2, "name": "water-8-de-dash_02"}, {"time": 0.30000000000000004, "name": "water-8-de-dash_03"},
+            {"time": 0.4, "name": "water-8-de-dash_04"}, {"time": 0.5, "name": "water-8-de-dash_05"}, {"time": 0.6000000000000001, "name": "water-8-de-dash_06"}, {"time": 0.7000000000000001, "name": "water-8-de-dash_07"},
+            {"time": 0.8, "name": "water-8-de-dash_08"}, {"time": 0.9, "name": "water-8-de-dash_09"}, {"time": 1.0, "name": "water-8-de-dash_10"}, {"time": 1.1, "name": "water-8-de-dash_11"},
+            {"time": 1.2000000000000002, "name": "water-8-de-dash_12"}, {"time": 1.3, "name": "water-8-de-dash_13"}, {"time": 1.4000000000000001, "name": "water-8-de-dash_14"}, {"time": 1.5, "name": "water-8-de-dash_15"},
+            {"time": 1.6, "name": "water-8-de-dash_16"}, {"time": 1.7000000000000002, "name": "water-8-de-dash_17"}
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+
+reptile-back-04-spike-throw.png
+size: 160,102
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spike-throw
+  rotate: false
+  xy: 2, 2
+  size: 156, 98
+  orig: 156, 98
+  offset: 0, 0
+  index: -1

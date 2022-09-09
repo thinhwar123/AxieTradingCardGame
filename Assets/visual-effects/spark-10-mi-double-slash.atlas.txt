@@ -1,0 +1,48 @@
+
+spark-10-mi-double-slash.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Sparks_21_00000
+  rotate: false
+  xy: 722,2
+  size: 282,134
+  orig: 282,134
+  offset: 0, 0
+  index: -1
+Sparks_21_00001
+  rotate: false
+  xy: 2,369
+  size: 305,166
+  orig: 305,166
+  offset: 0, 0
+  index: -1
+Sparks_21_00002
+  rotate: false
+  xy: 2,2
+  size: 349,188
+  orig: 349,188
+  offset: 0, 0
+  index: -1
+Sparks_21_00003
+  rotate: false
+  xy: 2,194
+  size: 354,171
+  orig: 354,171
+  offset: 0, 0
+  index: -1
+Sparks_21_00004
+  rotate: false
+  xy: 355,2
+  size: 363,171
+  orig: 363,171
+  offset: 0, 0
+  index: -1
+Sparks_21_00005
+  rotate: false
+  xy: 360,194
+  size: 363,114
+  orig: 363,114
+  offset: 0, 0
+  index: -1

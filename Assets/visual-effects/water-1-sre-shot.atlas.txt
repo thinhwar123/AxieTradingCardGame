@@ -1,0 +1,153 @@
+
+water-1-sre-shot.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-1-sre-shot_00
+  rotate: false
+  xy: 2,431
+  size: 83,25
+  orig: 83,25
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_01
+  rotate: false
+  xy: 2,246
+  size: 138,38
+  orig: 138,38
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_02
+  rotate: false
+  xy: 296,244
+  size: 148,45
+  orig: 148,45
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_03
+  rotate: false
+  xy: 309,189
+  size: 158,46
+  orig: 158,46
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_04
+  rotate: false
+  xy: 147,189
+  size: 158,51
+  orig: 158,51
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_05
+  rotate: false
+  xy: 297,129
+  size: 162,50
+  orig: 162,50
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_06
+  rotate: false
+  xy: 174,2
+  size: 163,56
+  orig: 163,56
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_07
+  rotate: false
+  xy: 2,2
+  size: 168,59
+  orig: 168,59
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_08
+  rotate: false
+  xy: 2,65
+  size: 146,60
+  orig: 146,60
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_09
+  rotate: false
+  xy: 2,129
+  size: 141,58
+  orig: 141,58
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_10
+  rotate: false
+  xy: 152,65
+  size: 143,59
+  orig: 143,59
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_11
+  rotate: false
+  xy: 299,65
+  size: 144,58
+  orig: 144,58
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_12
+  rotate: false
+  xy: 341,2
+  size: 146,58
+  orig: 146,58
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_13
+  rotate: false
+  xy: 147,129
+  size: 146,56
+  orig: 146,56
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_14
+  rotate: false
+  xy: 147,244
+  size: 145,54
+  orig: 145,54
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_15
+  rotate: false
+  xy: 2,191
+  size: 104,51
+  orig: 104,51
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_16
+  rotate: false
+  xy: 2,288
+  size: 101,48
+  orig: 101,48
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_17
+  rotate: false
+  xy: 2,340
+  size: 86,42
+  orig: 86,42
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_18
+  rotate: false
+  xy: 2,386
+  size: 84,41
+  orig: 84,41
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_19
+  rotate: false
+  xy: 447,65
+  size: 51,22
+  orig: 51,22
+  offset: 0, 0
+  index: -1
+water-1-sre-shot_20
+  rotate: false
+  xy: 491,2
+  size: 11,10
+  orig: 11,10
+  offset: 0, 0
+  index: -1

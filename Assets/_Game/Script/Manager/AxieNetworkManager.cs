@@ -5,13 +5,23 @@ using Mirror;
 
 public class AxieNetworkManager : NetworkManager
 {
-    private static AxieNetworkManager instance;
+    private static AxieNetworkManager m_Instance;
     public static AxieNetworkManager Instance{
         get {
-            if (instance == null){
-                instance = FindObjectOfType<AxieNetworkManager>();
+            m_Instance = FindObjectOfType<AxieNetworkManager>();
+
+            // Create new instance if one doesn't already exist.
+            if (m_Instance == null)
+            {
+                // Need to create a new GameObject to attach the singleton to.
+                var singletonObject = new GameObject();
+                m_Instance = singletonObject.AddComponent<AxieNetworkManager>();
+                singletonObject.name = typeof(AxieNetworkManager).ToString() + " (Singleton)";
+
+                // Make instance persistent.
+                //DontDestroyOnLoad(singletonObject);
             }
-            return instance;
+            return m_Instance;
         }
     }
     private List<GameObject> playerSpawned;
@@ -47,9 +57,10 @@ public class AxieNetworkManager : NetworkManager
             // call base functionality (actually destroys the player)
             base.OnServerDisconnect(conn);
         }
-    public override void OnClientDisconnect(NetworkConnection conn)
+
+    public override void OnClientDisconnect()
     {
-        base.OnClientDisconnect(conn);
+        base.OnClientDisconnect();
         UI_Game.Instance.CloseUI(UIID.UICIngame);
     }
 }

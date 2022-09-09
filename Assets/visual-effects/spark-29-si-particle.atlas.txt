@@ -1,0 +1,41 @@
+
+spark-29-si-particle.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-29-si-particle_00
+  rotate: false
+  xy: 343,100
+  size: 93,94
+  orig: 93,94
+  offset: 0, 0
+  index: -1
+spark-29-si-particle_01
+  rotate: false
+  xy: 182,2
+  size: 157,156
+  orig: 157,156
+  offset: 0, 0
+  index: -1
+spark-29-si-particle_02
+  rotate: false
+  xy: 2,2
+  size: 176,186
+  orig: 176,186
+  offset: 0, 0
+  index: -1
+spark-29-si-particle_03
+  rotate: false
+  xy: 343,2
+  size: 107,94
+  orig: 107,94
+  offset: 0, 0
+  index: -1
+spark-29-si-particle_04
+  rotate: false
+  xy: 182,162
+  size: 66,65
+  orig: 66,65
+  offset: 0, 0
+  index: -1

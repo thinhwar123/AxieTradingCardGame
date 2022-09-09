@@ -1,0 +1,31 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "sparks_13_v02_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "sparks_13_v02_00000": {"x": -11, "y": -3, "width": 25, "height": 26},
+          "sparks_13_v02_00001": {"x": -5, "y": 3, "width": 72, "height": 84},
+          "sparks_13_v02_00002": {"x": 4, "y": 10, "width": 137, "height": 105},
+          "sparks_13_v02_00003": {"x": 6, "y": -5, "width": 160, "height": 155},
+          "sparks_13_v02_00004": {"x": 5, "y": -8, "width": 166, "height": 166},
+          "sparks_13_v02_00005": {"x": 5, "y": -8, "width": 170, "height": 169}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "sparks_13_v02_00000"}, {"time": 0.1, "name": "sparks_13_v02_00001"}, {"time": 0.2, "name": "sparks_13_v02_00002"}, {"time": 0.30000000000000004, "name": "sparks_13_v02_00003"},
+            {"time": 0.4, "name": "sparks_13_v02_00004"}, {"time": 0.5, "name": "sparks_13_v02_00005"}
+          ]
+        }
+      }
+    }
+  }
+}

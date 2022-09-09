@@ -1,0 +1,118 @@
+
+smoke-1-si-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke-1-round_00000
+  rotate: false
+  xy: 184,890
+  size: 67,85
+  orig: 67,85
+  offset: 0, 0
+  index: -1
+smoke-1-round_00001
+  rotate: false
+  xy: 343,194
+  size: 121,138
+  orig: 121,138
+  offset: 0, 0
+  index: -1
+smoke-1-round_00002
+  rotate: false
+  xy: 184,731
+  size: 133,155
+  orig: 133,155
+  offset: 0, 0
+  index: -1
+smoke-1-round_00003
+  rotate: false
+  xy: 184,556
+  size: 145,171
+  orig: 145,171
+  offset: 0, 0
+  index: -1
+smoke-1-round_00004
+  rotate: false
+  xy: 184,378
+  size: 150,174
+  orig: 150,174
+  offset: 0, 0
+  index: -1
+smoke-1-round_00005
+  rotate: false
+  xy: 184,194
+  size: 155,180
+  orig: 155,180
+  offset: 0, 0
+  index: -1
+smoke-1-round_00006
+  rotate: false
+  xy: 859,2
+  size: 160,182
+  orig: 160,182
+  offset: 0, 0
+  index: -1
+smoke-1-round_00007
+  rotate: false
+  xy: 530,2
+  size: 163,184
+  orig: 163,184
+  offset: 0, 0
+  index: -1
+smoke-1-round_00008
+  rotate: false
+  xy: 360,2
+  size: 166,186
+  orig: 166,186
+  offset: 0, 0
+  index: -1
+smoke-1-round_00009
+  rotate: false
+  xy: 184,2
+  size: 172,188
+  orig: 172,188
+  offset: 0, 0
+  index: -1
+smoke-1-round_00010
+  rotate: false
+  xy: 2,789
+  size: 173,189
+  orig: 173,189
+  offset: 0, 0
+  index: -1
+smoke-1-round_00011
+  rotate: false
+  xy: 2,397
+  size: 176,193
+  orig: 176,193
+  offset: 0, 0
+  index: -1
+smoke-1-round_00012
+  rotate: false
+  xy: 2,2
+  size: 178,194
+  orig: 178,194
+  offset: 0, 0
+  index: -1
+smoke-1-round_00013
+  rotate: false
+  xy: 2,200
+  size: 178,193
+  orig: 178,193
+  offset: 0, 0
+  index: -1
+smoke-1-round_00014
+  rotate: false
+  xy: 2,594
+  size: 175,191
+  orig: 175,191
+  offset: 0, 0
+  index: -1
+smoke-1-round_00015
+  rotate: false
+  xy: 697,2
+  size: 158,188
+  orig: 158,188
+  offset: 0, 0
+  index: -1

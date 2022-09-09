@@ -8,30 +8,34 @@ using DG.Tweening;
 using Thinh;
 using System.Linq;
 using Mirror;
+using Mirror.Discovery;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Start is called before the first frame update    
+    public Canvas mainCanvas;
     public Slider loadingBar;
+    public Image loadingFill;
     public float speedLoad;
-    public float fill;
+    public float speedLoadBack;
+    public float fill;    
     public bool isLoading;    
-    public TextMeshProUGUI loadingText;
+    public TextMeshProUGUI loadingText;    
     public TextMeshProUGUI loadingMatchText;
-    public GameObject loadingPanel;
+    public GameObject loadingPanel;    
     public GameObject mainMenuPanel;
     public GameObject WaitJoin;
     //public Button soundSetting;
     public Button soundOnOff;
     public Sprite soundOn;
     public Sprite soundOff;
-    public List<Sprite> listAvatars = new List<Sprite>();
-    public int indexAvatar = 0;
+    //public List<Sprite> listAvatars = new List<Sprite>();    
     public Image avatarMain;
     public Image avatarEnemy;
     public Image avatar;
     public bool isSoundOn;
     public GameObject buildScreen;
+    public GameObject joinScreen;
     public GameObject matchPanel;
     public BasicCard card;
     public RectTransform allCards;
@@ -40,12 +44,23 @@ public class UIManager : MonoBehaviour
     public List<BasicCard> listCopyCards = new List<BasicCard>();
     public List<BasicCard> listDeckCards = new List<BasicCard>();
     public List<CardData> listCardDatas = new List<CardData>();
+    public List<ButtonJoin> listRooms = new List<ButtonJoin>();
+    public List<Sprite> bg;
+    public ButtonJoin roomPrefab;
+    public Image bgBack;
+    public Sprite mainBG;
+    public Sprite mainFill;
+    public Sprite backFill;
+    public GameObject banner;
+
     public static bool mainMenu = true;
 
     [SerializeField] private BasicCard m_BasicCard;
     [SerializeField] private Transform m_StartSpawnPosition;
     [SerializeField] private DropZone m_AllCard;
     [SerializeField] private DropZone m_AllCopyCard;
+    [SerializeField] private Transform m_StartSpawnButton;
+    [SerializeField] private Transform boxRoom;
     public DropZone buildSpace;
     public DropZone deckSpace;
 
@@ -54,13 +69,14 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI numberOfCards;
     public TextMeshProUGUI timeWait;
 
-    [Scene]
-    public string onlineScene;
+    //[Scene]
+    //public string onlineScene;
 
     //public bool goGame = false;
     public bool isFirstTime = true;
     public bool isCanStart = true;
     public bool isWaiting = false;
+    //public int isLoadingYet = 0;
     private int second;
     private int minute;
     private float countTime = 0f;
@@ -71,16 +87,36 @@ public class UIManager : MonoBehaviour
 
     public ServerClient serverClient;
 
+    readonly Dictionary<long, ServerResponse> discoveredServers = new Dictionary<long, ServerResponse>();
+
     //network
-    public AxieNetworkManager networkManager;
+    //public AxieNetworkManager networkManager;
+
     void Start()
     {
+        AxieNetworkDiscovery.Instance.NetworkDiscovery.OnServerFound.RemoveAllListeners();
+        AxieNetworkDiscovery.Instance.NetworkDiscovery.OnServerFound.AddListener(OnDiscoveredServer);
+        mainCanvas.worldCamera = Camera.main;
         isLoading = true;
         InitAllCard();
         InitAllCopyCard();
         //goGame = false;
         isCanStart = true;
         isWaiting = false;
+        //PlayerPrefs.SetInt("IsLoadingYet", 0);
+        //isLoadingYet = PlayerPrefs.GetInt("IsLoadingYet");
+        if (!PlayerData.Instance.isLoad)
+        {
+            bgBack.sprite = mainBG;
+            banner.SetActive(true);
+            loadingFill.sprite = mainFill;
+        }
+        else
+        {
+            SetBackGroundBack();
+            banner.SetActive(false);
+            loadingFill.sprite = backFill;
+        }
         second = 0;
         minute = 0;
         countTime = 0f;
@@ -201,7 +237,7 @@ public class UIManager : MonoBehaviour
     {
         //isLoading = false;
 
-        fill += speedLoad;        
+        fill += speedLoad * Time.deltaTime;        
 
         if(fill < 1f)
         {
@@ -211,6 +247,8 @@ public class UIManager : MonoBehaviour
         else
         {
             isLoading = false;
+            PlayerData.Instance.isLoad = true;            
+            //PlayerPrefs.SetInt("IsLoadingYet", 1);
             Invoke("EndLoading", 1);
             SwitchToBuildSpace();
             LoadDeck();
@@ -224,6 +262,33 @@ public class UIManager : MonoBehaviour
         mainMenuPanel.SetActive(true);
         //SwitchToBuildSpace();
     }
+
+    //public void LoadingBack()
+    //{
+    //    fillBack += speedLoadBack * Time.deltaTime;
+
+    //    if (fillBack < 1f)
+    //    {
+    //        loadingBackBar.value = fillBack;
+    //        loadingBackText.text = ((int)(100 * fillBack)).ToString() + "%";
+    //    }
+    //    else
+    //    {
+    //        isLoading = false;            
+    //        //PlayerPrefs.SetInt("IsLoadingYet", 1);
+    //        Invoke("EndLoadingBack", 1);
+    //        //SwitchToBuildSpace();
+    //        //LoadDeck();
+    //    }
+    //}
+
+    //public void EndLoadingBack()
+    //{
+    //    //yield return new WaitForSeconds(1f);
+    //    loadingBackPanel.SetActive(false);
+    //    mainMenuPanel.SetActive(true);
+    //    //SwitchToBuildSpace();
+    //}
 
     public void SoundSetting()
     {
@@ -323,7 +388,12 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             mainMenu = false;
-            networkManager.StartClient();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.StartDiscovery();
+            //PlayerPrefs.SetInt("player", indexAvatar);
+            //serverClient.AvatarEnemyServer(indexAvatar);
+            //AxieNetworkManager.Instance.StartClient();
+            OpenJoinScreen();
+            //InitRoom(16);
             //serverClient.AvatarEnemyServer(indexAvatar);
         }
         else
@@ -354,13 +424,19 @@ public class UIManager : MonoBehaviour
         if (IsDeckBuilded())
         {
             isServer = true;
-            networkManager.StartHost();
-            isWaiting = true;
-            minute = 0;
-            second = 0;
-            countTime = 0f;
-            //serverClient.goGame = true;
-            WaitJoin.SetActive(true);
+            //PlayerPrefs.SetInt("player", indexAvatar);
+            //serverClient.AvatarEnemyClient(indexAvatar);
+            UI_Game.Instance.OpenUI(UIID.UICTimeCount);
+            discoveredServers.Clear();
+            AxieNetworkManager.singleton.StartHost();
+            AxieNetworkDiscovery.Instance.NetworkDiscovery.AdvertiseServer();
+
+            //isWaiting = true;
+            //minute = 0;
+            //second = 0;
+            //countTime = 0f;
+            ////serverClient.goGame = true;
+            //WaitJoin.SetActive(true);
         }
         else
         {
@@ -543,8 +619,54 @@ public class UIManager : MonoBehaviour
             }
             //listCardSlots.Add(card.m_CardController.GetCardSlot());
         }
+    }    
+    public void InitRoom()
+    {
+        var empty = listRooms.Count() - discoveredServers.Count;
+        if (empty < 0)
+        {
+            for (int i = 0; i < -empty; i++)
+            {
+                //ButtonJoin newButton = SimplePool.Spawn<ButtonJoin>(roomPrefab);
+                ButtonJoin newButton = Instantiate<ButtonJoin>(roomPrefab);
+                newButton.gameObject.SetActive(false);
+                newButton.transform.SetParent(m_StartSpawnButton.transform, false);
+                listRooms.Add(newButton);
+            }
+        }
+        List<long> list_key = discoveredServers.Keys.ToList();
+        for (int j = 0; j < listRooms.Count(); j++)
+        {
+            if (j < discoveredServers.Count)
+            {
+                //if (!listRooms[j].gameObject.activeInHierarchy)
+                {
+                    listRooms[j].transform.SetParent(boxRoom, false);
+                    listRooms[j].gameObject.SetActive(true);
+                    //SimplePool.Spawn<ButtonJoin>(listRooms[j]);
+                    listRooms[j].info = discoveredServers[list_key[j]];
+                    listRooms[j].textPlayer.SetText(listRooms[j].info.EndPoint.ToString());
+                }
+            }
+            else
+            {
+                listRooms[j].gameObject.SetActive(false);
+                //SimplePool.Despawn(listRooms[j].gameObject);
+            }
+        }
+
     }
 
+    public void OpenJoinScreen()
+    {
+        discoveredServers.Clear();
+        joinScreen.SetActive(true);
+    }
+
+    public void CloseJoinScreen()
+    {
+        joinScreen.SetActive(false);
+    }
     //public void GenAllCard()
     //{
     //    for(int i = 0; i < 10; i++)
@@ -626,6 +748,13 @@ public class UIManager : MonoBehaviour
         //    Debug.Log("number " + i.ToString() + ":" + listCardDatas[i].m_ID);
         //}
     }
+    public void SaveListCardData()
+    {
+        for (int i = 0; i < listCardDatas.Count; i++)
+        {
+            PlayerPrefs.SetString(i.ToString(), listCardDatas[i].m_ID);
+        }
+    }
 
     public void ResetDeck()
     {
@@ -641,7 +770,7 @@ public class UIManager : MonoBehaviour
         listCardDatas.Clear();
         for(int i = 0; i < 24; i++)
         {
-            string id = PlayerPrefs.GetString(i.ToString());
+            string id = PlayerPrefs.GetString(i.ToString(), CardDataManager.Instance.m_CardDatas[i].m_ID);
             //Debug.Log(id);
             //CardData crData;
             //if (id == "") continue;
@@ -649,14 +778,15 @@ public class UIManager : MonoBehaviour
             {
                 if(CardDataManager.Instance.m_CardDatas[j].m_ID == id)
                 {
-                    CardData crData = new CardData(CardDataManager.Instance.m_CardDatas[j].m_ID,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_Name,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_Archetype,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_Symbol,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_AbilityType,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_EffectDescription,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_WinAnimation,
-                                                   CardDataManager.Instance.m_CardDatas[j].m_LoseAnimation);
+                    //CardData crData = new CardData(CardDataManager.Instance.m_CardDatas[j].m_ID,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_Name,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_Archetype,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_Symbol,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_AbilityType,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_EffectDescription,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_WinAnimation,
+                    //                               CardDataManager.Instance.m_CardDatas[j].m_LoseAnimation);
+                    CardData crData = CardDataManager.Instance.m_CardDatas[j];
                     //crData.m_ID = CardDataManager.Instance.m_CardDatas[i].m_ID;
                     //crData.m_Archetype = CardDataManager.Instance.m_CardDatas[i].m_Archetype;
                     //crData.m_Symbol = CardDataManager.Instance.m_CardDatas[i].m_Symbol;
@@ -664,11 +794,14 @@ public class UIManager : MonoBehaviour
                     //crData.m_EffectDescription = CardDataManager.Instance.m_CardDatas[i].m_EffectDescription;
                     //crData.m_Name = CardDataManager.Instance.m_CardDatas[i].m_Name;
                     //crData.m_WinAnimation = CardDataManager.Instance.m_CardDatas[i].m_WinAnimation;
-                    //crData.m_LoseAnimation = CardDataManager.Instance.m_CardDatas[i].m_LoseAnimation;                    
-                    listCardDatas.Add(crData);                    
+                    //crData.m_LoseAnimation = CardDataManager.Instance.m_CardDatas[i].m_LoseAnimation;
+                    
+                    listCardDatas.Add(crData);
+                    break;
                 }
             }
         }
+        SaveListCardData();
     }
 
     public void LoadDeck()
@@ -742,37 +875,46 @@ public class UIManager : MonoBehaviour
         bsCard.m_CardController.GetCardSlot().transform.SetParent(m_AllCopyCard.transform, false);
     }
 
-    public void ButtonLeft()
-    {
-        if(indexAvatar == 0)
-        {
-            indexAvatar = listAvatars.Count - 1;
-            avatar.sprite = listAvatars[indexAvatar];
-        }
-        else
-        {
-            indexAvatar--;
-            avatar.sprite = listAvatars[indexAvatar];
-        }
-    }
-
-    public void ButtonRight()
-    {
-        if (indexAvatar == listAvatars.Count-1)
-        {
-            indexAvatar = 0;
-            avatar.sprite = listAvatars[indexAvatar];
-        }
-        else
-        {
-            indexAvatar++;
-            avatar.sprite = listAvatars[indexAvatar];
-        }
-    }
-    //public IEnumerator FullCard()
+    //public void ButtonLeft()
     //{
-
+    //    if(indexAvatar == 0)
+    //    {
+    //        indexAvatar = listAvatars.listAvatar.Count - 1;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
+    //    else
+    //    {
+    //        indexAvatar--;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
     //}
+
+    //public void ButtonRight()
+    //{
+    //    if (indexAvatar == listAvatars.listAvatar.Count-1)
+    //    {
+    //        indexAvatar = 0;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
+    //    else
+    //    {
+    //        indexAvatar++;
+    //        avatar.sprite = listAvatars.listAvatar[indexAvatar].avatar;
+    //    }
+    //}
+    
+    public void SetBackGroundBack()
+    {
+        System.Random rd = new System.Random();
+        var index = rd.Next(0, bg.Count());
+        bgBack.sprite = bg[index];
+    }
+    public void OnDiscoveredServer(ServerResponse info)
+    {
+        // Note that you can check the versioning to decide if you can connect to the server or not using this method
+        discoveredServers[info.serverId] = info;
+        InitRoom();
+    }
 }
 
 

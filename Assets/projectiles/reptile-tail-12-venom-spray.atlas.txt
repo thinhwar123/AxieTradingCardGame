@@ -1,0 +1,34 @@
+
+reptile-tail-12-venom-spray.png
+size: 208,103
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+venom-spray-1
+  rotate: true
+  xy: 2, 2
+  size: 99, 52
+  orig: 99, 52
+  offset: 0, 0
+  index: -1
+venom-spray-2
+  rotate: true
+  xy: 56, 2
+  size: 99, 50
+  orig: 99, 50
+  offset: 0, 0
+  index: -1
+venom-spray-3
+  rotate: true
+  xy: 159, 2
+  size: 99, 47
+  orig: 99, 47
+  offset: 0, 0
+  index: -1
+venom-spray-4
+  rotate: true
+  xy: 108, 2
+  size: 99, 49
+  orig: 99, 49
+  offset: 0, 0
+  index: -1

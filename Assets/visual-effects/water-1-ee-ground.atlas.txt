@@ -1,0 +1,69 @@
+
+water-1-ee-ground.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_05_00000
+  rotate: false
+  xy: 2,391
+  size: 129,82
+  orig: 129,82
+  offset: 0, 0
+  index: -1
+water_05_00001
+  rotate: false
+  xy: 263,348
+  size: 175,144
+  orig: 175,144
+  offset: 0, 0
+  index: -1
+water_05_00002
+  rotate: false
+  xy: 263,167
+  size: 223,177
+  orig: 223,177
+  offset: 0, 0
+  index: -1
+water_05_00003
+  rotate: false
+  xy: 2,195
+  size: 242,192
+  orig: 242,192
+  offset: 0, 0
+  index: -1
+water_05_00004
+  rotate: false
+  xy: 2,2
+  size: 257,189
+  orig: 257,189
+  offset: 0, 0
+  index: -1
+water_05_00005
+  rotate: false
+  xy: 263,2
+  size: 291,161
+  orig: 291,161
+  offset: 0, 0
+  index: -1
+water_05_00006
+  rotate: false
+  xy: 558,2
+  size: 338,128
+  orig: 338,128
+  offset: 0, 0
+  index: -1
+water_05_00007
+  rotate: false
+  xy: 558,134
+  size: 352,113
+  orig: 352,113
+  offset: 0, 0
+  index: -1
+water_05_00008
+  rotate: false
+  xy: 558,251
+  size: 364,91
+  orig: 364,91
+  offset: 0, 0
+  index: -1

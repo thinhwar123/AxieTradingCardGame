@@ -1,0 +1,31 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "Sparks_21_00000"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "Sparks_21_00000": {"x": 17, "y": -61, "width": 282, "height": 134},
+          "Sparks_21_00001": {"x": 0, "y": -6, "width": 305, "height": 166},
+          "Sparks_21_00002": {"x": -2, "y": 9, "width": 349, "height": 188},
+          "Sparks_21_00003": {"x": -3, "y": 21, "width": 354, "height": 171},
+          "Sparks_21_00004": {"x": -3, "y": 26, "width": 363, "height": 171},
+          "Sparks_21_00005": {"x": -3, "y": 55, "width": 363, "height": 114}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "Sparks_21_00000"}, {"time": 0.1, "name": "Sparks_21_00001"}, {"time": 0.2, "name": "Sparks_21_00002"}, {"time": 0.30000000000000004, "name": "Sparks_21_00003"}, {"time": 0.4, "name": "Sparks_21_00004"},
+            {"time": 0.5, "name": "Sparks_21_00005"}
+          ]
+        }
+      }
+    }
+  }
+}

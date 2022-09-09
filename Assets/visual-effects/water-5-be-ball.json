@@ -1,0 +1,70 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "water-17-be-ball_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "water-17-be-ball_00": {"x": -6, "y": 68, "width": 21, "height": 10},
+          "water-17-be-ball_01": {"x": -5, "y": 69, "width": 32, "height": 14},
+          "water-17-be-ball_02": {"x": -5, "y": 69, "width": 44, "height": 20},
+          "water-17-be-ball_03": {"x": -5, "y": 68, "width": 59, "height": 20},
+          "water-17-be-ball_04": {"x": -4, "y": 66, "width": 74, "height": 23},
+          "water-17-be-ball_05": {"x": -1, "y": 63, "width": 90, "height": 29},
+          "water-17-be-ball_06": {"x": 0, "y": 57, "width": 105, "height": 40},
+          "water-17-be-ball_07": {"x": -2, "y": 53, "width": 121, "height": 46},
+          "water-17-be-ball_08": {"x": -3, "y": 48, "width": 135, "height": 56},
+          "water-17-be-ball_09": {"x": -1, "y": 42, "width": 140, "height": 67},
+          "water-17-be-ball_10": {"x": 1, "y": 31, "width": 145, "height": 86},
+          "water-17-be-ball_11": {"x": -2, "y": 24, "width": 157, "height": 98},
+          "water-17-be-ball_12": {"x": -4, "y": 16, "width": 163, "height": 112},
+          "water-17-be-ball_13": {"x": -4, "y": 13, "width": 165, "height": 118},
+          "water-17-be-ball_14": {"x": -3, "y": 10, "width": 165, "height": 122},
+          "water-17-be-ball_15": {"x": -3, "y": 8, "width": 169, "height": 127},
+          "water-17-be-ball_16": {"x": -2, "y": 5, "width": 167, "height": 131},
+          "water-17-be-ball_17": {"x": 0, "y": 2, "width": 162, "height": 136},
+          "water-17-be-ball_18": {"x": 0, "y": 0, "width": 157, "height": 143},
+          "water-17-be-ball_19": {"x": -1, "y": -3, "width": 154, "height": 147},
+          "water-17-be-ball_20": {"x": -3, "y": -4, "width": 151, "height": 150},
+          "water-17-be-ball_21": {"x": -3, "y": -4, "width": 150, "height": 149},
+          "water-17-be-ball_22": {"x": -3, "y": -4, "width": 150, "height": 149},
+          "water-17-be-ball_23": {"x": -3, "y": -5, "width": 149, "height": 148},
+          "water-17-be-ball_24": {"x": -3, "y": -4, "width": 149, "height": 146},
+          "water-17-be-ball_25": {"x": -3, "y": -4, "width": 149, "height": 143},
+          "water-17-be-ball_26": {"x": -3, "y": -3, "width": 147, "height": 138},
+          "water-17-be-ball_27": {"x": -2, "y": -4, "width": 148, "height": 137},
+          "water-17-be-ball_28": {"x": -2, "y": -3, "width": 148, "height": 128},
+          "water-17-be-ball_29": {"x": -2, "y": -4, "width": 147, "height": 125},
+          "water-17-be-ball_30": {"x": -1, "y": -6, "width": 146, "height": 122},
+          "water-17-be-ball_31": {"x": -1, "y": -7, "width": 146, "height": 122},
+          "water-17-be-ball_32": {"x": -1, "y": -7, "width": 144, "height": 121},
+          "water-17-be-ball_33": {"x": 1, "y": -3, "width": 140, "height": 108},
+          "water-17-be-ball_34": {"x": 9, "y": -26, "width": 13, "height": 50},
+          "water-17-be-ball_35": {"x": 10, "y": -26, "width": 11, "height": 49},
+          "water-17-be-ball_36": {"x": 8, "y": -48, "width": 7, "height": 6}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "water-17-be-ball_00"}, {"time": 0.1, "name": "water-17-be-ball_01"}, {"time": 0.2, "name": "water-17-be-ball_02"}, {"time": 0.30000000000000004, "name": "water-17-be-ball_03"},
+            {"time": 0.4, "name": "water-17-be-ball_04"}, {"time": 0.5, "name": "water-17-be-ball_05"}, {"time": 0.6000000000000001, "name": "water-17-be-ball_06"}, {"time": 0.7000000000000001, "name": "water-17-be-ball_07"},
+            {"time": 0.8, "name": "water-17-be-ball_08"}, {"time": 0.9, "name": "water-17-be-ball_09"}, {"time": 1.0, "name": "water-17-be-ball_10"}, {"time": 1.1, "name": "water-17-be-ball_11"},
+            {"time": 1.2000000000000002, "name": "water-17-be-ball_12"}, {"time": 1.3, "name": "water-17-be-ball_13"}, {"time": 1.4000000000000001, "name": "water-17-be-ball_14"}, {"time": 1.5, "name": "water-17-be-ball_15"},
+            {"time": 1.6, "name": "water-17-be-ball_16"}, {"time": 1.7000000000000002, "name": "water-17-be-ball_17"}, {"time": 1.8, "name": "water-17-be-ball_18"}, {"time": 1.9000000000000001, "name": "water-17-be-ball_19"},
+            {"time": 2.0, "name": "water-17-be-ball_20"}, {"time": 2.1, "name": "water-17-be-ball_21"}, {"time": 2.2, "name": "water-17-be-ball_22"}, {"time": 2.3000000000000003, "name": "water-17-be-ball_23"},
+            {"time": 2.4000000000000004, "name": "water-17-be-ball_24"}, {"time": 2.5, "name": "water-17-be-ball_25"}, {"time": 2.6, "name": "water-17-be-ball_26"}, {"time": 2.7, "name": "water-17-be-ball_27"},
+            {"time": 2.8000000000000003, "name": "water-17-be-ball_28"}, {"time": 2.9000000000000004, "name": "water-17-be-ball_29"}, {"time": 3.0, "name": "water-17-be-ball_30"}, {"time": 3.1, "name": "water-17-be-ball_31"},
+            {"time": 3.2, "name": "water-17-be-ball_32"}, {"time": 3.3000000000000003, "name": "water-17-be-ball_33"}, {"time": 3.4000000000000004, "name": "water-17-be-ball_34"}, {"time": 3.5, "name": "water-17-be-ball_35"},
+            {"time": 3.6, "name": "water-17-be-ball_36"}
+          ]
+        }
+      }
+    }
+  }
+}

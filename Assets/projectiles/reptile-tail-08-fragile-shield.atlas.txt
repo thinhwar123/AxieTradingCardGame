@@ -1,0 +1,13 @@
+
+reptile-tail-08-fragile-shield.png
+size: 192,172
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jar-barrage-1
+  rotate: false
+  xy: 2, 2
+  size: 188, 168
+  orig: 189, 170
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,76 @@
+
+spark-4-mi-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-18-mi-round_00
+  rotate: false
+  xy: 143,771
+  size: 44,45
+  orig: 44,45
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_01
+  rotate: false
+  xy: 259,427
+  size: 129,116
+  orig: 129,116
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_02
+  rotate: false
+  xy: 259,262
+  size: 163,161
+  orig: 163,161
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_03
+  rotate: false
+  xy: 782,2
+  size: 237,242
+  orig: 237,242
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_04
+  rotate: false
+  xy: 2,518
+  size: 247,249
+  orig: 247,249
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_05
+  rotate: false
+  xy: 2,262
+  size: 253,252
+  orig: 253,252
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_06
+  rotate: false
+  xy: 262,2
+  size: 256,254
+  orig: 256,254
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_07
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_08
+  rotate: false
+  xy: 522,2
+  size: 256,253
+  orig: 256,253
+  offset: 0, 0
+  index: -1
+spark-18-mi-round_09
+  rotate: false
+  xy: 2,771
+  size: 137,250
+  orig: 137,250
+  offset: 0, 0
+  index: -1

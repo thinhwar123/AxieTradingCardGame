@@ -1,0 +1,41 @@
+
+sparks_05-ricochet.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sparks_05_00000
+  rotate: false
+  xy: 353,2
+  size: 51,56
+  orig: 51,56
+  offset: 0, 0
+  index: -1
+sparks_05_00001
+  rotate: false
+  xy: 2,140
+  size: 172,138
+  orig: 172,138
+  offset: 0, 0
+  index: -1
+sparks_05_00002
+  rotate: false
+  xy: 203,2
+  size: 146,96
+  orig: 146,96
+  offset: 0, 0
+  index: -1
+sparks_05_00003
+  rotate: false
+  xy: 2,2
+  size: 197,134
+  orig: 197,134
+  offset: 0, 0
+  index: -1
+sparks_05_00004
+  rotate: false
+  xy: 2,282
+  size: 153,142
+  orig: 153,142
+  offset: 0, 0
+  index: -1

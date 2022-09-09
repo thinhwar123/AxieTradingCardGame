@@ -1,538 +1,379 @@
 {
   "0": {
     "id": "11410944",
-    "name": "The Swap 1",
+    "name": "Swatoo",
     "archetype": "Swap Back",
     "symbol": "rock",
     "active": true,
     "effect_description": "Swap this card with your previous card",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/mouth-bite",
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/melee/shrimp"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/horn-gore",
+    "ranged_animation": "attack/ranged/cast-high",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "1": {
     "id": "11411421",
-    "name": "The Swap 2",
+    "name": "Swotooo",
     "archetype": "Swap Back",
     "symbol": "paper",
     "active": true,
     "effect_description": "Swap this card with your previous card",
-    "win_animation": [
-      "attack/melee/mouth-bite",
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/melee/shrimp",
-      "attack/melee/tail-multi-slap"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
   },
   "2": {
     "id": "4457662",
-    "name": "The Swap 3",
+    "name": "Swipodo",
     "archetype": "Swap Back",
     "symbol": "sciccors",
     "active": true,
     "effect_description": "Swap this card with your previous card",
-    "win_animation": [
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/melee/shrimp",
-      "attack/melee/tail-multi-slap",
-      "attack/melee/tail-roll"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/multi-attack",
+    "ranged_animation": "attack/ranged/cast-fly",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "3": {
     "id": "11411237",
-    "name": "The Twin 1",
+    "name": "Tjinki-ki",
     "archetype": "Twin Power",
     "symbol": "rock",
     "active": true,
     "effect_description": "When there are exactly two same Axie on the field, you can change the Symbols of these Axie to another Symbols",
-    "win_animation": [
-      "attack/melee/normal-attack",
-      "attack/melee/shrimp",
-      "attack/melee/tail-multi-slap",
-      "attack/melee/tail-roll",
-      "attack/melee/tail-smash"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/multi-attack",
+    "ranged_animation": "attack/ranged/cast-tail",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "4": {
     "id": "11411350",
-    "name": "The Twin 2",
+    "name": "Tkino-no",
     "archetype": "Twin Power",
     "symbol": "paper",
     "active": true,
     "effect_description": "When there are exactly two same Axie on the field, you can change the Symbols of these Axie to another Symbols",
-    "win_animation": [
-      "attack/melee/shrimp",
-      "attack/melee/tail-multi-slap",
-      "attack/melee/tail-roll",
-      "attack/melee/tail-smash",
-      "attack/melee/tail-thrash"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/normal-attack",
+    "ranged_animation": "attack/ranged/cast-multi",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "5": {
     "id": "11411195",
-    "name": "The Twin 3",
+    "name": "Twimo-mo",
     "archetype": "Twin Power",
     "symbol": "sciccors",
     "active": true,
     "effect_description": "When there are exactly two same Axie on the field, you can change the Symbols of these Axie to another Symbols",
-    "win_animation": [
-      "attack/melee/tail-multi-slap",
-      "attack/melee/tail-roll",
-      "attack/melee/tail-smash",
-      "attack/melee/tail-thrash",
-      "attack/ranged/cast-fly"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/tail-multi-slap",
+    "ranged_animation": "attack/ranged/cast-high",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "6": {
     "id": "11410738",
-    "name": "Rock Breaker",
+    "name": "Crecked",
     "archetype": "Breaker",
     "symbol": "rock",
     "active": true,
     "effect_description": "The more Rock Symbol in your opponent's Axie team, the more chance you can change this card Symbol into Paper",
-    "win_animation": [
-      "attack/melee/tail-roll",
-      "attack/melee/tail-smash",
-      "attack/melee/tail-thrash",
-      "attack/ranged/cast-fly",
-      "attack/ranged/cast-high"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/tail-roll",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
   },
   "7": {
     "id": "11411211",
-    "name": "Paper Eater",
+    "name": "Bookworm",
     "archetype": "Breaker",
     "symbol": "paper",
     "active": true,
     "effect_description": "The more Paper Symbol in your opponent's Axie team, the more chance you can change this card Symbol into Sciccors",
-    "win_animation": [
-      "attack/melee/tail-smash",
-      "attack/melee/tail-thrash",
-      "attack/ranged/cast-fly",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/tail-smash",
+    "ranged_animation": "attack/ranged/cast-fly",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "8": {
     "id": "11411074",
-    "name": "Sciccors Breaker",
+    "name": "Skoria",
     "archetype": "Breaker",
     "symbol": "sciccors",
     "active": true,
     "effect_description": "The more Sciccor Symbol in your opponent's Axie team, the more chance you can change this card Symbol into Rock",
-    "win_animation": [
-      "attack/melee/tail-thrash",
-      "attack/ranged/cast-fly",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/tail-thrash",
+    "ranged_animation": "attack/ranged/cast-tail",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "9": {
     "id": "11410055",
-    "name": "Card Maker 1",
+    "name": "Dou-Rock",
     "archetype": "Card Maker",
     "symbol": "rock",
     "active": false,
     "effect_description": "If this Axie wins against your opponent's Axie, your next turn can draw up to 8 cards instead of 6",
-    "win_animation": [
-      "attack/ranged/cast-fly",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/horn-gore",
+    "ranged_animation": "attack/ranged/cast-multi",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "10": {
     "id": "11410599",
-    "name": "Card Maker 2",
+    "name": "PaperSSt",
     "archetype": "Card Maker",
     "symbol": "paper",
     "active": false,
     "effect_description": "If this Axie wins against your opponent's Axie, your next turn can draw up to 8 cards instead of 6",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-high",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "11": {
     "id": "11410849",
-    "name": "Card Maker 3",
+    "name": "Scci-cc",
     "archetype": "Card Maker",
     "symbol": "sciccors",
     "active": false,
     "effect_description": "If this Axie wins against your opponent's Axie, your next turn can draw up to 8 cards instead of 6",
-    "win_animation": [
-      "attack/melee/mouth-bite",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/multi-attack",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+
   },
 
   "12": {
     "id": "11409409",
-    "name": "The Nope 1",
+    "name": "Nopock",
     "archetype": "Silencer",
     "symbol": "rock",
     "active": false,
     "effect_description": "Negate the ability of your opponent 's Axie to fight this Axie",
-    "win_animation": [
-      "attack/melee/multi-attack",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/normal-attack",
+    "ranged_animation": "attack/ranged/cast-fly",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "13": {
     "id": "11410174",
-    "name": "The Nope 2",
+    "name": "Nopape",
     "archetype": "Silencer",
     "symbol": "paper",
     "active": false,
     "effect_description": "Negate the ability of your opponent 's Axie to fight this Axie",
-    "win_animation": [
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/tail-multi-slap",
+    "ranged_animation": "attack/ranged/cast-tail",
+    "defense_animation": "defense/hit-by-normal"
+  
   },
   "14": {
     "id": "11409398",
-    "name": "The Nope 3",
+    "name": "Nopiccor",
     "archetype": "Silencer",
     "symbol": "sciccors",
     "active": false,
     "effect_description": "Negate the ability of your opponent 's Axie to fight this Axie",
-    "win_animation": [
-      "attack/melee/shrimp",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/tail-roll",
+    "ranged_animation": "attack/ranged/cast-multi",
+    "defense_animation": "defense/hit-by-normal"
+
   },
 
   "15": {
     "id": "11408569",
-    "name": "Card Eater 1",
+    "name": "R-Hunger",
     "archetype": "Card Eater",
     "symbol": "rock",
     "active": false,
     "effect_description": "If this Axie wins against your opponent's Axie, your next turn can draw up to 4 cards instead of 6",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/mouth-bite",
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/melee/shrimp",
-      "attack/melee/tail-multi-slap",
-      "attack/melee/tail-roll",
-      "attack/melee/tail-smash",
-      "attack/melee/tail-thrash",
-      "attack/ranged/cast-fly",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-ranged-attack"
-    ]
+    "melee_animation": "attack/melee/tail-smash",
+    "ranged_animation": "attack/ranged/cast-high",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "16": {
     "id": "11409888",
-    "name": "Card Eater 2",
+    "name": "P-Hunger",
     "archetype": "Card Eater",
     "symbol": "paper",
     "active": false,
     "effect_description": "If this Axie wins against your opponent's Axie, your next turn can draw up to 4 cards instead of 6",
-    "win_animation": [
-      "attack/melee/tail-multi-slap",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/tail-thrash",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "17": {
     "id": "11406536",
-    "name": "Card Eater 3",
+    "name": "S-Hunger",
     "archetype": "Card Eater",
     "symbol": "sciccors",
     "active": false,
     "effect_description": "If this Axie wins against your opponent's Axie, your next turn can draw up to 4 cards instead of 6",
-    "win_animation": [
-      "attack/melee/tail-roll",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+    
+    "melee_animation": "attack/melee/horn-gore",
+    "ranged_animation": "attack/ranged/cast-fly",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "18": {
     "id": "11406953",
-    "name": "The Surprise 1",
+    "name": "Surprock",
     "archetype": "Surprise",
     "symbol": "rock",
     "active": true,
     "effect_description": "While losing to your opponent's Axie, your opponent draws the first card from the deck and your opponent's symbol becomes that card's",
-    "win_animation": [
-      "attack/melee/tail-smash",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+    
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-tail",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "19": {
     "id": "11409824",
-    "name": "The Surprise 2",
+    "name": "Surpraper",
     "archetype": "Surprise",
     "symbol": "paper",
     "active": true,
     "effect_description": "While losing to your opponent's Axie, your opponent draws the first card from the deck and your opponent's symbol becomes that card's",
-    "win_animation": [
-      "attack/melee/tail-thrash",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+  
+    "melee_animation": "attack/melee/multi-attack",
+    "ranged_animation": "attack/ranged/cast-multi",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "20": {
     "id": "2727",
-    "name": "The Surprise 3",
+    "name": "Surpriccor",
     "archetype": "Surprise",
     "symbol": "sciccors",
     "active": true,
     "effect_description": "While losing to your opponent's Axie, your opponent draws the first card from the deck and your opponent's symbol becomes that card's",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/mouth-bite",
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit"
-    ]
+
+    "melee_animation": "attack/melee/normal-attack",
+    "ranged_animation": "attack/ranged/cast-high",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "21": {
     "id": "11404770",
-    "name": "The Crusader 1",
+    "name": "A-Crusader",
     "archetype": "Crusader",
     "symbol": "rock",
     "active": false,
     "effect_description": "While losing to your opponent's Axie, you can draw the first card from the deck and this Axie's symbol will become that card's.",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/mouth-bite",
-      "attack/melee/multi-attack",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit"
-    ]
+
+    "melee_animation": "attack/melee/tail-multi-slap",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "22": {
     "id": "11409245",
-    "name": "The Crusader 2",
+    "name": "B-Crusader",
     "archetype": "Crusader",
     "symbol": "paper",
     "active": false,
     "effect_description": "While losing to your opponent's Axie, you can draw the first card from the deck and this Axie's symbol will become that card's.",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/tail-roll",
+    "ranged_animation": "attack/ranged/cast-fly",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "23": {
     "id": "11406536",
-    "name": "The Crusader 3",
+    "name": "C-Crusader",
     "archetype": "Crusader",
     "symbol": "sciccors",
     "active": false,
     "effect_description": "While losing to your opponent's Axie, you can draw the first card from the deck and this Axie's symbol will become that card's.",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/mouth-bite",
-      "attack/melee/multi-attack",
-      "attack/melee/normal-attack",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit"
-    ]
+
+    "melee_animation": "attack/melee/tail-smash",
+    "ranged_animation": "attack/ranged/cast-tail",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "24": {
     "id": "11404770",
-    "name": "Two Face 1",
+    "name": "DouFrock",
     "archetype": "Two Face",
     "active": false,
     "symbol": "rock",
     "effect_description": "When faced with a Leaf Symbol has a 50% chance to become Scissors Symbol but also has a 50% chance to become a Leaf Symbol when encountering Scissors Symbol",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/tail-multi-slap",
-      "attack/ranged/cast-fly",
-      "attack/ranged/cast-high",
-      "attack/ranged/cast-low"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/tail-thrash",
+    "ranged_animation": "attack/ranged/cast-multi",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "25": {
     "id": "11409390",
-    "name": "Two Face 2",
+    "name": "Doper",
     "archetype": "Two Face",
     "symbol": "paper",
     "active": false,
     "effect_description": "When faced with a Sciccors Symbol has a 50% chance to become Rock Symbol but also has a 50% chance to become a Sciccors Symbol when encountering Rock Symbol",
-    "win_animation": [
-      "attack/melee/horn-gore",
-      "attack/melee/tail-multi-slap",
-      "attack/melee/tail-roll",
-      "attack/melee/tail-smash",
-      "attack/melee/tail-thrash"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/horn-gore",
+    "ranged_animation": "attack/ranged/cast-high",
+    "defense_animation": "defense/hit-by-normal"
+
   },
   "26": {
     "id": "5509",
-    "name": "Two Face 3",
+    "name": "Doccer",
     "archetype": "Two Face",
     "symbol": "sciccors",
     "active": false,
     "effect_description": "When faced with a Rock Symbol has a 50% chance to become Paper Symbol but also has a 50% chance to become a Rock Symbol when encountering Paper Symbol",
-    "win_animation": [
-      "attack/melee/normal-attack",
-      "attack/melee/shrimp",
-      "attack/ranged/cast-low",
-      "attack/ranged/cast-multi",
-      "attack/ranged/cast-tail"
-    ],
-    "lost_animation": [
-      "defense/hit-by-normal-crit",
-      "defense/hit-by-normal-dramatic",
-      "defense/hit-by-ranged-attack"
-    ]
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+
+  },
+
+  "27": {
+    "id": "3454047",
+    "name": "Slimock",
+    "archetype": "Slime Power",
+    "symbol": "rock",
+    "active": false,
+    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+  },
+
+  "28": {
+    "id": "9016125",
+    "name": "Slimaper",
+    "archetype": "Slime Power",
+    "symbol": "paper",
+    "active": false,
+    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
+  },
+
+  "29": {
+    "id": "3801858",
+    "name": "Sliccors",
+    "archetype": "Slime Power",
+    "symbol": "sciccors",
+    "active": false,
+    "effect_description": "When you are losing by 3 or more, change this card symbol to a win symbol against your opponent's Axie",
+
+    "melee_animation": "attack/melee/mouth-bite",
+    "ranged_animation": "attack/ranged/cast-low",
+    "defense_animation": "defense/hit-by-normal"
   }
+
 }

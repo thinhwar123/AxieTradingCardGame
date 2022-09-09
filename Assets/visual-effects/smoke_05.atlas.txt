@@ -1,0 +1,76 @@
+
+smoke_05.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_05_00000
+  rotate: false
+  xy: 2,422
+  size: 35,39
+  orig: 35,39
+  offset: 0, 0
+  index: -1
+smoke_05_00001
+  rotate: false
+  xy: 228,407
+  size: 98,96
+  orig: 98,96
+  offset: 0, 0
+  index: -1
+smoke_05_00002
+  rotate: false
+  xy: 833,2
+  size: 156,148
+  orig: 156,148
+  offset: 0, 0
+  index: -1
+smoke_05_00003
+  rotate: false
+  xy: 650,2
+  size: 179,170
+  orig: 179,170
+  offset: 0, 0
+  index: -1
+smoke_05_00004
+  rotate: false
+  xy: 445,194
+  size: 191,179
+  orig: 191,179
+  offset: 0, 0
+  index: -1
+smoke_05_00005
+  rotate: false
+  xy: 445,2
+  size: 201,188
+  orig: 201,188
+  offset: 0, 0
+  index: -1
+smoke_05_00006
+  rotate: false
+  xy: 228,207
+  size: 207,196
+  orig: 207,196
+  offset: 0, 0
+  index: -1
+smoke_05_00007
+  rotate: false
+  xy: 228,2
+  size: 213,201
+  orig: 213,201
+  offset: 0, 0
+  index: -1
+smoke_05_00008
+  rotate: false
+  xy: 2,214
+  size: 217,204
+  orig: 217,204
+  offset: 0, 0
+  index: -1
+smoke_05_00009
+  rotate: false
+  xy: 2,2
+  size: 222,208
+  orig: 222,208
+  offset: 0, 0
+  index: -1

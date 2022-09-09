@@ -1,0 +1,13 @@
+
+aquatic-back-04-scale-dart.png
+size: 240,224
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+scale-dart
+  rotate: false
+  xy: 2, 2
+  size: 236, 220
+  orig: 236, 220
+  offset: 0, 0
+  index: -1

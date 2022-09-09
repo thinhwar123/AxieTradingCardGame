@@ -1,0 +1,33 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "spark-10-si-rear_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "spark-10-si-rear_00": {"x": -81, "y": 1, "width": 90, "height": 66},
+          "spark-10-si-rear_01": {"x": -22, "y": -4, "width": 163, "height": 92},
+          "spark-10-si-rear_02": {"x": 7, "y": -4, "width": 174, "height": 107},
+          "spark-10-si-rear_03": {"x": 26, "y": -3, "width": 171, "height": 116},
+          "spark-10-si-rear_04": {"x": 45, "y": -3, "width": 160, "height": 129},
+          "spark-10-si-rear_05": {"x": 50, "y": -3, "width": 156, "height": 129},
+          "spark-10-si-rear_06": {"x": 60, "y": -2, "width": 135, "height": 122},
+          "spark-10-si-rear_07": {"x": 73, "y": 0, "width": 109, "height": 113}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "spark-10-si-rear_00"}, {"time": 0.1, "name": "spark-10-si-rear_01"}, {"time": 0.2, "name": "spark-10-si-rear_02"}, {"time": 0.30000000000000004, "name": "spark-10-si-rear_03"},
+            {"time": 0.4, "name": "spark-10-si-rear_04"}, {"time": 0.5, "name": "spark-10-si-rear_05"}, {"time": 0.6000000000000001, "name": "spark-10-si-rear_06"}, {"time": 0.7000000000000001, "name": "spark-10-si-rear_07"}
+          ]
+        }
+      }
+    }
+  }
+}

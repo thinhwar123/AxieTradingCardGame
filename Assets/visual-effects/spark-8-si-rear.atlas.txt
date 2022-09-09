@@ -1,0 +1,83 @@
+
+spark-8-si-rear.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-8-si-rear_00
+  rotate: false
+  xy: 423,2
+  size: 79,56
+  orig: 79,56
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_01
+  rotate: false
+  xy: 2,403
+  size: 186,99
+  orig: 186,99
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_02
+  rotate: false
+  xy: 207,138
+  size: 203,117
+  orig: 203,117
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_03
+  rotate: false
+  xy: 211,2
+  size: 208,126
+  orig: 208,126
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_04
+  rotate: false
+  xy: 2,2
+  size: 205,132
+  orig: 205,132
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_05
+  rotate: false
+  xy: 2,138
+  size: 201,129
+  orig: 201,129
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_06
+  rotate: false
+  xy: 2,271
+  size: 197,128
+  orig: 197,128
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_07
+  rotate: false
+  xy: 207,259
+  size: 189,122
+  orig: 189,122
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_08
+  rotate: false
+  xy: 207,385
+  size: 169,112
+  orig: 169,112
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_09
+  rotate: false
+  xy: 400,259
+  size: 105,107
+  orig: 105,107
+  offset: 0, 0
+  index: -1
+spark-8-si-rear_10
+  rotate: false
+  xy: 423,62
+  size: 28,29
+  orig: 28,29
+  offset: 0, 0
+  index: -1

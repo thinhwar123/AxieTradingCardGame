@@ -1,0 +1,56 @@
+{
+  "bones": [{"name": "@root"}],
+  "slots": [{"name": "frame", "bone": "@root", "attachment": "explosion-8-mi-round_00"}],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "frame": {
+          "explosion-8-mi-round_00": {"x": 128, "y": -128, "width": 256, "height": 256},
+          "explosion-8-mi-round_01": {"x": 9, "y": 7, "width": 118, "height": 123},
+          "explosion-8-mi-round_02": {"x": 1, "y": 3, "width": 169, "height": 169},
+          "explosion-8-mi-round_03": {"x": 1, "y": 2, "width": 189, "height": 189},
+          "explosion-8-mi-round_04": {"x": 1, "y": 2, "width": 201, "height": 201},
+          "explosion-8-mi-round_05": {"x": 1, "y": 2, "width": 207, "height": 207},
+          "explosion-8-mi-round_06": {"x": 1, "y": 2, "width": 209, "height": 207},
+          "explosion-8-mi-round_07": {"x": 1, "y": 2, "width": 207, "height": 207},
+          "explosion-8-mi-round_08": {"x": 1, "y": 2, "width": 211, "height": 211},
+          "explosion-8-mi-round_09": {"x": 1, "y": 2, "width": 213, "height": 213},
+          "explosion-8-mi-round_10": {"x": -4, "y": 10, "width": 149, "height": 135},
+          "explosion-8-mi-round_11": {"x": -5, "y": 11, "width": 138, "height": 133},
+          "explosion-8-mi-round_12": {"x": -5, "y": 13, "width": 134, "height": 129},
+          "explosion-8-mi-round_13": {"x": -6, "y": 13, "width": 134, "height": 128},
+          "explosion-8-mi-round_14": {"x": -6, "y": 14, "width": 134, "height": 126},
+          "explosion-8-mi-round_15": {"x": -6, "y": 14, "width": 134, "height": 124},
+          "explosion-8-mi-round_16": {"x": -6, "y": 15, "width": 131, "height": 121},
+          "explosion-8-mi-round_17": {"x": -23, "y": 0, "width": 94, "height": 91},
+          "explosion-8-mi-round_18": {"x": -24, "y": -1, "width": 89, "height": 88},
+          "explosion-8-mi-round_19": {"x": -24, "y": -2, "width": 89, "height": 86},
+          "explosion-8-mi-round_20": {"x": -24, "y": -2, "width": 88, "height": 82},
+          "explosion-8-mi-round_21": {"x": -9, "y": -3, "width": 60, "height": 80},
+          "explosion-8-mi-round_22": {"x": -10, "y": -9, "width": 59, "height": 68},
+          "explosion-8-mi-round_23": {"x": 2, "y": -7, "width": 14, "height": 15},
+          "explosion-8-mi-round_24": {"x": 4, "y": -10, "width": 7, "height": 7}
+        }
+      }
+    }
+  ],
+  "animations": {
+    "play": {
+      "slots": {
+        "frame": {
+          "attachment": [
+            {"time": 0.0, "name": "explosion-8-mi-round_00"}, {"time": 0.1, "name": "explosion-8-mi-round_01"}, {"time": 0.2, "name": "explosion-8-mi-round_02"}, {"time": 0.30000000000000004, "name": "explosion-8-mi-round_03"},
+            {"time": 0.4, "name": "explosion-8-mi-round_04"}, {"time": 0.5, "name": "explosion-8-mi-round_05"}, {"time": 0.6000000000000001, "name": "explosion-8-mi-round_06"},
+            {"time": 0.7000000000000001, "name": "explosion-8-mi-round_07"}, {"time": 0.8, "name": "explosion-8-mi-round_08"}, {"time": 0.9, "name": "explosion-8-mi-round_09"}, {"time": 1.0, "name": "explosion-8-mi-round_10"},
+            {"time": 1.1, "name": "explosion-8-mi-round_11"}, {"time": 1.2000000000000002, "name": "explosion-8-mi-round_12"}, {"time": 1.3, "name": "explosion-8-mi-round_13"},
+            {"time": 1.4000000000000001, "name": "explosion-8-mi-round_14"}, {"time": 1.5, "name": "explosion-8-mi-round_15"}, {"time": 1.6, "name": "explosion-8-mi-round_16"},
+            {"time": 1.7000000000000002, "name": "explosion-8-mi-round_17"}, {"time": 1.8, "name": "explosion-8-mi-round_18"}, {"time": 1.9000000000000001, "name": "explosion-8-mi-round_19"},
+            {"time": 2.0, "name": "explosion-8-mi-round_20"}, {"time": 2.1, "name": "explosion-8-mi-round_21"}, {"time": 2.2, "name": "explosion-8-mi-round_22"}, {"time": 2.3000000000000003, "name": "explosion-8-mi-round_23"},
+            {"time": 2.4000000000000004, "name": "explosion-8-mi-round_24"}
+          ]
+        }
+      }
+    }
+  }
+}

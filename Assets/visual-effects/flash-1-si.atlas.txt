@@ -1,0 +1,167 @@
+
+flash-1-si.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flash-si-round_00
+  rotate: false
+  xy: 522,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_01
+  rotate: false
+  xy: 968,638
+  size: 88,88
+  orig: 88,88
+  offset: 0, 0
+  index: -1
+flash-si-round_02
+  rotate: false
+  xy: 782,890
+  size: 122,122
+  orig: 122,122
+  offset: 0, 0
+  index: -1
+flash-si-round_03
+  rotate: false
+  xy: 968,490
+  size: 146,144
+  orig: 146,144
+  offset: 0, 0
+  index: -1
+flash-si-round_04
+  rotate: false
+  xy: 782,720
+  size: 166,166
+  orig: 166,166
+  offset: 0, 0
+  index: -1
+flash-si-round_05
+  rotate: false
+  xy: 968,2
+  size: 164,164
+  orig: 164,164
+  offset: 0, 0
+  index: -1
+flash-si-round_06
+  rotate: false
+  xy: 968,334
+  size: 152,152
+  orig: 152,152
+  offset: 0, 0
+  index: -1
+flash-si-round_07
+  rotate: false
+  xy: 968,170
+  size: 160,160
+  orig: 160,160
+  offset: 0, 0
+  index: -1
+flash-si-round_08
+  rotate: false
+  xy: 782,548
+  size: 168,168
+  orig: 168,168
+  offset: 0, 0
+  index: -1
+flash-si-round_09
+  rotate: false
+  xy: 782,370
+  size: 174,174
+  orig: 174,174
+  offset: 0, 0
+  index: -1
+flash-si-round_10
+  rotate: false
+  xy: 782,188
+  size: 178,178
+  orig: 178,178
+  offset: 0, 0
+  index: -1
+flash-si-round_11
+  rotate: false
+  xy: 782,2
+  size: 182,182
+  orig: 182,182
+  offset: 0, 0
+  index: -1
+flash-si-round_12
+  rotate: false
+  xy: 262,782
+  size: 186,186
+  orig: 186,186
+  offset: 0, 0
+  index: -1
+flash-si-round_13
+  rotate: false
+  xy: 522,782
+  size: 184,184
+  orig: 184,184
+  offset: 0, 0
+  index: -1
+flash-si-round_14
+  rotate: false
+  xy: 2,782
+  size: 186,186
+  orig: 186,186
+  offset: 0, 0
+  index: -1
+flash-si-round_15
+  rotate: false
+  xy: 522,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_16
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_17
+  rotate: false
+  xy: 262,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_18
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_19
+  rotate: false
+  xy: 262,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_20
+  rotate: false
+  xy: 2,522
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_21
+  rotate: false
+  xy: 2,262
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+flash-si-round_22
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1

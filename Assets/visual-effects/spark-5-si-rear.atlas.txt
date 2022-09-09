@@ -1,0 +1,160 @@
+
+spark-5-si-rear.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+spark-5-si-rear_00
+  rotate: false
+  xy: 920,2
+  size: 89,57
+  orig: 89,57
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_01
+  rotate: false
+  xy: 221,653
+  size: 116,71
+  orig: 116,71
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_02
+  rotate: false
+  xy: 221,394
+  size: 138,85
+  orig: 138,85
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_03
+  rotate: false
+  xy: 852,277
+  size: 156,98
+  orig: 156,98
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_04
+  rotate: false
+  xy: 450,277
+  size: 172,110
+  orig: 172,110
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_05
+  rotate: false
+  xy: 2,844
+  size: 185,118
+  orig: 185,118
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_06
+  rotate: false
+  xy: 2,714
+  size: 191,126
+  orig: 191,126
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_07
+  rotate: false
+  xy: 2,577
+  size: 197,133
+  orig: 197,133
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_08
+  rotate: false
+  xy: 2,437
+  size: 203,136
+  orig: 203,136
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_09
+  rotate: false
+  xy: 2,295
+  size: 209,138
+  orig: 209,138
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_10
+  rotate: false
+  xy: 2,150
+  size: 215,141
+  orig: 215,141
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_11
+  rotate: false
+  xy: 695,2
+  size: 221,141
+  orig: 221,141
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_12
+  rotate: false
+  xy: 467,2
+  size: 224,143
+  orig: 224,143
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_13
+  rotate: false
+  xy: 235,2
+  size: 228,144
+  orig: 228,144
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_14
+  rotate: false
+  xy: 2,2
+  size: 229,144
+  orig: 229,144
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_15
+  rotate: false
+  xy: 221,150
+  size: 228,123
+  orig: 228,123
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_16
+  rotate: false
+  xy: 453,150
+  size: 228,120
+  orig: 228,120
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_17
+  rotate: false
+  xy: 685,150
+  size: 227,115
+  orig: 227,115
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_18
+  rotate: false
+  xy: 221,277
+  size: 225,113
+  orig: 225,113
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_19
+  rotate: false
+  xy: 626,277
+  size: 222,85
+  orig: 222,85
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_20
+  rotate: false
+  xy: 221,483
+  size: 129,84
+  orig: 129,84
+  offset: 0, 0
+  index: -1
+spark-5-si-rear_21
+  rotate: false
+  xy: 221,571
+  size: 123,78
+  orig: 123,78
+  offset: 0, 0
+  index: -1

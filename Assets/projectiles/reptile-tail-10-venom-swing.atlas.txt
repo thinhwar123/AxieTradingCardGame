@@ -1,0 +1,55 @@
+
+reptile-tail-10-venom-swing.png
+size: 458,352
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+venom-swing-1
+  rotate: true
+  xy: 317, 3
+  size: 91, 114
+  orig: 91, 114
+  offset: 0, 0
+  index: -1
+venom-swing-2
+  rotate: true
+  xy: 317, 96
+  size: 104, 139
+  orig: 104, 139
+  offset: 0, 0
+  index: -1
+venom-swing-3
+  rotate: false
+  xy: 311, 202
+  size: 126, 148
+  orig: 126, 148
+  offset: 0, 0
+  index: -1
+venom-swing-4
+  rotate: false
+  xy: 2, 2
+  size: 138, 164
+  orig: 138, 164
+  offset: 0, 0
+  index: -1
+venom-swing-5
+  rotate: true
+  xy: 142, 4
+  size: 162, 173
+  orig: 162, 173
+  offset: 0, 0
+  index: -1
+venom-swing-6
+  rotate: true
+  xy: 153, 193
+  size: 157, 156
+  orig: 157, 156
+  offset: 0, 0
+  index: -1
+venom-swing-7
+  rotate: true
+  xy: 2, 168
+  size: 182, 149
+  orig: 182, 149
+  offset: 0, 0
+  index: -1

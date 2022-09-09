@@ -1,0 +1,13 @@
+
+bird-tail-12-all-out-shot.png
+size: 202,105
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+all-out-shot
+  rotate: false
+  xy: 2, 2
+  size: 198, 101
+  orig: 198, 103
+  offset: 0, 1
+  index: -1

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: bird-tail-10-cool-breeze_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 0b60b391bef224c9e84aea3b06f83e68, type: 3}
+  materials:
+  - {fileID: 2100000, guid: ddc7dd433219d41ab9144f9f51f631f7, type: 2}
+  - {fileID: 2100000, guid: 1dae092025a1c47d6bb23e4ba92c033d, type: 2}
+  - {fileID: 2100000, guid: 5899df35bc2234d1d95478a7d77b3cc2, type: 2}
+  - {fileID: 2100000, guid: c943957e39096431c8258a97024dfa8c, type: 2}
+  - {fileID: 2100000, guid: 1cfc4ee2776f0411aab0b98c8c3a012f, type: 2}

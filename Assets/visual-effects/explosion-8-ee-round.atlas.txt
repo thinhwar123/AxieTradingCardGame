@@ -1,0 +1,139 @@
+
+explosion-8-ee-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+explosion-1-mi-round_00
+  rotate: false
+  xy: 893,243
+  size: 88,92
+  orig: 88,92
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_01
+  rotate: false
+  xy: 884,488
+  size: 130,134
+  orig: 130,134
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_02
+  rotate: false
+  xy: 703,488
+  size: 177,188
+  orig: 177,188
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_03
+  rotate: false
+  xy: 480,488
+  size: 219,219
+  orig: 219,219
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_04
+  rotate: false
+  xy: 2,2
+  size: 239,237
+  orig: 239,237
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_05
+  rotate: false
+  xy: 245,2
+  size: 239,237
+  orig: 239,237
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_06
+  rotate: false
+  xy: 731,2
+  size: 239,237
+  orig: 239,237
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_07
+  rotate: false
+  xy: 488,2
+  size: 239,237
+  orig: 239,237
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_08
+  rotate: false
+  xy: 2,243
+  size: 239,237
+  orig: 239,237
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_09
+  rotate: false
+  xy: 2,484
+  size: 239,237
+  orig: 239,237
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_10
+  rotate: false
+  xy: 2,725
+  size: 233,232
+  orig: 233,232
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_11
+  rotate: false
+  xy: 245,243
+  size: 231,234
+  orig: 231,234
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_12
+  rotate: false
+  xy: 245,481
+  size: 225,237
+  orig: 225,237
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_13
+  rotate: false
+  xy: 245,722
+  size: 211,238
+  orig: 211,238
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_14
+  rotate: false
+  xy: 687,243
+  size: 202,239
+  orig: 202,239
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_15
+  rotate: false
+  xy: 480,243
+  size: 203,241
+  orig: 203,241
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_16
+  rotate: false
+  xy: 480,711
+  size: 199,241
+  orig: 199,241
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_17
+  rotate: false
+  xy: 703,680
+  size: 173,170
+  orig: 173,170
+  offset: 0, 0
+  index: -1
+explosion-1-mi-round_18
+  rotate: false
+  xy: 703,854
+  size: 145,136
+  orig: 145,136
+  offset: 0, 0
+  index: -1

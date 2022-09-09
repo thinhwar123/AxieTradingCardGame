@@ -32,7 +32,8 @@ public class ServerClient : NetworkBehaviour
     public void AvatarEnemyClient(int i)
     {
         if (isServer) return;
-        uiManager.avatarEnemy.sprite = uiManager.listAvatars[i];
+        //uiManager.avatarEnemy.sprite = uiManager.listAvatars[i];
+        PlayerPrefs.SetInt("enemy", i);
     }
 
     [ClientRpc]
@@ -52,7 +53,8 @@ public class ServerClient : NetworkBehaviour
 
     [Command(requiresAuthority = false)]
     public void AvatarEnemyServer(int i)
-    {        
-        uiManager.avatarEnemy.sprite = uiManager.listAvatars[i];
+    {
+        //uiManager.avatarEnemy.sprite = uiManager.listAvatars[i];
+        PlayerPrefs.SetInt("enemy", i);
     }
 }

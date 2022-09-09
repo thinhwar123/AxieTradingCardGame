@@ -1,0 +1,90 @@
+
+water-25-me-slash.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-25-me-slash_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+water-25-me-slash_01
+  rotate: false
+  xy: 446,142
+  size: 64,23
+  orig: 64,23
+  offset: 0, 0
+  index: -1
+water-25-me-slash_02
+  rotate: false
+  xy: 446,93
+  size: 60,45
+  orig: 60,45
+  offset: 0, 0
+  index: -1
+water-25-me-slash_03
+  rotate: false
+  xy: 262,186
+  size: 144,63
+  orig: 144,63
+  offset: 0, 0
+  index: -1
+water-25-me-slash_04
+  rotate: false
+  xy: 262,2
+  size: 191,87
+  orig: 191,87
+  offset: 0, 0
+  index: -1
+water-25-me-slash_05
+  rotate: false
+  xy: 262,93
+  size: 180,89
+  orig: 180,89
+  offset: 0, 0
+  index: -1
+water-25-me-slash_06
+  rotate: false
+  xy: 2,262
+  size: 163,88
+  orig: 163,88
+  offset: 0, 0
+  index: -1
+water-25-me-slash_07
+  rotate: false
+  xy: 2,354
+  size: 151,86
+  orig: 151,86
+  offset: 0, 0
+  index: -1
+water-25-me-slash_08
+  rotate: false
+  xy: 169,262
+  size: 145,83
+  orig: 145,83
+  offset: 0, 0
+  index: -1
+water-25-me-slash_09
+  rotate: false
+  xy: 169,349
+  size: 142,73
+  orig: 142,73
+  offset: 0, 0
+  index: -1
+water-25-me-slash_10
+  rotate: false
+  xy: 410,186
+  size: 77,43
+  orig: 77,43
+  offset: 0, 0
+  index: -1
+water-25-me-slash_11
+  rotate: false
+  xy: 457,2
+  size: 10,9
+  orig: 10,9
+  offset: 0, 0
+  index: -1

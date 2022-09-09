@@ -1,0 +1,83 @@
+
+energy-1-ee-ground.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy-10-ee-ground_00
+  rotate: false
+  xy: 116,213
+  size: 67,78
+  orig: 67,78
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_01
+  rotate: false
+  xy: 174,107
+  size: 74,99
+  orig: 74,99
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_02
+  rotate: false
+  xy: 2,213
+  size: 110,100
+  orig: 110,100
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_03
+  rotate: false
+  xy: 2,107
+  size: 168,102
+  orig: 168,102
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_04
+  rotate: false
+  xy: 2,2
+  size: 246,101
+  orig: 246,101
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_05
+  rotate: false
+  xy: 252,2
+  size: 252,98
+  orig: 252,98
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_06
+  rotate: false
+  xy: 508,2
+  size: 254,95
+  orig: 254,95
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_07
+  rotate: false
+  xy: 766,2
+  size: 256,93
+  orig: 256,93
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_08
+  rotate: false
+  xy: 508,101
+  size: 256,89
+  orig: 256,89
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_09
+  rotate: false
+  xy: 508,194
+  size: 256,86
+  orig: 256,86
+  offset: 0, 0
+  index: -1
+energy-10-ee-ground_10
+  rotate: false
+  xy: 508,284
+  size: 256,72
+  orig: 256,72
+  offset: 0, 0
+  index: -1

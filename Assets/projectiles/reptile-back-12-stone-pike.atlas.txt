@@ -1,0 +1,13 @@
+
+reptile-back-12-stone-pike.png
+size: 139,247
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/stone-pike
+  rotate: false
+  xy: 2, 2
+  size: 135, 243
+  orig: 135, 243
+  offset: 0, 0
+  index: -1

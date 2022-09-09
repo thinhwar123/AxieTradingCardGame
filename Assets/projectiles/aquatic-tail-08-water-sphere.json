@@ -1,0 +1,44 @@
+{
+"skeleton": {
+	"hash": "/PhAi9TaG8jo0kgjBIBp2YndAhM",
+	"spine": "3.8.79",
+	"x": -220.5,
+	"y": -218,
+	"width": 441,
+	"height": 436,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -159.32 },
+	{ "name": "water-sphere", "parent": "root", "y": 159.32 }
+],
+"slots": [
+	{ "name": "water-sphere", "bone": "water-sphere", "attachment": "water-sphere" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"water-sphere": {
+				"water-sphere": { "width": 192, "height": 190 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {
+		"bones": {
+			"water-sphere": {
+				"scale": [
+					{ "x": 1.08, "y": 0.886, "curve": 0, "c2": 0.1, "c3": 0.85 },
+					{ "time": 0.2333, "x": 0.86, "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.5, "x": 1.08, "y": 0.886, "curve": 0.309, "c3": 0.691 },
+					{ "time": 0.7667, "x": 0.937, "y": 1.065, "curve": 0.153, "c4": 0.9 },
+					{ "time": 1, "x": 1.08, "y": 0.886 }
+				]
+			}
+		}
+	}
+}
+}

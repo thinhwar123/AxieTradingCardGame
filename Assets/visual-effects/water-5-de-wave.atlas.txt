@@ -1,0 +1,90 @@
+
+water-5-de-wave.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water_19_00000
+  rotate: false
+  xy: 110,457
+  size: 49,21
+  orig: 49,21
+  offset: 0, 0
+  index: -1
+water_19_00001
+  rotate: false
+  xy: 849,220
+  size: 155,125
+  orig: 155,125
+  offset: 0, 0
+  index: -1
+water_19_00002
+  rotate: false
+  xy: 2,262
+  size: 244,191
+  orig: 244,191
+  offset: 0, 0
+  index: -1
+water_19_00003
+  rotate: false
+  xy: 461,2
+  size: 210,220
+  orig: 210,220
+  offset: 0, 0
+  index: -1
+water_19_00004
+  rotate: false
+  xy: 250,262
+  size: 195,232
+  orig: 195,232
+  offset: 0, 0
+  index: -1
+water_19_00005
+  rotate: false
+  xy: 461,226
+  size: 192,223
+  orig: 192,223
+  offset: 0, 0
+  index: -1
+water_19_00006
+  rotate: false
+  xy: 675,2
+  size: 176,214
+  orig: 176,214
+  offset: 0, 0
+  index: -1
+water_19_00007
+  rotate: false
+  xy: 675,220
+  size: 170,196
+  orig: 170,196
+  offset: 0, 0
+  index: -1
+water_19_00008
+  rotate: false
+  xy: 855,2
+  size: 161,149
+  orig: 161,149
+  offset: 0, 0
+  index: -1
+water_19_00009
+  rotate: false
+  xy: 849,349
+  size: 159,108
+  orig: 159,108
+  offset: 0, 0
+  index: -1
+water_19_00010
+  rotate: false
+  xy: 2,457
+  size: 104,43
+  orig: 104,43
+  offset: 0, 0
+  index: -1
+water_19_00011
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

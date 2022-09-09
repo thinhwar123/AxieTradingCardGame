@@ -1,0 +1,90 @@
+
+water-24-sre-mi-shot.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+water-24-sre-mi-shot_00
+  rotate: false
+  xy: 124,374
+  size: 62,59
+  orig: 62,59
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_01
+  rotate: false
+  xy: 2,374
+  size: 118,122
+  orig: 118,122
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_02
+  rotate: false
+  xy: 201,372
+  size: 157,137
+  orig: 157,137
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_03
+  rotate: false
+  xy: 398,367
+  size: 168,140
+  orig: 168,140
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_04
+  rotate: false
+  xy: 779,2
+  size: 178,155
+  orig: 178,155
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_05
+  rotate: false
+  xy: 590,2
+  size: 185,166
+  orig: 185,166
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_06
+  rotate: false
+  xy: 398,184
+  size: 186,179
+  orig: 186,179
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_07
+  rotate: false
+  xy: 398,2
+  size: 188,178
+  orig: 188,178
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_08
+  rotate: false
+  xy: 201,187
+  size: 190,181
+  orig: 190,181
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_09
+  rotate: false
+  xy: 2,188
+  size: 192,182
+  orig: 192,182
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_10
+  rotate: false
+  xy: 201,2
+  size: 193,181
+  orig: 193,181
+  offset: 0, 0
+  index: -1
+water-24-sre-mi-shot_11
+  rotate: false
+  xy: 2,2
+  size: 195,182
+  orig: 195,182
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,230 @@
+
+electric-8-sre-ball.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-8-sre-ball_00
+  rotate: false
+  xy: 262,2
+  size: 254,252
+  orig: 254,252
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_01
+  rotate: false
+  xy: 1016,625
+  size: 116,169
+  orig: 116,169
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_02
+  rotate: false
+  xy: 262,513
+  size: 247,251
+  orig: 247,251
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_03
+  rotate: false
+  xy: 1166,404
+  size: 101,142
+  orig: 101,142
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_04
+  rotate: false
+  xy: 1253,2
+  size: 233,220
+  orig: 233,220
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_05
+  rotate: false
+  xy: 930,780
+  size: 67,71
+  orig: 67,71
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_06
+  rotate: false
+  xy: 780,473
+  size: 225,228
+  orig: 225,228
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_07
+  rotate: false
+  xy: 1166,662
+  size: 93,108
+  orig: 93,108
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_08
+  rotate: false
+  xy: 780,2
+  size: 232,235
+  orig: 232,235
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_09
+  rotate: false
+  xy: 1166,226
+  size: 111,174
+  orig: 111,174
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_10
+  rotate: false
+  xy: 520,508
+  size: 239,245
+  orig: 239,245
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_11
+  rotate: false
+  xy: 520,255
+  size: 256,249
+  orig: 256,249
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_12
+  rotate: false
+  xy: 1490,2
+  size: 148,193
+  orig: 148,193
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_13
+  rotate: false
+  xy: 2,257
+  size: 256,251
+  orig: 256,251
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_14
+  rotate: false
+  xy: 1016,226
+  size: 146,222
+  orig: 146,222
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_15
+  rotate: false
+  xy: 2,512
+  size: 256,251
+  orig: 256,251
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_16
+  rotate: false
+  xy: 1794,2
+  size: 140,203
+  orig: 140,203
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_17
+  rotate: false
+  xy: 1016,452
+  size: 116,169
+  orig: 116,169
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_18
+  rotate: false
+  xy: 262,258
+  size: 247,251
+  orig: 247,251
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_19
+  rotate: false
+  xy: 1938,2
+  size: 101,142
+  orig: 101,142
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_20
+  rotate: false
+  xy: 1016,2
+  size: 233,220
+  orig: 233,220
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_21
+  rotate: false
+  xy: 930,705
+  size: 67,71
+  orig: 67,71
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_22
+  rotate: false
+  xy: 780,241
+  size: 225,228
+  orig: 225,228
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_23
+  rotate: false
+  xy: 1166,550
+  size: 93,108
+  orig: 93,108
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_24
+  rotate: false
+  xy: 520,757
+  size: 232,235
+  orig: 232,235
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_25
+  rotate: false
+  xy: 1016,798
+  size: 111,174
+  orig: 111,174
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_26
+  rotate: false
+  xy: 262,768
+  size: 239,245
+  orig: 239,245
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_27
+  rotate: false
+  xy: 520,2
+  size: 256,249
+  orig: 256,249
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_28
+  rotate: false
+  xy: 1642,2
+  size: 148,193
+  orig: 148,193
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_29
+  rotate: false
+  xy: 2,767
+  size: 256,251
+  orig: 256,251
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_30
+  rotate: false
+  xy: 780,705
+  size: 146,222
+  orig: 146,222
+  offset: 0, 0
+  index: -1
+electric-8-sre-ball_31
+  rotate: false
+  xy: 2,2
+  size: 256,251
+  orig: 256,251
+  offset: 0, 0
+  index: -1

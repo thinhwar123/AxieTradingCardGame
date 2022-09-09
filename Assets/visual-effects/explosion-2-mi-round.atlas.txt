@@ -1,0 +1,181 @@
+
+explosion-2-mi-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+explosion-8-mi-round_00
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_01
+  rotate: false
+  xy: 820,262
+  size: 118,123
+  orig: 118,123
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_02
+  rotate: false
+  xy: 213,455
+  size: 169,169
+  orig: 169,169
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_03
+  rotate: false
+  xy: 213,262
+  size: 189,189
+  orig: 189,189
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_04
+  rotate: false
+  xy: 2,684
+  size: 201,201
+  orig: 201,201
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_05
+  rotate: false
+  xy: 2,262
+  size: 207,207
+  orig: 207,207
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_06
+  rotate: false
+  xy: 694,2
+  size: 209,207
+  orig: 209,207
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_07
+  rotate: false
+  xy: 2,473
+  size: 207,207
+  orig: 207,207
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_08
+  rotate: false
+  xy: 479,2
+  size: 211,211
+  orig: 211,211
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_09
+  rotate: false
+  xy: 262,2
+  size: 213,213
+  orig: 213,213
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_10
+  rotate: false
+  xy: 213,628
+  size: 149,135
+  orig: 149,135
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_11
+  rotate: false
+  xy: 2,889
+  size: 138,133
+  orig: 138,133
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_12
+  rotate: false
+  xy: 213,767
+  size: 134,129
+  orig: 134,129
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_13
+  rotate: false
+  xy: 406,262
+  size: 134,128
+  orig: 134,128
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_14
+  rotate: false
+  xy: 544,262
+  size: 134,126
+  orig: 134,126
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_15
+  rotate: false
+  xy: 682,262
+  size: 134,124
+  orig: 134,124
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_16
+  rotate: false
+  xy: 213,900
+  size: 131,121
+  orig: 131,121
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_17
+  rotate: false
+  xy: 907,2
+  size: 94,91
+  orig: 94,91
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_18
+  rotate: false
+  xy: 907,97
+  size: 89,88
+  orig: 89,88
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_19
+  rotate: false
+  xy: 406,394
+  size: 89,86
+  orig: 89,86
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_20
+  rotate: false
+  xy: 499,394
+  size: 88,82
+  orig: 88,82
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_21
+  rotate: false
+  xy: 144,889
+  size: 60,80
+  orig: 60,80
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_22
+  rotate: false
+  xy: 907,189
+  size: 59,68
+  orig: 59,68
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_23
+  rotate: false
+  xy: 262,219
+  size: 14,15
+  orig: 14,15
+  offset: 0, 0
+  index: -1
+explosion-8-mi-round_24
+  rotate: false
+  xy: 262,238
+  size: 7,7
+  orig: 7,7
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,111 @@
+
+electric-9-si-up.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+electric-9-si-up_00
+  rotate: false
+  xy: 946,103
+  size: 66,49
+  orig: 66,49
+  offset: 0, 0
+  index: -1
+electric-9-si-up_01
+  rotate: false
+  xy: 522,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-9-si-up_02
+  rotate: false
+  xy: 649,262
+  size: 87,73
+  orig: 87,73
+  offset: 0, 0
+  index: -1
+electric-9-si-up_03
+  rotate: false
+  xy: 522,362
+  size: 105,87
+  orig: 105,87
+  offset: 0, 0
+  index: -1
+electric-9-si-up_04
+  rotate: false
+  xy: 2,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-9-si-up_05
+  rotate: false
+  xy: 522,262
+  size: 123,96
+  orig: 123,96
+  offset: 0, 0
+  index: -1
+electric-9-si-up_06
+  rotate: false
+  xy: 782,103
+  size: 160,108
+  orig: 160,108
+  offset: 0, 0
+  index: -1
+electric-9-si-up_07
+  rotate: false
+  xy: 262,2
+  size: 256,256
+  orig: 256,256
+  offset: 0, 0
+  index: -1
+electric-9-si-up_08
+  rotate: false
+  xy: 262,262
+  size: 218,111
+  orig: 218,111
+  offset: 0, 0
+  index: -1
+electric-9-si-up_09
+  rotate: false
+  xy: 2,262
+  size: 240,109
+  orig: 240,109
+  offset: 0, 0
+  index: -1
+electric-9-si-up_10
+  rotate: false
+  xy: 946,156
+  size: 55,56
+  orig: 55,56
+  offset: 0, 0
+  index: -1
+electric-9-si-up_11
+  rotate: false
+  xy: 2,375
+  size: 234,109
+  orig: 234,109
+  offset: 0, 0
+  index: -1
+electric-9-si-up_12
+  rotate: false
+  xy: 262,377
+  size: 230,102
+  orig: 230,102
+  offset: 0, 0
+  index: -1
+electric-9-si-up_13
+  rotate: false
+  xy: 522,453
+  size: 52,52
+  orig: 52,52
+  offset: 0, 0
+  index: -1
+electric-9-si-up_14
+  rotate: false
+  xy: 782,2
+  size: 229,97
+  orig: 229,97
+  offset: 0, 0
+  index: -1

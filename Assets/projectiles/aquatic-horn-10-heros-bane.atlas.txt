@@ -1,0 +1,13 @@
+
+aquatic-horn-10-heros-bane.png
+size: 145,342
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+heros-bane-1
+  rotate: false
+  xy: 2, 2
+  size: 141, 338
+  orig: 143, 339
+  offset: 1, 0
+  index: -1

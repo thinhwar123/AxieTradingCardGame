@@ -1,0 +1,27 @@
+
+bug-horn-04-bug-signal.png
+size: 149,80
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bug-signal-1
+  rotate: false
+  xy: 121, 8
+  size: 26, 70
+  orig: 58, 102
+  offset: 16, 16
+  index: -1
+bug-signal-2
+  rotate: true
+  xy: 2, 2
+  size: 33, 92
+  orig: 65, 124
+  offset: 16, 16
+  index: -1
+bug-signal-3
+  rotate: true
+  xy: 2, 37
+  size: 41, 117
+  orig: 73, 149
+  offset: 16, 16
+  index: -1

@@ -1,0 +1,55 @@
+
+energy-2-me-chop.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy_02_00000
+  rotate: false
+  xy: 502,347
+  size: 148,91
+  orig: 148,91
+  offset: 0, 0
+  index: -1
+energy_02_00001
+  rotate: false
+  xy: 2,2
+  size: 267,245
+  orig: 267,245
+  offset: 0, 0
+  index: -1
+energy_02_00002
+  rotate: false
+  xy: 2,251
+  size: 230,225
+  orig: 230,225
+  offset: 0, 0
+  index: -1
+energy_02_00003
+  rotate: false
+  xy: 273,2
+  size: 225,222
+  orig: 225,222
+  offset: 0, 0
+  index: -1
+energy_02_00004
+  rotate: false
+  xy: 273,228
+  size: 216,212
+  orig: 216,212
+  offset: 0, 0
+  index: -1
+energy_02_00005
+  rotate: false
+  xy: 502,2
+  size: 174,190
+  orig: 174,190
+  offset: 0, 0
+  index: -1
+energy_02_00006
+  rotate: false
+  xy: 502,196
+  size: 114,147
+  orig: 114,147
+  offset: 0, 0
+  index: -1

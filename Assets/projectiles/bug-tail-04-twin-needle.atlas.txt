@@ -1,0 +1,13 @@
+
+bug-tail-04-twin-needle.png
+size: 57,221
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/twin-needle
+  rotate: false
+  xy: 2, 2
+  size: 53, 217
+  orig: 53, 217
+  offset: 0, 0
+  index: -1

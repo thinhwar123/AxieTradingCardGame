@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "QWMoFX0KSBDV0RRk7uRP92e7jsc",
+	"spine": "3.8.79",
+	"x": -233.21,
+	"y": -153.64,
+	"width": 439.97,
+	"height": 317.34,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "y": -63.5 },
+	{ "name": "all-out-shot", "parent": "root", "rotation": -18, "y": 63.5 }
+],
+"slots": [
+	{ "name": "all-out-shot", "bone": "all-out-shot", "attachment": "all-out-shot" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"all-out-shot": {
+				"all-out-shot": { "x": -14.14, "y": 0.7, "width": 396, "height": 205 }
+			}
+		}
+	}
+],
+"animations": {
+	"fly": {}
+}
+}

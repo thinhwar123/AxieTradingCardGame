@@ -1,0 +1,97 @@
+
+energy-1-be-round.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy_10_00000
+  rotate: false
+  xy: 244,757
+  size: 174,97
+  orig: 174,97
+  offset: 0, 0
+  index: -1
+energy_10_00001
+  rotate: false
+  xy: 260,522
+  size: 174,229
+  orig: 174,229
+  offset: 0, 0
+  index: -1
+energy_10_00002
+  rotate: false
+  xy: 461,732
+  size: 232,231
+  orig: 232,231
+  offset: 0, 0
+  index: -1
+energy_10_00003
+  rotate: false
+  xy: 2,757
+  size: 238,231
+  orig: 238,231
+  offset: 0, 0
+  index: -1
+energy_10_00004
+  rotate: false
+  xy: 2,522
+  size: 254,231
+  orig: 254,231
+  offset: 0, 0
+  index: -1
+energy_10_00005
+  rotate: false
+  xy: 461,262
+  size: 232,231
+  orig: 232,231
+  offset: 0, 0
+  index: -1
+energy_10_00006
+  rotate: false
+  xy: 461,497
+  size: 232,231
+  orig: 232,231
+  offset: 0, 0
+  index: -1
+energy_10_00007
+  rotate: false
+  xy: 697,262
+  size: 232,231
+  orig: 232,231
+  offset: 0, 0
+  index: -1
+energy_10_00008
+  rotate: false
+  xy: 697,497
+  size: 232,231
+  orig: 232,231
+  offset: 0, 0
+  index: -1
+energy_10_00009
+  rotate: false
+  xy: 697,732
+  size: 230,231
+  orig: 230,231
+  offset: 0, 0
+  index: -1
+energy_10_00010
+  rotate: false
+  xy: 2,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+energy_10_00011
+  rotate: false
+  xy: 461,2
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1
+energy_10_00012
+  rotate: false
+  xy: 2,262
+  size: 455,256
+  orig: 455,256
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+bird-back-04-heart-break.png
+size: 248,68
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+heart-piercing
+  rotate: false
+  xy: 2, 2
+  size: 244, 64
+  orig: 244, 66
+  offset: 0, 0
+  index: -1

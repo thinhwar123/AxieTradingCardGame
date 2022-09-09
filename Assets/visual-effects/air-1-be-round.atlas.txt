@@ -1,0 +1,76 @@
+
+air-1-be-round.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Air_15_00000
+  rotate: false
+  xy: 2,404
+  size: 43,71
+  orig: 43,71
+  offset: 0, 0
+  index: -1
+Air_15_00001
+  rotate: false
+  xy: 593,194
+  size: 159,146
+  orig: 159,146
+  offset: 0, 0
+  index: -1
+Air_15_00002
+  rotate: false
+  xy: 400,197
+  size: 186,183
+  orig: 186,183
+  offset: 0, 0
+  index: -1
+Air_15_00003
+  rotate: false
+  xy: 788,2
+  size: 183,186
+  orig: 183,186
+  offset: 0, 0
+  index: -1
+Air_15_00004
+  rotate: false
+  xy: 400,2
+  size: 189,191
+  orig: 189,191
+  offset: 0, 0
+  index: -1
+Air_15_00005
+  rotate: false
+  xy: 204,2
+  size: 192,196
+  orig: 192,196
+  offset: 0, 0
+  index: -1
+Air_15_00006
+  rotate: false
+  xy: 2,203
+  size: 196,197
+  orig: 196,197
+  offset: 0, 0
+  index: -1
+Air_15_00007
+  rotate: false
+  xy: 2,2
+  size: 198,197
+  orig: 198,197
+  offset: 0, 0
+  index: -1
+Air_15_00008
+  rotate: false
+  xy: 204,202
+  size: 192,195
+  orig: 192,195
+  offset: 0, 0
+  index: -1
+Air_15_00009
+  rotate: false
+  xy: 593,2
+  size: 191,188
+  orig: 191,188
+  offset: 0, 0
+  index: -1

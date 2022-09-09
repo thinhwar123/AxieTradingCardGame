@@ -1,0 +1,13 @@
+
+bird-tail-02-earlybird.png
+size: 274,208
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy-shot-1
+  rotate: false
+  xy: 2, 2
+  size: 270, 204
+  orig: 270, 206
+  offset: 0, 0
+  index: -1

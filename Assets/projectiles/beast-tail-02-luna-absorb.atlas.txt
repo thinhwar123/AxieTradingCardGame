@@ -1,0 +1,13 @@
+
+beast-tail-02-luna-absorb.png
+size: 142,138
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+luna-absorb
+  rotate: false
+  xy: 2, 2
+  size: 138, 134
+  orig: 138, 134
+  offset: 0, 0
+  index: -1
